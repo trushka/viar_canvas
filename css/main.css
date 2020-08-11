@@ -1,0 +1,12 @@
+body {
+    height: 100%;
+}
+
+.header {
+    background: linear-gradient(135deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 650px;
+    height: 100vh;
+}
