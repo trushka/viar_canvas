@@ -5,8 +5,15 @@ body {
 .header {
     background: linear-gradient(135deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.jpg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: bottom, bottom;
+    background-size: cover, 107% 109%;
     min-height: 650px;
     height: 100vh;
+    position: relative;
+}
+
+.boxer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }

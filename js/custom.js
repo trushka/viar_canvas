@@ -2,7 +2,7 @@ $(document).ready(function() {
     let settings = {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 40,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -21,7 +21,7 @@ $(document).ready(function() {
                     "nb_sides": 5
                 },
                 "image": {
-                    "src": "img/github.svg",
+                    "src": "../img/favicon.ico",
                     "width": 100,
                     "height": 100
                 }
@@ -41,7 +41,7 @@ $(document).ready(function() {
                 "random": true,
                 "anim": {
                     "enable": false,
-                    "speed": 80,
+                    "speed": 40,
                     "size_min": 0.1,
                     "sync": false
                 }
@@ -110,4 +110,17 @@ $(document).ready(function() {
         "retina_detect": true
     }
     particlesJS('particles-js', settings);
+
+
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        (function() {
+            const el = document.querySelector(".header");
+            el.addEventListener("mousemove", (e) => {
+                let x = e.clientX / window.innerWidth;
+                let y = e.clientY / window.innerHeight;
+                el.style.backgroundPosition = 'bottom, ' + x * -50 + 'px ' + y * -50 + 'px';
+            });
+        })();
+    }
+
 })
