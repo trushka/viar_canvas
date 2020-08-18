@@ -67,7 +67,7 @@ $(document).ready(function() {
 
     function nextOne() {
         return new Typed('.element', {
-            strings: ["My name is Asryan Babken ^500\nI am Front-End Web-Developer ^400\n&#128513;&#128526;"],
+            strings: ["My name is Asryan Babken ^500\nI am Front-End Web-Developer "],
             typeSpeed: 100
         });
     }
