@@ -1,118 +1,10 @@
 $(document).ready(function() {
-    let settings = {
-        "particles": {
-            "number": {
-                "value": 40,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#ffffff"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                },
-                "image": {
-                    "src": "../img/favicon.ico",
-                    "width": 100,
-                    "height": 100
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 10,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 300,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 2
-            },
-            "move": {
-                "enable": true,
-                "speed": 12,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": false,
-                    "mode": "repulse"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 800,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 800,
-                    "size": 80,
-                    "duration": 2,
-                    "opacity": 0.8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 400,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    }
-    particlesJS('particles-js', settings);
+    // particles library
+    particlesJS.load('particles-js', 'js/particles.json');
 
-
+    // actions for desktops
     if (window.matchMedia('(min-width: 992px)').matches) {
+        // background animation
         (function() {
             const el = document.querySelector(".header");
             el.addEventListener("mousemove", (e) => {
@@ -121,6 +13,61 @@ $(document).ready(function() {
                 el.style.backgroundPosition = 'bottom, ' + x * -50 + 'px ' + y * -50 + 'px';
             });
         })();
+        // mouse cursor animation
+        (function() {
+            // get the mouse element
+            const mouse = document.querySelector(".mouse");
+            mouse.style.display = 'block';
+            // get all links
+            const links = document.querySelectorAll("a");
+            // variable that add bounce to the circle
+            const bounce = "bounce";
+            // the variable that disable the animation
+            const inactive = "inactive";
+
+            // function that make the circle follows the mouse pointer
+            function moveMouse(e) {
+                const x = e.clientX;
+                const y = e.clientY;
+                mouse.style.transform = `translate(${x - 15}px, ${y - 15}px)`;
+            }
+
+            // function that turn on / off the animation
+
+            function disableAnimation() {
+                const hasBounceClass = mouse.classList.contains(bounce);
+
+                if (hasBounceClass) {
+                    mouse.classList.add(inactive);
+                    mouse.classList.remove(bounce);
+                } else {
+                    mouse.classList.add(bounce);
+                    mouse.classList.remove(inactive);
+                }
+            }
+
+            // check for when the mouse is being moving
+            document.addEventListener("mousemove", moveMouse);
+            // check wether the user hover / leave a link
+            links.forEach(link => link.addEventListener("mouseover", disableAnimation));
+            links.forEach(link => link.addEventListener("mouseleave", disableAnimation));
+        })()
+    }
+    let typed1 = new Typed('.greeting', {
+        strings: ["Hello everybody!"],
+        typeSpeed: 100,
+        onComplete: nextOne,
+        delay: 300,
+        onStringTyped: function() {
+            return $('.typed-cursor').remove();
+        }
+    })
+
+    function nextOne() {
+        return new Typed('.element', {
+            strings: ["My name is Asryan Babken ^1000\nI am Front-End Web-Developer\n"],
+            typeSpeed: 100
+        });
     }
 
 })
