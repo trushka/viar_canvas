@@ -27,10 +27,24 @@
 	}
 	/* Small Devices, Tablets */
 	
-	@media only screen and (max-width: 768px) {}
+	@media only screen and (max-width: 768px) {
+	    .boxer {
+	        width: 400px;
+	        font-size: 30px;
+	    }
+	    .element {
+	        line-height: initial;
+	    }
+	}
 	/* Extra Small Devices, Phones */
 	
-	@media only screen and (max-width: 480px) {}
+	@media only screen and (max-width: 480px) {
+	    .boxer {
+	        width: 280px;
+	        font-size: 20px;
+	        min-height: 280px;
+	    }
+	}
 	/* Custom, iPhone Retina */
 	
 	@media only screen and (max-width: 320px) {}

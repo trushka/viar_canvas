@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('.preloader').css({ 'display': 'none' });
+    $('.page').addClass('loaded');
     // particles library
     particlesJS.load('particles-js', 'js/particles.json');
 
@@ -65,7 +67,7 @@ $(document).ready(function() {
 
     function nextOne() {
         return new Typed('.element', {
-            strings: ["My name is Asryan Babken ^1000\nI am Front-End Web-Developer\n"],
+            strings: ["My name is Asryan Babken ^500\nI am Front-End Web-Developer ^400\n&#128513;&#128526;"],
             typeSpeed: 100
         });
     }
