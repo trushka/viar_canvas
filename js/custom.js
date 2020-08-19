@@ -1,12 +1,11 @@
-$(document).ready(function() {
-    document.body.onload = function() {
-            setTimeout(() => {
+document.body.onload = function() {
+    setTimeout(() => {
 
-                $('.preloader').css({ 'opacity': 0 });
-                $('.page').addClass('loaded');
-            }, 1000)
-        }
-        // particles library
+        $('.preloader').css({ 'display': 'none' });
+        $('.page').addClass('loaded');
+    }, 1000)
+
+    // particles library
     particlesJS.load('particles-js', 'js/particles.json');
 
     // actions for desktops
@@ -62,6 +61,7 @@ $(document).ready(function() {
     }
     let typed1 = new Typed('.greeting', {
         strings: ["Hello everybody!"],
+        startDelay: 2000,
         typeSpeed: 100,
         onComplete: nextOne,
         delay: 300,
@@ -77,4 +77,4 @@ $(document).ready(function() {
         });
     }
 
-})
+}
