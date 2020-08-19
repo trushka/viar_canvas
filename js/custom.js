@@ -1,7 +1,9 @@
 $(document).ready(function() {
-    $('.preloader').css({ 'display': 'none' });
-    $('.page').addClass('loaded');
-    // particles library
+    document.body.onload = function() {
+            $('.preloader').css({ 'display': 'none' });
+            $('.page').addClass('loaded');
+        }
+        // particles library
     particlesJS.load('particles-js', 'js/particles.json');
 
     // actions for desktops
