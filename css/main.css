@@ -71,6 +71,11 @@ body {
     z-index: 2;
 }
 
+.color-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .red,
 .yellow,
 .green {
@@ -81,23 +86,38 @@ body {
     height: 20px;
     background-color: #000;
     border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 20px;
+    transition: filter .4s;
 }
 
 .red {
     background-color: #FB6254;
     border: 1px solid #D5473C;
+    color: #D5473C;
 }
 
 .yellow {
     left: 25px;
     background-color: #FDBE2F;
     border: 1px solid #D5A127;
+    color: #D5A127;
 }
 
 .green {
     left: 50px;
     background-color: #2DCB48;
     border: 1px solid #27B03F;
+    color: #27B03F;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.red:hover,
+.green:hover,
+.yellow:hover {
+    filter: brightness(130%);
 }
 
 .element {
@@ -136,6 +156,7 @@ body {
 }
 
 .inactive {
+    margin-left: 6px;
     margin-top: 40px;
     width: 10px;
     height: 10px;
