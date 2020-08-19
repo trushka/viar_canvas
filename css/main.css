@@ -32,7 +32,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.webP');
+    background: linear-gradient(135deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: bottom, bottom;
     background-size: cover, 107% 109%;
