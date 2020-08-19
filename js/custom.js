@@ -1,7 +1,10 @@
 $(document).ready(function() {
     document.body.onload = function() {
-            $('.preloader').css({ 'display': 'none' });
-            $('.page').addClass('loaded');
+            setTimeout(() => {
+
+                $('.preloader').css({ 'opacity': 0 });
+                $('.page').addClass('loaded');
+            }, 1000)
         }
         // particles library
     particlesJS.load('particles-js', 'js/particles.json');
