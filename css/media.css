@@ -40,11 +40,19 @@
 	
 	@media only screen and (max-width: 480px) {
 	    .boxer {
-	        width: 350px;
-	        font-size: 20px;
+	        width: 340px;
+	        font-size: 24px;
 	        min-height: 280px;
 	    }
 	}
 	/* Custom, iPhone Retina */
+	
+	@media only screen and (max-width: 375px) {
+	    .boxer {
+	        width: 280px;
+	        font-size: 19px;
+	        min-height: 280px;
+	    }
+	}
 	
 	@media only screen and (max-width: 320px) {}
