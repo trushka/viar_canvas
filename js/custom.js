@@ -1,4 +1,6 @@
 document.body.onload = function() {
+    let typed,
+        boxer = $('.boxer');
     setTimeout(() => {
 
         $('.preloader').css({ 'display': 'none' });
@@ -59,7 +61,7 @@ document.body.onload = function() {
             links.forEach(link => link.addEventListener("mouseleave", disableAnimation));
         })()
     }
-    let typed1 = new Typed('.greeting', {
+    typed = new Typed('.greeting', {
         strings: ["Hello everybody!"],
         startDelay: 2000,
         typeSpeed: 100,
@@ -76,5 +78,14 @@ document.body.onload = function() {
             typeSpeed: 100
         });
     }
-
+    $('.red').click(function() {
+        boxer.addClass('icon');
+        $('.boxer > *').fadeOut(100);
+        // boxer.animate({
+        //     'bottom': '0',
+        //     'width': '100px',
+        //     'height': '100px',
+        //     'border-radius': '50%'
+        // }, 400)
+    })
 }

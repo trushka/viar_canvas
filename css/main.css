@@ -6,7 +6,11 @@ body {
 
 .page {
     opacity: 0;
+    -webkit-transition: .4;
+    -o-transition: .4;
     transition: .4;
+    -webkit-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
     transition: opacity .4s ease;
 }
 
@@ -28,10 +32,13 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .header {
+    background: -o-linear-gradient(315deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.jpg');
     background: linear-gradient(135deg, rgba(121, 121, 121, 0.76) 0%, rgb(0, 0, 0) 200%), url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: bottom, bottom;
@@ -45,6 +52,8 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 40px;
@@ -58,6 +67,31 @@ body {
     border-radius: 10px;
 }
 
+.slide-out-bottom {
+    -webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.boxer.icon::after {
+    display: none;
+}
+
+.boxer.icon {
+    min-width: 50px;
+    min-height: 50px;
+    animation: icon-maker .4s ease-in;
+}
+@keyframes icon-maker {
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(-50%, 20%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
 .boxer::after {
     position: absolute;
     content: "";
@@ -99,7 +133,11 @@ body {
     font-size: 25px;
     text-align: center;
     line-height: 20px;
+    -webkit-transition: -webkit-filter .4s;
+    transition: -webkit-filter .4s;
+    -o-transition: filter .4s;
     transition: filter .4s;
+    transition: filter .4s, -webkit-filter .4s;
 }
 
 .red {
@@ -127,6 +165,7 @@ body {
 .red:hover,
 .green:hover,
 .yellow:hover {
+    -webkit-filter: brightness(130%);
     filter: brightness(130%);
 }
 
@@ -145,6 +184,7 @@ body {
     border-radius: 50%;
     border: 3px solid #65e2d9;
     z-index: 9999999;
+    -webkit-animation: flow_withoutMoving 1.4s ease infinite;
     animation: flow_withoutMoving 1.4s ease infinite;
     display: none;
 }
@@ -162,6 +202,7 @@ body {
     top: -15px;
     position: absolute;
     border: 2px solid #ECECEC;
+    -webkit-animation: flow 1.4s ease infinite;
     animation: flow 1.4s ease infinite;
 }
 
@@ -170,6 +211,8 @@ body {
     margin-top: 40px;
     width: 10px;
     height: 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -181,11 +224,11 @@ body {
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 
 svg {
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
     transform: rotate3d(0, 0, 1, -90deg);
 }
 
@@ -194,9 +237,14 @@ svg circle {
     stroke: #444;
     stroke-width: 1px;
     will-change: transform;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
     transform-origin: center center;
+    -webkit-animation-name: rotate;
     animation-name: rotate;
+    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
@@ -204,7 +252,9 @@ svg .inner {
     stroke: #aacbb0;
     stroke-dasharray: 200.96;
     stroke-dashoffset: 160.96;
+    -webkit-animation-delay: 200ms;
     animation-delay: 200ms;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
@@ -212,7 +262,9 @@ svg .middle {
     stroke: #517574;
     stroke-dasharray: 238.64;
     stroke-dashoffset: 178.64;
+    -webkit-animation-delay: 100ms;
     animation-delay: 100ms;
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }
 
@@ -220,7 +272,9 @@ svg .outer {
     stroke: #1ca197;
     stroke-dasharray: 276.32;
     stroke-dashoffset: 176.32;
+    -webkit-animation-delay: 300ms;
     animation-delay: 300ms;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
@@ -251,29 +305,50 @@ svg .outer {
     }
 }
 
-@-moz-keyframes blink {
+@-webkit-keyframes flow {
     0% {
-        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #ECECEC;
     }
     50% {
-        opacity: 0;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        border-color: hsl(198, 60%, 50%);
     }
     100% {
-        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #ECECEC;
     }
 }
 
 @keyframes flow {
     0% {
+        -webkit-transform: scale(1);
         transform: scale(1);
         border-color: #ECECEC;
     }
     50% {
+        -webkit-transform: scale(0.8);
         transform: scale(0.8);
         border-color: hsl(198, 60%, 50%);
     }
     100% {
+        -webkit-transform: scale(1);
         transform: scale(1);
+        border-color: #ECECEC;
+    }
+}
+
+@-webkit-keyframes flow_withoutMoving {
+    0% {
+        border-color: #ECECEC;
+    }
+    50% {
+        border-color: hsl(198, 60%, 50%);
+    }
+    100% {
         border-color: #ECECEC;
     }
 }
@@ -290,6 +365,19 @@ svg .outer {
     }
 }
 
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slide-in-fwd-center {
     0% {
         -webkit-transform: translateZ(-1400px);
@@ -303,8 +391,16 @@ svg .outer {
     }
 }
 
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
 @keyframes rotate {
     100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
         transform: rotate3d(0, 0, 1, 360deg);
     }
 }
