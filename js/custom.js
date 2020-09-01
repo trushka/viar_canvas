@@ -32,7 +32,7 @@ document.body.onload = function() {
             const bounce = "bounce";
             // the variable that disable the animation
             const inactive = "inactive";
-
+            
             // function that make the circle follows the mouse pointer
             function moveMouse(e) {
                 const x = e.clientX;
@@ -64,7 +64,7 @@ document.body.onload = function() {
     typed = new Typed('.greeting', {
         strings: ["Hello everybody!"],
         startDelay: 2000,
-        typeSpeed: 100,
+        typeSpeed: 80,
         onComplete: nextOne,
         delay: 300,
         onStringTyped: function() {
@@ -75,17 +75,34 @@ document.body.onload = function() {
     function nextOne() {
         return new Typed('.element', {
             strings: ["My name is Asryan Babken ^500\nI am Front-End Web-Developer ^400\n&#128513;&#128526;"],
-            typeSpeed: 100
+            typeSpeed: 80
         });
     }
     $('.red').click(function() {
         boxer.addClass('icon');
         $('.boxer > *').fadeOut(100);
-        // boxer.animate({
-        //     'bottom': '0',
-        //     'width': '100px',
-        //     'height': '100px',
-        //     'border-radius': '50%'
-        // }, 400)
+        anime({
+        targets: '.boxer',
+        top: ['50%','90%'],
+        borderRadius: ['0%', '50%'],
+        width: 70,
+        height: 70,
+        easing: 'spring(1, 90, 10, 0)'
+      });
+      
     })
+    $('.icon').click(function() {
+        console.log(this)
+        anime({
+        targets: '.boxer',
+        top: ['90%','50%'],
+        borderRadius: ['50%', '0%'],
+        width: 550,
+        height: 280,
+        easing: 'spring(1, 90, 10, 0)'
+      });
+      $('.boxer > *').fadeIn(100);
+      boxer.removeClass('icon')
+  })
+    
 }
