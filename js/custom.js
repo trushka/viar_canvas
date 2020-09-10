@@ -1,4 +1,5 @@
 document.body.onload = function() {
+    var icon;
     let typed,
         boxer = $('.boxer');
     setTimeout(() => {
@@ -78,31 +79,38 @@ document.body.onload = function() {
             typeSpeed: 80
         });
     }
-    $('.red').click(function() {
-        boxer.addClass('icon');
-        $('.boxer > *').fadeOut(100);
-        anime({
-        targets: '.boxer',
-        top: ['50%','90%'],
-        borderRadius: ['0%', '50%'],
-        width: 70,
-        height: 70,
-        easing: 'spring(1, 90, 10, 0)'
-      });
-      
+    $('.boxer').click(function(e) {
+        let target = e.target;
+        if (target.className === 'red')  {
+            boxer.addClass('icon');
+            $('.boxer > *').fadeOut(100);
+                anime({
+                targets: '.boxer',
+                padding: 0,
+                top: ['50%','90%'],
+                borderRadius: [10, '50%'],
+                width: 70,
+                height: 70,
+                easing: 'spring(1, 90, 10, 0)'
+            }); 
+        } else if(target.className === 'boxer icon') {
+            anime({
+                targets: '.boxer',
+                padding: '35px 10px 10px',
+                top: ['90%','50%'],
+                borderRadius: ['50%', '10px'],
+                width: 550,
+                height: 280,
+                easing: 'spring(1, 90, 10, 0)'
+            });
+            $('.boxer > *').delay(400).fadeIn(100);
+            boxer.removeClass('icon');
+        } else {
+            return;
+        }
+        
     })
-    $('.icon').click(function() {
-        console.log(this)
-        anime({
-        targets: '.boxer',
-        top: ['90%','50%'],
-        borderRadius: ['50%', '0%'],
-        width: 550,
-        height: 280,
-        easing: 'spring(1, 90, 10, 0)'
-      });
-      $('.boxer > *').fadeIn(100);
-      boxer.removeClass('icon')
-  })
+    
+  
     
 }

@@ -1,6 +1,5 @@
 body {
     height: 100%;
-    cursor: none !important;
     background-color: #444444;
 }
 
@@ -80,6 +79,10 @@ body {
     min-width: 50px;
     min-height: 50px;
     cursor: pointer;
+    background-image: url('../img/console2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
 }
 
 .boxer::after {
