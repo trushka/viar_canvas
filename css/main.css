@@ -64,6 +64,9 @@ body {
     background-color: #1E1E1E;
     padding: 35px 10px 10px;
     border-radius: 10px;
+    transition-property: background-image;
+    transition-delay: 2s;
+    transition-duration: .4s;
 }
 
 .slide-out-bottom {
@@ -79,7 +82,6 @@ body {
     min-width: 50px;
     min-height: 50px;
     cursor: pointer;
-    background-image: url('../img/console2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;

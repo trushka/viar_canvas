@@ -1,9 +1,7 @@
 document.body.onload = function() {
-    var icon;
     let typed,
         boxer = $('.boxer');
     setTimeout(() => {
-
         $('.preloader').css({ 'display': 'none' });
         $('.page').addClass('loaded');
     }, 1000)
@@ -81,7 +79,7 @@ document.body.onload = function() {
     }
     $('.boxer').click(function(e) {
         let target = e.target;
-        if (target.className === 'red')  {
+        if (target.className === 'yellow')  {
             boxer.addClass('icon');
             $('.boxer > *').fadeOut(100);
                 anime({
@@ -93,7 +91,19 @@ document.body.onload = function() {
                 height: 70,
                 easing: 'spring(1, 90, 10, 0)'
             }); 
+            setTimeout(()=> {
+                boxer.css(
+                    {
+                        'backgroundImage': 'url(../img/console2.png)'
+                    }
+                )
+            }, 200)
         } else if(target.className === 'boxer icon') {
+            boxer.css(
+                {
+                    'backgroundImage': 'none'
+                }
+            )
             anime({
                 targets: '.boxer',
                 padding: '35px 10px 10px',
@@ -101,10 +111,37 @@ document.body.onload = function() {
                 borderRadius: ['50%', '10px'],
                 width: 550,
                 height: 280,
-                easing: 'spring(1, 90, 10, 0)'
+                easing: 'spring(0, 100, 100, 0)'
             });
             $('.boxer > *').delay(400).fadeIn(100);
             boxer.removeClass('icon');
+        } else if (target.className === 'red') {
+            $('.boxer').animate({
+                'opacity': 0
+            }, 100);
+            setTimeout(()=>{
+                $('.boxer > *').fadeOut(100);
+                boxer.addClass('icon');
+                anime({
+                    targets: '.boxer',
+                    padding: 0,
+                    top: ['50%','90%'],
+                    borderRadius: [10, '50%'],
+                    width: 70,
+                    height: 70,
+                    easing: 'spring(0, 100, 100, 0)'
+                });
+            },300)
+            
+            setTimeout(()=> {
+                boxer.css(
+                    {
+                        'backgroundImage': 'url(../img/console2.png)',
+                        'opacity': 1
+
+                    }
+                )
+            }, 700)
         } else {
             return;
         }
