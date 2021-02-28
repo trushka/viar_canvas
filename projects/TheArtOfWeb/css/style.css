@@ -1,0 +1,351 @@
+/* OVERALL */
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+html, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+button, button:focus {
+    outline: none;
+}
+.hidden {
+    display: none;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+/* HEADER */
+.header {
+    height: 127px;
+    width: 100%;
+}
+.header__wrapper {
+    max-width: 1230px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav {
+    height: 100%;
+}
+.header__nav ul {
+    height: 100%;
+    display: flex;
+}
+.header__nav li a {
+    margin-top: 40px !important;
+    position: relative;
+}
+.header__nav li:not(:first-child) {
+    padding: 0 1.4vw;
+}
+.header__nav li:first-child {
+    padding: 0 1.4vw 0 0;
+}
+.header__nav li:nth-child(4) {
+    padding: 0 2.9vw 0 1.4vw;
+}
+.header__nav li:not(:last-child) a:before {
+    height: .1em;
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    background: orange;
+    background: linear-gradient(270deg,#00f,#ff1493);
+    background: transparent;
+    transition: all .3s;
+}
+.header__nav li:not(:last-child) a:hover {
+    color: hsla(0,0%,100%,.6);
+}
+.header__nav li a:hover::before {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(
+270deg
+,#00f,#ff1493);
+    background: #fff;
+    opacity: .7;
+}
+.animated__link {
+    padding: 0 1.95vw 0 1.95vw;
+    position: relative;
+    border: 2px solid #DE466D;
+    border-top: none;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    overflow: hidden;
+}
+.animated__link span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(222,70,109,1) 0%, rgba(36,74,252,1) 49%);
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.animated__link:hover a {
+    font-weight: 600;
+}
+.animated__link:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+.header__nav li a {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    transition: 0.4s;
+}
+.header__nav li.active__link a {
+    font-weight: 500;
+}
+.logo {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.logo span {
+    display: inline-block;
+    width: 36px;
+    margin-right: -4px;
+}
+.hamburger {
+    display: none !important;
+    padding: 0 !important;
+    height: 20px;
+    margin-top: 43px !important;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: #fff !important;
+    height: 1.33px !important;
+}
+/* MAIN */
+.main {
+    width: 100%;
+}
+.main__screen {
+    width: 100%;
+    height: calc(100vh - 127px);
+    background: url('../img/main-background.webp') no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 16.2vh;
+    position: relative;
+    overflow: hidden;
+}
+.main__screen--wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__screen--wrapper hr {
+    margin: 7vh 0;
+    height: 3px;
+    width: 143px;
+    background: #fff;
+}
+.main__screen--about {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.34);    
+}
+.main__screen--logan {
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.chevron {
+    margin-top: 17vh;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+}
+.chevron::after, .chevron::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: all .4s ease;
+}
+.chevron::before {
+    top: 0;
+    left: -12px;
+    transform: rotate(216deg);
+}
+.chevron::after {
+    top: 0;
+    left: 12px;
+    transform: rotate(143deg);
+}
+.chevron:hover::after, 
+.chevron:hover::before {
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.48);
+    height: 4px;
+    width: 32px;
+}
+.chevron:hover::after {
+    left: 11px;
+}
+.chevron:hover::before {
+    left: -11px;
+}
+.br-mobile {
+    display: none;
+}
+.sphere {
+    position: absolute;
+    bottom: 150px;
+    left: 22%;
+
+}
+canvas {
+    display: block;
+    border-radius: 50%;
+    background: transparent;
+}
+#particles-js1, #particles-js2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    background: transparent;
+}

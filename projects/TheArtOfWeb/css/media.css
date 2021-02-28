@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1250px) {
+    .header__wrapper {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .header__nav li:not(:first-child) {
+        padding: 0 1vw;
+    }
+    .header__nav li:first-child {
+        padding: 0 1vw 0 0;
+    }
+    .header__nav li:nth-child(4) {
+        padding: 0 1vw 0 1vw;
+    }
+    .main__screen--about {
+        font-size: 36px;
+    }
+    .main__screen--logan {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .hamburger {
+        display: block !important;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        height: 104px;
+    }
+    .main__screen {
+        height: calc(100vh - 104px);
+    }
+    .main__screen hr {
+        margin: 4vh 0;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .main__screen--about {
+        font-size: 29px;
+    }
+    .main__screen--logan {
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main__screen--about {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .main__screen--wrapper hr {
+        margin: 5vh 0;
+    }
+    .br-desktop {
+        display: none;
+    }
+    .main__screen--logan {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .br-mobile {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 425px) {
+    .logo {
+        font-size: 16px;
+        padding-top: 27px;
+    }
+    .hamburger {
+        margin-top: 39px !important;
+    }
+    #particles-js1, #particles-js2 {
+        width: 100px;
+        height: 100px;
+    }
+    .sphere {
+        bottom: 33%;
+        left: 35%;
+    }
+    .main__screen {
+        background: url('../img/main__mobile-background.webp') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .main__screen--about {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .main__screen--logan {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .main__screen hr {
+        margin: 2vh 0;
+    }
+    .chevron {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 700px) and (min-width: 768px) {
+    .main__screen {
+        padding-top: 2.2vh;
+    }
+}
+
+
+@media only screen and (max-height: 550px) and (min-width: 768px) {
+    .chevron {
+        margin-top: 7vh;
+    }
+    .main__screen--wrapper hr {
+        margin: 4vh 0;
+    }
+}
+@media only screen and (max-height: 440px) and (min-width: 768px) {
+    .chevron {
+        margin-top: 3vh;
+    }
+    .main__screen--wrapper hr {
+        margin: 2vh 0;
+    }
+    .main__screen--about {
+        font-size: 2vw;
+    }
+    .main__screen--logan {
+        font-size: 1vw;
+    }
+}
