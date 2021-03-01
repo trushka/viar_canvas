@@ -73,21 +73,6 @@ $(document).ready(function() {
     });
     //
 
-    // skills block animation
-    $('.main__content--skill__logo').hover(
-      function() {
-        $(this).animate({
-          'transform': 'rotateY(180deg)
-        }, 400)
-      },
-      function() {
-        $(this).animate({
-          'transform': 'rotateY(0)
-        }, 400)
-      }
-    )
-
-    //
 
     // Particles sphere animation with two layers
     particlesJS("particles-js1", {
