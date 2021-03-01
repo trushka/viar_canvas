@@ -128,8 +128,9 @@ body {
 }
 /* HEADER */
 .header {
-    height: 127px;
+    height: 104px;
     width: 100%;
+    overflow: hidden;
 }
 .header__wrapper {
     max-width: 1230px;
@@ -144,10 +145,6 @@ body {
 .header__nav ul {
     height: 100%;
     display: flex;
-}
-.header__nav li a {
-    margin-top: 40px !important;
-    position: relative;
 }
 .header__nav li:not(:first-child) {
     padding: 0 1.4vw;
@@ -211,33 +208,38 @@ body {
     height: 562.5px;
 }
 .header__nav li a {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
     text-transform: uppercase;
     color: #FEFEFE;
     transition: 0.4s;
+    margin-top: 43px !important;
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
 }
 .header__nav li.active__link a {
     font-weight: 500;
 }
 .logo {
-    font-size: 18px;
-    line-height: 21px;
     color: #FEFEFE;
     text-transform: uppercase;
-    padding-top: 30px;
+    padding-top: 33px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
 }
 .logo span {
     display: inline-block;
-    width: 36px;
+    width: 26px;
     margin-right: -4px;
 }
 .hamburger {
     display: none !important;
     padding: 0 !important;
     height: 20px;
-    margin-top: 43px !important;
+    margin-top: 37px !important;
 }
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     background-color: #fff !important;
@@ -246,10 +248,12 @@ body {
 /* MAIN */
 .main {
     width: 100%;
+    position: relative;
 }
 .main__screen {
     width: 100%;
-    height: calc(100vh - 127px);
+    height: 1080px;
+    max-height: calc(100vh - 104px);
     background: url('../img/main-background.webp') no-repeat;
     background-size: contain;
     background-position: center;
@@ -292,6 +296,7 @@ body {
     position: relative;
     cursor: pointer;
     padding: 5px;
+    height: 10px;
 }
 .chevron::after, .chevron::before {
     content: "";
@@ -314,12 +319,12 @@ body {
 }
 .chevron:hover::after, 
 .chevron:hover::before {
-    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.48);
+    box-shadow: 1px -3px 12px 1px rgb(255 255 255 / 48%);
     height: 4px;
     width: 32px;
 }
 .chevron:hover::after {
-    left: 11px;
+    left: 13px;
 }
 .chevron:hover::before {
     left: -11px;
@@ -348,4 +353,93 @@ canvas {
     margin: 20px;
     border-radius: 50%;
     background: transparent;
+}
+.navigation__block {
+    position: fixed;
+    bottom: 112px;
+    right: 100px;
+}
+.navigation__block ul {
+    display: flex;
+    flex-direction: column;
+    height: 212px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation__block ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #244AFC 0%, #DE466D 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation__block ul li:not(.navigation__active) a {
+    background: black;
+}
+.navigation__block ul li a {
+    width: 16px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+}
+.mobile__menu--overlay {
+    height: calc(100% - 104px);
+    width: 100%;
+    position: absolute;
+    top: 104px;
+    left: 0;
+    background: #000;
+}
+.mobile__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 3vh;
+}
+.mobile__menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mobile__menu ul li.active__link a {
+    font-weight: 500;
+}
+.mobile__menu ul li {
+    text-align: center;
+}
+.mobile__menu ul li:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobile__menu ul li a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.main__screen--contact__block {
+    position: absolute;
+    display: none;
+    padding: 0 10px;
+    bottom: 32px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(222, 70, 109, 0.8) 0%, rgba(36, 74, 252, 0.8) 100%);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.main__screen--contact__block h2 {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.mobile--contact {
+    display: flex;
 }

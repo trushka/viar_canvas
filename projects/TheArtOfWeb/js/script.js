@@ -16,8 +16,21 @@ $(document).ready(function() {
 
 
 
+    // mobile menu trigger
+    $('.hamburger').click(function() {
+      $(this).toggleClass('is-active');
+      $('.mobile__menu--overlay').fadeToggle(500);
+    })
     
-    
+    //
+    window.addEventListener('resize', 
+      function() {
+        if (window.matchMedia('(min-width: 970px)').matches) {
+          $('.mobile__menu--overlay').css({'display': 'none'});
+          $('.hamburger').removeClass('is-active');
+        }
+      }
+    )
 
 
 
