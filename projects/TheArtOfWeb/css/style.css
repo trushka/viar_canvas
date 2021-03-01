@@ -324,10 +324,10 @@ body {
     width: 32px;
 }
 .chevron:hover::after {
-    left: 13px;
+    left: 11px;
 }
 .chevron:hover::before {
-    left: -11px;
+    left: -13px;
 }
 .br-mobile {
     display: none;
