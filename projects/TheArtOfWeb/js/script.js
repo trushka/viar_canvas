@@ -13,7 +13,7 @@ $(document).ready(function() {
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
-
+    //
 
 
     // mobile menu trigger
@@ -21,7 +21,9 @@ $(document).ready(function() {
       $(this).toggleClass('is-active');
       $('.mobile__menu--overlay').fadeToggle(500);
     })
-    
+    //
+
+
     //
     window.addEventListener('resize', 
       function() {
@@ -31,13 +33,11 @@ $(document).ready(function() {
         }
       }
     )
+    //
 
+
+    // navigation active links animation
     let mainNavLinks = document.querySelectorAll(".navigation__block ul li a");
-    let mainSections = document.querySelectorAll(".nav__logger");
-    
-    let lastId;
-    let cur = [];
-    
     window.addEventListener("scroll", event => {
       let fromTop = window.scrollY;
     
@@ -70,7 +70,24 @@ $(document).ready(function() {
           }
           
       });
-  });
+    });
+    //
+
+    // skills block animation
+    $('.main__content--skill__logo').hover(
+      function() {
+        $(this).animate({
+          'transform': 'rotateY(180deg)
+        }, 400)
+      },
+      function() {
+        $(this).animate({
+          'transform': 'rotateY(0)
+        }, 400)
+      }
+    )
+
+    //
 
     // Particles sphere animation with two layers
     particlesJS("particles-js1", {
@@ -285,5 +302,6 @@ $(document).ready(function() {
     },
     "retina_detect": true
     });
+    //
       
 })
