@@ -186,6 +186,13 @@
     .main__screen--logan {
         font-size: 1vw;
     }
+    #particles-js1, #particles-js2 {
+        width: 100px;
+        height: 100px;
+    }
+    .sphere {
+        bottom: 80px;
+    }
 }
 
 

@@ -230,11 +230,6 @@ body {
     line-height: 16px;
 
 }
-.logo span {
-    display: inline-block;
-    width: 26px;
-    margin-right: -4px;
-}
 .hamburger {
     display: none !important;
     padding: 0 !important;
