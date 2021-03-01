@@ -6,14 +6,6 @@ $(document).ready(function() {
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
 			$(this).find('span').css({top:relY, left:relX})
-            console.log(relX, relY);
-            if (relY >= 90) {
-                $('.animated__link span').css({'background':'linear-gradient(180deg, rgba(222,70,109,1) 33%, rgba(36,74,252,1) 56%)'})
-            } else if (relY < 90 && relY > 10 && relX > 0) {
-                $('.animated__link span').css({'background':'linear-gradient(rgb(222, 70, 109) 47%, rgb(36, 74, 252) 66%)'})
-            } else {
-                $('.animated__link span').css({'background':'linear-gradient(rgb(222, 70, 109) 57%, rgb(36, 74, 252) 76%)'})
-            }
     })
     .on('mouseout', function(e) {
 			var parentOffset = $(this).offset(),
@@ -21,20 +13,8 @@ $(document).ready(function() {
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
-    $('.animated__link').hover(function() {
-        $(this).delay(100).css({'border': '2px solid transparent', 'border-top': 'none'})
-    },
-    function() {
-        $(this).delay(500).css({'border': '2px solid #DE466D', 'border-top': 'none'})
-    })
 
-    // $('.chevron').hover(
-    //     function() {
-    //         $(".chevron img").attr("src","img/chevron-hover.svg");
-    // },
-    //     function() {
-    //         $(".chevron img").attr("src","img/chevron.svg");
-    // })
+
 
     
     
