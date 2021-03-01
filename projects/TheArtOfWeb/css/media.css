@@ -18,6 +18,22 @@
     .main__screen--logan {
         font-size: 26px;
     }
+    .main__content--wrapper {
+        width: 90%;
+    }
+    .main__content--skill {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__content--skill:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+    .main__content--skill h2, .main__content--skill p {
+        text-align: center !important;
+    }
+    .main__content--skill__text h2 {
+        margin: 4vw 0;
+    }
 }
 @media only screen and (max-width: 1080px) {
     .main__screen hr {
@@ -95,7 +111,7 @@
     }
     .main__screen {
         background: url('../img/main__mobile-background.webp') no-repeat;
-        background-position: center;
+        background-position: 0 -101px;
         background-size: cover;
     }
     .main__screen--about {
@@ -114,6 +130,34 @@
     }
     .main__screen--contact__block {
         display: flex;
+    }
+    .main__content--about {
+        font-size: 14px;
+        line-height: 139.9%;
+    }
+    .main__content--skill__logo {
+        width: 100px;
+        height: 100px;
+    }
+    .main__content--skill__logo svg {
+        width: 50%;
+    }
+    .main__content--skill__text h2 {
+        font-size: 18px;
+        line-height: 119.04%;
+    }
+    .main__content--skill__text p {
+        font-size: 10px;
+        line-height: 180%;
+    }
+    .main__content--about {
+        padding-top: 32px;
+    }
+    .main__content--skill__text h2 {
+        margin: 24px 0;
+    }
+    .main__content--skill:not(:last-child) {
+        margin-bottom: 41px;
     }
 }
 

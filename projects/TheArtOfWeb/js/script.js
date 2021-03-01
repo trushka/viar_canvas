@@ -32,8 +32,45 @@ $(document).ready(function() {
       }
     )
 
+    let mainNavLinks = document.querySelectorAll(".navigation__block ul li a");
+    let mainSections = document.querySelectorAll(".nav__logger");
+    
+    let lastId;
+    let cur = [];
+    
+    window.addEventListener("scroll", event => {
+      let fromTop = window.scrollY;
+    
+      mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+    
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add("navigation__active");
+        } else {
+          link.classList.remove("navigation__active");
+        }
+      });
+    });
 
-
+    document.querySelectorAll('a[href^="#section"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          console.log($(this).attr('href'))
+          if ($(this).attr('href') == '#section1') {
+            document.querySelector('.header').scrollIntoView({
+              behavior: 'smooth'
+          });
+          } else {
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+          }
+          
+      });
+  });
 
     // Particles sphere animation with two layers
     particlesJS("particles-js1", {
