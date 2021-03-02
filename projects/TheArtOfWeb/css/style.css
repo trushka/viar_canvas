@@ -299,11 +299,11 @@ body {
     text-align: center;
 }
 .chevron {
-    margin-top: 17vh;
+    display: block;
+    margin-top: 20vh;
     position: relative;
     cursor: pointer;
     padding: 5px;
-    height: 10px;
 }
 .chevron::after, .chevron::before {
     content: "";
@@ -377,7 +377,7 @@ canvas {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(180deg, #244AFC 0%, #DE466D 100%);
+    background: #DE466D ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,7 +462,7 @@ canvas {
     width: 100%;
 }
 .main__content--wrapper {
-    max-width: 1064px;
+    max-width: 1050px;
     margin: 0 auto; 
 }
 .main__content--about {
@@ -482,13 +482,13 @@ canvas {
     justify-content: space-between;
 }
 .main__content--skill:not(:last-child) {
-    margin-bottom: 3vw;
+    margin-bottom: 1.5vw;
 }
 .main__content--skill__logo {
     background: rgba(222, 70, 109, 0.25);
     border: 1px solid #DE466D;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -497,6 +497,9 @@ canvas {
     transition-delay: .4s;
     cursor: pointer;
 }
+.main__content--skill__logo svg {
+    width: 50%;
+}
 .main__content--skill__text {
     max-width: 794px;
 }
@@ -504,14 +507,14 @@ canvas {
     margin-bottom: 1vw;
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 119.04%;
     text-align: left;
     text-transform: uppercase;
 }
 .main__content--skill__text p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 145.4%;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -524,7 +527,7 @@ canvas {
     text-align: right;
 }
 .main__content--skills .chevron {
-    margin: 71px auto 0;
+    margin: 57px auto 0;
 }
 .main__content--skill__logo svg path {
     transition: fill .3s ease;
