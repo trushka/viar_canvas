@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    // preloader
+    setTimeout(function() {
+      $('.preloader').fadeOut(200);
+    }, 3500)
+    //
+
     // animated link animation on header
     $('.animated__link')
     .on('mouseenter', function(e) {
