@@ -127,7 +127,9 @@ body {
     color: #fff;
     scroll-behavior: smooth;
 }
-
+.fixed {
+    overflow: hidden;
+}
 /* HEADER */
 
 .header {
@@ -648,6 +650,7 @@ canvas {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: background .4s ease;
 }
 .whoweare__inner--our_projects:hover {
     background: #DE466D;
@@ -823,6 +826,70 @@ canvas {
     justify-content: space-between;
     padding: 8px 0 8px 4px;
 }
+
+/* PORTFOLIO */
+
+.main__content--wrapper__portfolio {
+    padding: 63px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main__portfolio--inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 98px 14px;
+    padding-top: 82px;
+}
+.main__portfolio--project {
+    padding: 31px 0 29px 11px;
+    border: 1px solid #FFFFFF;
+    background: url('../img/ellipse.svg') no-repeat;
+    background-position: 102% 102%;
+    cursor: pointer;
+    position: relative;
+}
+.main__portfolio--project:hover h2 {
+    color: #ff1493;
+}
+.main__portfolio--project:hover a {
+    color: #ff1493;
+    text-decoration: underline;
+}
+.main__portfolio--project h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 119.04%;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+.main__portfolio--project p {
+    margin: 24px 0 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145.4%;
+    letter-spacing: 0.055em;
+}
+.main__portfolio--project a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 145.4%;
+    letter-spacing: 0.055em;   
+    transition: .3s ease; 
+}
+.main__portfolio--project:nth-child(1)::after, .main__portfolio--project:nth-child(2)::after, .main__portfolio--project:nth-child(3)::after {
+    content: "";
+    bottom: -49px;
+    left: calc(50% - 59px);
+    height: 2px;
+    width: 118px;
+    position: absolute;
+    display: block;
+    background: #fff;
+}
+
 
 
 

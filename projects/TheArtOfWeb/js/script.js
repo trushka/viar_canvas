@@ -26,9 +26,13 @@ $(document).ready(function() {
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
       $('.mobile__menu--overlay').fadeToggle(500);
+      $('body').toggleClass('fixed');
     })
     //
 
+    $(document).mousemove(function(e) {
+      console.log(e.clientX, e.clientY)
+    })
 
     //
     window.addEventListener('resize', sizerQueries);
@@ -37,6 +41,7 @@ $(document).ready(function() {
       if (window.matchMedia('(min-width: 970px)').matches) {
         $('.mobile__menu--overlay').css({'display': 'none'});
         $('.hamburger').removeClass('is-active');
+        $('body').removeClass('fixed');
         
       }
       if (window.matchMedia('(min-width: 768px)').matches) {

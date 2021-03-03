@@ -12,6 +12,22 @@
     .main__content--wrapper__team {
         width: 98%;
     }
+    .main__content--wrapper__portfolio {
+        width: 85%;
+    }
+    .main__portfolio--project:nth-child(4)::after {
+        content: "";
+        bottom: -49px;
+        left: calc(50% - 59px);
+        height: 2px;
+        width: 118px;
+        position: absolute;
+        display: block;
+        background: #fff;
+    }
+    .main__portfolio--inner {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 1160px) {
@@ -118,6 +134,9 @@
     .team__person--content p {
         max-width: unset;
     }
+    .main__portfolio--project h2 {
+        font-size: 18px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .main__screen--about {
@@ -195,6 +214,9 @@
     .main__about--inner {
         margin-top: 61px;
     }
+    .main__portfolio--inner {
+        grid-template-columns: 1fr;
+    }
 }
 @media only screen and (max-width: 660px) {
     .main__screen--about {
@@ -225,15 +247,23 @@
     .main__team--inner_person h2 {
         font-size: 18px;
     }
+    .main__team--inner_person h3 {
+        font-size: 14px;
+    }
     .team__person--content p {
         font-size: 9px;
-        max-width: 150px;
+        max-width: 250px;
+        line-height: 160%;
     }
     .main__team--inner_person {
         height: 257px;
+        width: 400px;
     }
     .team__person--content img {
         width: 122px;
+    }
+    .team__person--white {
+        width: 30%;
     }
 }
 @media only screen and (max-width: 540px) {
@@ -344,6 +374,45 @@
     }
     .br-mobile__whoweare {
         display: inline;
+    }
+    .main__content--wrapper__team {
+        width: 100%;
+        padding: 52px 17px 56px;
+    }
+    .main__team--inner_person {
+        width: 100%;
+    }
+    .team__person--white {
+        width: 114px;
+    }
+    .team__person--black {
+        width: unset;
+    }
+    .main__section--title::after {
+        left: 30px;
+    }
+    .team__person--white {
+        padding: 8px 1px 8px 0;
+    }
+    .main__portfolio--project p {
+        font-size: 13px;
+        text-align: center;
+        margin: 22px 0 35px;
+    }
+    .main__portfolio--project {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 6px 29px 6px;
+        border: 1px solid #FFFFFF;
+        background: url('../img/ellipse-mini.svg') no-repeat;
+        background-position: 100% 100%;
+    }
+    .main__portfolio--project h2 {
+        text-align: center;
+    }
+    .main__portfolio--project a {
+        width: 100%;
+        text-align: right;
     }
 }
 
