@@ -34,6 +34,21 @@
     .main__content--skill__text h2 {
         margin: 4vw 0;
     }
+    .main__about--inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__content--wrapper__about h2 {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .main__content--wrapper__about h2::after {
+        left: 80px;
+    }
+    .main__about--list {
+        margin-bottom: 50px;
+        max-width: 90%;
+    }
 }
 @media only screen and (max-width: 1080px) {
     .main__screen hr {
@@ -119,6 +134,23 @@
     .main__content--whoweare__inner .chevron {
         margin-top: 7vh;
     }
+    .main__about--image {
+        display: none;
+    }
+    .main__about--list {
+        margin-bottom: 0;
+    }
+    .main__about--list ul li p {
+        font-size: 16px;
+    }
+    .main__about--list ul li p span {
+        width: 30px;
+        height: 30px;
+    }
+    .main__content--wrapper__about h2::after {
+        left: 60px;
+        width: 200px;
+    }
 }
 @media only screen and (max-width: 660px) {
     .main__screen--about {
@@ -136,7 +168,22 @@
         font-size: 18px;
         max-width: 384px;
     }
-
+    .main__about--list ul li p {
+        font-size: 12px;
+        line-height: 129.9%;
+        letter-spacing: 0.255em;
+    }
+    .main__content--wrapper__about h2 {
+        font-size: 24px;
+    }
+    .main__content--wrapper__about h2::after {
+        left: 50px;
+        width: 150px;
+        bottom: -11px;
+    }
+    .main__content--wrapper__about {
+        padding: 49px 0 61px;
+    }
 }
 @media only screen and (max-width: 425px) {
     #particles-js1, #particles-js2 {
