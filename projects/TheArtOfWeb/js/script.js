@@ -2,7 +2,7 @@ $(document).ready(function() {
     // preloader
     setTimeout(function() {
       $('.preloader').fadeOut(200);
-    }, 3500)
+    }, 100)
     //
 
     // animated link animation on header
@@ -31,14 +31,20 @@ $(document).ready(function() {
 
 
     //
-    window.addEventListener('resize', 
-      function() {
-        if (window.matchMedia('(min-width: 970px)').matches) {
-          $('.mobile__menu--overlay').css({'display': 'none'});
-          $('.hamburger').removeClass('is-active');
-        }
+    window.addEventListener('resize', sizerQueries);
+    sizerQueries();
+    function sizerQueries() {
+      if (window.matchMedia('(min-width: 970px)').matches) {
+        $('.mobile__menu--overlay').css({'display': 'none'});
+        $('.hamburger').removeClass('is-active');
+        
       }
-    )
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        $('.whoweare__inner--arrow img').attr("src","img/arrow.svg");
+      } else {
+        $('.whoweare__inner--arrow img').attr("src","img/arrow-min.svg");          
+      }
+    }
     //
 
 

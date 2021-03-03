@@ -70,6 +70,13 @@
     .hamburger {
         margin-top: 27px !important;
     }
+    .main__content--whoweare__inner h2 {
+        font-size: 35px;
+        max-width: 730px;
+    }
+    .main__content--whoweare__inner h2 > span {
+        padding: 5px 0;
+    }
 }
 @media only screen and (max-width: 768px) {
     .main__screen--about {
@@ -89,6 +96,29 @@
     .br-mobile {
         display: block;
     }
+    .whoweare__inner--arrow {
+        flex-direction: column;
+    }
+    .whoweare__inner--our_projects {
+        width: 150px;
+        height: 150px;
+        position: unset;
+        margin-top: 4vw;
+    }
+    .whoweare__inner--our_projects h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .whoweare__inner--arrow img {
+        margin: 37px 0 0 0;
+    }
+    .main__content--whoweare__inner h2 {
+        font-size: 24px;
+        max-width: 530px;
+    }
+    .main__content--whoweare__inner .chevron {
+        margin-top: 7vh;
+    }
 }
 @media only screen and (max-width: 660px) {
     .main__screen--about {
@@ -99,6 +129,14 @@
     .navigation__block {
         display: none;
     }
+}
+@media only screen and (max-width: 540px) {
+    
+    .main__content--whoweare__inner h2 {
+        font-size: 18px;
+        max-width: 384px;
+    }
+
 }
 @media only screen and (max-width: 425px) {
     #particles-js1, #particles-js2 {
@@ -155,6 +193,26 @@
     }
     .main__content--skill:not(:last-child) {
         margin-bottom: 41px;
+    }
+    .main__content--whoweare__inner h2 > span {
+        background: none;
+        display: inline;
+        padding: 0;
+
+    }
+    .main__content--whoweare__inner h2 > span > span {
+        background: #DE466D;
+        display: block;
+        max-width: 100px;
+        margin: 0 auto;
+    }
+    .main__content--whoweare__inner h2 {
+        max-width: 284px;
+        line-height: 198.9%;
+        letter-spacing: 0.15em;
+    }
+    .br-mobile__whoweare {
+        display: inline;
     }
 }
 
