@@ -9,6 +9,9 @@
     .header__wrapper {
         width: 96%;
     }
+    .main__content--wrapper__team {
+        width: 98%;
+    }
 }
 
 @media only screen and (max-width: 1160px) {
@@ -38,11 +41,11 @@
         flex-direction: column;
         align-items: center;
     }
-    .main__content--wrapper__about h2 {
+    .main__section--title {
         max-width: 300px;
         margin: 0 auto;
     }
-    .main__content--wrapper__about h2::after {
+    .main__section--title::after {
         left: 80px;
     }
     .main__about--list {
@@ -91,6 +94,29 @@
     }
     .main__content--whoweare__inner h2 > span {
         padding: 5px 0;
+    }
+    .preloader {
+        font-size: 26px;
+    }
+    .preloader__image_animate {
+        left: calc(50% - 104px);
+        width: 80px;
+        height: 80px;
+        animation: up-down2 2s infinite;
+    }
+    .span {
+        margin-left: 65px;
+    }
+    .main__team--inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__team--inner_person {
+        width: 581px;
+    }
+    .team__person--content p {
+        max-width: unset;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -143,13 +169,31 @@
     .main__about--list ul li p {
         font-size: 16px;
     }
-    .main__about--list ul li p span {
-        width: 30px;
-        height: 30px;
+    .main__about--list ul li p > span > span {
+        width: 33px;
+        height: 33px;
     }
-    .main__content--wrapper__about h2::after {
+    .main__section--title::after {
         left: 60px;
         width: 200px;
+    }
+    .main__about--list ul li p > span > span > span {
+        padding: 10px 0 0 10px;
+    }
+    .main__about--list ul li p > span {
+        padding-left: 28px;
+    }
+    .main__about--list ul li:last-child p > span {
+        padding-left: 25px;
+    }
+    .main__about--list ul li:last-child p > span > span > span {
+        padding: 10px 0 0 14px;
+    }
+    .main__about--list ul li p > span > span {
+        left: -10px;
+    }
+    .main__about--inner {
+        margin-top: 61px;
     }
 }
 @media only screen and (max-width: 660px) {
@@ -161,6 +205,36 @@
     .navigation__block {
         display: none;
     }
+    .preloader {
+        font-size: 18px;
+    }
+    .preloader__image_animate {
+        left: calc(50% - 73px);
+        width: 50px;
+        height: 50px;
+        animation: up-down3 2s infinite;
+    }
+    .preloader__text {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .span {
+        margin-left: 45px;
+    }
+    .main__team--inner_person h2 {
+        font-size: 18px;
+    }
+    .team__person--content p {
+        font-size: 9px;
+        max-width: 150px;
+    }
+    .main__team--inner_person {
+        height: 257px;
+    }
+    .team__person--content img {
+        width: 122px;
+    }
 }
 @media only screen and (max-width: 540px) {
     
@@ -170,19 +244,29 @@
     }
     .main__about--list ul li p {
         font-size: 12px;
-        line-height: 129.9%;
+        line-height: 160%;
         letter-spacing: 0.255em;
     }
-    .main__content--wrapper__about h2 {
+    .main__section--title {
         font-size: 24px;
     }
-    .main__content--wrapper__about h2::after {
+    .main__section--title::after {
         left: 50px;
         width: 150px;
         bottom: -11px;
     }
     .main__content--wrapper__about {
         padding: 49px 0 61px;
+    }
+    .main__about--list ul li p > span > span {
+        width: 30px;
+        height: 30px;
+    }
+    .main__about--list ul li:last-child p > span {
+        padding-left: 23px;
+    }
+    .main__about--list ul li p > span {
+        padding-left: 25px;
     }
 }
 @media only screen and (max-width: 425px) {
