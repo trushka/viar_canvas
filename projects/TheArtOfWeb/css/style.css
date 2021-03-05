@@ -652,12 +652,6 @@ canvas {
     cursor: pointer;
     transition: background .4s ease;
 }
-.whoweare__inner--our_projects:hover {
-    background: #DE466D;
-}
-.whoweare__inner--our_projects:hover h3 {
-    color: #fff;
-}
 .whoweare__inner--our_projects h3 {
     font-weight: 600;
     font-size: 28px;

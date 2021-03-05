@@ -31,7 +31,7 @@ $(document).ready(function() {
     //
 
     $(document).mousemove(function(e) {
-      console.log(e.clientX, e.clientY)
+      // console.log(e.clientX, e.clientY)
     })
 
     //
@@ -306,4 +306,113 @@ $(document).ready(function() {
     });
     //
       
+
+
+
+
+
+
+
+    var hoverMouse = function($el) {
+      $el.each(function() {
+          var $self = $(this);
+          var hover = false;
+          var offsetHoverMax = $self.attr("offset-hover-max") || 1;
+          var offsetHoverMin = $self.attr("offset-hover-min") || 0.75;
+
+          var attachEventsListener = function() {
+              $(window).on("mousemove", function(e) {
+                  var hoverArea = hover ? offsetHoverMax : offsetHoverMin;
+
+                  var cursor = {
+                      x: e.clientX,
+                      y: e.clientY + $(window).scrollTop()
+                  };
+
+                  var width = $self.outerWidth();
+                  var height = $self.outerHeight();
+
+                  var offset = $self.offset();
+                  var elPos = {
+                      x: offset.left + width / 2,
+                      y: offset.top + height / 2
+                  };
+
+                  var x = cursor.x - elPos.x;
+                  var y = cursor.y - elPos.y;
+
+                  var dist = Math.sqrt(x * x + y * y);
+
+                  var mutHover = false;
+
+                  if (dist < width * hoverArea) {
+                      mutHover = true;
+                      if (!hover) {
+                          hover = true;
+                      }
+                      onHover(x, y);
+                  }
+
+                  if (!mutHover && hover) {
+                      onLeave();
+                      hover = false;
+                  }
+              });
+          };
+
+          var onHover = function(x, y) {
+              TweenMax.to($self, 0.4, {
+                  x: x * 0.8,
+                  y: y * 0.8,
+                  rotation: x * 0.05,
+                  scale: 1.2,
+                  ease: Power2.easeOut
+              });
+            //   TweenMax.to($self, 0.4, {
+            //     backgroundColor: "#DE466D",
+            //     ease: Circ.easeIn
+            // });
+            $self.css({'background-color': '#DE466D'});
+              TweenMax.to($('.whoweare__inner--our_projects h3'), 0.4, {
+                color: "#fff",
+                ease: Power2.easeOut
+            });
+          };
+          var onLeave = function() {
+              TweenMax.to($self, 0.7, {
+                  x: 0,
+                  y: 0,
+                  scale: 1,
+                  rotation: 0,
+                  ease: Power2.easeOut
+              });
+              $self.css({'background-color': 'transparent'});
+            //   TweenMax.to($self, 0.4, {
+            //     backgroundColor: "transparent",
+            //     ease: Circ.easeIn
+            // });
+              TweenMax.to($('.whoweare__inner--our_projects h3'), 0.4, {
+                color: "#DE466D",
+                ease: Power2.easeOut
+            });
+          };
+
+          attachEventsListener();
+      });
+  };
+
+hoverMouse($(".whoweare__inner--our_projects"));
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
