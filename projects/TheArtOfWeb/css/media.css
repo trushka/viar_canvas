@@ -3,13 +3,17 @@
         right: 3vw;
     }
 }
+@media only screen and (max-width: 1350px) {
 
+}
 
 @media only screen and (max-width: 1250px) {
     .header__wrapper {
         width: 96%;
     }
-    .main__content--wrapper__team {
+    .main__content--wrapper__team,
+    .main__content--wrapper__contacts,
+    .footer__wrapper {
         width: 98%;
     }
     .main__content--wrapper__portfolio {
@@ -68,10 +72,48 @@
         margin-bottom: 50px;
         max-width: 90%;
     }
+    .team__person--white {
+        width: 27%;
+    }
+    .main__team--inner_person h3 {
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 1080px) {
     .main__screen hr {
         margin: 4vh 0;
+    }
+    .contacts__inner--form {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .contacts__inner--social {
+        bottom: -470px;
+        top: unset;
+        background: linear-gradient(253deg, #DE466D 0.95%, #000000 91.75%);
+    }
+    .contacts__inner--social ul {
+        justify-content: start;
+        padding-top: 45px;
+    }
+    .contacts__inner--social ul li:first-child {
+        margin-left: 200px;
+        order: 1;
+    }
+    .contacts__inner--social ul li:last-child {
+        margin: 25px 0 25px 140px;
+        order: 2;
+    }
+    .contacts__inner--social ul li:nth-child(2) {
+        margin: 0 0 0 80px;
+        order: 3;
+    }
+    .contacts__inner--social ul li {
+        font-size: 14px;
+    }
+    .contacts__inner--social ul li img {
+        width: 25px;
+        margin-right: 10px;
     }
 }
 @media only screen and (max-width: 970px) {
@@ -217,6 +259,36 @@
     .main__portfolio--inner {
         grid-template-columns: 1fr;
     }
+    .about__sphere {
+        display: none;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__nav {
+        order: 1;
+    }
+    .footer__nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__nav ul li {
+        margin-right: 0 !important;
+    }
+    .footer__nav ul li:not(:last-child) {
+        margin-bottom: 21px;
+    }
+    .footer__logo {
+        order: 3;
+    }
+    .footer__social {
+        order: 2;
+        margin: 25px 0;
+    }
+    .footer__social ul li:first-child {
+        margin-right: 20px;
+    }
 }
 @media only screen and (max-width: 660px) {
     .main__screen--about {
@@ -298,6 +370,65 @@
     .main__about--list ul li p > span {
         padding-left: 25px;
     }
+    .contacts__inner--social ul li {
+        font-size: 9px;
+    }
+    .contacts__inner--social ul li img {
+        width: 15px;
+    }
+    .contacts__inner--social ul {
+        padding-top: 20px;
+    }
+    .contacts__inner--social {
+        bottom: -190px;
+        width: 340px;
+        height: 340px;
+    }
+    .contacts__inner--social ul li:first-child {
+        margin-left: 120px;
+    }
+    .contacts__inner--social ul li:last-child {
+        margin: 25px 0 25px 80px;
+    }
+    .contacts__inner--social ul li:nth-child(2) {
+        margin: 0 0 0 45px;
+    }
+    .main__content--wrapper__contacts {
+        width: 85%;
+        padding: 35px 0 0;
+        margin-bottom: 14px;
+    }
+    .contacts__inner--form {
+        padding-top: 30px;
+    }
+    .form__submit {
+        width: 91px;
+        height: 31px;
+        font-size: 14px;
+    }
+    .form__group--row {
+        flex-wrap: wrap;
+    }
+    .form__group--row:not(:last-of-type) {
+        margin-bottom: 21px;
+    }
+    .form__group--input {
+        width: 100%;
+        font-size: 14px;
+    }
+    .form__group--input::placeholder {
+        font-size: 14px;
+    }
+    .form__group--input:not(:last-of-type) {
+        margin-bottom: 21px;
+    }
+    .form__group--row:last-of-type {
+        margin-top: 0;
+    }
+    .contacts__inner--social {
+        background: linear-gradient(149deg, #DE466D 0.95%, #000000 27.75%);
+    }
+
 }
 @media only screen and (max-width: 425px) {
     #particles-js1, #particles-js2 {
@@ -414,13 +545,20 @@
         width: 100%;
         text-align: right;
     }
+    .main__portfolio--project:hover a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    .contacts__inner--social ul li:first-child {
+        margin-left: 115px;
+    }
+    .contacts__inner--social ul li:last-child {
+        margin: 25px 0 25px 67px;
+    }
+    .contacts__inner--social ul li:nth-child(2) {
+        margin: 0 0 0 23px;
+    }
 }
-
-
-
-
-
-
 
 
 

@@ -45,10 +45,26 @@ $(document).ready(function() {
         
       }
       if (window.matchMedia('(min-width: 768px)').matches) {
+        $('.contacts__inner--social').css({
+          'right': '-' + (parseInt($('.main__content--wrapper__contacts').css('marginRight')) + 85 + 'px')
+        })
         $('.whoweare__inner--arrow img').attr("src","img/arrow.svg");
       } else {
+        $('.contacts__inner--social').css({
+          'right': '-' + (parseInt($('.main__content--wrapper__contacts').css('marginRight')) + 200 + 'px')
+        })
         $('.whoweare__inner--arrow img').attr("src","img/arrow-min.svg");          
       }
+      if (window.matchMedia('(max-width: 425px)').matches) {
+        $('.contacts__inner--social').css({
+          'right': '-' + (parseInt($('.main__content--wrapper__contacts').css('marginRight')) + 130 + 'px')
+        })
+      } else if (window.matchMedia('(max-width: 540px)').matches) {
+        $('.contacts__inner--social').css({
+          'right': '-' + (parseInt($('.main__content--wrapper__contacts').css('marginRight')) + 90 + 'px')
+        })
+      }
+
     }
     //
 
@@ -60,7 +76,6 @@ $(document).ready(function() {
     
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-    
         if (
           section.offsetTop <= fromTop &&
           section.offsetTop + section.offsetHeight > fromTop
@@ -304,6 +319,218 @@ $(document).ready(function() {
     },
     "retina_detect": true
     });
+    particlesJS("particles-js3", {
+        "particles": {
+          "number": {
+            "value": 8000,
+            "density": {
+              "enable": true,
+              "value_area": 200
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "image",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "https://i.ibb.co/H78LBWP/e.png",
+              "width": 5000,
+              "height": 5000
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false
+          },
+          "move": {
+            "enable": true,
+            "speed": 1.5,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 70,
+              "duration": 1
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+    });
+    particlesJS("particles-js4", {
+    "particles": {
+        "number": {
+        "value": 1000,
+        "density": {
+            "enable": true,
+            "value_area": 200
+        }
+        },
+        "color": {
+        "value": "#ffffff"
+        },
+        "shape": {
+        "type": "image",
+        "stroke": {
+            "width": 0,
+            "color": "#000000"
+        },
+        "polygon": {
+            "nb_sides": 5
+        },
+        "image": {
+            "src": "https://i.ibb.co/qWJRdpj/w.png",
+            "width": 5000,
+            "height": 5000
+        }
+        },
+        "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+        }
+        },
+        "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+        }
+        },
+        "line_linked": {
+        "enable": false
+        },
+        "move": {
+        "enable": true,
+        "speed": 1.5,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+        }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+        "onhover": {
+            "enable": true,
+            "mode": "repulse"
+        },
+        "onclick": {
+            "enable": true,
+            "mode": "push"
+        },
+        "resize": true
+        },
+        "modes": {
+        "grab": {
+            "distance": 140,
+            "line_linked": {
+            "opacity": 1
+            }
+        },
+        "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+        },
+        "repulse": {
+            "distance": 20,
+            "duration": 0.4
+        },
+        "push": {
+            "particles_nb": 4
+        },
+        "remove": {
+            "particles_nb": 2
+        }
+        }
+    },
+    "retina_detect": true
+    });
     //
       
 
@@ -312,38 +539,38 @@ $(document).ready(function() {
 
 
 
-
+    // magnetic button
     var hoverMouse = function($el) {
       $el.each(function() {
-          var $self = $(this);
-          var hover = false;
-          var offsetHoverMax = $self.attr("offset-hover-max") || 1;
-          var offsetHoverMin = $self.attr("offset-hover-min") || 0.75;
+          var $self           = $(this);
+          var hover           = false;
+          var offsetHoverMax  = $self.attr("offset-hover-max") || 1;
+          var offsetHoverMin  = $self.attr("offset-hover-min") || 0.75;
 
           var attachEventsListener = function() {
               $(window).on("mousemove", function(e) {
                   var hoverArea = hover ? offsetHoverMax : offsetHoverMin;
 
-                  var cursor = {
+                  var cursor    = {
                       x: e.clientX,
                       y: e.clientY + $(window).scrollTop()
                   };
 
-                  var width = $self.outerWidth();
-                  var height = $self.outerHeight();
+                  var width     = $self.outerWidth();
+                  var height    = $self.outerHeight();
 
-                  var offset = $self.offset();
-                  var elPos = {
+                  var offset    = $self.offset();
+                  var elPos     = {
                       x: offset.left + width / 2,
                       y: offset.top + height / 2
                   };
 
-                  var x = cursor.x - elPos.x;
-                  var y = cursor.y - elPos.y;
+                  var x         = cursor.x - elPos.x;
+                  var y         = cursor.y - elPos.y;
 
-                  var dist = Math.sqrt(x * x + y * y);
+                  var dist      = Math.sqrt(x * x + y * y);
 
-                  var mutHover = false;
+                  var mutHover  = false;
 
                   if (dist < width * hoverArea) {
                       mutHover = true;
@@ -366,12 +593,8 @@ $(document).ready(function() {
                   y: y * 0.8,
                   rotation: x * 0.05,
                   scale: 1.2,
-                  ease: Power2.easeOut
+                  ease: Power1.easeOut
               });
-            //   TweenMax.to($self, 0.4, {
-            //     backgroundColor: "#DE466D",
-            //     ease: Circ.easeIn
-            // });
             $self.css({'background-color': '#DE466D'});
               TweenMax.to($('.whoweare__inner--our_projects h3'), 0.4, {
                 color: "#fff",
@@ -387,16 +610,11 @@ $(document).ready(function() {
                   ease: Power2.easeOut
               });
               $self.css({'background-color': 'transparent'});
-            //   TweenMax.to($self, 0.4, {
-            //     backgroundColor: "transparent",
-            //     ease: Circ.easeIn
-            // });
               TweenMax.to($('.whoweare__inner--our_projects h3'), 0.4, {
                 color: "#DE466D",
                 ease: Power2.easeOut
             });
           };
-
           attachEventsListener();
       });
   };
