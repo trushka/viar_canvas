@@ -19,6 +19,20 @@ $(document).ready(function() {
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
+
+    $('.form__submit')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
     //
 
 
@@ -110,20 +124,20 @@ $(document).ready(function() {
     particlesJS("particles-js1", {
         "particles": {
           "number": {
-            "value": 8000,
+            "value": 500,
             "density": {
               "enable": true,
-              "value_area": 200
+              "value_area": 15
             }
           },
           "color": {
-            "value": "#ffffff"
+            "value": "#C64262"
           },
           "shape": {
-            "type": "image",
+            "type": "circle",
             "stroke": {
               "width": 0,
-              "color": "#000000"
+              "color": "#C64262"
             },
             "polygon": {
               "nb_sides": 5
@@ -145,7 +159,7 @@ $(document).ready(function() {
             }
           },
           "size": {
-            "value": 3,
+            "value": 2,
             "random": true,
             "anim": {
               "enable": false,
@@ -200,7 +214,7 @@ $(document).ready(function() {
               "speed": 3
             },
             "repulse": {
-              "distance": 70,
+              "distance": 50,
               "duration": 1
             },
             "push": {
