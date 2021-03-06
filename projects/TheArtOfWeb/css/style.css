@@ -487,12 +487,12 @@ canvas {
 .main__content--wrapper__ability {
     max-width: 1050px;
     margin: 0 auto; 
+    padding-top: 101px;
 }
 .main__content--describe {
     padding: 3.9vw 0 6.4vw;
     font-size: 24px;
     line-height: 34px;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 .main__content--skills {
@@ -776,10 +776,6 @@ canvas {
     padding: 31px 0 61px;
     margin: 0 auto;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .main__content--wrapper__team .chevron {
     margin-top: 60px;
