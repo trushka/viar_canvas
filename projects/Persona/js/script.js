@@ -259,9 +259,7 @@ $(document).ready(function() {
         arrows: false, 
         infinite: true,
         centerMode: true,
-        focusOnSelect: true,
-        centerPadding: '0',
-        lazyLoad: 'ondemand'
+        centerPadding: '100px'
     });
     let serviceContentSlider = $('.coloring-content').slick({
         slidesToShow: 1,
