@@ -27,20 +27,6 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: local('Raleway Bold'), local('Raleway-Bold'), url('ralewaybold.woff2') format('woff2'), url('ralewaybold.woff') format('woff'), url('ralewaybold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url('ralewayextrabold.woff2') format('woff2'), url('ralewayextrabold.woff') format('woff'), url('ralewayextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
     src: local('Raleway Black'), local('Raleway-Black'), url('ralewayblack.woff2') format('woff2'), url('ralewayblack.woff') format('woff'), url('ralewayblack.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
@@ -55,5 +41,11 @@
     font-family: 'Montserrat';
     src: local('Montserrat'), local('Montserrat-Medium'), url('Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'), url('montserratblack.woff2') format('woff2'), url('montserratblack.woff') format('woff'), url('montserratblack.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
