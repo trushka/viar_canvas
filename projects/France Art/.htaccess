@@ -1,0 +1,43 @@
+RewriteEngine On
+ErrorDocument 404 /404.php
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ /$1.php [NC,L]
+
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|webp|ico|swf|js|css|woff2|pdf)$">  
+Header set Cache-Control "max-age=2592000"  
+</FilesMatch>  
+
+<IfModule mod_expires.c>
+
+ExpiresActive On
+
+ExpiresByType application/javascript  "access plus 8 days"
+
+ExpiresByType text/javascript  "access plus 8 days"
+
+ExpiresByType text/css "access  plus 8 days"
+
+ExpiresByType image/gif  "access plus 8 days"
+
+ExpiresByType image/jpeg  "access plus 8 days"
+ExpiresByType image/webp  "access plus 8 days"
+
+ExpiresByType image/png  "access plus 8 days"
+
+</IfModule>
+
+
+
+
+
+
+
+
+
+
+

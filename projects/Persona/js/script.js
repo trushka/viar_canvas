@@ -257,9 +257,9 @@ $(document).ready(function() {
     let serviceImageSlider = $('.coloring-images--wrapper').slick({
         slidesToShow: 1,
         arrows: false, 
-        infinite: true,
         centerMode: true,
-        centerPadding: '100px'
+        centerPadding: '100px',
+        speed: 700
     });
     let serviceContentSlider = $('.coloring-content').slick({
         slidesToShow: 1,
@@ -267,6 +267,7 @@ $(document).ready(function() {
         infinite: true,
         centerMode: true,
         focusOnSelect: true,
+        fade: true,
         centerPadding: '0px',
         lazyLoad: 'ondemand'
     });
@@ -382,6 +383,7 @@ $(document).ready(function() {
                     $('.general').removeClass('non-active');
                     $(target).addClass('non-active');
                     $(this).fadeOut();
+                    $(this).find('.first-sel span:first-child').text($(target).text());
                     $(this).parent().find('.main_select span:first-child').text($(target).text())
                 } else {
                     $(this).fadeOut();
