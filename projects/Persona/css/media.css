@@ -673,6 +673,9 @@
     .coloring-images, .coloring-inner {
         max-width: 100%;
     }
+    .hairs_section {
+        padding-top: 34px !important; 
+    }
     .selector {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
