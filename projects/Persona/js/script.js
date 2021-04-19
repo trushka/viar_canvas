@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    // SCROLL AND JS MEDIA SETTINGS AND ALSO STICKY HEADER AND BAR
+
     onScroll();
     onSize();
     window.onresize = function() {
@@ -37,9 +40,9 @@ $(document).ready(function() {
             header.classList.remove('sticky-mobile');
         }
     }
-    function onSize() {
 
-    }
+
+    // MOBILE MENU AND CONTACTS MENU
 
     $('.hamburger').click(function() {
         $('.overlay').removeClass('hidden');
@@ -63,6 +66,10 @@ $(document).ready(function() {
         }, 200)
   
     })
+
+
+    // THE SLIDERS COLUMN
+
 
     $('.main__slider--section').slick({
         autoplay: true,
@@ -382,8 +389,9 @@ $(document).ready(function() {
     }
 
 
+    // POPUP TRIGGER
 
-    $('.button').click(function() {
+    $('.button, .main__slider--button').click(function() {
         $('body').addClass('over');
         $('.overlay').removeClass('hidden');
         $('.overlay-wrapper').addClass('overlayed');
@@ -397,26 +405,28 @@ $(document).ready(function() {
     })
 
 
-        $('.main_select').click(function() {
-            $(this).parent().find('.selector-block').css("display", "flex").hide().fadeIn();
-        })
+    // THE CUSTOM SELECTOR
 
-        var selects = document.querySelectorAll('.selector-block');
-        for (let i = 0; i < selects.length; i++) {
-            var select = selects[i];        
-            select.addEventListener('click', function(e) {
-                var target = e.target;
-                if (target.classList.contains('general')) {
-                    $('.general').removeClass('non-active');
-                    $(target).addClass('non-active');
-                    $(this).fadeOut();
-                    $(this).find('.first-sel span:first-child').text($(target).text());
-                    $(this).parent().find('.main_select span:first-child').text($(target).text())
-                } else {
-                    $(this).fadeOut();
-                }
-            })
-        }
+    $('.main_select').click(function() {
+        $(this).parent().find('.selector-block').css("display", "flex").hide().fadeIn();
+    })
+
+    var selects = document.querySelectorAll('.selector-block');
+    for (let i = 0; i < selects.length; i++) {
+        var select = selects[i];        
+        select.addEventListener('click', function(e) {
+            var target = e.target;
+            if (target.classList.contains('general')) {
+                $('.general').removeClass('non-active');
+                $(target).addClass('non-active');
+                $(this).fadeOut();
+                $(this).find('.first-sel span:first-child').text($(target).text());
+                $(this).parent().find('.main_select span:first-child').text($(target).text())
+            } else {
+                $(this).fadeOut();
+            }
+        })
+    }
 
 
 })
