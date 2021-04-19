@@ -241,9 +241,6 @@
                 transform: none !important;
         right: 0;
     }
-    .desk-bg {
-        display: none !important;
-    }
     .main__slider--title span:first-child {
         font-size: 16px;
         line-height: 19px;
