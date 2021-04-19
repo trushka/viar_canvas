@@ -268,6 +268,7 @@ ul li .a:hover {
     background: #181818;
     z-index: 2;
     padding: 24px 26px 38px;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .mobile-menu__inner > ul {
     display: flex;
@@ -300,6 +301,7 @@ ul li .a:hover {
     background: #181818;
     z-index: 2;
     padding: 32px 0;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .mobile-contact--inner > ul {
     display: flex;
@@ -342,10 +344,21 @@ ul li .a:hover {
 
 /* MAIN */
 
-.main {
+.parralax {
     width: 100%;
+    background: url('../img/parallax.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.parralax .main__content > div {
+    background-color: #181818;
 }
 
+.main__bg--section {
+    background: transparent !important;
+}
 /* MAIN SLIDER */
 
 .main__slider--section {
@@ -910,6 +923,8 @@ ul li .a:hover {
 }
 
 /* COLORING */
+
+
 .coloring_section .main__section--title {
     padding-bottom: 8px;
 }
@@ -929,6 +944,7 @@ ul li .a:hover {
     display: flex;
 }
 .coloring-img {
+    position: relative;
     width: 40%;
 }
 .coloring-service {
@@ -1066,18 +1082,17 @@ ul li .a:hover {
 .coloring-images--wrapper .slick-list, .coloring-images--wrapper .slick-track  {
     height: 200px !important;
 }
+.coloring-images--wrapper {
+    max-width: 318px !important;
+    margin: 0 auto;    
+}
+.mobile-coloring-title {
+    display: none;
+}
 .coloring-images {
     position: relative;
     width: 100%;
-    max-width: 318px !important;
-    margin: 0 auto;
 }
-/* .coloring-images .slick-slide {
-    margin: 0 0 !important;
-}
-.coloring-images .slick-list {
-    margin: 0 0 !important;
-} */
 .coloring-content .slick-slide {
     margin: 0 50px !important;
 }
@@ -1101,6 +1116,7 @@ ul li .a:hover {
     text-align: center;
     display: flex !important;
     align-items: center !important;
+    
 }
 .main_select {
     border: 1px solid #FFFFFF;
@@ -1242,6 +1258,9 @@ ul li .a:hover {
 }
 .action-bg {
     height: 560px;
+}
+.action-com {
+    margin-top: 12px;
 }
 .main__section--action p:nth-child(2) {
     font-weight: bold;
@@ -1518,6 +1537,9 @@ ul li .a:hover {
     overflow: hidden;
     border-radius: 24px;
     background: #575151;
+}
+.contacts-map iframe {
+    min-height: 350px;
 }
 .contact-logo {
     max-width: 35px;

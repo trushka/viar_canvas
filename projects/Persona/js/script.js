@@ -259,7 +259,15 @@ $(document).ready(function() {
         arrows: false, 
         centerMode: true,
         centerPadding: '100px',
-        speed: 700
+        speed: 700,
+        responsive: [
+            {
+                breakpoint: 325,
+                settings: {
+                    centerPadding: '80px',
+                }
+            }
+        ]
     });
     let serviceContentSlider = $('.coloring-content').slick({
         slidesToShow: 1,
@@ -279,26 +287,45 @@ $(document).ready(function() {
         serviceImageSlider.slick('slickPrev');
         serviceContentSlider.slick('slickPrev');
     })
-
-    let masterSlider = $('.master-slider--inner').slick({
+    
+    let masterSlider1 = $('.main__masters--section:nth-child(2) .master-slider--inner').slick({
         slidesToShow: 3,
         arrows: false, 
         vertical: true,
         verticalSwiping: true
     });
-    $('.chevron-top').click(() => {
-        masterSlider.slick('slickNext');
+    $('.main__masters--section:nth-child(2) .chevron-top').click(() => {
+        masterSlider1.slick('slickNext');
     })
-    $('.chevron-bottom').click(() => {
-        masterSlider.slick('slickPrev');
+    $('.main__masters--section:nth-child(2) .chevron-bottom').click(() => {
+        masterSlider1.slick('slickPrev');
     })
-    // $('.brand--coloring .chevron-right').click(() => {
-    //     serviceImageSlider.slick('slickNext');
-    // })
-    // $('.brand--coloring .chevron-left').click(() => {
-    //     serviceImageSlider.slick('slickPrev');
-    // })
 
+    let masterSlider2 = $('.main__masters--section:nth-child(3) .master-slider--inner').slick({
+        slidesToShow: 3,
+        arrows: false, 
+        vertical: true,
+        verticalSwiping: true
+    });
+    $('.main__masters--section:nth-child(3) .chevron-top').click(() => {
+        masterSlider2.slick('slickNext');
+    })
+    $('.main__masters--section:nth-child(3) .chevron-bottom').click(() => {
+        masterSlider2.slick('slickPrev');
+    })
+
+    let masterSlider3 = $('.main__masters--section:last-child .master-slider--inner').slick({
+        slidesToShow: 3,
+        arrows: false, 
+        vertical: true,
+        verticalSwiping: true
+    });
+    $('.main__masters--section:last-child .chevron-top').click(() => {
+        masterSlider3.slick('slickNext');
+    })
+    $('.main__masters--section:last-child .chevron-bottom').click(() => {
+        masterSlider3.slick('slickPrev');
+    })
 
     let worksSlider = $('.works_section .main__person--slider').slick({
         slidesToShow: 4,
@@ -371,7 +398,7 @@ $(document).ready(function() {
 
 
         $('.main_select').click(function() {
-            $('.selector-block').css("display", "flex").hide().fadeIn();
+            $(this).parent().find('.selector-block').css("display", "flex").hide().fadeIn();
         })
 
         var selects = document.querySelectorAll('.selector-block');
