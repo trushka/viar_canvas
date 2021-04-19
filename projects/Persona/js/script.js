@@ -3,7 +3,6 @@ $(document).ready(function() {
     // SCROLL AND JS MEDIA SETTINGS AND ALSO STICKY HEADER AND BAR
 
     onScroll();
-    onSize();
     window.onresize = function() {
         onScroll();
     }
