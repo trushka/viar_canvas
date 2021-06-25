@@ -1,0 +1,123 @@
+
+
+@media only screen and (max-width: 1254px) {
+    .header__nav ul {
+        gap: 18px;
+    }
+    .header__social {
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .header__nav, .header__social {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__inner, .main__page--header, .header--wrapper {
+        height: 50px;
+    }
+    .main__page--inner {
+        height: calc(100% - 50px);
+    }
+    .hamburger-box {
+        width: 25px !important;
+        height: 12px !important;
+    }
+    .hamburger-box > div, .hamburger-box > div::after, .hamburger-box > div::before  {
+        height: 2px !important;
+    }
+    .hamburger--collapse .hamburger-inner:after {
+        top: -10px !important;
+    }
+    .hamburger--collapse .hamburger-inner::before {
+        top: -5px !important;
+    }
+    .hamburger--collapse.is-active .hamburger-inner:before {
+        top: 0 !important;
+    }
+    .hamburger--collapse.is-active .hamburger-inner {
+        transform: translate3d(0,-5px,0) rotate(-45deg) !important;
+    }
+    .logo {
+        width: 202px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main__page {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/main-page-bg-mobile.jpg) no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 561px;
+    }
+    .page__content--title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 4px;
+    }
+    .page__content--description {
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 18px;
+    }
+    .content__button--text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .main__page--content {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+    .button__inner {
+        height: 33.4px;
+        width: 33.4px;
+    }
+    .arrow-right {
+        width: 44.5px;
+        right: 15.4px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .logo {
+        width: 121px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1254px) {
+    .header__logo {
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 1180px) {
+    .hamburger {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .br__content--title {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-height: 420px) {
+    .mobile__nav ul {
+        gap: 16px;
+    }
+    .mobile__nav {        
+        margin-bottom: 21px;    
+    }
+    .header--wrapper, .header__inner, .main__page--header {
+        height: 50px;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (min-height: 600px) {
+    .mobile__nav ul li {
+        font-size: 28px;
+    }
+    
+}

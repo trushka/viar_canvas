@@ -29,7 +29,8 @@ body {
 }
 .overlayed {
     overflow: hidden;
-    padding-right: 16px;
+    padding-right: 17px;
+    background: #F1F0FD;
 }
 .upper__container {
     max-height: 992px;
@@ -280,16 +281,18 @@ body {
 .overlay__menu {
     z-index: 100;
     position: fixed;
-    top: 0;
+    top: 160px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ECE9FF;
+    background: #F1F0FD;
 }
 .menu-header {
+    display: none;
+    height: 160px;
     display: flex;
     justify-content: space-between;
-    padding: 59px 0;
+    padding: 62px 0 32px;
 }
 .menu__nav li {
     font-weight: bold;
@@ -723,7 +726,7 @@ body {
 /* REVIEWS */
 
 .reviews__container {
-    /* padding-top: 100px; */
+    padding-top: 100px;
 }
 .review-content {
     max-width: 372px;
@@ -1769,7 +1772,12 @@ body {
 .sertificate__image img {
     width: 100%;
 }
-
+.sertificate__slider .slick-slide {
+    margin: 0 20px !important;
+}
+.sertificate__slider .slick-list {
+    margin: 0 -20px !important;
+}
 
 /* BLOGS PAGE */
 
@@ -1781,4 +1789,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+}
+
+
+
+
+.menu-close__mobile {
+    display: none;
+}
+.overlayed .menu-close__mobile {
+    cursor: pointer;
+    display: flex;
+}
+.overlayed .nav, .overlayed .header-auth {
+    display: none;
+}
+.overlayed .hamburger-text, .overlayed .hamburger {
+    display: none;
+}
+.overlayed .header__items {
+    justify-content: flex-end;
+}
+.overlayed .abs-items {
+    display: none;
 }

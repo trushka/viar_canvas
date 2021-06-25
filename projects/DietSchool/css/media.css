@@ -395,6 +395,9 @@
         height: 90px;
         padding: 24px 0;
     }
+    .overlay__menu {
+        top: 90px;
+    }
     .logo {
         width: 144px;
     }
