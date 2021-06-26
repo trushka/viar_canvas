@@ -58,6 +58,10 @@ $(document).ready(function() {
         arrows: false,
         infinite: false
     })
+    aboutSlider.on('swipe', function(){  
+        checkSliderNav();
+        checkSliderButtons(aboutSlider, $('.about__arrow--right'), $('.about__arrow--left'));
+      });
     $('.about__arrow--left').click(function() {
         checkSliderNav();
         aboutSlider.slick('slickPrev');
