@@ -6,7 +6,9 @@ $(document).ready(function() {
     window.onresize = function() { stickyAction();reziseActions() };
     reziseActions();
     function reziseActions() {
-        
+        // if (mediaChecker('min', 768)) {
+        //     $('.p-overall .experience-mobile').css('display', 'none');
+        // }
     }   
     function mediaChecker(max_min, resolution, width = 'width') {
         return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
@@ -56,12 +58,17 @@ $(document).ready(function() {
     const aboutSlider = $('.about__image__slider').slick({
         slideToShow: 1,
         arrows: false,
-        infinite: false
+        infinite: false,
+        autoplay: true
     })
     aboutSlider.on('swipe', function(){  
         checkSliderNav();
         checkSliderButtons(aboutSlider, $('.about__arrow--right'), $('.about__arrow--left'));
       });
+    aboutSlider.on('afterChange', function(){  
+        checkSliderNav();
+        checkSliderButtons(aboutSlider, $('.about__arrow--right'), $('.about__arrow--left'));
+    });
     $('.about__arrow--left').click(function() {
         checkSliderNav();
         aboutSlider.slick('slickPrev');
@@ -83,7 +90,6 @@ $(document).ready(function() {
 
 
     function checkSliderButtons(slider, sliderRight, sliderLeft) {
-        console.log(sliderRight, sliderLeft)
         if (slider.find('.slick-track').children().first().hasClass('slick-active')) {
             $(sliderLeft).removeClass('active-arrow');
             $(sliderRight).addClass('active-arrow');
@@ -102,4 +108,43 @@ $(document).ready(function() {
             $(`[data-slide='${index}']`).addClass('active-slide');
         }, 100);
     }
+
+    $('.experience__block--button').click(function() {
+        $(this).toggleClass('toggled-btn');
+        const experience = $(this).closest('.experience__block--text');
+        $(experience.find('.experience-mobile')[0]).fadeToggle(50);
+        $(experience.find('p:not(.experience-mobile)')).fadeToggle(0);
+        experience.toggleClass('opened__text');
+        $(this).closest('.experience__inner--block').css({'margin-bottom': `${experience.height()}px`});
+        console.log(experience.height());
+    })
+
+
+    function changeActiveTab(_this,selectorTabWrap,selectorTabContent,selectorTabLink,classLinkActive) {
+        
+        _this.closest(selectorTabWrap).querySelectorAll(selectorTabLink).forEach((element) => {
+          element.classList.remove(classLinkActive);
+        });
+      
+        _this.classList.add(classLinkActive);
+      
+        const indexTab = [..._this.parentElement.children].indexOf(_this);
+        const newActiveTabContent = _this.closest(selectorTabWrap).querySelectorAll(selectorTabContent)[indexTab];
+        
+        _this.closest(selectorTabWrap).querySelectorAll(selectorTabContent).forEach((element) => {
+          element.classList.add('hidden-block');
+        });
+      
+        newActiveTabContent.classList.remove('hidden-block');
+    }
+    // trigger for comments
+    document.querySelectorAll('.experience__tabs--row li').forEach((element) => {
+    element.addEventListener( "click" , function(e) {
+        e.preventDefault();
+        let _this = this;
+        changeActiveTab(_this,'.main__experience--inner','.experience__inner--block','.experience__tabs--row li','active-tab');
+        return false;
+    });
+    });
+
 })
