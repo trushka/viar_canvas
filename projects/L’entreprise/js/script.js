@@ -6,9 +6,15 @@ $(document).ready(function() {
     window.onresize = function() { stickyAction();reziseActions() };
     reziseActions();
     function reziseActions() {
-        // if (mediaChecker('min', 768)) {
-        //     $('.p-overall .experience-mobile').css('display', 'none');
-        // }
+        $('.project__title--block, .main__team--image').css('margin-left', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+        $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+        if (mediaChecker('max', 550)) {
+            $('.project__content--button').css('top', `${document.querySelector('.project__item').getBoundingClientRect.height}px`);
+            $('.project__title--block, .main__team--image').css('margin-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+        } else {
+            $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+            $('.project__title--block, .main__team--image').css('margin-right', `0px`);
+        }
     }   
     function mediaChecker(max_min, resolution, width = 'width') {
         return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
@@ -112,14 +118,10 @@ $(document).ready(function() {
     $('.experience__block--button').click(function() {
         $(this).toggleClass('toggled-btn');
         const width = $('.experience__inner--block').innerWidth();
-        console.log(width)
-        $('.experience__hidden--block').css('width',`${width}px`)
         const experience = $(this).closest('.experience__block--text');
         const experience_hid = $(this).closest('.experience__block--text').find('.experience__hidden--block');
-        
-        // $(experience.find('p:not(.experience-mobile)')).css({opacity: 1.0, visibility: "visible"})
-        // experience.toggleClass('opened__text');
         const height = (experience_hid.css({'visibility': 'hidden','max-height': 'initial'})).height();
+        $('.experience__hidden--block').css('width',`${width}px`);
         experience_hid.css({'visibility': 'visible','max-height': '0'});
         experience_hid.toggleClass('visible');
         if (experience_hid.hasClass('visible')) {
