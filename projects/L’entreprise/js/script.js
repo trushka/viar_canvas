@@ -111,12 +111,41 @@ $(document).ready(function() {
 
     $('.experience__block--button').click(function() {
         $(this).toggleClass('toggled-btn');
+        const width = $('.experience__inner--block').innerWidth();
+        console.log(width)
+        $('.experience__hidden--block').css('width',`${width}px`)
         const experience = $(this).closest('.experience__block--text');
-        $(experience.find('.experience-mobile')[0]).fadeToggle(50);
-        $(experience.find('p:not(.experience-mobile)')).fadeToggle(0);
-        experience.toggleClass('opened__text');
-        $(this).closest('.experience__inner--block').css({'margin-bottom': `${experience.height()}px`});
-        console.log(experience.height());
+        const experience_hid = $(this).closest('.experience__block--text').find('.experience__hidden--block');
+        
+        // $(experience.find('p:not(.experience-mobile)')).css({opacity: 1.0, visibility: "visible"})
+        // experience.toggleClass('opened__text');
+        const height = (experience_hid.css({'visibility': 'hidden','max-height': 'initial'})).height();
+        experience_hid.css({'visibility': 'visible','max-height': '0'});
+        experience_hid.toggleClass('visible');
+        if (experience_hid.hasClass('visible')) {
+            $(this).closest('.experience__inner--block').css({'margin-bottom': `${height}px`});
+            $(experience.find('.experience-mobile')[0]).css({opacity: 0, visibility: "hidden"})
+            experience_hid.animate({
+                'max-height': `${height}`
+            }, {
+                duration: 50, 
+                speciaalEasing: {
+                    'max-height': `ease`
+                }
+            });
+        } else {  
+
+            experience_hid.animate({
+                'max-height': `0`
+            }, {
+                duration: 50, 
+                speciaalEasing: {
+                    'max-height': `ease`
+                }
+            });
+                $(experience.find('.experience-mobile')[0]).css({opacity: 1, visibility: "visible"});
+                $(this).closest('.experience__inner--block').css({'margin-bottom': `20px`});
+            }
     })
 
 
