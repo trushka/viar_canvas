@@ -393,7 +393,28 @@
     .main__contacts--page {
         margin-top: 89px;
     }
-    
+    .main__contacts--content {
+        top: unset;
+        bottom: 100%;
+        flex-direction: column;
+        transform: unset;
+        width: 100%;
+        padding: 0 18px 25px 18px;
+    }
+    .main__contacts--page .container {
+        padding: 0;
+    }
+    .main__contacts--title {
+        padding: 0 18px;
+    }
+    .main__contacts--social {
+        width: 200px;
+        height: 50px;
+    }
+    .main__contacts--social ul {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 @media only screen and (max-width: 700px) {
     .footer__content {
@@ -411,7 +432,7 @@
     }
     .project__item {
         width: 100%;
-        max-width: 220px;
+        max-width: 300px;
         padding-right: 20px;
     }
     .project__location {
@@ -428,7 +449,7 @@
     .project__content--button {
         position: absolute;
         right: 0;
-        top: 165px;
+        top: 246px;
         width: 55px;
         height: 35px;
         background: #fff;
@@ -436,13 +457,14 @@
     }
     .project__items {
         flex-direction: column;
+        gap: 25px;
     }
     .project__button {
         margin-top: 0;
     }
     .project__item--wrapper {
         visibility: visible;
-        width: 200px;
+        width: 300px;
         opacity: 1;
         height: 35px;
         top: 0;
@@ -460,9 +482,9 @@
     .arrow__project-right {
         width: 22px;
         position: absolute;
-        height: 15px;
+        height: 17px;
         top: 50%;
-        right: 11px;
+        right: 8px;
         transform: translateY(-50%);
     }
     .arrow__project-right svg path {
@@ -599,6 +621,32 @@
     .main__contacts--page {
         margin-top: 39px;
     }
+    .project__button {
+        max-width: 125px;
+    }
+    .project__button .content__button--text {
+        font-weight: 500;
+        font-size: 12.5855px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .project__button .button__inner {
+        background: rgba(249, 1, 1, 0.7);
+        width: 26.22px;
+        height: 26.22px;
+    }
+    .project__button .arrow-right {
+        width: 34px;
+        height: 15px;
+        right: 12px !important;
+    }
+    .project__button .arrow-right svg {
+        width: 100%;
+    }
+    .project__button .arrow-right svg path {
+        fill: rgba(0, 0, 0, 0.7);
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -811,7 +859,9 @@
         font-size: 12.2013px;
         line-height: 18px;
     }
-    
+    .main__partners--row {
+        margin-top: 20px;
+    }
     .founder__absolute--item.gray-item p:nth-child(2) {
         font-size: 8.75344px;
         line-height: 13px;
@@ -821,6 +871,64 @@
         right: -9px;
         width: 34px;
         height: 34px;
+    }
+    .main__contacts--content {
+        gap: 18px;
+    }
+    .main__contacts--content > ul a {
+        padding-left: 17px;
+    }
+    .main__contacts--content > ul span {
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 13px;
+    }
+    .main__contacts--content > ul a svg {
+        max-width: 10px;
+    }
+    .main__contacts--content > ul li:nth-child(3) span:first-child {
+        left: 1px;
+        top: -6px;
+    }
+    .main__contacts--social {
+        height: 28.5px;
+        width: 82px;
+    }
+    .main__contacts--social svg {
+        width: 100%;
+        max-width: 14px;
+    }
+    .main__contacts--content > ul li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    .project__tabs--row ul {
+        flex-wrap: wrap;
+    }
+    .project__tabs--row li {
+        padding-bottom: 3px;
+    }
+    .project__tabs--row li:nth-child(2) {
+        text-align: left;
+    }
+    .project__tabs--row li:first-child {
+        width: 33%;
+        text-align: left;
+        margin: 0 200px 16px 0;
+    }
+    .project__tabs--row li:not(:first-child) {
+        width: 33%;
+    }
+    .project__tabs--row li::after {
+        height: 1px;
+    }
+    .project__item {
+        max-width: 220px;
+    }
+    .project__content--button {
+        top: 165px;
+    }
+    .project__item--wrapper {
+        width: 200px;
     }
 }
 
@@ -854,6 +962,10 @@
     }
     .team-mobile {
         display: inline-block;
+    }
+    .project__tabs--row li:first-child {
+        width: 33%;
+        margin: 0 150px 16px 0;
     }
 }
 
