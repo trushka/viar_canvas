@@ -1,8 +1,5 @@
 
 @media only screen and (max-width: 1440px) {
-    .about__inner {
-        flex-direction: column-reverse;
-    }
     .about__content {
         max-width: unset;
     }
@@ -968,7 +965,11 @@
         margin: 0 150px 16px 0;
     }
 }
-
+@media only screen and (min-width: 1440px) {
+    .about__inner {
+        flex-direction: row;
+    }
+}
 @media only screen and (min-width: 1254px) {
     .header__logo {
         margin-right: 0;

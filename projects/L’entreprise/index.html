@@ -33,7 +33,7 @@
                             <ul>
                                 <li class="active-nav">
                                     <a href="#">
-                                    Аccueil
+                                    Accueil
                                     </a>
                                 </li>
                                 <li>
@@ -362,15 +362,15 @@
                     Notre <br> projets 
                 </div>
                 <div class="project__tabs--row">
-                    <ul>
-                        <li data-info="all" class="active-tab"><a href="#">Tous les projets</a></li>
-                        <li data-info="first"><a href="#">Le gros œuvre</a></li>
-                        <li data-info="second"><a href="#">Le second œuvre</a></li>
-                        <li data-info="pool"><a href="#">Piscines</a></li>
+                    <ul class="controls">
+                        <li data-filter=".all" class="active-tab filter"><a href="#">Tous les projets</a></li>
+                        <li data-filter=".first" class="filter"><a href="#">Le gros œuvre</a></li>
+                        <li data-filter=".second" class="filter"><a href="#">Le second œuvre</a></li>
+                        <li data-filter=".pool" class="filter"><a href="#">Piscines</a></li>
                     </ul>
                 </div>
-                <div class="project__items">
-                    <div data-info="first" class="project__item">
+                <div class="project__items filter-container">
+                    <div class="project__item all mix first">
                         <img src="img/project1.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -393,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="first" class="project__item">
+                    <div class="project__item all mix first">
                         <img src="img/project2.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -416,7 +416,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="first" class="project__item">
+                    <div class="project__item all mix second">
                         <img src="img/project3.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -439,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="first" class="project__item">
+                    <div class="project__item all mix second">
                         <img src="img/project4.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -462,7 +462,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="second" class="project__item">
+                    <div class="project__item all mix second">
                         <img src="img/project5.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -485,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="second" class="project__item">
+                    <div class="project__item all mix first">
                         <img src="img/project6.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -508,7 +508,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="second" class="project__item">
+                    <div class="project__item all mix first">
                         <img src="img/project7.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -531,7 +531,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-info="pool" class="project__item">
+                    <div class="project__item all mix pool">
                         <img src="img/project8.jpg" alt="">
                         <div class="project__item--wrapper">
                             <div class="item__inner">
@@ -970,6 +970,7 @@
 
 <script src="js/libs/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://www.helha.pub/scripts/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
 
