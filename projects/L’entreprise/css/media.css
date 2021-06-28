@@ -563,7 +563,8 @@
         margin-bottom: 37px;
     }
     .main__team--image {
-        max-width: 340px;
+        max-width: 100%;
+        /* padding-right: 18px; */
     }
 
     .another-brief {
@@ -839,9 +840,6 @@
         line-height: 13px;
 
     }
-    .main__team--image {
-        max-width: 240px;
-    }
     .team__mobile--text {
         font-size: 10px;
         line-height: 15px;
@@ -919,14 +917,15 @@
         height: 1px;
     }
     .project__item {
-        max-width: 220px;
-    }
-    .project__content--button {
-        top: 165px;
+        max-width: 100%;
+        padding-right: 0;
     }
     .project__item--wrapper {
-        width: 200px;
+        width: 100%;
     }
+}
+
+@media only screen and (max-width: 375px) {
 }
 
 @media only screen and (max-width: 360px) {
@@ -1014,4 +1013,13 @@
         font-size: 28px;
     }
     
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+    .construction__video {
+        width: unset;
+        max-width: unset;
+        min-width: 100%;
+    }
 }

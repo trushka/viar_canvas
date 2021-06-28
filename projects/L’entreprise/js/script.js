@@ -15,11 +15,33 @@ $(document).ready(function() {
         }
         if (mediaChecker('max', 550)) {
             $('.project__content--button').css('top', `${document.querySelector('.project__item').getBoundingClientRect.height}px`);
-            $('.project__title--block, .main__team--image').css('margin-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+            // $('.project__title--block, .main__team--image').css('margin-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+            $('.main__team--image').css('margin-left', `0px`);
         } else {
             $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
             $('.project__title--block, .main__team--image').css('margin-right', `0px`);
         }
+
+
+        if (mediaChecker('max', 425)) {
+            $('.project__content--button').css('top', `${parseInt($('.project__item').css('height')) - 35}px`)
+        } else {
+            $('.project__content--button').css('top', `245px`)
+        }
+        
+
+        var mixer;
+        if (mediaChecker('min',550)) {
+            mixer = mixitup('.filter-container'); 
+        } else {
+            mixer = mixitup('.filter-container', {
+                animation: {
+                    enable: false
+                }
+            });
+        }
+    
+    
     }   
     function mediaChecker(max_min, resolution, width = 'width') {
         return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
@@ -191,26 +213,11 @@ $(document).ready(function() {
         }
         $('.project__tabs--row li').removeClass('active-tab');
         $(this).addClass('active-tab');
-        // const target = $(this).data('info');
-        
-       
-        // if (target == 'all') {
-        //     $('.project__item').fadeIn();
-        // } else if (target == 'first') {
-        //     $(`.project__item[data-info='${target}']`).fadeIn();
-        //     $(`.project__item:not([data-info='${target}'])`).fadeOut();
-        // } else if (target == 'second') {
-        //     $(`.project__item[data-info='${target}']`).fadeIn();
-        //     $(`.project__item:not([data-info='${target}'])`).fadeOut();
-            
-        // } else if (target == 'pool') {
-        //     $(`.project__item[data-info='${target}']`).fadeIn();
-        //     $(`.project__item:not([data-info='${target}'])`).fadeOut();
-            
-        // }   
         
         return false;
     })
-    var mixer = mixitup('.filter-container');
+    
+
+
 })
 
