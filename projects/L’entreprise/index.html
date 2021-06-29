@@ -19,7 +19,7 @@
 
     <!-- MAIN PAGE BLOCK -->
 
-    <div class="main__page main__wrapper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/main-page-bg.jpg) no-repeat;background-size: cover;background-position: center;">
+    <div id="main" class="main__page main__wrapper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/main-page-bg.jpg) no-repeat;background-size: cover;background-position: center;">
         <div class="header--wrapper">
             <header class="header main__page--header">
                 <div class="main__page--container container">
@@ -32,42 +32,54 @@
                         <nav class="nav header__nav">
                             <ul>
                                 <li class="active-nav">
-                                    <a href="#">
+                                    <a href="#main">
                                     Accueil
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                    Notre expertise
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
+                                    <a href="#prop">
                                     À propos de nous
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                    Notre équipe
+                                    <a href="#experience">
+                                    Notre expertise
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#project">
                                     Nos projets
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#team">
+                                    Notre équipe
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contacts">
                                     Contacts
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                         <ul class="social header__social">
-                            <li><a href="#"><img src="img/phone-icon.svg" alt=""></a></li>
-                            <li><a href="#"><img src="img/youtube-icon.svg" alt=""></a></li>
-                            <li><a href="#"><img src="img/mail-icon.svg" alt=""></a></li>
-                            <li><a href="#"><img src="img/facebook-icon.svg" alt=""></a></li>
+                            <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.125 22.9165C13.8722 22.9109 9.79516 21.2191 6.78796 18.2119C3.78076 15.2047 2.08889 11.1276 2.08337 6.87479C2.08337 5.60396 2.58821 4.38519 3.48682 3.48657C4.38543 2.58796 5.60421 2.08313 6.87504 2.08313C7.14415 2.08108 7.4128 2.1055 7.67712 2.15604C7.93266 2.19386 8.18386 2.25666 8.42712 2.34354C8.59822 2.40357 8.75067 2.50722 8.86943 2.64424C8.98818 2.78126 9.0691 2.94691 9.10421 3.12479L10.5313 9.37479C10.5698 9.54444 10.5651 9.72102 10.5178 9.88842C10.4705 10.0558 10.382 10.2087 10.2605 10.3331C10.125 10.479 10.1146 10.4894 8.83337 11.156C9.85941 13.4069 11.6596 15.2145 13.9063 16.2498C14.5834 14.9581 14.5938 14.9477 14.7396 14.8123C14.864 14.6907 15.0169 14.6022 15.1843 14.5549C15.3517 14.5076 15.5283 14.503 15.698 14.5415L21.948 15.9685C22.1201 16.0085 22.2793 16.0916 22.4105 16.2101C22.5418 16.3285 22.6407 16.4784 22.698 16.6456C22.7859 16.8929 22.8521 17.1473 22.8959 17.406C22.9378 17.6678 22.9587 17.9326 22.9584 18.1977C22.9392 19.4631 22.4201 20.6695 21.5146 21.5536C20.6091 22.4377 19.3905 22.9276 18.125 22.9165Z" fill="#F90101" fill-opacity="0.5"/>
+                            </svg></a></li>
+                            <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.4407 6.76859C22.9167 8.62484 22.9167 12.4998 22.9167 12.4998C22.9167 12.4998 22.9167 16.3748 22.4407 18.2311C22.1761 19.2571 21.4021 20.0644 20.4219 20.3373C18.6417 20.8332 12.5 20.8332 12.5 20.8332C12.5 20.8332 6.3615 20.8332 4.57817 20.3373C3.59379 20.0603 2.82087 19.254 2.55942 18.2311C2.08337 16.3748 2.08337 12.4998 2.08337 12.4998C2.08337 12.4998 2.08337 8.62484 2.55942 6.76859C2.824 5.74255 3.59796 4.93525 4.57817 4.66234C6.3615 4.1665 12.5 4.1665 12.5 4.1665C12.5 4.1665 18.6417 4.1665 20.4219 4.66234C21.4063 4.93942 22.1792 5.74567 22.4407 6.76859ZM10.4167 16.1457L16.6667 12.4998L10.4167 8.854V16.1457Z" fill="#F90101" fill-opacity="0.5"/>
+                            </svg>
+                            </a></li>
+                            <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 4.6875C5.4212 4.6875 4.62634 5.01674 4.04029 5.60279C3.45424 6.18884 3.125 6.9837 3.125 7.8125V8.12656L12.5 13.175L21.875 8.12813V7.8125C21.875 6.9837 21.5458 6.18884 20.9597 5.60279C20.3737 5.01674 19.5788 4.6875 18.75 4.6875H6.25Z" fill="#F90101" fill-opacity="0.5"/>
+                            <path d="M21.875 9.90137L12.8703 14.7498C12.7565 14.8111 12.6293 14.8431 12.5 14.8431C12.3707 14.8431 12.2435 14.8111 12.1297 14.7498L3.125 9.90137V17.1873C3.125 18.0161 3.45424 18.811 4.04029 19.397C4.62634 19.9831 5.4212 20.3123 6.25 20.3123H18.75C19.5788 20.3123 20.3737 19.9831 20.9597 19.397C21.5458 18.811 21.875 18.0161 21.875 17.1873V9.90137Z" fill="#F90101" fill-opacity="0.5"/>
+                            </svg>
+                            </a></li>
+                            <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.25 1.25H3.75C2.375 1.25 1.25 2.375 1.25 3.75V21.25C1.25 22.6262 2.375 23.75 3.75 23.75H12.5V15H10V11.9062H12.5V9.34375C12.5 6.63875 14.015 4.73875 17.2075 4.73875L19.4613 4.74125V7.9975H17.965C16.7225 7.9975 16.25 8.93 16.25 9.795V11.9075H19.46L18.75 15H16.25V23.75H21.25C22.625 23.75 23.75 22.6262 23.75 21.25V3.75C23.75 2.375 22.625 1.25 21.25 1.25Z" fill="#F90101" fill-opacity="0.5"/>
+                            </svg>
+                            </a></li>
                         </ul>
                         <div class="hamburger main__page--hamburger hamburger--collapse">
                             <div class="hamburger-box">
@@ -89,7 +101,7 @@
                             Nous proposons des solutions de conception et de développement innovantes!
                         </div>
                     </div>
-                    <a href="#" class="page__content--button">
+                    <a href="#" class="page__content--button main__screen--button">
                         <div class="content__button--text">
                             Voir les projets
                         </div>
@@ -106,136 +118,140 @@
         </div>
     </div>
 
-    <!-- MAIN BRIEF -->
+    <div class="section--wrapper" id="prop">
+        <!-- MAIN BRIEF -->
 
-    <div class="main__page--brief">
-        <div class="container">
-            <div class="brief__inner">
-                <div class="brief__inner--title">
-                    Construisons Ensemble Votre Rêve!
+        <div class="main__page--brief">
+            <div class="container">
+                <div class="brief__inner">
+                    <div class="brief__inner--title">
+                        Construisons Ensemble Votre Rêve!
+                    </div>
+                    <div class="brief__inner--description">
+                        L’entreprise BE CONSTRUCTION est née d'une véritable passion pour la conception et la réalisation de chantiers en bâtiment tout corps d’état. 
+                    </div>
                 </div>
-                <div class="brief__inner--description">
-                    L’entreprise BE CONSTRUCTION est née d'une véritable passion pour la conception et la réalisation de chantiers en bâtiment tout corps d’état. 
+            </div>
+        </div>
+
+        <!-- ABOUT BLOCK -->
+
+        <div class="main__about--page">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__slider">
+                        <div class="about__slider--inner">
+                            <div class="about__absolute">
+                                <div class="about__absolute--item slider__absolute--item red-backitem"></div>
+                                <div class="about__absolute--item slider__absolute--item gray-item"></div>
+                                <div class="about__absolute--item slider__absolute--item red-borderitem"></div>
+                            </div>
+                            <div class="about__image__slider">
+                                <div class="slider__item">
+                                    <img src="img/about1.jpg" alt="">                           
+                                </div>
+                                <div class="slider__item">
+                                    <img src="img/about2.jpg" alt="">                           
+                                </div>
+                                <div class="slider__item">
+                                    <img src="img/about3.jpg" alt="">                           
+                                </div>
+                            </div>
+                            <div class="about__nav">
+                                <div class="about__nav--navigation">
+                                    <ul>
+                                        <li data-slide="1" class="active-slide"><a href="">01</a></li>
+                                        <li data-slide="2"><a href="">02</a></li>
+                                        <li data-slide="3"><a href="">03</a></li>
+                                    </ul>
+                                </div>
+                                <div class="about__nav--arrows">
+                                    <div class="about__arrow--left">
+                                        <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM38 7L1 7V9L38 9V7Z" fill="#F90101" fill-opacity="0.5"/>
+                                        </svg>                                        
+                                    </div>
+                                    <div class="about__arrow--right active-arrow">
+                                        <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9L37 9V7L0 7L0 9Z" fill="#F90101" fill-opacity="0.5"/> 
+                                        </svg>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <div class="about__content--inner">
+                            <div class="about__content--title main__title--block">
+                                À propos de nous
+                            </div>
+                            <div class="about__content--text">
+                                <p>
+                                    Notre savoir-faire et nos compétences reposent sur un bureau d'études, nos compétences terrain et des personnels expérimentés (>10ans) et motivés, dans les domaines du gros œuvre, du second œuvre, 
+                                    et de l’enveloppe du bâtiment.                                
+                                </p>
+                                <p>
+                                    Quel que soit votre projet, l’entreprise BE CONSTRUCTION vous accompagne, identifie l'ensemble de vos besoins et vous propose des solutions architecturales et/ ou techniques 
+                                « clef en main » répondant à votre attente.                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__overall">
+                    <div class="about__overall--inner">
+                        <div class="about__overall--block">
+                            <div class="about__absolute">
+                                <div class="overall__absolute--item about__absolute--item red-backitem"></div>
+                                <div class="overall__absolute--item about__absolute--item gray-item"></div>
+                            </div>
+                            <div class="overall__block--content">
+                                <div class="overall__title">
+                                    Notre philosophie 
+                                </div>
+                                <div class="overall__text">
+                                    "Réaliser des prestations de qualité dans une recherche constante de la satisfaction du client" 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__overall--block">
+                            <div class="about__absolute">
+                                <div class="overall__absolute--item about__absolute--item red-backitem"></div>
+                                <div class="overall__absolute--item about__absolute--item gray-item"></div>
+                            </div>
+                            <div class="overall__block--content">
+                                <div class="overall__title">
+                                    Nos <br> valeurs  
+                                </div>
+                                <div class="overall__text">
+                                    "Savoir-faire et Qualité, Engagement, Disponibilité, Responsabilité, Confiance et Proximité" 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__overall--block">
+                            <div class="about__absolute">
+                                <div class="overall__absolute--item about__absolute--item red-backitem"></div>
+                                <div class="overall__absolute--item about__absolute--item gray-item"></div>
+                            </div>
+                            <div class="overall__block--content">
+                                <div class="overall__title">
+                                    Nos domaines d'activités  
+                                </div>
+                                <div class="overall__text">
+                                    Tous travaux de construction et de rénovation générale de bâtiment, compris l’importation et le négoce de matériel
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ABOUT BLOCK -->
 
-    <div class="main__about--page">
-        <div class="container">
-            <div class="about__inner">
-                <div class="about__slider">
-                    <div class="about__slider--inner">
-                        <div class="about__absolute">
-                            <div class="about__absolute--item slider__absolute--item red-backitem"></div>
-                            <div class="about__absolute--item slider__absolute--item gray-item"></div>
-                            <div class="about__absolute--item slider__absolute--item red-borderitem"></div>
-                        </div>
-                        <div class="about__image__slider">
-                            <div class="slider__item">
-                                <img src="img/about1.jpg" alt="">                           
-                            </div>
-                            <div class="slider__item">
-                                <img src="img/about2.jpg" alt="">                           
-                            </div>
-                            <div class="slider__item">
-                                <img src="img/about3.jpg" alt="">                           
-                            </div>
-                        </div>
-                        <div class="about__nav">
-                            <div class="about__nav--navigation">
-                                <ul>
-                                    <li data-slide="1" class="active-slide"><a href="">01</a></li>
-                                    <li data-slide="2"><a href="">02</a></li>
-                                    <li data-slide="3"><a href="">03</a></li>
-                                </ul>
-                            </div>
-                            <div class="about__nav--arrows">
-                                <div class="about__arrow--left">
-                                    <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM38 7L1 7V9L38 9V7Z" fill="#F90101" fill-opacity="0.5"/>
-                                    </svg>                                        
-                                </div>
-                                <div class="about__arrow--right active-arrow">
-                                    <svg width="38" height="16" viewBox="0 0 38 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9L37 9V7L0 7L0 9Z" fill="#F90101" fill-opacity="0.5"/> 
-                                    </svg>                                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__content">
-                    <div class="about__content--inner">
-                        <div class="about__content--title main__title--block">
-                            À propos de nous
-                        </div>
-                        <div class="about__content--text">
-                            <p>
-                                Notre savoir-faire et nos compétences reposent sur un bureau d'études, nos compétences terrain et des personnels expérimentés (>10ans) et motivés, dans les domaines du gros œuvre, du second œuvre, 
-                                et de l’enveloppe du bâtiment.                                
-                            </p>
-                            <p>
-                                Quel que soit votre projet, l’entreprise BE CONSTRUCTION vous accompagne, identifie l'ensemble de vos besoins et vous propose des solutions architecturales et/ ou techniques 
-                            « clef en main » répondant à votre attente.                               </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about__overall">
-                <div class="about__overall--inner">
-                    <div class="about__overall--block">
-                        <div class="about__absolute">
-                            <div class="overall__absolute--item about__absolute--item red-backitem"></div>
-                            <div class="overall__absolute--item about__absolute--item gray-item"></div>
-                        </div>
-                        <div class="overall__block--content">
-                            <div class="overall__title">
-                                Notre philosophie 
-                            </div>
-                            <div class="overall__text">
-                                "Réaliser des prestations de qualité dans une recherche constante de la satisfaction du client" 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__overall--block">
-                        <div class="about__absolute">
-                            <div class="overall__absolute--item about__absolute--item red-backitem"></div>
-                            <div class="overall__absolute--item about__absolute--item gray-item"></div>
-                        </div>
-                        <div class="overall__block--content">
-                            <div class="overall__title">
-                                Nos <br> valeurs  
-                            </div>
-                            <div class="overall__text">
-                                "Savoir-faire et Qualité, Engagement, Disponibilité, Responsabilité, Confiance et Proximité" 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__overall--block">
-                        <div class="about__absolute">
-                            <div class="overall__absolute--item about__absolute--item red-backitem"></div>
-                            <div class="overall__absolute--item about__absolute--item gray-item"></div>
-                        </div>
-                        <div class="overall__block--content">
-                            <div class="overall__title">
-                                Nos domaines d'activités  
-                            </div>
-                            <div class="overall__text">
-                                Tous travaux de construction et de rénovation générale de bâtiment, compris l’importation et le négoce de matériel
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- EXPERIENCE BLOCK -->
 
-    <div class="main__experience--page gray-bg">
+    <div id="experience" class="main__experience--page gray-bg">
         <div class="container">
             <div class="main__experience--inner">
                 <div class="experience__upper--row">
@@ -353,416 +369,436 @@
         </div>
     </div>
 
+
+    <div class="section--wrapper" id="project">
+
     <!-- PROJECTS BLOCK -->
 
-    <div class="main__project--page">
-        <div class="container">
-            <div class="main__project--inner">
-                <div class="main__title--block project__title--block">
-                    Notre <br> projets 
-                </div>
-                <div class="project__tabs--row">
-                    <ul class="controls">
-                        <li data-filter=".all" class="active-tab filter"><a href="#">Tous les projets</a></li>
-                        <li data-filter=".first" class="filter"><a href="#">Le gros œuvre</a></li>
-                        <li data-filter=".second" class="filter"><a href="#">Le second œuvre</a></li>
-                        <li data-filter=".pool" class="filter"><a href="#">Piscines</a></li>
-                    </ul>
-                </div>
-                <div class="project__items filter-container">
-                    <div class="project__item all mix first">
-                        <img src="img/project1.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
+        <div class="main__project--page">
+            <div class="container">
+                <div class="main__project--inner">
+                    <div class="main__title--block project__title--block">
+                        Notre <br> projets 
+                    </div>
+                    <div class="project__tabs--row">
+                        <ul class="controls">
+                            <li data-filter=".all" class="active-tab filter"><a href="#">Tous les projets</a></li>
+                            <li data-filter=".first" class="filter"><a href="#">Le gros œuvre</a></li>
+                            <li data-filter=".second" class="filter"><a href="#">Le second œuvre</a></li>
+                            <li data-filter=".pool" class="filter"><a href="#">Piscines</a></li>
+                        </ul>
+                    </div>
+                    <div class="project__items filter-container">
+                        <div class="project__item all mix first">
+                            <img src="img/project1.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix first">
-                        <img src="img/project2.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix second">
-                        <img src="img/project3.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix second">
-                        <img src="img/project4.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix second">
-                        <img src="img/project5.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix first">
-                        <img src="img/project6.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix first">
-                        <img src="img/project7.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__item all mix pool">
-                        <img src="img/project8.jpg" alt="">
-                        <div class="project__item--wrapper">
-                            <div class="item__inner">
-                                <div class="project__title">LE SECOND OEUVRE</div>
-                                <div class="project__location">Librevelle, Gabon</div>
-                                <a href="#" class="project__content--button">
-                                    <div class="project__button--text">
-                                        Regarder
-                                    </div>
-                                    <div class="project__button button">
-                                        <div class="button__project--inner">
-                                            <div class="arrow__project-right">
-                                                <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
-                                                </svg>                                                  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="page__content--button project__button">
-                    <div class="content__button--text">
-                        Voir tous les projets
-                    </div>
-                    <div class="content__button button">
-                        <div class="button__inner">
-                            <div class="arrow-right">
-                                <svg width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M66.7147 8.70711C67.1052 8.31658 67.1052 7.68342 66.7147 7.29289L60.3507 0.928932C59.9602 0.538408 59.327 0.538408 58.9365 0.928932C58.546 1.31946 58.546 1.95262 58.9365 2.34315L64.5934 8L58.9365 13.6569C58.546 14.0474 58.546 14.6805 58.9365 15.0711C59.327 15.4616 59.9602 15.4616 60.3507 15.0711L66.7147 8.70711ZM0 9H66.0076V7H0V9Z" fill="#F90101" fill-opacity="0.65"/>
-                                </svg>                                    
-                            </div>                                
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONSTRUCTION BLOCK -->
-
-    <div class="main__construction--page">
-        <video autoplay muted loop class="construction__video">
-            <source src="img/construction.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="main__construction--inner">
-                <h4>Nous avons une grande <br class="mobile-construction"> expérience dans</h4>
-                <h1>la construction et <br> la reconstruction d'architecture </h1>
-                <a href="#" class="page__content--button construction-button">
-                    <div class="content__button--text">
-                        Voir les projets
-                    </div>
-                    <div class="content__button button">
-                        <div class="button__inner">
-                            <div class="arrow-right">
-                                <img src="img/arrow-right.svg" alt="">
-                            </div>                                
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- TEAM BLOCK -->
-
-    <div class="main__team--page">
-        <div class="main__team--inner">
-            <div class="main__title--block project__title--block">
-                Notre équipe 
-            </div>
-            <div class="main__team--content">
-                <div class="main__team--image">
-                    <img src="img/team.jpg" alt="">
-                    <div class="team__mobile--text">
-                        <p>BE CONSTRUCTION est une entreprise à taille humaine, flexible, disponible. 
-                        </p>
-                        <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
-                        <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
-                    </div>
-                </div>
-                <div class="main__team--desc">
-                    <div class="main__team--text">
-                        <p>BE CONSTRUCTION est une entreprise à taille humaine, flexible, disponible. 
-                        </p>
-                        <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
-                        <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
-                    </div>
-                    <div class="main__team--blocks">
-                        <div class="main__team--block">
-                            <div class="team-num">
-                                <div class="team__inner-num">
-                                    10+
-                                </div>
-                            </div>
-                            <div class="team-prop">
-                                <div>ANNÉES D'EXPÉRIENCE</div>
-                            </div>
-                        </div>
-                        <div class="main__team--block">
-                            <div class="team-num">
-                                <div class="team__inner-num">
-                                    13+
-                                </div>
-                            </div>
-                            <div class="team-prop">
-                                <div>Employés <br class="team-mobile"> en l'équipe</div>
-                            </div>
-                        </div>
-                        <div class="main__team--block">
-                            <div class="team-num">
-                                <div class="team__inner-num">
-                                    100+
-                                </div>
-                            </div>
-                            <div class="team-prop">
-                                <div>PROJETS RÉALISÉS</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MAIN BRIEF -->
-
-    <div class="main__page--brief">
-        <div class="container">
-            <div class="brief__inner">
-                <div class="brief__inner--title another-brief">
-                    Fondateurs
-                </div>
-                <div class="brief__inner--description">
-                    est née d'une véritable passion pour la conception et la réalisation de chantiers en Bâtiment tout corps d’état. 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOUNDER BLOCK -->
-
-    <div class="main__founder--page">
-        <div class="container">
-            <div class="main__founder--inner">
-                <div class="main__founder--row">
-                    <div class="main__founder--item">
-                        <div class="about__absolute">
-                            <div class="about__absolute--item founder__absolute--item red-borderitem"></div>
-                            <div class="about__absolute--item founder__absolute--item gray-item">
-                                <p>M Boussiengue</p>
-                                <p>Poste</p>
-                                <div class="about__absolute">
-                                    <div class="about__absolute--item founder__absolute--item  red-backitem"></div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <img src="img/founder.jpg" alt="">
-                    </div>
-                    <div class="main__founder--item">
-                        <div class="about__absolute">
-                            <div class="about__absolute--item founder__absolute--item red-borderitem"></div>
-                            <div class="about__absolute--item founder__absolute--item gray-item">
-                                <p>M Boussiengue</p>
-                                <p>Poste</p>
-                                <div class="about__absolute">
-                                    <div class="about__absolute--item founder__absolute--item  red-backitem"></div>
+                        <div class="project__item all mix first">
+                            <img src="img/project2.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <img src="img/founder.jpg" alt="">
+                        <div class="project__item all mix second">
+                            <img src="img/project3.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item all mix second">
+                            <img src="img/project4.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item all mix second">
+                            <img src="img/project5.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item all mix first">
+                            <img src="img/project6.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item all mix first">
+                            <img src="img/project7.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__item all mix pool">
+                            <img src="img/project8.jpg" alt="">
+                            <div class="project__item--wrapper">
+                                <div class="item__inner">
+                                    <div class="project__title">LE SECOND OEUVRE</div>
+                                    <div class="project__location">Librevelle, Gabon</div>
+                                    <a href="#" class="project__content--button">
+                                        <div class="project__button--text">
+                                            Regarder
+                                        </div>
+                                        <div class="project__button button small__project--button
+">
+                                            <div class="button__project--inner">
+                                                <div class="arrow__project-right">
+                                                    <svg width="67" height="10" viewBox="0 0 67 10"     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M66.4318 5.42426C66.6662 5.18995 66.6662 4.81005 66.4318 4.57574L62.6135 0.757359C62.3792 0.523045 61.9992 0.523045 61.7649 0.757359C61.5306 0.991674 61.5306 1.37157 61.7649 1.60589L65.159 5L61.7649 8.39411C61.5306 8.62843 61.5306 9.00833 61.7649 9.24264C61.9992 9.47696 62.3792 9.47696 62.6135 9.24264L66.4318 5.42426ZM0 5.6H66.0076V4.4H0V5.6Z" fill="white"/>
+                                                    </svg>                                                  
+                                                </div>                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="page__content--button project__button">
+                        <div class="content__button--text">
+                            Voir tous les projets
+                        </div>
+                        <div class="content__button button">
+                            <div class="button__inner">
+                                <div class="arrow-right">
+                                    <svg width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M66.7147 8.70711C67.1052 8.31658 67.1052 7.68342 66.7147 7.29289L60.3507 0.928932C59.9602 0.538408 59.327 0.538408 58.9365 0.928932C58.546 1.31946 58.546 1.95262 58.9365 2.34315L64.5934 8L58.9365 13.6569C58.546 14.0474 58.546 14.6805 58.9365 15.0711C59.327 15.4616 59.9602 15.4616 60.3507 15.0711L66.7147 8.70711ZM0 9H66.0076V7H0V9Z" fill="#F90101" fill-opacity="0.65"/>
+                                    </svg>                                    
+                                </div>                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSTRUCTION BLOCK -->
+
+        <div class="main__construction--page">
+            <video autoplay muted loop class="construction__video">
+                <source src="img/construction.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="main__construction--inner">
+                    <h4>Nous avons une grande <br class="mobile-construction"> expérience dans</h4>
+                    <h1>la construction et <br> la reconstruction d'architecture </h1>
+                    <a href="#" class="page__content--button construction-button">
+                        <div class="content__button--text">
+                            Voir les projets
+                        </div>
+                        <div class="content__button button">
+                            <div class="button__inner">
+                                <div class="arrow-right">
+                                    <img src="img/arrow-right.svg" alt="">
+                                </div>                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section--wrapper" id="team">
+
+        <!-- TEAM BLOCK -->
+
+        <div class="main__team--page">
+            <div class="main__team--inner">
+                <div class="main__title--block team__title--block">
+                    Notre équipe 
+                </div>
+                <div class="main__team--content">
+                    <div class="main__team--image">
+                        <img src="img/team.jpg" alt="">
+                        <div class="team__mobile--text">
+                            <p>BE CONSTRUCTION est une entreprise à taille humaine, flexible, disponible. 
+                            </p>
+                            <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
+                            <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
+                        </div>
+                    </div>
+                    <div class="main__team--desc">
+                        <div class="main__team--text">
+                            <p>BE CONSTRUCTION est une entreprise à taille humaine, flexible, disponible. 
+                            </p>
+                            <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
+                            <p>SARL crée en 2018 et co-gérée par M BOUSSIENGUE et M ELLA EKO, nous sommes situés à Batterie 4, en face de l’école Franco-Britannique.</p>
+                        </div>
+                        <div class="main__team--blocks">
+                            <div class="main__team--block">
+                                <div class="team-num">
+                                    <div class="team__inner-num">
+                                        10+
+                                    </div>
+                                </div>
+                                <div class="team-prop">
+                                    <div>ANNÉES D'EXPÉRIENCE</div>
+                                </div>
+                            </div>
+                            <div class="main__team--block">
+                                <div class="team-num">
+                                    <div class="team__inner-num">
+                                        13+
+                                    </div>
+                                </div>
+                                <div class="team-prop">
+                                    <div>Employés <br class="team-mobile"> en l'équipe</div>
+                                </div>
+                            </div>
+                            <div class="main__team--block">
+                                <div class="team-num">
+                                    <div class="team__inner-num">
+                                        100+
+                                    </div>
+                                </div>
+                                <div class="team-prop">
+                                    <div>PROJETS RÉALISÉS</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- MAIN BRIEF -->
+        <!-- MAIN BRIEF -->
 
-    <div class="main__page--brief">
-        <div class="container">
-            <div class="brief__inner">
-                <div class="brief__inner--title another-brief organize-brief">
-                    Organigramme
-                </div>
-                <div class="brief__inner--description">
-                    est née d'une véritable passion pour la conception et la réalisation de chantiers en Bâtiment tout corps d’état. 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCHEME BLOCK -->
-    
-    <div class="main__scheme--page">
-        <div class="container">
-            <div class="main__scheme--inner">
-                <img src="img/scheme.svg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <!-- PARTNERS BLOCK -->
-
-    <div class="main__partners--page">
-        <div class="container">
-            <div class="main__partners--inner">
-                <div class="main__title--block partners__title--block">
-                    Nos <br class="partners-mob"> partenaires 
-                </div>
-                <div class="main__partners--row">
-                    <a href="#" class="main__partners--item"><img src="img/partners1.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners2.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners3.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners4.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners5.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners6.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners7.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners8.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners9.svg" alt=""></a>
-                    <a href="#" class="main__partners--item"><img src="img/partners10.svg" alt=""></a>                    
+        <div class="main__page--brief">
+            <div class="container">
+                <div class="brief__inner">
+                    <div class="brief__inner--title another-brief">
+                        Fondateurs
+                    </div>
+                    <div class="brief__inner--description">
+                        est née d'une véritable passion pour la conception et la réalisation de chantiers en Bâtiment tout corps d’état. 
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- FOUNDER BLOCK -->
+
+        <div class="main__founder--page">
+            <div class="container">
+                <div class="main__founder--inner">
+                    <div class="main__founder--row">
+                        <div class="main__founder--item">
+                            <div class="about__absolute">
+                                <div class="about__absolute--item founder__absolute--item red-borderitem"></div>
+                                <div class="about__absolute--item founder__absolute--item gray-item">
+                                    <p>M Boussiengue</p>
+                                    <p>Poste</p>
+                                    <div class="about__absolute">
+                                        <div class="about__absolute--item founder__absolute--item  red-backitem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/founder.jpg" alt="">
+                        </div>
+                        <div class="main__founder--item">
+                            <div class="about__absolute">
+                                <div class="about__absolute--item founder__absolute--item red-borderitem"></div>
+                                <div class="about__absolute--item founder__absolute--item gray-item">
+                                    <p>M Boussiengue</p>
+                                    <p>Poste</p>
+                                    <div class="about__absolute">
+                                        <div class="about__absolute--item founder__absolute--item  red-backitem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="img/founder.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN BRIEF -->
+
+        <div class="main__page--brief">
+            <div class="container">
+                <div class="brief__inner">
+                    <div class="brief__inner--title another-brief organize-brief">
+                        Organigramme
+                    </div>
+                    <div class="brief__inner--description">
+                        est née d'une véritable passion pour la conception et la réalisation de chantiers en Bâtiment tout corps d’état. 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCHEME BLOCK -->
+        
+        <div class="main__scheme--page">
+            <div class="container">
+                <div class="main__scheme--inner">
+                    <img src="img/scheme.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTNERS BLOCK -->
+
+        <div class="main__partners--page">
+            <div class="container">
+                <div class="main__partners--inner">
+                    <div class="main__title--block partners__title--block">
+                        Nos <br class="partners-mob"> partenaires 
+                    </div>
+                    <div class="main__partners--row">
+                        <a href="#" class="main__partners--item"><img src="img/partners1.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners2.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners3.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners4.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners5.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners6.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners7.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners8.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners9.svg" alt=""></a>
+                        <a href="#" class="main__partners--item"><img src="img/partners10.svg" alt=""></a>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+
 
     <!-- CONTACTS BLOCK -->
-    <div class="main__contacts--page">
+
+    <div id="contacts" class="main__contacts--page">
         <div class="container">
             <div class="main__contacts--inner">
                 <div class="main__contacts--title main__title--block">Contacts</div>
@@ -843,34 +879,34 @@
                         <div class="footer__nav">
                             <ul>
                                 <li class="active-nav">
-                                    <a href="#">
+                                    <a href="#main">
                                     Аccueil
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#experience">
                                     Notre expertise
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#prop">
                                     À propos de nous
                                     </a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="#team">
                                     Notre équipe
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#project">
                                     Nos projets
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#contacts">
                                     Contacts
                                     </a>
                                 </li>
@@ -887,10 +923,22 @@
                         </div>
                         <div class="footer__social social-mobile">
                             <ul>
-                                <li><a href="#"><img src="img/phone-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/youtube-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/mail-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/facebook-icon.svg" alt=""></a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.125 22.9165C13.8722 22.9109 9.79516 21.2191 6.78796 18.2119C3.78076 15.2047 2.08889 11.1276 2.08337 6.87479C2.08337 5.60396 2.58821 4.38519 3.48682 3.48657C4.38543 2.58796 5.60421 2.08313 6.87504 2.08313C7.14415 2.08108 7.4128 2.1055 7.67712 2.15604C7.93266 2.19386 8.18386 2.25666 8.42712 2.34354C8.59822 2.40357 8.75067 2.50722 8.86943 2.64424C8.98818 2.78126 9.0691 2.94691 9.10421 3.12479L10.5313 9.37479C10.5698 9.54444 10.5651 9.72102 10.5178 9.88842C10.4705 10.0558 10.382 10.2087 10.2605 10.3331C10.125 10.479 10.1146 10.4894 8.83337 11.156C9.85941 13.4069 11.6596 15.2145 13.9063 16.2498C14.5834 14.9581 14.5938 14.9477 14.7396 14.8123C14.864 14.6907 15.0169 14.6022 15.1843 14.5549C15.3517 14.5076 15.5283 14.503 15.698 14.5415L21.948 15.9685C22.1201 16.0085 22.2793 16.0916 22.4105 16.2101C22.5418 16.3285 22.6407 16.4784 22.698 16.6456C22.7859 16.8929 22.8521 17.1473 22.8959 17.406C22.9378 17.6678 22.9587 17.9326 22.9584 18.1977C22.9392 19.4631 22.4201 20.6695 21.5146 21.5536C20.6091 22.4377 19.3905 22.9276 18.125 22.9165Z" fill="#F90101" fill-opacity="0.5"/>
+                                </svg></a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.4407 6.76859C22.9167 8.62484 22.9167 12.4998 22.9167 12.4998C22.9167 12.4998 22.9167 16.3748 22.4407 18.2311C22.1761 19.2571 21.4021 20.0644 20.4219 20.3373C18.6417 20.8332 12.5 20.8332 12.5 20.8332C12.5 20.8332 6.3615 20.8332 4.57817 20.3373C3.59379 20.0603 2.82087 19.254 2.55942 18.2311C2.08337 16.3748 2.08337 12.4998 2.08337 12.4998C2.08337 12.4998 2.08337 8.62484 2.55942 6.76859C2.824 5.74255 3.59796 4.93525 4.57817 4.66234C6.3615 4.1665 12.5 4.1665 12.5 4.1665C12.5 4.1665 18.6417 4.1665 20.4219 4.66234C21.4063 4.93942 22.1792 5.74567 22.4407 6.76859ZM10.4167 16.1457L16.6667 12.4998L10.4167 8.854V16.1457Z" fill="#F90101" fill-opacity="0.5"/>
+                                </svg>
+                                </a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.25 4.6875C5.4212 4.6875 4.62634 5.01674 4.04029 5.60279C3.45424 6.18884 3.125 6.9837 3.125 7.8125V8.12656L12.5 13.175L21.875 8.12813V7.8125C21.875 6.9837 21.5458 6.18884 20.9597 5.60279C20.3737 5.01674 19.5788 4.6875 18.75 4.6875H6.25Z" fill="#F90101" fill-opacity="0.5"/>
+                                <path d="M21.875 9.90137L12.8703 14.7498C12.7565 14.8111 12.6293 14.8431 12.5 14.8431C12.3707 14.8431 12.2435 14.8111 12.1297 14.7498L3.125 9.90137V17.1873C3.125 18.0161 3.45424 18.811 4.04029 19.397C4.62634 19.9831 5.4212 20.3123 6.25 20.3123H18.75C19.5788 20.3123 20.3737 19.9831 20.9597 19.397C21.5458 18.811 21.875 18.0161 21.875 17.1873V9.90137Z" fill="#F90101" fill-opacity="0.5"/>
+                                </svg>
+                                </a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.25 1.25H3.75C2.375 1.25 1.25 2.375 1.25 3.75V21.25C1.25 22.6262 2.375 23.75 3.75 23.75H12.5V15H10V11.9062H12.5V9.34375C12.5 6.63875 14.015 4.73875 17.2075 4.73875L19.4613 4.74125V7.9975H17.965C16.7225 7.9975 16.25 8.93 16.25 9.795V11.9075H19.46L18.75 15H16.25V23.75H21.25C22.625 23.75 23.75 22.6262 23.75 21.25V3.75C23.75 2.375 22.625 1.25 21.25 1.25Z" fill="#F90101" fill-opacity="0.5"/>
+                                </svg>
+                                </a></li>
                             </ul>
                         </div>
                     </div>
@@ -901,10 +949,22 @@
                     <div class="footer__rights--inner">
                         <div class="footer__social social-desk">
                             <ul>
-                                <li><a href="#"><img src="img/phone-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/youtube-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/mail-icon.svg" alt=""></a></li>
-                                <li><a href="#"><img src="img/facebook-icon.svg" alt=""></a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.125 22.9165C13.8722 22.9109 9.79516 21.2191 6.78796 18.2119C3.78076 15.2047 2.08889 11.1276 2.08337 6.87479C2.08337 5.60396 2.58821 4.38519 3.48682 3.48657C4.38543 2.58796 5.60421 2.08313 6.87504 2.08313C7.14415 2.08108 7.4128 2.1055 7.67712 2.15604C7.93266 2.19386 8.18386 2.25666 8.42712 2.34354C8.59822 2.40357 8.75067 2.50722 8.86943 2.64424C8.98818 2.78126 9.0691 2.94691 9.10421 3.12479L10.5313 9.37479C10.5698 9.54444 10.5651 9.72102 10.5178 9.88842C10.4705 10.0558 10.382 10.2087 10.2605 10.3331C10.125 10.479 10.1146 10.4894 8.83337 11.156C9.85941 13.4069 11.6596 15.2145 13.9063 16.2498C14.5834 14.9581 14.5938 14.9477 14.7396 14.8123C14.864 14.6907 15.0169 14.6022 15.1843 14.5549C15.3517 14.5076 15.5283 14.503 15.698 14.5415L21.948 15.9685C22.1201 16.0085 22.2793 16.0916 22.4105 16.2101C22.5418 16.3285 22.6407 16.4784 22.698 16.6456C22.7859 16.8929 22.8521 17.1473 22.8959 17.406C22.9378 17.6678 22.9587 17.9326 22.9584 18.1977C22.9392 19.4631 22.4201 20.6695 21.5146 21.5536C20.6091 22.4377 19.3905 22.9276 18.125 22.9165Z" fill="#F90101" fill-opacity="0.5"/>
+</svg></a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.4407 6.76859C22.9167 8.62484 22.9167 12.4998 22.9167 12.4998C22.9167 12.4998 22.9167 16.3748 22.4407 18.2311C22.1761 19.2571 21.4021 20.0644 20.4219 20.3373C18.6417 20.8332 12.5 20.8332 12.5 20.8332C12.5 20.8332 6.3615 20.8332 4.57817 20.3373C3.59379 20.0603 2.82087 19.254 2.55942 18.2311C2.08337 16.3748 2.08337 12.4998 2.08337 12.4998C2.08337 12.4998 2.08337 8.62484 2.55942 6.76859C2.824 5.74255 3.59796 4.93525 4.57817 4.66234C6.3615 4.1665 12.5 4.1665 12.5 4.1665C12.5 4.1665 18.6417 4.1665 20.4219 4.66234C21.4063 4.93942 22.1792 5.74567 22.4407 6.76859ZM10.4167 16.1457L16.6667 12.4998L10.4167 8.854V16.1457Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.25 4.6875C5.4212 4.6875 4.62634 5.01674 4.04029 5.60279C3.45424 6.18884 3.125 6.9837 3.125 7.8125V8.12656L12.5 13.175L21.875 8.12813V7.8125C21.875 6.9837 21.5458 6.18884 20.9597 5.60279C20.3737 5.01674 19.5788 4.6875 18.75 4.6875H6.25Z" fill="#F90101" fill-opacity="0.5"/>
+<path d="M21.875 9.90137L12.8703 14.7498C12.7565 14.8111 12.6293 14.8431 12.5 14.8431C12.3707 14.8431 12.2435 14.8111 12.1297 14.7498L3.125 9.90137V17.1873C3.125 18.0161 3.45424 18.811 4.04029 19.397C4.62634 19.9831 5.4212 20.3123 6.25 20.3123H18.75C19.5788 20.3123 20.3737 19.9831 20.9597 19.397C21.5458 18.811 21.875 18.0161 21.875 17.1873V9.90137Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
+                                <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.25 1.25H3.75C2.375 1.25 1.25 2.375 1.25 3.75V21.25C1.25 22.6262 2.375 23.75 3.75 23.75H12.5V15H10V11.9062H12.5V9.34375C12.5 6.63875 14.015 4.73875 17.2075 4.73875L19.4613 4.74125V7.9975H17.965C16.7225 7.9975 16.25 8.93 16.25 9.795V11.9075H19.46L18.75 15H16.25V23.75H21.25C22.625 23.75 23.75 22.6262 23.75 21.25V3.75C23.75 2.375 22.625 1.25 21.25 1.25Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
                             </ul>
                         </div>
                         <div class="footer__rights--text">
@@ -926,42 +986,54 @@
                 <nav class="nav mobile__nav">
                     <ul>
                         <li class="active-nav">
-                            <a href="#">
-                            Аccueil
+                            <a href="#main">
+                            Accueil
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                            Notre expertise
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="#prop">
                             À propos de nous
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                            Notre équipe
+                            <a href="#experience">
+                            Notre expertise
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#project">
                             Nos projets
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#team">
+                            Notre équipe
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacts">
                             Contacts
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="social mobile__social">
-                    <li><a href="#"><img src="img/phone-icon.svg" alt=""></a></li>
-                    <li><a href="#"><img src="img/youtube-icon.svg" alt=""></a></li>
-                    <li><a href="#"><img src="img/mail-icon.svg" alt=""></a></li>
-                    <li><a href="#"><img src="img/facebook-icon.svg" alt=""></a></li>
+                    <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.125 22.9165C13.8722 22.9109 9.79516 21.2191 6.78796 18.2119C3.78076 15.2047 2.08889 11.1276 2.08337 6.87479C2.08337 5.60396 2.58821 4.38519 3.48682 3.48657C4.38543 2.58796 5.60421 2.08313 6.87504 2.08313C7.14415 2.08108 7.4128 2.1055 7.67712 2.15604C7.93266 2.19386 8.18386 2.25666 8.42712 2.34354C8.59822 2.40357 8.75067 2.50722 8.86943 2.64424C8.98818 2.78126 9.0691 2.94691 9.10421 3.12479L10.5313 9.37479C10.5698 9.54444 10.5651 9.72102 10.5178 9.88842C10.4705 10.0558 10.382 10.2087 10.2605 10.3331C10.125 10.479 10.1146 10.4894 8.83337 11.156C9.85941 13.4069 11.6596 15.2145 13.9063 16.2498C14.5834 14.9581 14.5938 14.9477 14.7396 14.8123C14.864 14.6907 15.0169 14.6022 15.1843 14.5549C15.3517 14.5076 15.5283 14.503 15.698 14.5415L21.948 15.9685C22.1201 16.0085 22.2793 16.0916 22.4105 16.2101C22.5418 16.3285 22.6407 16.4784 22.698 16.6456C22.7859 16.8929 22.8521 17.1473 22.8959 17.406C22.9378 17.6678 22.9587 17.9326 22.9584 18.1977C22.9392 19.4631 22.4201 20.6695 21.5146 21.5536C20.6091 22.4377 19.3905 22.9276 18.125 22.9165Z" fill="#F90101" fill-opacity="0.5"/>
+</svg></a></li>
+                    <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.4407 6.76859C22.9167 8.62484 22.9167 12.4998 22.9167 12.4998C22.9167 12.4998 22.9167 16.3748 22.4407 18.2311C22.1761 19.2571 21.4021 20.0644 20.4219 20.3373C18.6417 20.8332 12.5 20.8332 12.5 20.8332C12.5 20.8332 6.3615 20.8332 4.57817 20.3373C3.59379 20.0603 2.82087 19.254 2.55942 18.2311C2.08337 16.3748 2.08337 12.4998 2.08337 12.4998C2.08337 12.4998 2.08337 8.62484 2.55942 6.76859C2.824 5.74255 3.59796 4.93525 4.57817 4.66234C6.3615 4.1665 12.5 4.1665 12.5 4.1665C12.5 4.1665 18.6417 4.1665 20.4219 4.66234C21.4063 4.93942 22.1792 5.74567 22.4407 6.76859ZM10.4167 16.1457L16.6667 12.4998L10.4167 8.854V16.1457Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
+                    <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.25 4.6875C5.4212 4.6875 4.62634 5.01674 4.04029 5.60279C3.45424 6.18884 3.125 6.9837 3.125 7.8125V8.12656L12.5 13.175L21.875 8.12813V7.8125C21.875 6.9837 21.5458 6.18884 20.9597 5.60279C20.3737 5.01674 19.5788 4.6875 18.75 4.6875H6.25Z" fill="#F90101" fill-opacity="0.5"/>
+<path d="M21.875 9.90137L12.8703 14.7498C12.7565 14.8111 12.6293 14.8431 12.5 14.8431C12.3707 14.8431 12.2435 14.8111 12.1297 14.7498L3.125 9.90137V17.1873C3.125 18.0161 3.45424 18.811 4.04029 19.397C4.62634 19.9831 5.4212 20.3123 6.25 20.3123H18.75C19.5788 20.3123 20.3737 19.9831 20.9597 19.397C21.5458 18.811 21.875 18.0161 21.875 17.1873V9.90137Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
+                    <li><a href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.25 1.25H3.75C2.375 1.25 1.25 2.375 1.25 3.75V21.25C1.25 22.6262 2.375 23.75 3.75 23.75H12.5V15H10V11.9062H12.5V9.34375C12.5 6.63875 14.015 4.73875 17.2075 4.73875L19.4613 4.74125V7.9975H17.965C16.7225 7.9975 16.25 8.93 16.25 9.795V11.9075H19.46L18.75 15H16.25V23.75H21.25C22.625 23.75 23.75 22.6262 23.75 21.25V3.75C23.75 2.375 22.625 1.25 21.25 1.25Z" fill="#F90101" fill-opacity="0.5"/>
+</svg>
+</a></li>
                 </ul>
             </div>
         </div>

@@ -6,7 +6,7 @@ $(document).ready(function() {
     window.onresize = function() { stickyAction();reziseActions() };
     reziseActions();
     function reziseActions() {
-        $('.project__title--block, .main__team--image').css('margin-left', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+        $('.team__title--block, .main__team--image').css('margin-left', `${parseInt($('.container').css('marginLeft')) + 18}px`);
         $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
         if (mediaChecker('max', 768)) {
             $('.map__wrapper').css('margin-top', `${parseInt($('.main__contacts--content').outerHeight() + 20)}px`);
@@ -19,7 +19,7 @@ $(document).ready(function() {
             $('.main__team--image').css('margin-left', `0px`);
         } else {
             $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
-            $('.project__title--block, .main__team--image').css('margin-right', `0px`);
+            $('.team__title--block, .main__team--image').css('margin-right', `0px`);
         }
 
 
@@ -74,8 +74,8 @@ $(document).ready(function() {
 
     // MOBILE MENU
 
-    $('.hamburger').click(function() {
-        $(this).toggleClass('is-active')
+    $('.hamburger, .mobile__nav ul li').click(function() {
+        $('.hamburger').toggleClass('is-active')
         $('body').toggleClass('overflowed');
         $('.main__layout').toggleClass('active-menu');
         $('.main__page--header').toggleClass('mobile-header');
@@ -217,6 +217,26 @@ $(document).ready(function() {
         return false;
     })
     
+
+ 
+    
+    // navigation active links animation
+    let mainNavLinks = document.querySelectorAll(".header__nav ul li a");
+    window.addEventListener("scroll", event => {
+      let fromTop = window.scrollY;
+    
+      mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if (
+          section.offsetTop <= (fromTop + 220) &&
+          section.offsetTop + section.offsetHeight > (fromTop + 220)
+        ) {
+          link.closest('li').classList.add("active-nav");
+        } else {
+          link.closest('li').classList.remove("active-nav");
+        }
+      });
+    });
 
 
 })
