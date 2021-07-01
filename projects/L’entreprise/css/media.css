@@ -24,6 +24,9 @@
         padding-left: 49px;
         gap: 40px;
     }
+    .button__scroll--up {
+        left: 18px;
+    }
 }
 @media only screen and (max-width: 1400px) {
     .about__overall--inner {
@@ -323,6 +326,26 @@
     }
     .main__founder--row {
         max-width: unset;
+    }
+    .about__project--inner {
+        flex-direction: column;
+    }
+    .about__project--info {
+        max-width: unset;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .about__project--block {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .about__project--text {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .about__project--image-second {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -883,10 +906,26 @@
     }
     
     .project__button .arrow-right::before {
-        top: calc(50% + 1px);
         background: #000;
         height: 1px;
         right: 1px;
+    }
+    
+    .breadcrumb__row {
+        height: 50px;
+        margin-bottom: 27px;
+    }
+    .breadcrumb--item:not(:last-child) { 
+        margin-right: 12px;
+    }
+    .breadcrumb--item {
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .about__project--subtitle {
+        font-size: 10px;
+        line-height: 15px;
+        max-width: 236px;
     }
 }
 
@@ -924,6 +963,9 @@
     .arrow-right {
         width: 44.5px;
         right: 15.4px;
+    }
+    .main__screen--button .arrow-right {
+        height: 19px;
     }
     .brief__inner--title {
         font-size: 16px;
@@ -1045,6 +1087,53 @@
     .opened__text {
         padding: 40px 13px !important;
     }
+
+
+    .main__testimonial--page {
+        padding: 63px 0 68px;
+    }
+    .testimonial--inner {
+        background-size: 87px 76px;
+        max-width: 281px;
+    }
+    .testimonial-title {
+        font-size: 36px;
+        line-height: 24px;
+        margin-bottom: 53px;
+    }
+    .testimonial--inner p:nth-child(2) {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 11px;
+    }
+    .testimonial--inner p:nth-child(3) {
+        font-size: 9px;
+        line-height: 13px;
+    }
+    .about__project--page {
+        padding-bottom: 35px;
+    }
+    .project__info--upper span, .project__info--upper p {
+        font-size: 10px;
+        line-height: 170.5%;
+    }
+    .about__project--inner {
+        margin-top: 15px;
+    }
+    .project__info--lower {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .text-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 9px;
+    }
+    .project__inner--text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
 }
 @media only screen and (max-width: 425px) {
     .main__about--page {

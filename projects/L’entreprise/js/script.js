@@ -2,12 +2,16 @@ $(document).ready(function() {
 
     // STICKY HEADER
 
-    window.onscroll = function() { stickyAction() };
+    window.onscroll = function() { stickyAction(); scrollFunction() };
     window.onresize = function() { stickyAction();reziseActions() };
     reziseActions();
     function reziseActions() {
         $('.team__title--block, .main__team--image').css('margin-left', `${parseInt($('.container').css('marginLeft')) + 18}px`);
         $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+        if (mediaChecker('min', 1260)) {
+            // $('.project__info--upper, .project__info--lower').css('padding-left', `${parseInt($('.container').css('marginLeft')) + 18}px`);
+            // $('.about__project--image').css('margin-right', `${parseInt($('.container').css('marginLeft')) + 18}px`)
+        }
         if (mediaChecker('max', 768)) {
             $('.map__wrapper').css('margin-top', `${parseInt($('.main__contacts--content').outerHeight() + 20)}px`);
         } else {
@@ -15,7 +19,6 @@ $(document).ready(function() {
         }
         if (mediaChecker('max', 550)) {
             $('.project__content--button').css('top', `${document.querySelector('.project__item').getBoundingClientRect.height}px`);
-            // $('.project__title--block, .main__team--image').css('margin-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
             $('.main__team--image').css('margin-left', `0px`);
         } else {
             $('.main__team--blocks, .main__team--text').css('padding-right', `${parseInt($('.container').css('marginLeft')) + 18}px`);
@@ -31,15 +34,18 @@ $(document).ready(function() {
         
 
         var mixer;
-        if (mediaChecker('min',550)) {
-            mixer = mixitup('.filter-container'); 
-        } else {
-            mixer = mixitup('.filter-container', {
-                animation: {
-                    enable: false
-                }
-            });
+        if ($('.filter-container').length) {
+            if (mediaChecker('min',550)) {
+                mixer = mixitup('.filter-container'); 
+            } else {
+                mixer = mixitup('.filter-container', {
+                    animation: {
+                        enable: false
+                    }
+                });
+            }            
         }
+
     
     
     }   
@@ -227,6 +233,7 @@ $(document).ready(function() {
     
       mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
+        if (!section) return;
         if (
           section.offsetTop <= (fromTop + 220) &&
           section.offsetTop + section.offsetHeight > (fromTop + 220)
@@ -238,6 +245,88 @@ $(document).ready(function() {
       });
     });
 
+
+
+    var scrollToUp = document.querySelector(".button__scroll--up");
+
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToUp.style.display = "flex";
+    } else {
+        scrollToUp.style.display = "none";
+    }
+    }
+
+
+
+
+
+
+
+    try {
+        gsap.fromTo('.page__content--title', {x: 0, y: -100, autoAlpha: 0}, {
+            duration: 1.25, 
+            delay: 0.5,
+            x: 0,
+            y: 0, 
+            autoAlpha: 1, 
+            ease: "expo", 
+            overwrite: "auto"
+        });
+        gsap.fromTo('.page__content--description', {x: 0, y: -100, autoAlpha: 0}, {
+            duration: 1.25, 
+            delay: 0.7,
+            x: 0,
+            y: 0, 
+            autoAlpha: 1, 
+            ease: "expo", 
+            overwrite: "auto"
+        });
+        gsap.fromTo('.main__screen--button', {x: 0, y: 100, autoAlpha: 0}, {
+            duration: 1.25, 
+            delay: 0.9,
+            x: 0,
+            y: 0, 
+            autoAlpha: 1, 
+            ease: "expo", 
+            overwrite: "auto"
+        });
+        
+        gsap.to('.about__overall--block:nth-child(2)', { // this will animate ALL boxes
+            scrollTrigger: {
+                trigger: ".about__overall--block:nth-child(2)",
+                scrub: true
+            },
+            y: -120,
+        })
+        gsap.to('.about__overall--block:nth-child(1)', { // this will animate ALL boxes
+            scrollTrigger: {
+                trigger: ".about__overall--block:nth-child(2)",
+                scrub: true
+            },
+            y: -100,
+        })
+        gsap.to('.about__overall--block:nth-child(3)', { // this will animate ALL boxes
+            scrollTrigger: {
+                trigger: ".about__overall--block:nth-child(2)",
+                scrub: true
+            },
+            y: -100,
+        })       
+    } catch {
+        console.log('Without gsap')
+    }
+
+
+        
+
+
+    $('.button__scroll--up').click(topFunction);
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 
 })
 
