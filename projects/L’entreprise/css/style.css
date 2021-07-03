@@ -481,7 +481,7 @@ body {
 	    -ms-flex-direction: column-reverse;
 	        flex-direction: column-reverse;
 	gap: 42px;
-	margin-bottom: 207px;
+	margin-bottom: 227px;
 }
 .about__slider--inner {
 	max-width: 664px;
@@ -1074,6 +1074,9 @@ body {
 	line-height: 36px;
 	color: #F5100B;
 }
+.project__button .content__button {
+	min-height: 55px;
+}
 .project__button .button__inner {
 	background: rgba(249, 1, 1, 0.25);
 	-webkit-transition: .3s ease-in;
@@ -1081,11 +1084,16 @@ body {
 	transition: .3s ease-in;
 }
 .project__button:hover .button__inner {
+	background: #F90101;
+	width: 55px;
+	height: 55px;
+}
+.project__button:hover .arrow-right svg path {
+	fill: #fff;
+}
+.project__button:hover .arrow-right::before {
 	background: #fff;
-	width: 60px;
-	height: 60px;
-	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
-	        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
 }
 .project__button:hover .arrow-right {
 	right: 27px;
@@ -1651,9 +1659,6 @@ body {
 	-o-transition: .3s ease-in;
 	transition: .3s ease-in;
 }
-.button__scroll--up:hover .scroll-up {
-	height: 52px;
-}
 .button__scroll--up:hover svg:first-child {
 	display: none;
 	opacity: 0;
@@ -1663,8 +1668,6 @@ body {
 	opacity: 1;
 } 
 .button__scroll--up:hover {
-	width: 66px;
-	height: 66px;	
 	background: #FFFFFF;
 	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
 	        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.13);
@@ -1717,7 +1720,7 @@ body {
 	        transform: translateY(-50%);
 	width: 100%;
 	background: #fff;
-	height: 1.5px;
+	height: 2.5px;
 	opacity: 0.5;
 	-webkit-transition: .3s ease-in;
 	-o-transition: .3s ease-in;
@@ -1740,6 +1743,7 @@ body {
 	background: #F90101;
 	height: 60px;
 	width: 60px;
+	transform: translateX(10px);
 }
 .construction-button:hover .arrow-right svg path {
 	fill-opacity: 1;

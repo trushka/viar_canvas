@@ -37,21 +37,6 @@ $(document).ready(function() {
         }
 
 
-        // MIXER FILTER ACTIVATION
-
-        var mixer;
-        if ($('.filter-container').length) {
-            if (mediaChecker('min', 550)) {
-                mixer = mixitup('.filter-container');
-            } else {
-                mixer = mixitup('.filter-container', {
-                    animation: {
-                        enable: false
-                    }
-                });
-            }
-        }
-
 
 
     }
@@ -70,6 +55,24 @@ $(document).ready(function() {
             });
         });
     });
+
+
+    // MIXER FILTER ACTIVATION
+
+    var mixer;
+    if ($('.filter-container').length) {
+        if (mediaChecker('min', 550)) {
+            mixer = mixitup('.filter-container');
+        } else {
+            mixer = mixitup('.filter-container', {
+                animation: {
+                    enable: false
+                }
+            });
+        }
+    }
+
+
 
 
     // STICKY HEADER FUNCTION
@@ -304,12 +307,7 @@ $(document).ready(function() {
         }
     }
 
-    $('.button__scroll--up').click(topFunction);
 
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
 
 
 
@@ -363,21 +361,21 @@ $(document).ready(function() {
                     trigger: ".about__overall--block:nth-child(2)",
                     scrub: true
                 },
-                y: -120,
+                y: -160,
             })
             gsap.to('.about__overall--block:nth-child(1)', { // this will animate ALL boxes
                 scrollTrigger: {
                     trigger: ".about__overall--block:nth-child(2)",
                     scrub: true
                 },
-                y: -100,
+                y: -120,
             })
             gsap.to('.about__overall--block:nth-child(3)', { // this will animate ALL boxes
                 scrollTrigger: {
                     trigger: ".about__overall--block:nth-child(2)",
                     scrub: true
                 },
-                y: -100,
+                y: -120,
             })
         }
 
@@ -391,7 +389,7 @@ $(document).ready(function() {
 
     $("html").niceScroll({
         scrollspeed: 120,
-        cursorcolor: "#DE466D",
+        cursorcolor: "#F90101",
         cursorwidth: "7px",
         cursorborder: "none",
         cursorborderradius: '10px',
