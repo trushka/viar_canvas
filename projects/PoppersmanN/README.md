@@ -1,0 +1,1 @@
+#Test site for azure platform integration
