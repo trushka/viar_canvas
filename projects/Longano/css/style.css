@@ -897,8 +897,8 @@ h3 {
 }
 
 .partners #map {
-  width: calc(100% + 10px);
-  height: calc(100% + 100px);
+  width: calc(100%);
+  height: calc(100%);
   position: absolute;
   left: 50%;
   top: 50%;
