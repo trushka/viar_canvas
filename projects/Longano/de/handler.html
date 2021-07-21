@@ -98,7 +98,9 @@
               />
             </svg>
             <span>
-              <h6 data-index="0">B-F-G Fahrzeughandel Zell/Mosel Bernhard Friedrich Gröff</h6>
+              <h6 data-index="0">
+                B-F-G Fahrzeughandel Zell/Mosel Bernhard Friedrich Gröff
+              </h6>
               <p>
                 Altlayerbachtal 16<br />
                 56856 Zell-Mosel<br />
@@ -213,15 +215,16 @@
           disableDefaultUI: true,
           mapTypeControl: true,
 
-            mapTypeControlOptions: {
+          mapTypeControlOptions: {
+            mapTypeIds: [
+              google.maps.MapTypeId.ROADMAP,
+              google.maps.MapTypeId.HYBRID,
+            ],
 
-                mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.HYBRID],
+            style: google.maps.MapTypeControlStyle.DEFAULT,
 
-                style: google.maps.MapTypeControlStyle.DEFAULT,
-
-                position: google.maps.ControlPosition.LEFT_TOP
-
-            },
+            position: google.maps.ControlPosition.LEFT_TOP,
+          },
         });
         for (i = 0; i < locations.length; i++) {
           marker = new google.maps.Marker({
@@ -232,11 +235,13 @@
         }
       }
 
-      $('h6[data-index]').click(function() {
-            let index  = $(this).data('index');
-            map.panTo(new google.maps.LatLng(locations[index][1], locations[index][2]));
-            map.setZoom(10);
-      })
+      $("h6[data-index]").click(function () {
+        let index = $(this).data("index");
+        map.panTo(
+          new google.maps.LatLng(locations[index][1], locations[index][2])
+        );
+        map.setZoom(10);
+      });
     </script>
 
     <script
