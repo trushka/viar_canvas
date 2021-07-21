@@ -228,7 +228,7 @@ h3 {
 .header__top {
   position: relative;
   padding: 13px 0 14px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.15);
           box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.15);
   z-index: 1;
@@ -355,7 +355,7 @@ h3 {
 
 .header__bottom {
   padding: 13px 0 14px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.15);
           box-shadow: 0px 0px 10px rgba(11, 11, 11, 0.15);
 }
@@ -950,7 +950,8 @@ h3 {
   cursor: pointer;
 }
 
-.partners__info li svg {
+.partners__info li img {
+  margin-top: 5px;
   margin-right: 9px;
 }
 
