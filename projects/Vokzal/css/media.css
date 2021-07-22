@@ -1,0 +1,182 @@
+@media only screen and (max-width: 992px) {
+    .header__logo {
+        top: -12px;
+        left: 0;
+        transform: unset;
+        width: 91px;
+        height: 101px;
+        border-width: 6.5px;
+    }
+    .header {
+        height: 101px;
+    }
+    .header__logo img {
+        width: 44px;
+        height: 57px;
+    }
+    .header {
+        padding-top: 12px;
+    }
+    .header__elements--right > div:not(:last-child), .header__elements--right > a {
+        margin-right: 5px;
+    }
+    .header__elements--left {
+        margin-right: 5px;
+    }
+    .main__text::after, .main__text::before {
+        width: 40px;
+        top: -30px;
+    }
+    .main__title {
+        font-size: 28px;
+    }
+    .main__title span {
+        font-size: 36px;
+    }
+    .main__text--inner p:last-child {
+        display: none;
+    }
+    .main__title {
+        margin-top: 18px;
+    }
+    .main__screen {
+        padding-bottom: 110px;
+    }
+    .our__menu--title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .mobile__menu {
+        font-size: 18px;
+        line-height: 45px;
+    }
+    .mobile__menu--nav {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header__elements--left {
+        font-size: 11px;
+    }
+    .first__screen {
+        max-width: 664px;
+    }
+    .main__text::before {
+        border-top: 7px solid;
+        border-left: 7px solid;
+    }
+    .main__text::after {
+        border-top: 7px solid;
+        border-right: 7px solid;
+    }
+    .main__text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .main__screen {
+        background: url(../img/facade-table.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .slide__item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .slide__item {
+        flex: 0 0 19%;
+        padding: 6px 6px 10px;
+    }
+    .mobile__menu {
+        background-size: 200px;
+        background-position: 100% 100%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .header__wrapper .header__elements--left {
+        display: none !important;
+    }
+    .mobile__firstScreen--elements {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        height: 81px;
+    }
+    .header__logo {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 73px;
+        height: 81px;
+        border-width: 5.3px;
+    }
+    .header__logo img {
+        width: 35px;
+        height: 46px;
+    }
+    .header__elements--right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35px 35px 1fr 50px 35px;
+        grid-gap: 10px;
+    }
+    .header__cart {
+        order: 1;
+        grid-column: 1 / 2;
+    }
+    .header__insta {
+        grid-column: 2 / 3;
+        order: 2;
+    }
+    .header__lang {
+        grid-column: 4 / 5;
+        order: 3;
+    }
+    .hamburger__wrapper {
+        order: 4;
+        grid-column: 5 / 6;
+    }
+    .header__elements--right > div:not(:last-child), .header__elements--right > a {
+        margin: 0;
+    }
+    .main__text::after, .main__text::before {
+        width: 25px;
+    }
+    .main__title br {
+        display: inline;
+    }
+    .main__title {
+        line-height: 30px;    
+        letter-spacing: 2.02px;
+    }    
+    .main__screen {
+        background: url(../img/facade-mobile.jpg) no-repeat center;
+        background-size: cover;
+        padding-bottom: 45px;
+    }    
+    .main__text--inner p:nth-child(2) {
+        display: none;
+    }
+    .first__main {
+        box-shadow: 0px 0px 28px 29px rgb(255 255 255);
+    }
+    .mobile__menu {
+        background-size: 100px;
+    }
+    .slide__title {
+        font-size: 14px;
+    }
+    .slide__item {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main__text::after, .main__text::before {
+        width: 17px;
+    }
+}
+
+
