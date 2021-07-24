@@ -171,6 +171,7 @@ $(document).ready(function () {
 
     $('.gallery__item, .gallery__popup--cross').click(function(e) {
         $(".overlay").toggleClass("hide");
+        $('.gallery__popup').toggleClass('visibilited');
         $('.gallery__popup').fadeToggle();
         setTimeout(() => {
             let slider = $('.showed').clone();
