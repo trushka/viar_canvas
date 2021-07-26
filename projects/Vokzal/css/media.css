@@ -17,6 +17,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .custom__screen {
+        height: 254px;    
+    }
     .header__logo {
         top: -12px;
         left: 0;
@@ -193,6 +196,67 @@
         font-size: 20px;
         line-height: 28px;
     }
+    .big__title {
+        font-size: 38px;
+        line-height: 51px;
+        letter-spacing: unset;
+    }
+    .continent__title {
+        font-size: 20px;
+        line-height: 27px
+    }
+    .continent__text {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 23px;
+    }
+    .bars__item {
+        height: 316px;
+        padding: 0 36px;
+    }
+    .bars-title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .vip__item {
+        height: 283px;
+    }
+    .vip-title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .team-title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .team-desc {
+        font-size: 12px;
+        line-height: 140%
+    }
+    .team__image {
+        border: 15px solid rgba(237, 241, 243, 0.27);
+    }
+    .study-type {
+        font-size: 16px;
+    }
+    .study-title {
+        font-size: 22px;
+    }
+    .child-title__last {
+        font-size: 22px;
+    }
+    .children-title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .children-image__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .child-text__last {
+        height: 314px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -248,14 +312,14 @@
         background-size: 200px;
         background-position: 100% 100%;
     }
-    .main__section--title {
+    .main__section--title:not(.bars-title) {
         margin-bottom: 21px;
     }
     .main__section--title::after {
         width: 34px;    
     }
     .main__section--title::before {
-        width: 144px;
+        width: 122px;
     }
     .bars-gallery__navigaton {
         max-width: 195px;
@@ -313,6 +377,29 @@
         width: 27px;
         height: 27px;
     }
+    .inner-adress {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .inner-day {
+        font-size: 12px;
+    }
+    .inner__contacts--title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .contacts-title {
+        font-size: 20px;
+    }
+    .contacts-text {
+        font-size: 12px;
+    }
+    .child-text__last {
+        height: 286px;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 
@@ -359,6 +446,10 @@
     .footer__logo img {
         width: 68px;
         height: 88px;
+    }
+    
+    .bars-text {
+        margin: 24px 0;
     }
 }
 
@@ -420,6 +511,9 @@
     }
     .kitchen__banner--content > * {
         max-width: 260px;
+    }
+    .inner-number {
+        font-size: 18px;
     }
 }
 
@@ -596,9 +690,124 @@
         font-size: 14px;
         line-height: 29px;
     }
+    .custom__screen {
+        height: 184px;    
+    }
+    .big__title {
+        font-size: 24px;
+        line-height: 51px;
+        line-height: 33px;
+    }
+    .continent__item {
+        justify-content: center;
+        text-align: center;
+    }
+    .continent__button {
+        margin: 0 auto;
+    }
+    .continent__item:nth-child(2n) {
+        flex-direction: row;
+    }
+    .continent__title {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .footer-bg__padding {
+        padding-top: 37px;
+    }
+    .continent__title {
+        font-size: 18px;
+        line-height: 19px;
+        margin-top: 0;
+    }
+    .continent__text {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .continent__item {
+        margin-bottom: 10px;
+    }
+    .bars__item {
+        height: 352px;
+        padding: 0 16px;
+    }    
+    .bars-text {
+        font-size: 13px;
+        text-align: center;
+    }
+    .bars-title {
+        text-align: center;
+    }
+    .bars-button {
+        margin: 0 auto;
+    }
+    .bars__title--line {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .vip__item {
+        height: 450px;
+    }
+    .team-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .team-desc {
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .team__image {
+        border: 10px solid rgba(237, 241, 243, 0.27);
+    }
+    .inner-adress {
+        font-size: 13px;
+        line-height: 18px;
+        
+    }
+    .inner-day {
+        font-size: 14px;
+        line-height: 132.2%;
+        
+    }
+    .inner__contacts--title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .inner-number {
+        font-size: 24px;
+    }
+    .contacts-text {
+        font-size: 13px;
+    }
+    .study-type {
+        font-size: 18px;
+    }
+    .study-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .child-title__last {
+        font-size: 20px;
+        text-align: center;
+    }
+    .children-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .children-text__bottom {
+        font-size: 13px;
+        line-height: 19px;
+        
+    }
+    .child-text__last {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
+    .child-text__last {
+        height: 380px;
+    }
     .main__text::after, .main__text::before {
         width: 17px;
     }
@@ -651,10 +860,16 @@
         width: 38.76px;
         height: 43.6px;
     }
-    .custom__footer {
+    .custom__footer.deliver-custom__footery {
         background: url(../img/custom-footerBgMob.png);
         background-repeat: no-repeat;
         background-position: center 102%;
+        background-size: cover;
+    }
+    .custom__footer {
+        background: url(../img/custom-footerBgMob1.png);
+        background-repeat: no-repeat;
+        background-position: 0 -10px;
         background-size: cover;
     }
     .order__title--inner p {
@@ -666,6 +881,16 @@
     }
     .cart__image {
         margin-right: 20px;
+    }
+    .vip__item {
+        height: 270px;
+    }
+    .vip-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .child__image {
+        width: 100%;
     }
 }
 
@@ -681,7 +906,11 @@
 
 
 
-
+@media only screen and (min-width: 1200px) {
+    .child-text__last {
+        height: 255px;
+    }
+}
 
 
 

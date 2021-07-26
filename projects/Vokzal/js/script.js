@@ -184,12 +184,12 @@ $(document).ready(function () {
                 centerMode: true
             })
         if (e.currentTarget.className == 'gallery__popup--cross') {
-            console.log('x')
             $('.popup__slider--inner').remove();
         }
         }, 100);
 
     })
+
 
 
   // let _deliveryPageData = [".delivery__page-slider--nav div[data-slide", ".delivery__page__inner--slider"];
