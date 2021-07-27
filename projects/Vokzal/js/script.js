@@ -169,24 +169,115 @@ $(document).ready(function () {
     })
 
 
-    $('.gallery__item, .gallery__popup--cross').click(function(e) {
+    $('.gallery__item, .gallery__popup--cross, .overlay-wrapper, .vip-button').click(function(e) {
         $(".overlay").toggleClass("hide");
         $('.gallery__popup').toggleClass('visibilited');
         $('.gallery__popup').fadeToggle();
-        setTimeout(() => {
-            let slider = $('.showed').clone();
-            $('.gallery__popup--slides').append("<div class='popup__slider--inner'></div>");
-            $('.popup__slider--inner').html(slider);
-            $('.popup__slider--inner').not('.slick-initialized').slick({
-                arrows: false,
-                infinite: true,
-                slidesToShow: 1,
-                centerMode: true
-            })
-        if (e.currentTarget.className == 'gallery__popup--cross') {
-            $('.popup__slider--inner').remove();
+        if ($('.gallery__popup--slides').hasClass('gallery__slide--action')) {
+          setTimeout(() => {
+              let slider = $('.showed').clone();
+              $('.gallery__popup--slides').append("<div class='popup__slider--inner'></div>");
+              $('.popup__slider--inner').html(slider);
+              $('.gallery__popup .main__section--title').text($(slider[0]).data('tab'));
+              let gallerySlider  = $('.popup__slider--inner').not('.slick-initialized').slick({
+                  arrows: false,
+                  infinite: false,
+                  slidesToShow: 1,
+                  centerMode: true,
+                  centerPadding: '60px',
+                  dots:true,
+                  responsive: [
+                    {
+                      breakpoint: 730,
+                      settings: {
+                        centerPadding: '0px'
+                      },
+                    },
+                  ]
+              });
+              let galleryRight   = $(".gallery__popup--navigation .slider__button--right");
+              let galleryLeft    = $(".gallery__popup--navigation .slider__button--left");
+              galleryRight.click(() => {
+                gallerySlider.slick("slickNext");
+                checkSliderButtons(gallerySlider, this, galleryLeft);
+              });
+              galleryLeft.click(() => {
+                gallerySlider.slick("slickPrev");
+                checkSliderButtons(gallerySlider, galleryRight, this);
+              });
+            if (e.currentTarget.className == 'gallery__popup--cross' || e.currentTarget.className == 'overlay-wrapper') {
+                $('.popup__slider--inner').remove();
+                $('.gallery__popup .main__section--title').text('');
+            }
+          }, 100);   
+                 
+        } else {
+          $('.overlay').toggleClass('z-indexed');
+
+          vips__list = $('.popup__slider--block');
+          vipText__list = $('.popup__text');
+          vips__list.css('display', 'block').addClass('showed');
+          vipText__list.css('display', 'block').addClass('showed');
+          var tab_target = $(this).data('tab');
+          console.log(tab_target);
+          if (tab_target) {
+              vips__list.filter((i, elem) => {
+                  if ($(elem).data().tab) {
+                    return ($(elem).data().tab).search(tab_target) == -1;  
+                  } else {
+                      return true;
+                  }
+                  
+              }).css('display', 'none').removeClass('showed');  
+              vipText__list.filter((i, elem) => {
+                  if ($(elem).data().tab) {
+                    return ($(elem).data().tab).search(tab_target) == -1;  
+                  } else {
+                      return true;
+                  }
+                
+              }).css('display', 'none').removeClass('showed');    
+          }
+          
+          console.log(tab_target);
+          $('.gallery__popup .main__section--title').text(`Кабина VIP ${tab_target}`);
+          
+            let vipSlider = $('.popup__slider--block.showed').not('.slick-initialized').slick({
+              arrows: false,
+              infinite: false,
+              slidesToShow: 1,
+              centerMode: true,
+              centerPadding: '60px',
+              dots:true,
+              adaptiveHeight: true,
+              responsive: [
+                  {
+                    breakpoint: 730,
+                    settings: {
+                      centerPadding: '0px'
+                    },
+                  },
+                ]
+            });
+            let vipRight   = $(".gallery__popup--navigation .slider__button--right");
+            let vipLeft    = $(".gallery__popup--navigation .slider__button--left");
+            vipRight.click(() => {
+              vipSlider.slick("slickNext");
+              checkSliderButtons(vipSlider, this, vipLeft);
+            });
+            vipLeft.click(() => {
+              vipSlider.slick("slickPrev");
+              checkSliderButtons(vipSlider, vipRight, this);
+            });    
+
+          if (e.currentTarget.className == 'gallery__popup--cross' || e.currentTarget.className == 'overlay-wrapper') {
+            vipSlider.slick('unslick');
+            $('.gallery__popup .main__section--title').text('');
+          }
+
         }
-        }, 100);
+      
+
 
     })
 

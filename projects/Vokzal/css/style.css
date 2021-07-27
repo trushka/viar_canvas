@@ -329,7 +329,10 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     -ms-scroll-chaining: none;
     overscroll-behavior: contain;
-
+    background: rgba(16, 60, 85, 0.7);
+}
+.overlay.z-indexed {
+    z-index: 100;
 }
 .mobile__menu {
     background-color: rgba(38, 74, 115, 0.79);
@@ -654,18 +657,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery__popup {
     position: fixed;
-    top: 20%;
+    top: calc(50% - 100px);
     left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    transform: translate(-50%, -50%);
+    max-width: 840px;
+    width: 90%;
     border: 16px solid rgba(237, 241, 243, 0.27);
     display: none;
+    position: relative;
+    z-index: 10000;
+}
+
+.gallery__popup--slides::after, .gallery__popup--slides::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 101%;
+    display: block;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.gallery__popup--slides::after {
+    right: -17px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 8.01%, #FFFFFF 98.26%);
+}
+
+.gallery__popup--slides::before {
+    left: -17px;
+    background: linear-gradient(272.48deg, rgba(255, 255, 255, 0) 8.01%, #FFFFFF 98.26%);
+    
+}
+.gallery__popup--wrap {
+    padding: 41px 25px 70px;
+    background: #fff;
 }
 .gallery__popup--inner {
-    background: #fff;
-    padding: 80px 120px;
     position: relative;
 
+}
+.gallery__popup--slides {
+    position: relative;
 }
 .gallery__popup--cross {
     z-index: 100;
@@ -673,8 +706,80 @@ h1, h2, h3, h4, h5, h6 {
     top: 19px;
     right: 25px;
     display: block;
+    cursor: pointer;
+}
+.gallery__popup--slides .slick-slide {
+	margin: 0 16px !important;
+    transition: transform .3s;
+    transition-delay: 0.4s;
 }
 
+.gallery__popup--slides .slick-list {
+	margin: 0 -16px !important;
+}
+.gallery__popup--slides .slick-active {
+    z-index: 20;
+}
+.gallery__popup--slides .slick-slide:not(.slick-active, .slick-current) {
+    transform: scale(1, .6);
+}
+.visibilited {
+    visibility: hidden;
+}
+.slick-dots {
+    display: flex !important;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+    height: 15px;
+    align-items: center;
+}
+.slick-dots li {
+    width: 10px;
+    height: 10px;   
+    border-radius: 50%;
+    border: 1px solid #E1915C;
+    cursor: pointer;
+}
+.slick-dots li:not(:last-child) {
+    margin-right: 16px;
+}
+.slick-dots li.slick-active {
+    width: 15px;
+    height: 15px;    
+    background: #E1915C;
+}
+.slick-dots li button { 
+    opacity: 0;
+    font-size: 0; 
+ }
+.gallery__popup--navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 21;
+}
+.gallery__popup--navigation .slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 21;
+}
+.gallery__popup--navigation .slider__button--left {
+    left: 0;
+}
+.gallery__popup--navigation .slider__button--right {
+    right: 0;
+}
+.gallery__popup--navigation .slider__button--left {
+    left: 0;
+}
+.gallery__popup--navigation .slider__button--right {
+    right: 0;
+}
 /* CUSTOM SCREEN */
 
 .custom__screen {
@@ -1368,22 +1473,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------------------------- */
 
-.gallery__popup--slides .slick-slide {
-	margin: 0 26px !important;
-    transition: transform .3s;
-    transition-delay: 0.5s;
-}
-
-.gallery__popup--slides .slick-list {
-	margin: 0 -26px !important;
-}
-
-.gallery__popup--slides .slick-slide:not(.slick-active) {
-    transform: scale(1, .6);
-}
-.visibilited {
-    visibility: hidden;
-}
 
 
 /* ------------------------------------- */
@@ -1874,4 +1963,35 @@ h1, h2, h3, h4, h5, h6 {
     margin: -2px;
     border-radius: inherit;
     background: linear-gradient(to top, black, #CBCBCB);
+}
+
+
+
+
+/* ---------------------- */
+
+.overlay-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.popup__slider--block {
+    display: none;
+}
+.popup__text {
+    display: none;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+}
+.center-popup {
+    top: 50%;
 }
