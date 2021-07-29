@@ -2,8 +2,7 @@ $(document).ready(function () {
     $(".header__burger").click(function () {
         $(".main-nav").toggleClass("active");
     });
-
-
+    
     $(".moto-colors__list li").click(function () {
         $(".moto-colors__list li").removeClass("active");
         $(this).addClass("active");
