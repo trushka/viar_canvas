@@ -400,10 +400,9 @@ h3 {
 
 .banner__left h1 {
   display: inline-block;
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 60px;
+  font-weight: 500;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .banner__left h1 span {
@@ -412,9 +411,8 @@ h3 {
 
 .banner__left > * {
   padding: 20px;
-  background: linear-gradient(107.47deg, rgba(255, 255, 255, 0.3) -11.49%, rgba(255, 255, 255, 0) 105.84%), rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 .banner__left > * + * {
@@ -891,7 +889,7 @@ h3 {
 }
 
 .partners_page {
-  padding-top: 73px;
+  padding-top: 70px;
 }
 
 .partners {
@@ -1042,13 +1040,14 @@ h3 {
 .contact {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 30px;
+  padding-bottom: 42px;
+  padding-top: 112px !important;
   margin-bottom: -50px;
 }
 
 .contact .partners__info {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 43px;
 }
 
 .contact .partners__info li h6 {
@@ -1647,12 +1646,23 @@ h3 {
   margin-top: 60px;
 }
 .moto .header__bottom, .moto .header__top {
-  background: (255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.moto .header__top {
+  box-shadow: none;
+  border-bottom: 1px solid red;
+}
+.moto .header__bottom a, .moto .header__top a {
+  color: #fff;
+
 }
 .grid-wrapper {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 155px);
   display: grid;
-  grid-template-rows: 486px 1fr;
+  grid-template-rows: 485px 1fr;
+}
+.contact {
+  padding-top: 120px;
 }
 .partners__info h4 {
     padding: 20px 30px 20px 20px;
@@ -1685,12 +1695,23 @@ h3 {
   margin-right: auto;
   margin-left: auto;
 }
-.kontakt-col {
-  padding-right: 5px !important;
+
+@media only screen and (max-width: 768px) {
+  .partners_page {
+    padding-top: 81px;    
+  }
+
 }
 @media only screen and (max-height: 975px) {
   .grid-wrapper {
     height: unset;
+  }
+  
+}
+@media only screen and (max-height: 1010px) {
+  .first__slide {
+    background-size: 120% 120% !important;
+    background-position: center !important;
   }
   
 }

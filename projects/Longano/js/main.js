@@ -35,11 +35,10 @@ $(document).ready(function () {
             return false;
         }
         else{
-            console.log('+')
             $.ajax({
-                type: $(this).attr('method'),
-                url: $(this).attr('action'),
-                data: new FormData(this),
+                type: "POST",
+                url: "/mail.php",
+                data: JSON.stringify(formData),
                 async: false,
                 cache: false,
                 contentType: false,
@@ -49,7 +48,38 @@ $(document).ready(function () {
                     $(this).trigger('reset');
                 },
                 error:  function(xhr, str){
-                    alert("Возникла ошибка!", xhr, str);
+                    alert("Возникла ошибка!");
+                }
+            });
+        }
+        return false;
+    });
+    $("#contact-form_handler").submit(function () {
+        var form = $(this);
+        var msg = form.serialize();
+        var formData = new FormData($(this)[0]);
+        var faults = form.find('input').filter(function () {
+            return $(this).data('required') && $(this).val() === "";
+        }).addClass('error');
+        console.log(faults);
+        if((faults.length)){
+            return false;
+        }
+        else{
+            $.ajax({
+                type: "POST",
+                url: "/mail2.php",
+                data: JSON.stringify(formData),
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    openPopup($("#popup_ty"));
+                    $(this).trigger('reset');
+                },
+                error:  function(xhr, str){
+                    alert("Возникла ошибка!");
                 }
             });
         }
