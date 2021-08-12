@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <link href="images/favicon.png" rel="apple-touch-icon-precomposed">
+    <meta property="og:image" content="images/favicon.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Second annual Snap creative challenge: The Future of Co-located Social AR.">
+    <meta property="og:description" content="Snap Inc. will provide up to $100,000 of funding in an effort to foster an ecosystem of AR researchers.">
+
+    <title>Snap Creative Challenge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header header--questionnaire">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__logos">
+                <a href="index.html" class="header__logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <a href="mailto:creative-challenge@snapchat.com" class="header__button button-border button-border--sm">Contact us</a>
+        </div>
+    </div>
+</header>
+
+<section class="questionnaire">
+    <img src="images/icon-cloud-1.png" class="questionnaire__cloud questionnaire__cloud--first" alt="">
+    <img src="images/icon-cloud-2.png" class="questionnaire__cloud questionnaire__cloud--second" alt="">
+
+    <div class="container">
+        <div class="questionnaire__content">
+            <div class="questionnaire__holder">
+                <div class="questionnaire__container">
+                    <form method="POST" action="send.php" id="theForm" class="simform" autocomplete="off">
+                        <div class="simform-inner">
+                            <ol class="questions">
+                                <li>
+                                    <span>
+                                        <label for="q1">
+                                            <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                        </label>
+                                    </span>
+                                    <input id="q1" name="q1" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q2">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q2" name="q2" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q3">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q3" name="q3" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q4">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q4" name="q4" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q5">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q5" name="q5" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q6">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q6" name="q6" type="text"/>
+                                </li>
+                                <li>
+                                    <span><label for="q7">
+                                          <h3 class="main__text-bg">Ambitious vision</h3>
+                                            <h2>What opportunities does AR enable in co-located settings?</h2>
+                                    </label></span>
+                                    <input id="q7" name="q7" type="text"/>
+                                </li>
+                            </ol><!-- /questions -->
+                            <button class="submit" type="submit">Send answers</button>
+                            <div class="controls">
+                                <button class="next"></button>
+                                <div class="progress"></div>
+                                <span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+                                <span class="error-message"></span>
+                            </div><!-- / controls -->
+                        </div>
+                        <div class="final-message">
+                            <div class="final-message__holder">
+                                <div class="final-message__lside">
+                                    <h2 class="main__title">Leave your contact information</h2>
+                                    <div class="final-message__form">
+                                        <div class="final-message__form-item">
+                                            <input name="name" type="text" placeholder="Your Name"
+                                                   class="field-input field-input--name">
+                                        </div>
+                                        <div class="final-message__form-item">
+                                            <input name="company" type="text" placeholder="Company Name"
+                                                   class="field-input field-input--company-name">
+                                        </div>
+                                        <div class="final-message__form-item">
+                                            <input name="phone" required type="text" placeholder="Phone"
+                                                   class="field-input field-input--phone">
+                                        </div>
+                                        <div class="final-message__form-item">
+                                            <input name="email" required type="email" placeholder="Email" class="field-input field-input--email">
+                                        </div>
+                                        <div class="final-message__form-item">
+                                            <input name="site" type="text" placeholder="Website"
+                                                   class="field-input field-input--website">
+                                        </div>
+                                        <div class="final-message__form-item custom-select custom-select--location">
+                                            <select name="country" id="">
+                                                <option value="">Country</option>
+                                                <option>England</option>
+                                                <option>Usa</option>
+                                                <option>Germany</option>
+                                            </select>
+                                        </div>
+                                        <div class="final-message__form-item final-message__form-item--w100">
+                                            <div class="final-message__form-items">
+                                                <div class="final-message__form-item final-message__form-item--auto">
+                                                    <div class="main__text main__text--sm main__text-grey">
+                                                        By clicking on the button you agree to the processing of personal data,
+                                                        the Terms of Condition and Privacy Policy
+                                                    </div>
+                                                </div>
+                                                <div class="final-message__form-item final-message__form-item--action">
+                                                    <button class="button-orange">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="final-message__rside">
+                                    <img src="images/img-5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/form-animate/modernizr.custom.js"></script>
+<script src="assets/js/form-animate/classie.js"></script>
+<script src="assets/js/form-animate/stepsForm.js"></script>
+<script src="assets/js/form-animate/form-animate.js"></script>
+
+</body>
+
+</html>
