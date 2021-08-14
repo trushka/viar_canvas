@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 
-    $('.promotion__active, .question__block').click(function() {
+    $('.promotion__item, .question__block').click(function() {
         $(this).toggleClass('c-collapsed');
     })
 
