@@ -626,6 +626,10 @@
     .promotion__sidebar {
         margin-top: 0;
     }
+    .mobile-menu c-button {
+        width: 100%;
+    }
+
     /* .help-panel {
         margin-bottom: 0;
     } */
