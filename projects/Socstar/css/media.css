@@ -631,10 +631,10 @@
     } */
 }
 
-@media only screen and (min-width: 1260px) {
-    /* .container {
-        max-width: 1250px !important;
-    } */
+@media only screen and (min-width: 1600px) {
+    .header-nav ul li:not(:last-child) {
+        margin-right: 53px;
+    }
 }
 
 @media only screen and (min-width: 475px) {
