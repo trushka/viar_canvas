@@ -152,6 +152,16 @@ img {
 .block-margin {
     margin: 60px 0;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .c-collapsed .promotion__active {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -771,6 +781,7 @@ body.no-boot.body {
 .c-collapsed .question-item {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    border-bottom: 0;
 }
 
 /* footer */
@@ -1608,6 +1619,13 @@ tbody > tr:not(:last-child):not(.tr-title) {
 .select .dropdown-menu {
     margin: 0;
     padding: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.select .show .btn {
+    border-bottom: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 .c-input-row {
     display: -webkit-box;
