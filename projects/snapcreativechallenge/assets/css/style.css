@@ -5761,3 +5761,11 @@ body.is-open-popup {
     font-size: 14px;
   }
 }
+#proposals .proposals__inner-center img {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+} 
