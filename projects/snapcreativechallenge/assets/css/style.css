@@ -3740,7 +3740,9 @@ body.is-open-popup {
 .proposals {
   background-color: #fff;
 }
-
+#proposals .proposals__content {
+  padding: 0 !important;
+}
 .proposals__content {
   padding: 200px 0;
 }
