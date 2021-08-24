@@ -1,0 +1,27 @@
+<svg width="596" height="596" viewBox="0 0 596 596" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="298" y="0" width="298" height="298">
+<rect x="298" width="298" height="298" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="298" width="298" height="298" fill="#F7F1DF"/>
+<rect x="128" y="136" width="23" height="468" transform="rotate(-45 128 136)" fill="#F8A3E5"/>
+<rect x="160" y="104" width="23" height="468" transform="rotate(-45 160 104)" fill="#F8A3E5"/>
+<rect x="192" y="72" width="23" height="468" transform="rotate(-45 192 72)" fill="#F8A3E5"/>
+<rect x="224" y="40" width="23" height="468" transform="rotate(-45 224 40)" fill="#F8A3E5"/>
+<rect x="257" y="7" width="23" height="468" transform="rotate(-45 257 7)" fill="#F8A3E5"/>
+<rect x="289" y="-25" width="23" height="468" transform="rotate(-45 289 -25)" fill="#F8A3E5"/>
+<rect x="321" y="-57" width="23" height="468" transform="rotate(-45 321 -57)" fill="#F8A3E5"/>
+<rect x="353" y="-89" width="23" height="468" transform="rotate(-45 353 -89)" fill="#F8A3E5"/>
+<rect x="386" y="-121" width="23" height="468" transform="rotate(-45 386 -121)" fill="#F8A3E5"/>
+<rect x="418" y="-154" width="23" height="468" transform="rotate(-45 418 -154)" fill="#F8A3E5"/>
+</g>
+<rect width="298" height="298" fill="#B27CF8"/>
+<rect y="298" width="298" height="298" fill="white"/>
+<rect x="298" y="298" width="298" height="298" fill="#B27CF8"/>
+<path d="M297.5 595C215.348 595 148.75 528.402 148.75 446.25C148.75 364.098 215.348 297.5 297.5 297.5V351.936C245.412 351.936 203.186 394.162 203.186 446.25C203.186 498.338 245.412 540.564 297.5 540.564V595Z" fill="#F8A3E5"/>
+<path d="M297.5 297.5C215.348 297.5 148.75 230.902 148.75 148.75C148.75 66.5976 215.348 0 297.5 0V297.5Z" fill="#F7F1DF"/>
+<path d="M0 595C82.1524 595 148.75 528.402 148.75 446.25C148.75 364.098 82.1524 297.5 0 297.5V595Z" fill="#0C0A7A"/>
+<path d="M297.5 595C379.652 595 446.25 528.402 446.25 446.25C446.25 364.098 379.652 297.5 297.5 297.5V595Z" fill="#F7F1DF"/>
+<path d="M595 595C512.848 595 446.25 528.402 446.25 446.25C446.25 364.098 512.848 297.5 595 297.5V595Z" fill="#0C0A7A"/>
+<circle cx="74.5" cy="73.5" r="34.5" fill="#F8A3E5"/>
+</svg>

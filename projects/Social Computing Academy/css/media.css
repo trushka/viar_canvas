@@ -1,0 +1,329 @@
+@media only screen and (max-width: 2559px) {
+    .header .container {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1599px) {
+    .screen-squares {
+        max-width: 470px;
+    }
+    .screen-square:nth-child(3n) {
+        display: none;
+    }
+    .screen-square {
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width: 1350px) {
+    .screen-squares {
+        max-width: 235px;
+    }
+    .screen-square:not(:nth-child(3n + 1)) {
+        display: none;
+    }
+    .screen-square {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1270px) {
+    .header .container {
+        padding: 0 25px;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .screen-squares {
+        position: unset;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .screen-square {
+        max-width: unset;
+        height: unset;
+        max-height: unset;
+    }
+    .screen-square:nth-child(1),
+    .screen-square:nth-child(2),
+    .screen-square:nth-child(3),
+    .screen-square:nth-child(4),
+    .screen-square:nth-child(5),
+    .screen-square:nth-child(6) {
+        display: block;
+    }
+    .screen__wrapper {
+        padding-bottom: 120px;
+    }
+    .section-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .header-nav {
+        position: fixed;
+        left: 0;
+        padding: 20px 20px 63px;
+        width: 100%;
+        top: 120px;
+        background: #0C0A7A;
+        z-index: 2;
+        transform: translateX(100%);
+        transition-property: transform;
+        transition-duration: .5s;
+        display: none;
+    }
+    .is-open .header-nav {
+        transform: translateX(0);
+    }
+    .header-nav ul {
+        flex-direction: column;
+    }
+    .header-nav li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .nav-item {
+        text-align: center;
+        font-size: 24px;
+    }
+    .header__wrapper {
+        justify-content: space-between;
+    }
+    .description__screen--wrapper {
+        flex-direction: column-reverse;
+    }
+    .description__squares {
+        width: 100%;
+        max-width: 800px;
+    }
+    .description-info {
+        max-width: 800px;
+    }
+    .description__content {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .description-item {
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 175px;
+        height: 50px;
+    }
+    
+    .header__wrapper {
+        height: 90px;
+    }
+    .screen-squares {
+        position: unset;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .screen-square:nth-child(7),
+    .screen-square:nth-child(8),
+    .screen-square:nth-child(9),
+    .screen-square:nth-child(10),
+    .screen-square:nth-child(11),
+    .screen-square:nth-child(10) {
+        display: none;
+    }
+    .information__screen--row {
+        flex-direction: column;
+    }
+    .information__screen--row > div {
+        width: 100%;
+    }
+    .information-title {
+        order: 1;
+    }
+    .information-desc {
+        order: 2;
+    }
+    .information-social--text {
+        margin: 50px 0 50px;
+        order: 3;
+    }
+    .information-social {
+        order: 4;
+    }
+    .goals__screen--wrapper {
+        flex-direction: column-reverse;
+    }
+    .goals__screen--wrapper > div {
+        width: 100%;
+    }
+    .goals-title {
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    .goals-scrolling {
+        margin-top: 70px;
+    }
+    .goals-scrolling-title, .goals-static-title {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .screen-title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .screen-text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin: 30px 0;
+    }
+    .main-btn {
+        width: 158px;
+        height: 54px;
+        font-size: 20px;
+        margin-right: 31px;
+    }
+    .title-slogan {
+        bottom: unset;
+        transform: unset;
+        top: 0;
+        right: 0;
+    }
+    .screen__wrapper {
+        padding: 68px 0 87px;
+    }
+    .description-info {
+        margin: 30px 0 50px;
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    .screen-title, .section-title {
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .m-section {
+        padding: 100px 0 0;
+    }
+    .title-slogan {
+        width: 132px;
+        height: 92px;
+        top: -50px;
+        right: 0;
+    }
+    .title-slogan p {
+        font-size: 18px;
+    }
+    .btn-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+    .btn-inner {
+        width: 30px;
+        height: 30px;
+    }
+    .screen__wrapper {
+        padding: 68px 0 50px;
+    }
+    .header-nav {
+        top: 90px;
+    }
+    .desc-img {
+        width: 64px;
+        height: 64px;
+    }
+    .desc-info p:last-child {
+        font-size: 18px;
+    }
+    .soc-info {
+        max-width: 229px;
+    }
+    .goals-img {
+        margin-right: 21px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .screen-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .title-slogan {
+        top: -90px;
+    }
+    .main-btn {
+        margin-right: 15px;
+    }
+    .screen-text {
+        margin: 20px 0;
+    }
+    .btn-text {
+        font-size: 14px;
+    }
+    .main-btn {
+        width: 130px;
+    }
+    .soc-info {
+        max-width: 200px;
+    }
+    .desc-info {
+        max-width: 190px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 2100px) {
+    .header-logo {
+        margin-right: 12vw;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1020px) and (max-width: 1830px) {
+    .header-logo {
+        margin-right: 3vw;
+    }
+    .header-nav li:not(:last-child) {
+        margin-right: 1.5vw;
+    }
+}
+
+
+@media only screen and (max-height: 630px) {
+    .header-nav {
+        height: calc(100% - 82px);
+        max-height: calc(100% - 82px);
+        overflow-y: auto;
+    }
+    
+}
+
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .collapsing {
+        transition: none;
+    }
+}
