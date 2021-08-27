@@ -572,6 +572,78 @@ body {
 .structure__screen {
     padding: 150px 0;
     background: #0C0A7A;
+    color: #FFFFFF;
+}
+.structure__screen--wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.structure-text {
+    max-width: 595px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9797ED;
+}
+.structure-arrow {
+    width: 150px;
+    margin: 0 40px;
+}
+.structure-title {
+    color: #FFFFFF;
+    max-width: 300px;
+}
+.structure__scrolling--container {
+    position: relative;
+    margin-top: 83px;
+    overflow: hidden;
+    height: 474px;
+}
+.structure__scrolling-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2220px;
+    height: 100%;
+    display: flex;
+}
+.structure__scrolling-item {
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 59px 49px 44px;
+    margin-right: 40px;
+    width: calc(100% / 5 - 40px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.structure__inner-row {
+    display: flex;
+    justify-content: space-between;`
+
+}
+.structure-icon {
+    width: 50px;
+}
+.structure-id {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #8CF2F2;
+}
+.structure-inner--title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 122%;
+    margin-top: 23px;
+    color: #FFFFFF;
+}
+.structure-inner--text {
+    justify-content: flex-end;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9797ED;
+    margin-top: auto;
 }
 
 /* reading */
@@ -778,7 +850,7 @@ body {
 
 
 .research__screen {
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 .research-title span::after {
     content: "";
@@ -860,7 +932,9 @@ body {
     margin: 59px 0 29px;
 }
 
-
+.research__screen--main {
+    margin-bottom: 100px;
+}
 
 
 
@@ -878,10 +952,11 @@ body {
     display: flex;
     top: 0;
     left: 0;
+    width: 2400px;
 }
 .research__scroll--item {
     width: 300px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 .milestone-title {
     font-weight: 500;
@@ -891,12 +966,35 @@ body {
 }
 .milestone-arrow {
     width: 171px;
-    margin-top: 20px;
+    margin-top: 6px;
+}
+.research-date {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #9E9EC8;
+}
+.research-date img {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+}
+.research-inner--title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0C0A7A;
+    margin: 30px 0 12px;
+}
+.research-text--inner {
+    color: #111111;
+    opacity: 0.6;
 }
 
-
-
-
+.research__scroll--item-mobile {
+    display: none;
+}
 
 
 

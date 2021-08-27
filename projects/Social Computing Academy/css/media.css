@@ -41,6 +41,20 @@
         max-width: 420px;
         margin: 0 80px 0 40px;
     }
+    .structure__screen--wrapper {
+        padding-bottom: 120px;
+    }
+    .structure-arrow {
+        width: 110px;
+        margin: 0 40px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .structure__scrolling--container {
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 1020px) {
     .screen-squares {
@@ -138,9 +152,6 @@
         margin-top: 60px;
         flex: 0 0 100%;
     }
-    .schedule-title span::after {
-        width: 60%;
-    }
     .research-content, .research-img {
         flex: 0 0 100%;
     }
@@ -193,6 +204,12 @@
     .aknowledgements-left {
         flex: 0 0 100%;
         margin: 0;
+    }
+    .structure__screen--wrapper {
+        flex-direction: column;
+    }
+    .structure-title {
+        margin-bottom: 40px;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -331,6 +348,12 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
+    .research__scroll--item {
+        margin-right: 50px;
+    }
+    .research__scroll--abs {
+        width: 2100px;
+    }
 }
 
 
@@ -431,6 +454,14 @@
     }
     .footer__social a:first-child {
         margin-right: 20px;
+    }
+    .research__scroll--item-mobile {
+        display: block;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    .research__scroll--item:first-child {
+        display: none;
     }
 }
 
@@ -540,8 +571,34 @@
     .schedule-row {
         margin-bottom: 30px;
     }
+    .structure-arrow {
+        width: 70px;
+        transform: translateX(-50%) rotate(22deg);
+    }
+    .structure__screen--wrapper {
+        padding-bottom: 80px;
+        margin-bottom: 10px;
+    }
+    .research__scroll--item {
+        margin-right: 20px;
+    }
+    .research__scroll--abs {
+        width: 1600px;
+    }
 }
-
+@media only screen and (max-width: 445px) {
+    .structure__scrolling-item {
+        padding: 44px 30px 40px;
+        width: 335px;
+    }
+    .structure-inner--title {
+        font-size: 30px;
+        line-height: 110%;
+    }
+    .structure__scrolling-abs {
+        width: 1875px;
+    }
+}
 @media only screen and (max-width: 360px) {
     .screen-title {
         font-size: 36px;
@@ -586,6 +643,21 @@
     .aknowledgements-title {
         font-size: 30px;
     }
+    .structure__scrolling-item {
+        padding: 30px 20px 30px;
+        width: 285px;
+    }
+    .structure-inner--title {
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .structure__scrolling-abs {
+        width: 1625px;
+    }
+    .research__scroll--item {
+        width: 285px;
+    }
+
 }
 
 
