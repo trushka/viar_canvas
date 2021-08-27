@@ -850,7 +850,7 @@ body {
 
 
 .research__screen {
-    padding: 150px 0 0;
+    padding: 150px 0;
 }
 .research-title span::after {
     content: "";
