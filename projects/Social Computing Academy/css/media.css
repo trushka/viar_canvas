@@ -773,6 +773,31 @@
     .research__scroll--abs {
       width: 1600px;
     }
+    .description-title span::after,
+    .information-title span::after {
+        background-size: cover;
+        height: 21px;
+        bottom: 0px;
+    }
+    .goals-title span::after {
+        width: 105%;
+        height: 25px;
+        bottom: 1px;
+    }
+    .assignments-title span::after {
+        width: 147px;
+    }
+    .research-title span::after {
+        height: 21px;
+        background: url(../img/descriptionL.svg) no-repeat;
+        background-size: cover;
+        bottom: 2px;
+        left: 2px;
+    }
+    .schedule-title span::after {
+        width: 100%;
+        height: 23px;
+    }
   }
   @media only screen and (max-width: 445px) {
     .structure__scrolling-item {

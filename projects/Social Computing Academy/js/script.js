@@ -113,25 +113,27 @@ $(document).ready(function () {
       ease: Linear.easeNone,
     });
 
-  var _deskHeight = $(".research__screen--main").outerHeight();
-  var _mobHeight = $(".research__scroll--item-mobile").outerHeight();
-
+  var _deskHeight = $(".research__screen--main").outerHeight(true);
+  var _mobHeight = $(".research__scroll--item-mobile").outerHeight(true);
+  var _research = (() => mediaChecker("max", 800, "height") && mediaChecker("max", 425) ? "#research-scroll" : "#research")();
   
   new ScrollMagic.Scene({
     offset: (() =>
       mediaChecker("max", 700, "height") && mediaChecker("max", 425)
-        ? _deskHeight + _mobHeight
+        ? 100
+        : mediaChecker("max", 800, "height") && mediaChecker("max", 425)
+        ? 0
         : mediaChecker("max", 700, "height") && mediaChecker("min", 700)
         ? _deskHeight + 100
         : mediaChecker("max", 700, "height") && mediaChecker("max", 700)
         ? _deskHeight + _mobHeight
         : _deskHeight)(),
-    triggerElement: "#research",
+    triggerElement: _research,
     triggerHook: "onLeave",
     duration: "100%",
     triggerHook: 0,
   })
-    .setPin("#research")
+    .setPin(_research)
     .setTween(horizontalSlide)
     .addTo(controller);
 
@@ -163,7 +165,7 @@ $(document).ready(function () {
       ease: Linear.easeNone,
     });
 
-
+console.log($(".structure__screen--main").outerHeight())
   new ScrollMagic.Scene({
     offset: (() =>
       mediaChecker("min", 700, "height")
