@@ -1104,7 +1104,7 @@ body {
   perspective: 1000;
 }
 .research__scroll--abs {
-    position: fixed;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
