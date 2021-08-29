@@ -203,6 +203,9 @@ body {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
 }
+.h-cent__left {
+    display: flex;
+}
 .h-cent__right {
     width: 50%;
     display: -webkit-box;
