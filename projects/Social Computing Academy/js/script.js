@@ -16,7 +16,7 @@ $(document).ready(function () {
     var faults = form.find('input').filter(function () {
         return $(this).data('required') && $(this).val() === "";
     }).addClass('error');
-    console.log(faults);
+    console.log(formData);
     if((faults.length)){
         return false;
     }
