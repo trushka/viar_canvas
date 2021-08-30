@@ -1280,6 +1280,7 @@ body {
     display: flex;
     top: 50%;
     left: 0;
+    font-weight: 500;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
