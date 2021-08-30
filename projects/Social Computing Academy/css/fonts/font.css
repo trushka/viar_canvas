@@ -1,47 +1,37 @@
 @font-face {
     font-family: 'Recoleta Alt';
-    src: url('RecoletaAlt-SemiBold.eot');
-    src: local('Recoleta Alt SemiBold'), local('RecoletaAlt-SemiBold'),
-        url('RecoletaAlt-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('RecoletaAlt-SemiBold.woff2') format('woff2'),
-        url('RecoletaAlt-SemiBold.woff') format('woff'),
-        url('RecoletaAlt-SemiBold.ttf') format('truetype');
+    src: url('RECOLETA-SEMIBOLD.TTF') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Recoleta Alt';
-    src: url('RecoletaAlt-Medium.eot');
-    src: local('Recoleta Alt Medium'), local('RecoletaAlt-Medium'),
-        url('RecoletaAlt-Medium.eot?#iefix') format('embedded-opentype'),
-        url('RecoletaAlt-Medium.woff2') format('woff2'),
-        url('RecoletaAlt-Medium.woff') format('woff'),
-        url('RecoletaAlt-Medium.ttf') format('truetype');
+    src: url('RECOLETA-MEDIUM.TTF') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-Medium.ttf') format('truetype');
+    src: url('CIRCULARSTD-MEDIUM.TTF') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-Black.ttf') format('truetype');
+    src: url('CIRCULARSTD-BOOK.TTF') format('truetype');
     font-weight: 450;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-BlackItalic.ttf') format('truetype');
+    src: url('CIRCULARSTD-BOOKITALIC.TTF') format('truetype');
     font-weight: 450;
     font-style: italic;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-Bold.ttf') format('truetype');
+    src: url('CIRCULARSTD-BOLD.TTF') format('truetype');
     font-weight: 700;
     font-style: normal;
 }

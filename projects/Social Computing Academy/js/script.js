@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+  
+    });
+  });
+
+
+
   // MOBILE MENU
   $(".hamburger").click(function () {
     $(this).toggleClass("is-active");
@@ -165,7 +177,7 @@ $(document).ready(function () {
       ease: Linear.easeNone,
     });
 
-console.log($(".structure__screen--main").outerHeight())
+
   new ScrollMagic.Scene({
     offset: (() =>
       mediaChecker("min", 700, "height")

@@ -399,7 +399,7 @@ body {
     margin-top: 44px;
     border-bottom: 1px solid #EDEDF5;
 }
-.description-item p {
+.description-item > p {
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
@@ -425,6 +425,14 @@ body {
 .description-collapse {
     color: #111111;
     opacity: 0.6;
+}
+.description-collapse p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.description-collapse ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
 }
 .collapse:not(.show) {
     display: none;
@@ -1570,15 +1578,24 @@ body {
 }
 .schedule-collapse--inner p {
     color: #000000;
+    display: block;
+    min-height: 20px;
     opacity: 0.6;
 }
-.schedule-collapse--inner p a {
+.schedule-collapse--inner ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #000000;
+    opacity: 0.6;
+}
+.schedule-collapse--inner a {
     color: #B27CF8;
 }
 .schedule-collapse--inner p:not(:last-child) {
     margin-bottom: 20px;
 }
 .schedule-collapse--inner span {
+    display: block;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
