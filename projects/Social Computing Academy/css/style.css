@@ -1488,7 +1488,7 @@ body {
         -ms-flex: 0 0 58%;
             flex: 0 0 58%;
 }
-.schedule-text span {
+.schedule-text a {
     color: #CDAEF7;
 }
 .schedule-tab {

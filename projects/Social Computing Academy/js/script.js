@@ -9,7 +9,38 @@ $(document).ready(function () {
     });
   });
 
-
+  $(".form").submit(function () {
+    var form = $(this);
+    var msg = form.serialize();
+    var formData = new FormData($(this)[0]);
+    var faults = form.find('input').filter(function () {
+        return $(this).data('required') && $(this).val() === "";
+    }).addClass('error');
+    console.log(faults);
+    if((faults.length)){
+        return false;
+    }
+    else{
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: formData,
+            async: false,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function(data) {
+                form[0].reset();
+                // openPopup($("#popup_ty"));
+                $(this).trigger('reset');
+            },
+            error:  function(xhr, str){
+                alert("Возникла ошибка!");
+            }
+        });
+    }
+    return false;
+});
 
   // MOBILE MENU
   $(".hamburger").click(function () {
