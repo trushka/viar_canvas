@@ -8,7 +8,7 @@ if (isset($_POST['email'])) {$email = $_POST['email'];}
 
 
 /* Сюда впишите свою эл. почту */
-$address = "iTeplik@gmail.com";
+$address = "teplin.dev@gmail.com";
 
 
 /* А здесь прописывается текст сообщения, \n - перенос строки */
