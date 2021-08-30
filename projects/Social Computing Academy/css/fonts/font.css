@@ -1,37 +1,37 @@
 @font-face {
     font-family: 'Recoleta Alt';
-    src: url('RECOLETA-SEMIBOLD.TTF') format('truetype');
+    src: url('/RECOLETA-SEMIBOLD.TTF') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Recoleta Alt';
-    src: url('RECOLETA-MEDIUM.TTF') format('truetype');
+    src: url('/RECOLETA-MEDIUM.TTF') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CIRCULARSTD-MEDIUM.TTF') format('truetype');
+    src: url('/CIRCULARSTD-MEDIUM.TTF') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CIRCULARSTD-BOOK.TTF') format('truetype');
+    src: url('/CIRCULARSTD-BOOK.TTF') format('truetype');
     font-weight: 450;
     font-style: normal;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CIRCULARSTD-BOOKITALIC.TTF') format('truetype');
+    src: url('/CIRCULARSTD-BOOKITALIC.TTF') format('truetype');
     font-weight: 450;
     font-style: italic;
 }
 @font-face {
     font-family: 'Circular Std';
-    src: url('CIRCULARSTD-BOLD.TTF') format('truetype');
+    src: url('/CIRCULARSTD-BOLD.TTF') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
