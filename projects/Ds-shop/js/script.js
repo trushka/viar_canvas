@@ -71,6 +71,7 @@ $(document).ready(function () {
     dots: true
   });
 
+  
   let auction = $('.auction__slider').not('.slick-initialized').slick({
     slidesToShow: 4,
     prevArrow: $('.slider-arr__auction .arr-left'),
@@ -102,7 +103,7 @@ $(document).ready(function () {
   $('.brands__slider').not('.slick-initialized').slick({
     slidesToShow: 6,
     prevArrow: $('.slider-arr__brands .arr-left'),
-    nextArrow: $('.slider-arr__brandsn .arr-right'),
+    nextArrow: $('.slider-arr__brands .arr-right'),
     dots: false,
     responsive: [
       {

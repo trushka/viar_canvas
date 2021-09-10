@@ -1037,11 +1037,11 @@ select.current-lang::-ms-expand {
 .auction__slider .slick-list {
     margin: 0 -12px;
 }
-/* .auction__slider .slick-list {
+.auction__slider .slick-list {
     overflow-x: clip;
     overflow-y: visible;
     overscroll-behavior: none;
-} */
+}
 .auction-price-btn.active::after, .info-buy.active::after {
     content: "";
     position: absolute;
@@ -1121,6 +1121,12 @@ select.current-lang::-ms-expand {
     margin: 0 -15px;
 }
 
+.slider-arr__brands .arr-left {
+    left: 10px;
+}
+.slider-arr__brands .arr-right {
+    right: 10px;
+}
 /* shop */
 
 .shop__screen {
