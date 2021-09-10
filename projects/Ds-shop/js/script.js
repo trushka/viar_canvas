@@ -79,7 +79,7 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-          breakpoint: 1440,
+          breakpoint: 1340,
           settings: {
               slidesToShow: 3
           }
@@ -147,12 +147,20 @@ $(document).ready(function () {
     $('.footer__list-first').unbind('click');
   }
 
+  $('.cross').click(function() {
+    $(this).closest('.selected__filter--item').fadeOut();
+  })
 
 
   $('.auction-tool, .auction-price-btn, .info-buy').click(function(e) {
     e.preventDefault();
     $(this).toggleClass('active');
    
+  })
+
+  $('.catalog__filter').click(function() {
+    $(this).toggleClass('active');
+    $(this).next('.filter__inner').slideToggle();
   })
 
   function mediaChecker(max_min, resolution, width = "width") {
