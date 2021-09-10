@@ -16,6 +16,14 @@
         margin-right: 0;
         margin-bottom: 10px;
     }
+    .about-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .about-desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (max-width: 1220px) {
@@ -118,6 +126,9 @@
     .brands__slider .slick-list {
         margin: 0 -7px;
     }
+    .ms-container {
+        padding: 0 15px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -206,6 +217,9 @@
     }
     .subscribe-email img {
         margin-right: 15px;
+    }
+    .list-coll li:hover {
+        font-weight: normal;
     }
 }
 
@@ -347,9 +361,7 @@
     .footer__wrapper .col-12 {
         margin: 11px 0;
     }
-    .list-coll li:hover {
-        font-weight: normal;
-    }
+    
 }
 
 
