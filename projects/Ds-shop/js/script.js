@@ -93,6 +93,13 @@ $(document).ready(function () {
       {
           breakpoint: 700,
           settings: {
+              slidesToShow: 2,
+              // variableWidth: true 
+          }
+      },
+      {
+          breakpoint: 550,
+          settings: {
               slidesToShow: 1,
               variableWidth: true 
           }
