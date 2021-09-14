@@ -206,83 +206,124 @@ $(document).ready(function () {
     }
   });
 
-
-    // form validation
-    $(".login-form").validate({
-      errorPlacement: function() {
-
-      },
-      rules:{
-        email:{
-          required: true,
-          minlength: 2,
-          email: true
-        },
-        password:{
-          required: true,
-          minlength: 8
-        },
-        remember: {
-          required: true,
-          maxlength: 2
-        }
-      }
-  });
-  $(".register-form").validate({
-    errorPlacement: function() {
-
-    },
-    rules:{
-      name:{
+  // form validation
+  $(".login-form").validate({
+    errorPlacement: function () {},
+    rules: {
+      email: {
         required: true,
         minlength: 2,
-        integer: false
+        email: true,
       },
-      surname:{
+      password: {
         required: true,
-        minlength: 2,
-        integer: false
-      },
-      phone:{
-        required: true,
-        matches: "\+38[0-9]+",
-        minlength:10,
-      },
-      email:{
-        required: true,
-        minlength: 2,
-        email: true
-      },
-      password:{
-        required: true,
-        minlength: 8
+        minlength: 8,
       },
       remember: {
         required: true,
-        maxlength: 2
-      }
-    }
-});
+        maxlength: 2,
+      },
+    },
+  });
+  $(".register-form").validate({
+    errorPlacement: function () {},
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        integer: false,
+      },
+      surname: {
+        required: true,
+        minlength: 2,
+        integer: false,
+      },
+      phone: {
+        required: true,
+        matches: "+38[0-9]+",
+        minlength: 10,
+      },
+      email: {
+        required: true,
+        minlength: 2,
+        email: true,
+      },
+      password: {
+        required: true,
+        minlength: 8,
+      },
+      remember: {
+        required: true,
+        maxlength: 2,
+      },
+    },
+  });
 
-  $('.header-info, .popup-cross, .overlay').click(function() {
-    $('.popup__layout').fadeToggle();
-    $('.popup__login').fadeToggle();
-    $('body').toggleClass('overflowed');
+  $('.popup-cross, .overlay').click(function() {
+    $("body").removeClass("overflowed");
+    $(".popup__layout").fadeToggle();
+    $(".popup-window").fadeOut();
+
   })
+  $(".header-cabinet").click(function () {
+    $("body").addClass("overflowed");
+    $(".popup__layout").fadeIn();
+    $(".popup__login").fadeIn();
+  });
+  $(".log-reg").click(function () {
+    $("body").addClass("overflowed");
+    $(".popup__registration").fadeOut();
+    $(".popup__login").fadeIn();
+  });
 
-  $('.cart-delivery--item .checkbox-cart--wrapper input').click(function() {
-    $('.cart-delivery--item').removeClass('active');
-    $(this).closest('.cart-delivery--item').addClass('active');
-  })
-  $('.cart-payment--item .checkbox-cart--wrapper input').click(function() {
-    $('.cart-payment--item').removeClass('active');
-    $(this).closest('.cart-payment--item').addClass('active');
-  })
+  $('.register:not(.log-reg)').click(function () {
+    $("body").addClass("overflowed");
+    $(".popup__login").fadeOut();
+    $(".popup__registration").fadeIn();
+  });
+  $('.credit-btn').click(function () {
+    $("body").addClass("overflowed");
+    $(".popup__layout").fadeIn();
+    $(".popup__credit").fadeIn();
+  });
+  $('.click-btn').click(function () {
+    $("body").addClass("overflowed");
+    $(".popup__layout").fadeIn();
+    $(".popup__click").fadeIn();
+  });
 
-
-
+  $(".cart-delivery--item .checkbox-cart--wrapper input").click(function () {
+    $(".cart-delivery--item").removeClass("active");
+    $(this).closest(".cart-delivery--item").addClass("active");
+  });
+  $(".cart-payment--item .checkbox-cart--wrapper input").click(function () {
+    $(".cart-payment--item").removeClass("active");
+    $(this).closest(".cart-payment--item").addClass("active");
+  });
 
   function mediaChecker(max_min, resolution, width = "width") {
     return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
   }
+
+  $(".card__menu li a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
