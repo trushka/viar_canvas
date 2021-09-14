@@ -550,9 +550,9 @@
       <div class="header__main">
         <div class="ms-container">
           <div class="header__main--wrapper">
-            <div class="header__logo logo">
+            <a href="#" class="header__logo logo">
               <img src="img/logo.svg" alt="">
-            </div>
+            </a>
             <div class="header__search-bar search-bar">
               <form action="" class="form header-form">
                 <div class="form-wrapper">
@@ -689,6 +689,12 @@
                 <div class="catalog__wrapper">
                     <div class="breadcrumbs">
                         <ul>
+                            <li class="mobile-arrow">
+                                <a href="#"><svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 9L5 5L1 1" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                            </li>
                             <li><a href="#">Главная /&nbsp;	</a></li>
                             <li><a href="#">Пылесосы</a></li>
                         </ul>
@@ -2058,8 +2064,478 @@
     </footer>
 
 
+
+    <!-- popups -->
+
+    <div class="popup__layout">
+      <div class="overlay"></div>
+      <div class="layout">
+        <div class="popup__login popup-window">
+          <div class="popup__inner">
+            <div class="popup-title">
+              <h4 class="h4"><span>Вход</span></h4>
+              <div class="popup-cross">
+                <svg
+                  width="26"
+                  height="25"
+                  viewBox="0 0 26 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L24 23M2 23L24 2"
+                    stroke="#848484"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="popup-content">
+              <form action="" class="popup-form login-form">
+                <div class="form-inner">
+                  <div class="input__column">
+                    <div class="input__group">
+                      <label for="" class="label">Эл. почта или телефон</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="email" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Пароль</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="password" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="remember-row">
+                    <div class="popup__check">
+                      <label>
+                        <input name="remember" type="checkbox" required />
+                        <span class="checkmark"></span>Запомнить пароль
+                      </label>
+                    </div>
+                    <a href="#" class="remember-pass"> Напомнить пароль </a>
+                  </div>
+                  <button class="popup__form--btn">Войти</button>
+                  <a href="#" class="register"> Зарегистрироваться </a>
+                </div>
+                <div class="form-separator">
+                  <div></div>
+                  <span>Или</span>
+                  <div></div>
+                </div>
+                <div class="form-auth">
+                  <div class="label">Войти как пользователь</div>
+                  <a href="#" class="auth-btn">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26Z"
+                        fill="#3B5998"
+                      />
+                      <path
+                        d="M16.2682 13.5089H13.9485V22.0071H10.434V13.5089H8.76244V10.5222H10.434V8.58955C10.434 7.20747 11.0905 5.04327 13.9798 5.04327L16.5831 5.05417V7.9532H14.6942C14.3844 7.9532 13.9487 8.108 13.9487 8.76729V10.525H16.5752L16.2682 13.5089Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                  <a href="#" class="auth-btn">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.09375 13C6.09375 11.7118 6.44866 10.5051 7.06525 9.47188V5.08905H2.68242C0.942906 7.34821 0 10.1015 0 13C0 15.8985 0.942906 18.6518 2.68242 20.911H7.06525V16.5281C6.44866 15.4949 6.09375 14.2882 6.09375 13Z"
+                        fill="#FBBD00"
+                      />
+                      <path
+                        d="M13 19.9063L9.95312 22.9532L13 26C15.8985 26 18.6518 25.0571 20.911 23.3176V18.9395H16.5328C15.4905 19.5583 14.2787 19.9063 13 19.9063Z"
+                        fill="#0F9D58"
+                      />
+                      <path
+                        d="M7.06522 16.5281L2.68239 20.911C3.02679 21.3582 3.40181 21.7866 3.8076 22.1924C6.26298 24.6478 9.52755 26 13 26V19.9063C10.48 19.9063 8.27137 18.5494 7.06522 16.5281Z"
+                        fill="#31AA52"
+                      />
+                      <path
+                        d="M26 13C26 12.2091 25.9284 11.4167 25.7871 10.6449L25.6728 10.0204H13V16.1141H19.1675C18.5686 17.3055 17.6477 18.2775 16.5327 18.9395L20.9109 23.3177C21.3582 22.9733 21.7865 22.5982 22.1924 22.1925C24.6477 19.737 26 16.4724 26 13Z"
+                        fill="#3C79E6"
+                      />
+                      <path
+                        d="M17.8835 8.11652L18.4221 8.65511L22.731 4.34622L22.1924 3.80763C19.737 1.35225 16.4725 0 13 0L9.95312 3.04688L13 6.09375C14.8447 6.09375 16.579 6.8121 17.8835 8.11652Z"
+                        fill="#CF2D48"
+                      />
+                      <path
+                        d="M13 6.09375V0C9.52759 0 6.26302 1.35225 3.80759 3.80758C3.4018 4.21337 3.02678 4.64171 2.68238 5.08904L7.06521 9.47187C8.27142 7.45062 10.48 6.09375 13 6.09375Z"
+                        fill="#EB4132"
+                      />
+                    </svg>
+                    <span>Google</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup__registration popup-window">
+          <div class="popup__inner">
+            <div class="popup-title">
+              <h4 class="h4"><span>Регистрация</span></h4>
+              <div class="popup-cross">
+                <svg
+                  width="26"
+                  height="25"
+                  viewBox="0 0 26 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L24 23M2 23L24 2"
+                    stroke="#848484"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="popup-content">
+              <form action="" class="popup-form register-form">
+                <div class="form-inner">
+                  <div class="input__column">
+                    <div class="input__group">
+                      <label for="" class="label">Имя</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="name" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Фамилия</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="surname" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Номер телефона</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input
+                          type="text"
+                          name="phone"
+                          required
+                          placeholder="+38"
+                        />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Эл. почта</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="email" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Придумайте пароль</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="password" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-condition">
+                    <p>
+                      Пароль должен быть не менее 6 символов длиной, содержать
+                      цифры и латинские буквы, в том числе заглавные, и не
+                      должен совпадать с именем и эл. почтой
+                    </p>
+                    <p>
+                      Регистрируясь, вы соглашаетесь с
+                      <a href="#">пользовательскими соглашениями</a>
+                    </p>
+                  </div>
+                  <button class="popup__form--btn">Зарегистрироваться</button>
+                  <a href="#" class="register"> Я уже зарегистрирован </a>
+                </div>
+                <div class="form-separator">
+                  <div></div>
+                  <span>Или</span>
+                  <div></div>
+                </div>
+                <div class="form-auth">
+                  <div class="label">Войти как пользователь</div>
+                  <a href="#" class="auth-btn">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26Z"
+                        fill="#3B5998"
+                      />
+                      <path
+                        d="M16.2682 13.5089H13.9485V22.0071H10.434V13.5089H8.76244V10.5222H10.434V8.58955C10.434 7.20747 11.0905 5.04327 13.9798 5.04327L16.5831 5.05417V7.9532H14.6942C14.3844 7.9532 13.9487 8.108 13.9487 8.76729V10.525H16.5752L16.2682 13.5089Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                  <a href="#" class="auth-btn">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.09375 13C6.09375 11.7118 6.44866 10.5051 7.06525 9.47188V5.08905H2.68242C0.942906 7.34821 0 10.1015 0 13C0 15.8985 0.942906 18.6518 2.68242 20.911H7.06525V16.5281C6.44866 15.4949 6.09375 14.2882 6.09375 13Z"
+                        fill="#FBBD00"
+                      />
+                      <path
+                        d="M13 19.9063L9.95312 22.9532L13 26C15.8985 26 18.6518 25.0571 20.911 23.3176V18.9395H16.5328C15.4905 19.5583 14.2787 19.9063 13 19.9063Z"
+                        fill="#0F9D58"
+                      />
+                      <path
+                        d="M7.06522 16.5281L2.68239 20.911C3.02679 21.3582 3.40181 21.7866 3.8076 22.1924C6.26298 24.6478 9.52755 26 13 26V19.9063C10.48 19.9063 8.27137 18.5494 7.06522 16.5281Z"
+                        fill="#31AA52"
+                      />
+                      <path
+                        d="M26 13C26 12.2091 25.9284 11.4167 25.7871 10.6449L25.6728 10.0204H13V16.1141H19.1675C18.5686 17.3055 17.6477 18.2775 16.5327 18.9395L20.9109 23.3177C21.3582 22.9733 21.7865 22.5982 22.1924 22.1925C24.6477 19.737 26 16.4724 26 13Z"
+                        fill="#3C79E6"
+                      />
+                      <path
+                        d="M17.8835 8.11652L18.4221 8.65511L22.731 4.34622L22.1924 3.80763C19.737 1.35225 16.4725 0 13 0L9.95312 3.04688L13 6.09375C14.8447 6.09375 16.579 6.8121 17.8835 8.11652Z"
+                        fill="#CF2D48"
+                      />
+                      <path
+                        d="M13 6.09375V0C9.52759 0 6.26302 1.35225 3.80759 3.80758C3.4018 4.21337 3.02678 4.64171 2.68238 5.08904L7.06521 9.47187C8.27142 7.45062 10.48 6.09375 13 6.09375Z"
+                        fill="#EB4132"
+                      />
+                    </svg>
+                    <span>Google</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup__credit popup-window">
+          <div class="popup__inner">
+            <div class="popup-title">
+              <h4 class="h4"><span>Кредиты</span></h4>
+              <div class="popup-cross">
+                <svg
+                  width="26"
+                  height="25"
+                  viewBox="0 0 26 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L24 23M2 23L24 2"
+                    stroke="#848484"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="credit-content">
+              <div class="credit-inner">
+                <div class="credit-row">
+                  <div class="credit-col">
+                    <img src="img/credit1.svg" alt="">
+                    <span>А-Банк. Плати частами</span>
+                  </div>
+                  <div class="credit-col">
+                    <span>4 платежа на</span>
+                    <div class="credit-select">
+                      <select class="credit-selector">
+                        <option>3 месяца</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="credit-col">
+                    <div class="credit-price"><span>625</span> ₴ / месяц</div>
+                    <a href="#" class="choose-btn">Выбрать</a>
+                  </div>
+                </div>
+                <div class="credit-row">
+                  <div class="credit-col">
+                    <img src="img/credit2.svg" alt="">
+                    <span>Оплата частями</span>
+                  </div>
+                  <div class="credit-col">
+                    <span>4 платежа на</span>
+                    <div class="credit-select">
+                      <select class="credit-selector">
+                        <option>3 месяца</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="credit-col">
+                    <div class="credit-price"><span>625</span> ₴ / месяц</div>
+                    <a href="#" class="choose-btn">Выбрать</a>
+                  </div>
+                </div>
+                <div class="credit-row">
+                  <div class="credit-col">
+                    <img src="img/credit3.svg" alt="">
+                    <span>Покупка частями Монобанк</span>
+                  </div>
+                  <div class="credit-col">
+                    <span>4 платежа на</span>
+                    <div class="credit-select">
+                      <select class="credit-selector">
+                        <option>3 месяца</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="credit-col">
+                    <div class="credit-price"><span>625</span> ₴ / месяц</div>
+                    <a href="#" class="choose-btn">Выбрать</a>
+                  </div>
+                </div>
+                <div class="credit-row">
+                  <div class="credit-col">
+                    <img src="img/credit4.svg" alt="">
+                    <span>Альфа банк легкая рассрочка</span>
+                  </div>
+                  <div class="credit-col">
+                    <span>4 платежа на</span>
+                    <div class="credit-select">
+                      <select class="credit-selector">
+                        <option>3 месяца</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="credit-col">
+                    <div class="credit-price"><span>625</span> ₴ / месяц</div>
+                    <a href="#" class="choose-btn">Выбрать</a>
+                  </div>
+                </div>
+                <div class="credit-row">
+                  <div class="credit-col">
+                    <img src="img/credit5.svg" alt="">
+                    <span>Кредит 0.01%</span>
+                  </div>
+                  <div class="credit-col">
+                    <span>4 платежа на</span>
+                    <div class="credit-select">
+                      <select class="credit-selector">
+                        <option>3 месяца</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="credit-col">
+                    <div class="credit-price"><span>625</span> ₴ / месяц</div>
+                    <a href="#" class="choose-btn">Выбрать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="credit-text">
+                <p>Повседневная практика показывает, что новая модель организационной.</p>
+                <p>С другой стороны консультация с широким активом требуют определения и уточнения соответствующий условий активизации. 
+                  Таким образом сложившаяся структура организации позволяет оценить значение новых предложений. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение модели развития.
+                  Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__click popup-window">
+          <div class="popup__inner">
+            <div class="popup-title">
+              <h4 class="h4 center">Купить в один клик</h4>
+              <div class="popup-cross">
+                <svg
+                  width="26"
+                  height="25"
+                  viewBox="0 0 26 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L24 23M2 23L24 2"
+                    stroke="#848484"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="popup-content">
+              <form action="" class="popup-form click-form">
+                <div class="form-inner">
+                  <div class="input__column">
+                    <div class="input__group">
+                      <label for="" class="label">Имя</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="email" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <label for="" class="label">Телефон</label>
+                      <div class="input-form-wrapper popup__input">
+                        <input type="text" name="phone" required />
+                        <img src="img/warn.svg" alt="" />
+                        <div class="input-warn">
+                          Введен неверный адрес эл.почты или номер телефона
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="popup__form--btn">Войти</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/libs/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/libs/jquery.validate.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
