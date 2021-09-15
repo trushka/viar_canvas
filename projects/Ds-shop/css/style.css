@@ -646,6 +646,7 @@ select.current-lang::-ms-expand {
   width: 100%;
   border: none;
   padding-left: 20px;
+  font-size: inherit;
 }
 .input-wrapper {
   border: 1px solid #dcdcdc;
@@ -1500,6 +1501,7 @@ select.current-lang::-ms-expand {
   line-height: 25px;
   color: #dcdcdc;
   padding-left: 20px;
+  font-size: inherit;
 }
 .subscribe-btn {
   width: 190px;
