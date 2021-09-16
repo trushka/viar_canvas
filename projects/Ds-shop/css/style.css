@@ -1774,7 +1774,7 @@ select.sort-select::-ms-expand {
   width: calc(100% - 430px);
 }
 .catalog__items .auction-item {
-  width: 350px;
+  width: 385px;
   margin: 0 10px 20px;
   height: unset;
 }

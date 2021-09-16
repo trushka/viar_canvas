@@ -141,7 +141,7 @@
     font-size: 14px;
   }
   .catalog__items .auction-item {
-    width: 245px;
+    width: 302px;
   }
   .subscribe-social p {
     font-size: 14px;
@@ -2955,6 +2955,11 @@
     left: unset;
     right: 6%;
   }
+  
+  .catalog__items .auction-item {
+    width: 100%;
+    margin: 0 0 16px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2967,10 +2972,6 @@
   }
   .catalog__items {
     margin: 0;
-  }
-  .catalog__items .auction-item {
-    width: 100%;
-    margin: 0 0 16px;
   }
 }
 
