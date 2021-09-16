@@ -98,7 +98,7 @@
                         <div class="cart-content">
                           <div class="cart-col">
                             <div class="cart-name">
-                              Пылесос Dyson Cyclone V11™
+                              <a href="#">Пылесос Dyson Cyclone V11™</a>                              
                             </div>
                             <div class="auction-info d-info">
                               <div class="info-btn">
@@ -883,8 +883,8 @@
                                 <span class="hours">08.00 - 22.00</span>
                               </li>
                             </ul>
-                            <div class="map">
-                              <img src="img/map.jpg" alt="" />
+                            <div class="map" id="map1">
+                              <!-- <img src="img/map.jpg" alt="" /> -->
                             </div>
                           </div>
                         </div>
@@ -1615,6 +1615,36 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="js/libs/jquery.validate.js"></script>
+    <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCt2KuiQu8HI3i46L0W0skWbZ7mq16YxA&region=UA&language=ua&callback=initMap"></script>
     <script src="js/script.js"></script>
+    <script>
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map1"), {
+          center: { lat: 50.42850517791925, lng: 30.53728278509373 },
+          zoom: 17,
+          disableDefaultUI: true,
+          mapTypeControl: true,
+
+          mapTypeControlOptions: {
+            mapTypeIds: [
+              google.maps.MapTypeId.ROADMAP,
+              google.maps.MapTypeId.HYBRID,
+            ],
+
+            style: google.maps.MapTypeControlStyle.DEFAULT,
+
+            position: google.maps.ControlPosition.LEFT_TOP,
+          },
+        });
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(50.42850517791925, 30.53728278509373),
+            map: map,
+            icon: "img/marker.png",
+          });
+      }
+    </script>
   </body>
 </html>
