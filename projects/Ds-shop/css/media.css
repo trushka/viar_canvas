@@ -2023,9 +2023,9 @@
     width: 30px;
     height: 30px;
   }
-  .card-tools svg:first-child {
+  /* .card-tools svg:first-child {
     margin-right: 15px;
-  }
+  } */
   .price--tools {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;

@@ -1956,6 +1956,9 @@ select.sort-select::-ms-expand {
   text-align: center;
   cursor: pointer;
 }
+.add-btn:hover {
+  opacity: .6;
+}
 .add-btn svg {
   margin-right: 10px;
 }
@@ -1973,9 +1976,11 @@ select.sort-select::-ms-expand {
 }
 .pagination-left {
   margin-right: 30px;
+  cursor: pointer;
 }
 .pagination-right {
   margin-left: 30px;
+  cursor: pointer;
 }
 .pagination__block ul {
   display: -webkit-box;
@@ -1984,6 +1989,9 @@ select.sort-select::-ms-expand {
 }
 .pagination__block li:not(:last-child) {
   margin-right: 10px;
+}
+.pagination__block li:hover {
+  opacity: .8;
 }
 .pagination__block li a {
   display: -webkit-box;
@@ -4156,7 +4164,9 @@ input[name="phone"]::placeholder {
 .card-tools a:first-child:hover svg:last-child {
   display: block;
 }
-
+/* .card-tools a:first-child svg:last-child {
+  margin-right: 15px;
+} */
 .card-tools a:first-child svg:last-child {
   display: none;
 }
