@@ -1956,8 +1956,8 @@ select.sort-select::-ms-expand {
   text-align: center;
   cursor: pointer;
 }
-.add-btn:hover {
-  opacity: .6;
+.add-btn:hover {  
+  border: 1px solid var(--yellow);
 }
 .add-btn svg {
   margin-right: 10px;
@@ -1987,11 +1987,14 @@ select.sort-select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
 }
+.pagination__block li {
+  transition: background .3s ease;
+}
 .pagination__block li:not(:last-child) {
   margin-right: 10px;
 }
-.pagination__block li:hover {
-  opacity: .8;
+.pagination__block li a:hover {
+  background: var(--yellow);
 }
 .pagination__block li a {
   display: -webkit-box;
