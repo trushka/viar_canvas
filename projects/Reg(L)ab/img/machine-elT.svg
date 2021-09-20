@@ -1,0 +1,13 @@
+<svg width="150" height="231" viewBox="0 0 150 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="115.042" cy="115.042" rx="84.1863" ry="84.1863" transform="rotate(160.127 115.042 115.042)" fill="#B68FC4"/>
+<mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="216" height="216">
+<ellipse cx="115.042" cy="115.042" rx="84.1863" ry="84.1863" transform="rotate(160.127 115.042 115.042)" fill="#F2B0A0"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="312.454" y="67.3772" width="142.45" height="188.126" transform="rotate(160.127 312.454 67.3772)" fill="#218449"/>
+<rect x="165.064" y="78.6694" width="41.8059" height="148.643" transform="rotate(160.127 165.064 78.6694)" fill="#218449"/>
+<rect x="113.116" y="57.9329" width="41.8059" height="111.482" transform="rotate(160.127 113.116 57.9329)" fill="#218449"/>
+<rect x="60.9028" y="36.4709" width="41.8059" height="73.5474" transform="rotate(160.127 60.9028 36.4709)" fill="#218449"/>
+<rect x="9.74542" y="17.9177" width="41.8059" height="38.7092" transform="rotate(160.127 9.74542 17.9177)" fill="#218449"/>
+</g>
+</svg>
