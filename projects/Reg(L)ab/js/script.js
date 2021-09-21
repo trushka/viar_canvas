@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // hamburger menu trigger
   $(".hamburger").click(function () {
     $("body").toggleClass("overflowed");
     $(".header-menu__layout").fadeToggle(500);
@@ -6,6 +7,7 @@ $(document).ready(function () {
     $(".header-main__menu").toggleClass("active");
   });
 
+  // menu collapse
   $(".menu__nav ul > li").click(function () {
     $(".menu__nav ul > li").removeClass("active");
     $(this).addClass("active");
@@ -19,20 +21,11 @@ $(document).ready(function () {
       $(".menu-column_sublist ul").removeClass("collapsed__list");
     }
   });
+
+  // media actions
   mediaActions();
   window.onresize = function () {
     mediaActions();
-  };
-
-  var header = document.querySelector(".header-main");
-  var sticky = header.offsetTop;
-
-  window.onscroll = function () {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
   };
   function mediaActions() {
     if (mediaChecker("min", 526)) {
@@ -49,7 +42,24 @@ $(document).ready(function () {
     //   }
     // }
   }
+  
+  // sticky menu
+  var header = document.querySelector(".header-main");
+  var sticky = header.offsetTop;
 
+  window.onscroll = function () {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  };
+
+
+
+
+
+  // sliders
   let machineSlider = $(".machine__items");
   let initialCount = machineSlider.find(".machine__item").length;
   let progressBarLabel = $(".machine-progress .progress-item");
@@ -87,6 +97,9 @@ $(document).ready(function () {
       },
     ],
   });
+  $(window).on("resize orientationChange", function (event) {
+    machineSlider.slick("reinit");
+  });
 
   let activitySlider = $(".activity--slider");
   let initialCount2 = activitySlider.find(".activity-item").length;
@@ -112,9 +125,12 @@ $(document).ready(function () {
     dots: false,
     infinite: false,
     variableWidth: true,
-    touchThreshold: 200
-
+    touchThreshold: 200,
   });
+
+
+
+  // media checker function
 
   function mediaChecker(max_min, resolution, width = "width") {
     return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;

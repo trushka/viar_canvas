@@ -1,0 +1,4 @@
+<svg width="1440" height="416" viewBox="0 0 1440 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L60 13.4444C120 26.8889 240 53.7778 360 53.7778C480 53.7778 600 26.8889 720 47.0556C840 67.2222 960 134.444 1080 147.889C1200 161.333 1320 121 1380 100.833L1440 80.6667V242H1380C1320 242 1200 242 1080 242C960 242 840 242 720 242C600 242 480 242 360 242C240 242 120 242 60 242H0V0Z" fill="#FFBE4A"/>
+<rect width="1440" height="176" transform="matrix(1 0 0 -1 0 416)" fill="#FFBE4A"/>
+</svg>
