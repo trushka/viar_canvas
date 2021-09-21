@@ -1341,7 +1341,7 @@ body.overflowed {
   padding: 126px 0 34px;
   background: url(../img/footer-bg.svg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   color: #ffffff;
   font-size: 24px;
   line-height: 115%;
