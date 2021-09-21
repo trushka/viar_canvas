@@ -1383,7 +1383,9 @@ body.overflowed {
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
-  font-weight: 300;
+}
+.footer__left li, .footer__right li {
+  /* font-weight: 300; */
 }
 .footer-menu li {
   margin-right: 30px;
@@ -1394,6 +1396,8 @@ body.overflowed {
 .footer__left li a::before {
   display: block;
   content: attr(title);
+  font-size: inherit;
+  /* letter-spacing: 0.05em; */
   font-weight: bold;
   height: 0;
   overflow: hidden;
@@ -1422,7 +1426,6 @@ body.overflowed {
 }
 .footer-contacts li {
   text-align: right;
-  font-weight: 300;
 }
 .footer-phone a,
 .footer-email a {
