@@ -230,7 +230,11 @@ body.overflowed {
   z-index: 1;
 }
 .sticky .header__logo {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.header__logo {
+  transition: all .3s ease;
 }
 .header-main__wrapper {
   height: 207px;
@@ -297,11 +301,14 @@ body.overflowed {
   align-items: center;
 }
 .sticky .hamburger-text {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
 }
 .hamburger-text {
   font-size: 38px;
   line-height: 43px;
+  transition: all .3s ease;
 }
 .hamburger {
   z-index: 100;
@@ -543,7 +550,7 @@ body.overflowed {
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
-.menu__nav > ul > li:hover > a {
+.menu__nav > ul > li > a:hover {
   color: #94b7dc;
 }
 .menu__nav > ul > li.active > a {
@@ -1090,6 +1097,10 @@ body.overflowed {
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
+  transition: all .3s ease;
+}
+.activity-btn:hover {
+  background: var(--l-golden);
 }
 .activity-plug {
   display: none;

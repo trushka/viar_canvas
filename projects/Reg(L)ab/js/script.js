@@ -8,10 +8,10 @@ $(document).ready(function () {
   });
 
   // menu collapse
-  $(".menu__nav ul > li").click(function () {
-    $(".menu__nav ul > li").removeClass("active");
-    $(this).addClass("active");
-    if ($(this).hasClass("menu__nav--collapser")) {
+  $(".menu__nav > ul > li > a").hover(function () {
+    $(".menu__nav > ul > li").removeClass("active");
+    $(this).parents('li').addClass("active");
+    if ($(this).parents('li').hasClass("menu__nav--collapser")) {
       if (mediaChecker("min", 526)) {
         $(".menu-column_sublist ul").addClass("collapsed__list");
       } else {

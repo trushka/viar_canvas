@@ -1103,8 +1103,8 @@
     padding-left: 52px;
   }
   .screen-main__title {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 36px;
+    line-height: 33px;
     margin-bottom: 10px;
   }
   .screen-main__subtitle {
@@ -1688,9 +1688,7 @@
   .screen-activity--wrapper {
     padding: 35px 0 43px 21px;
   }
-  .activity-btn {
-    padding-right: 21px;
-  }
+
 
   /* news screen */
 
