@@ -782,7 +782,7 @@
   }
   .activity-plug p,
   .activity-content p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 115%;
   }
   .activity-content {
@@ -1901,6 +1901,11 @@
   }
   .activity-item--date {
     font-size: 12px;
+    line-height: 115%;
+  }
+  .activity-plug p,
+  .activity-content p {
+    font-size: 14px;
     line-height: 115%;
   }
 
