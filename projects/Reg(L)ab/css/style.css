@@ -150,6 +150,7 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -273,7 +274,7 @@ body.overflowed {
   color: #ffffff;
   transition: all .3s ease;
 }
-.btn--dark:hover {
+.btn--dark:hover, .btn--dark:focus {
   background: var(--l-golden);
 }
 .header__btn {
@@ -311,7 +312,8 @@ body.overflowed {
   line-height: 43px;
   transition: all .15s ease;
 }
-.header__hamburger:hover .hamburger-text {
+.header__hamburger:hover .hamburger-text,
+.header__hamburger:focus .hamburger-text {
   color: var(--l-golden);
 }
 .hamburger {
@@ -344,7 +346,10 @@ body.overflowed {
 .hamburger.is-active .hamburger-inner::after,
 .header__hamburger:hover .hamburger-inner,
 .header__hamburger:hover .hamburger-inner::before,
-.header__hamburger:hover .hamburger-inner::after {
+.header__hamburger:hover .hamburger-inner::after,
+.header__hamburger:focus .hamburger-inner,
+.header__hamburger:focus .hamburger-inner::before,
+.header__hamburger:focus .hamburger-inner::after {
   background-color: var(--l-golden);
 }
 
@@ -563,7 +568,8 @@ body.overflowed {
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
-.menu__nav > ul > li > a:hover {
+.menu__nav > ul > li > a:hover,
+.menu__nav > ul > li > a:focus  {
   color: #94b7dc;
 }
 .menu__nav > ul > li.active > a {
@@ -590,7 +596,8 @@ body.overflowed {
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
-.menu-column_sublist li:hover {
+.menu-column_sublist li:hover,
+.menu-column_sublist li:focus {
   color: var(--l-golden);
 }
 .menu-column_sublist li:not(:last-child) {
@@ -920,7 +927,8 @@ body.overflowed {
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
-.machine__item--btn:hover {
+.machine__item--btn:hover,
+.machine__item--btn:focus {
   background: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -1003,25 +1011,31 @@ body.overflowed {
   box-shadow: 5px 5px 8px rgb(0 0 0 / 15%);
 }
 
-.activity-item:hover {
+.activity-item:hover,
+.activity-item:focus {
   background: var(--l-golden);
 }
-.activity-item:hover .activity-item--date svg path {
+.activity-item:hover .activity-item--date svg path,
+.activity-item:focus .activity-item--date svg path {
   fill: #ffffff;
 }
-.activity-item:hover .activity-item--title {
+.activity-item:hover .activity-item--title,
+.activity-item:focus .activity-item--title {
   color: #ffffff;
 }
-.activity-item:hover .activity-item--date {
+.activity-item:hover .activity-item--date,
+.activity-item:focus .activity-item--date {
   color: #ffffff;
 }
-.activity-item:hover .activity-item--btn {
+.activity-item:hover .activity-item--btn,
+.activity-item:focus .activity-item--btn {
   background: #ffffff;
   -webkit-box-shadow: inset -2px -2px 2px #ffffff,
     inset 2px 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset -2px -2px 2px #ffffff, inset 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
-.activity-item:hover .activity-item--btn svg path {
+.activity-item:hover .activity-item--btn svg path,
+.activity-item:focus .activity-item--btn svg path {
   fill: var(--l-golden);
 }
 .activity-item--title {
@@ -1112,7 +1126,8 @@ body.overflowed {
   text-transform: uppercase;
   transition: all .3s ease;
 }
-.activity-btn:hover {
+.activity-btn:hover,
+.activity-btn:focus {
   background: var(--l-golden);
 }
 .activity-plug {
@@ -1251,13 +1266,16 @@ body.overflowed {
 .news__item:nth-child(3) .news__item-btn {
   background: var(--r-blue);
 }
-.news__item:nth-child(1) .news__item-btn:hover {
+.news__item:nth-child(1) .news__item-btn:hover,
+.news__item:nth-child(1) .news__item-btn:focus {
   background: #f2b0a0;
 }
-.news__item:nth-child(2) .news__item-btn:hover {
+.news__item:nth-child(2) .news__item-btn:hover,
+.news__item:nth-child(2) .news__item-btn:focus {
   background: var(--p-blue);
 }
-.news__item:nth-child(3) .news__item-btn:hover {
+.news__item:nth-child(3) .news__item-btn:hover,
+.news__item:nth-child(3) .news__item-btn:focus {
   background: var(--l-golden);
 }
 .news__item:nth-child(even) {
@@ -1350,6 +1368,9 @@ body.overflowed {
 .footer {
   margin-top: 40px;
 }
+.footer-logo {
+  display: block;
+}
 .footer--wrapper {
   padding: 126px 0 34px;
   background: url(../img/footer-bg.svg);
@@ -1390,7 +1411,8 @@ body.overflowed {
 .footer-menu li {
   margin-right: 30px;
 }
-.footer__left li a:hover {
+.footer__left li a:hover,
+.footer__left li a:focus {
   font-weight: bold;
 }
 .footer__left li a::before {
@@ -1486,4 +1508,18 @@ body.overflowed {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+
+
+/* scroll up */
+
+#scroll-up {
+  position: fixed;
+  right: -150px;
+  bottom: 50px;
+  transition: all .3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
