@@ -342,6 +342,7 @@
   .news__item--image img {
     width: 210px;
     height: 255px;
+    top: -100px;
   }
   .news__item--content p {
     font-size: 18px;
@@ -475,7 +476,7 @@
     height: 55px;
   }
   .machine__item--title {
-    font-size: 17px;
+    font-size: 18px;
   }
   .machine__item--btn {
     font-size: 13.4115px;
@@ -848,7 +849,7 @@
   .news__item--image img {
     width: 112.15px;
     height: 136.18px;
-    bottom: 15%;
+    top: -50px;
   }
   .news__item--content p {
     font-size: 14px;
@@ -1267,6 +1268,10 @@
     margin: 2px 10px 2px 0;
   }
 
+  .activity-block {
+    padding: 25px 20px 10px 18px;
+  }
+
   /* news screen */
 
   .screen-news {
@@ -1309,6 +1314,7 @@
     width: 94px;
     height: 114px;
     bottom: 105%;
+    top: unset;
   }
   .news__item--content p {
     margin-top: 15px;
@@ -1511,10 +1517,10 @@
     height: 2px;
   }
   .hamburger--collapse .hamburger-inner::after {
-    top: -14px;
+    top: -17px;
   }
   .hamburger-inner::before {
-    top: -7px;
+    top: -9px;
   }
   .hamburger--collapse.is-active .hamburger-inner {
     -webkit-transform: translate3d(0, -7px, 0) rotate(-45deg);
@@ -1621,16 +1627,16 @@
   /* about screen */
 
   .screen-title {
-    font-size: 24px;
+    font-size: 27px;
     line-height: 27px;
   }
   .about__title {
     margin-bottom: 18px;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 24px;
   }
   .about__text {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   /* machine screen */
@@ -1642,10 +1648,10 @@
     width: 280px;
   }
   .progress-count {
-    font-size: 16px;
+    font-size: 18px;
   }
   .machine__item--title {
-    font-size: 17px;
+    font-size: 20px;
   }
   .machine__item--icon {
     padding-right: 10px;
@@ -1674,10 +1680,9 @@
   }
   .activity-content p {
     padding-right: 21px;
-    max-width: 280px;
   }
   .activity-item--title {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 115%;
     margin-bottom: 10px;
     height: 60px;
@@ -1685,7 +1690,7 @@
   }
   .activity-item--date {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 115%;
   }
   .screen-activity--wrapper {
@@ -1701,7 +1706,7 @@
   /* subscribe screen */
 
   .subscribe-title {
-    font-size: 20px;
+    font-size: 23px;
     line-height: 23px;
   }
 
@@ -1724,7 +1729,7 @@
     background: url(../img/footer-bgM.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 115%;
   }
 
@@ -1749,7 +1754,7 @@
   .footer-title {
     text-align: center;
     margin-bottom: 11px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 19px;
   }
   .footer-phone a,
@@ -1777,12 +1782,15 @@
   .footer-contacts li:not(:last-child) {
     margin-bottom: 10px;
   }
+  .footer-menu li {
+    margin-right: 0;
+  }
   .footer-social svg {
     width: 33px;
     height: 33px;
   }
   .footer-notice {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
   }
   .rights-inner {
@@ -1794,7 +1802,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 16px;
   }
   .rights-dev img {
@@ -1812,10 +1820,11 @@
 
   .machine__item {
     padding: 33px 15px 27px;
-    width: 221px;
+    width: 250px;
   }
+
   .progress-bar {
-    width: 221px;
+    width: 250px;
   }
   .machine__item--icon svg {
     width: 40px;
@@ -1831,7 +1840,87 @@
   /* activity screen */
 
   .activity-item {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* about screen */
+
+  .screen-title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .about__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about__text {
+    font-size: 14px;
+  }
+
+  /* machine screen */
+
+  .progress-count {
+    font-size: 16px;
+  }
+  .machine__item--title {
+    font-size: 17px;
+  }
+
+  /* machine screen */
+
+  .machine__item {
     width: 221px;
+  }
+
+  .progress-bar {
+    width: 221px;
+  }
+
+  /* activity screen */
+
+  .activity-item {
+    width: 221px;
+  }
+
+  /* activity screen */
+
+  .activity-item--title {
+    font-size: 12px;
+    line-height: 115%;
+  }
+  .activity-item--date {
+    font-size: 12px;
+    line-height: 115%;
+  }
+
+  /* subscribe screen */
+
+  .subscribe-title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  /* footer */
+
+  .footer--wrapper {
+    font-size: 12px;
+    line-height: 115%;
+  }
+
+  .footer-title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .footer-notice {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .rights-inner {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

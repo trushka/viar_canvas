@@ -1201,7 +1201,7 @@ body.overflowed {
 }
 .news__item--image img {
   position: absolute;
-  bottom: 0;
+  top: -125px;
   left: 0;
 }
 .news__item--content {
