@@ -235,7 +235,7 @@ body.overflowed {
   opacity: 0;
 }
 .header__logo {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .header-main__wrapper {
   height: 207px;
@@ -272,9 +272,10 @@ body.overflowed {
 .btn--dark {
   background: #000000;
   color: #ffffff;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.btn--dark:hover, .btn--dark:focus {
+.btn--dark:hover,
+.btn--dark:focus {
   background: var(--l-golden);
 }
 .header__btn {
@@ -310,7 +311,7 @@ body.overflowed {
 .hamburger-text {
   font-size: 38px;
   line-height: 43px;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 .header__hamburger:hover .hamburger-text,
 .header__hamburger:focus .hamburger-text {
@@ -368,7 +369,7 @@ body.overflowed {
 .header__hamburger .hamburger .hamburger-inner,
 .header__hamburger .hamburger .hamburger-inner::before,
 .header__hamburger .hamburger .hamburger-inner::after {
-  transition: all .15s ease;
+  transition: all 0.15s ease;
   transition-delay: 0;
 }
 .hamburger-inner,
@@ -569,7 +570,7 @@ body.overflowed {
   transition: color 0.2s linear;
 }
 .menu__nav > ul > li > a:hover,
-.menu__nav > ul > li > a:focus  {
+.menu__nav > ul > li > a:focus {
   color: #94b7dc;
 }
 .menu__nav > ul > li.active > a {
@@ -1124,7 +1125,7 @@ body.overflowed {
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .activity-btn:hover,
 .activity-btn:focus {
@@ -1316,7 +1317,6 @@ body.overflowed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
   margin-top: 68px;
 }
 .subscribe-input {
@@ -1350,8 +1350,17 @@ body.overflowed {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: transparent;
+  color: #94b7dc;
+  border: 2px solid #94b7dc;
 }
 .subscribe-text {
+  margin-top: 60px;
   font-size: 24px;
   line-height: 140%;
   letter-spacing: 0.03em;
@@ -1405,7 +1414,8 @@ body.overflowed {
   display: flex;
   white-space: nowrap;
 }
-.footer__left li, .footer__right li {
+.footer__left li,
+.footer__right li {
   /* font-weight: 300; */
 }
 .footer-menu li {
@@ -1510,16 +1520,67 @@ body.overflowed {
   align-items: center;
 }
 
-
-
 /* scroll up */
 
 #scroll-up {
   position: fixed;
   right: -150px;
   bottom: 50px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
+
+/* validation block */
+
+.validation-block {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.validation-block > div {
+  display: none;
+}
+.error-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--red);
+  margin-top: 9px;
+}
+.error-text--exist {
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--red);
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+.success-text {
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--green);
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+.error-text--exist span {
+  font-weight: 700;
+}
+.error .validation-block,
+.success .validation-block {
+  height: unset;
+  visibility: visible;
+  opacity: 1;
+}
+.error .validation-block .error-text {
+  display: block;
+}
+.success .validation-block .success-text {
+  display: block;
+}
+.error .subscribe-text,
+.success .subscribe-text {
+  margin-top: 26px;
+}
+

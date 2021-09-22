@@ -381,7 +381,7 @@
     padding: 40px 250px 37px 37px;
   }
   .subscribe-form {
-    margin: 50px 0;
+    margin: 50px 0 0;
   }
   .subscribe-input {
     width: 413px;
@@ -408,6 +408,7 @@
     right: -20px;
   }
   .subscribe-text {
+    margin-top: 50px;
     font-size: 18px;
     line-height: 140%;
   }
@@ -897,7 +898,7 @@
     padding: 26px 28px 20px 20px;
   }
   .subscribe-form {
-    margin: 25px 0 22px;
+    margin: 25px 0 0;
   }
   .subscribe-input {
     width: 220.55px;
@@ -924,6 +925,7 @@
     right: -27px;
   }
   .subscribe-text {
+    margin-top: 22px;
     font-size: 17px;
     line-height: 115%;
   }
@@ -1369,7 +1371,7 @@
     padding: 54px 13px 32px;
   }
   .subscribe-form {
-    margin: 23px 0;
+    margin: 23px 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1405,6 +1407,7 @@
   }
   .subscribe-text {
     text-align: center;
+    margin-top: 23px;
   }
 
   /* footer */

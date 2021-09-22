@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reg(L)ab</title>
+    <!-- styles and fonts -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/fonts/font.css" />
@@ -1776,9 +1777,22 @@
             </div>
             <div class="subscribe-inner">
               <form action="" class="subscribe-form">
-                <input type="text" class="subscribe-input" />
-                <button class="subscribe-btn btn">je m’inscris</button>
+                <div class="input-wrapper">
+                  <input type="email" name="email" class="subscribe-input" />               
+                </div>
+                <button type="submit" class="subscribe-btn btn">je m’inscris</button>
               </form>
+              <div class="validation-block">
+                <div class="validation-text error-text">
+                  L'adresse email renseignée n'est pas valide
+                </div>  
+                <div class="validation-text error-text--exist">
+                  Vous vous êtes déjà inscrit/e.
+                </div>  
+                <div class="validation-text success-text">
+                  Votre Inscription a bien été prise en compte. <span>Un email de confirmation vous a été envoyé.</span> 
+                </div>                      
+              </div> 
               <div class="subscribe-text">
                 La collecte de votre adresse email est nécessaire pour vous
                 adresser notre lettre d'infos. Vous pouvez vous désabonner à
@@ -2002,13 +2016,17 @@
     </footer>
 
 
-    <div id="scroll-up">
+    <!-- scroll up -->
+    <a href="#" id="scroll-up">
       <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="33.6663" cy="33.6669" r="33.3333" transform="rotate(-90 33.6663 33.6669)" fill="#F2A611"/>
         <path d="M35.0802 22.9193C34.2992 22.1382 33.0329 22.1382 32.2518 22.9193L19.5239 35.6472C18.7428 36.4283 18.7428 37.6946 19.5239 38.4756C20.3049 39.2567 21.5713 39.2567 22.3523 38.4756L33.666 27.1619L44.9797 38.4756C45.7608 39.2567 47.0271 39.2567 47.8081 38.4756C48.5892 37.6946 48.5892 36.4283 47.8081 35.6472L35.0802 22.9193ZM35.666 60.3335L35.666 24.3335H31.666L31.666 60.3335H35.666Z" fill="white"/>
         <rect x="17.6665" y="13.6665" width="30.6667" height="4" rx="2" fill="white"/>
       </svg>        
-    </div>
+    </a>
+
+
+    <!-- scripts -->
 
     <script src="js/libs/jquery.min.js"></script>
     <script
@@ -2017,6 +2035,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

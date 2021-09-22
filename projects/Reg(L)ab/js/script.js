@@ -8,7 +8,10 @@ $(document).ready(function () {
   });
 
   // menu collapse
-  $(".menu__nav > ul > li > a").hover(function () {
+  $(".menu__nav > ul > li > a").hover(navMenuHoverFocus);
+  $(".menu__nav > ul > li > a").focus(navMenuHoverFocus);
+
+  function navMenuHoverFocus() {
     $(".menu__nav > ul > li").removeClass("active");
     $(this).parents("li").addClass("active");
     if ($(this).parents("li").hasClass("menu__nav--collapser")) {
@@ -20,7 +23,7 @@ $(document).ready(function () {
     } else {
       $(".menu-column_sublist ul").removeClass("collapsed__list");
     }
-  });
+  }
 
   // media actions
   mediaActions();
@@ -81,6 +84,7 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     infinite: false,
+    accessibility: true,
     responsive: [
       {
         breakpoint: 5000,
@@ -95,6 +99,12 @@ $(document).ready(function () {
       },
     ],
   });
+  if (mediaChecker("min", 601)) {
+    machineSlider
+      .find(".machine__item, .machine__item a")
+      .removeAttr("tabindex");
+  }
+
   $(window).on("resize orientationChange", function (event) {
     machineSlider.slick("reinit");
   });
@@ -126,6 +136,8 @@ $(document).ready(function () {
     touchThreshold: 200,
   });
 
+  // scroll up
+
   var scrollToUp = document.querySelector("#scroll-up");
 
   function scrollFunction() {
@@ -142,6 +154,33 @@ $(document).ready(function () {
     }
   }
 
+  // form validation
+  $(".subscribe-form").validate({
+    errorPlacement: function () {},
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+
+  });
+  $(".subscribe-form").change(function () {
+    if ($(this).valid()) {
+      $(this).closest('.subscribe-inner').removeClass('error');
+    } else {
+      $(this).closest('.subscribe-inner').addClass('error');
+    }
+  });
+  $(".subscribe-btn").click(function (e) {
+    e.preventDefault();
+    if ($(".subscribe-form").valid()) {
+      $(this).closest('.subscribe-inner').addClass('success').removeClass('error');
+      $('.subscribe-form')[0].reset();
+    } else {
+      $(this).closest('.subscribe-inner').removeClass('success');
+    }
+  });
   // media checker function
 
   function mediaChecker(max_min, resolution, width = "width") {
