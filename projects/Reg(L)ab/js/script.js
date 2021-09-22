@@ -1,9 +1,9 @@
 $(document).ready(function () {
   // hamburger menu trigger
-  $(".hamburger").click(function () {
+  $(".header__hamburger").click(function () {
     $("body").toggleClass("overflowed");
     $(".header-menu__layout").fadeToggle(500);
-    $(this).toggleClass("is-active");
+    $(this).find('.hamburger').toggleClass("is-active");
     $(".header-main__menu").toggleClass("active");
   });
 
