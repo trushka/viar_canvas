@@ -1591,8 +1591,12 @@
     width: 40px;
     height: 40px;
   }
-
   /* main screen */
+  .screen-main__subtitle {
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   .main {
     padding-top: 101px;
