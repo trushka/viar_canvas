@@ -731,7 +731,6 @@
     max-width: 529px;
     font-size: 18px;
     line-height: 140%;
-    text-indent: 10px;
   }
 
   /* machine screen */
@@ -1103,13 +1102,13 @@
     padding-left: 52px;
   }
   .screen-main__title {
-    font-size: 36px;
-    line-height: 33px;
+    font-size: 39px;
+    line-height: 35px;
     margin-bottom: 10px;
   }
   .screen-main__subtitle {
-    font-size: 20px;
-    line-height: 18px;
+    font-size: 23px;
+    line-height: 22px;
   }
 
   /* about screen */
@@ -1845,6 +1844,16 @@
 }
 
 @media only screen and (max-width: 360px) {
+  /* main screen */
+  .screen-main__title {
+    font-size: 36px;
+    line-height: 33px;
+  }
+  .screen-main__subtitle {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
   /* about screen */
 
   .screen-title {
