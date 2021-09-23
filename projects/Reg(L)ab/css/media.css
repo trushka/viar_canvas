@@ -263,7 +263,7 @@
   .activity-plug p,
   .activity-content p {
     font-size: 18px;
-    line-height: 115%;
+    line-height: 140%;
   }
   .activity-btn {
     width: 299px;
@@ -789,7 +789,6 @@
   .activity-plug p,
   .activity-content p {
     font-size: 16px;
-    line-height: 115%;
   }
   .activity-content {
     padding: 0;
@@ -926,7 +925,7 @@
   .subscribe-text {
     margin-top: 22px;
     font-size: 17px;
-    line-height: 115%;
+    line-height: 140%;
   }
 
   /* footer */
@@ -1072,6 +1071,31 @@
   #scroll-up svg {
     width: 40px;
     height: 40px;
+  }
+
+  /* validation */
+
+  .error-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .error-text--exist {
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+  .success-text {
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+  .error .subscribe-text,
+  .success .subscribe-text {
+    margin-top: 16px;
   }
 }
 
@@ -1330,6 +1354,7 @@
   }
   .news__item--content p {
     margin-top: 15px;
+    line-height: 140%;
   }
   .news__item-btn {
     width: 149px;
@@ -1626,7 +1651,8 @@
   }
 
   .screen-main__wrapper {
-    background: url(../img/bg-ellipsesM.svg), url(../img/bg-weed.svg), url(../img/bg.svg);
+    background: url(../img/bg-ellipsesM.svg), url(../img/bg-weed.svg),
+      url(../img/bg.svg);
     background-repeat: no-repeat;
     background-size: 178px 158px, 69px 50px, cover;
     background-position: 100% 100%, 90% 0%, center;
@@ -1718,7 +1744,7 @@
 
   .subscribe-title {
     font-size: 23px;
-    line-height: 23px;    
+    line-height: 23px;
     max-width: 265px;
     margin-right: auto;
     margin-left: auto;
@@ -1856,6 +1882,22 @@
   .activity-item {
     width: 250px;
   }
+  /* validation */
+
+  .error-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .error-text--exist,
+  .success-text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .error .subscribe-text,
+  .success .subscribe-text {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -1906,6 +1948,7 @@
 
   .news__item--content p {
     font-size: 14px;
+    line-height: 115%;
   }
   /* activity screen */
 
