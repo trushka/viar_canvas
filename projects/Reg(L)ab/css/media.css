@@ -1718,7 +1718,10 @@
 
   .subscribe-title {
     font-size: 23px;
-    line-height: 23px;
+    line-height: 23px;    
+    max-width: 265px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   /* footer */
