@@ -313,7 +313,7 @@
   .screen-main__wrapper {
     height: 606px;
     padding-left: 98px;
-    background-size: 430px 350px, 303px 220px;
+    background-size: 430px 350px, 303px 220px, cover;
   }
   .screen-main__subtitle {
     font-size: 45px;
@@ -328,7 +328,6 @@
   }
 
   .screen-news--wrapper {
-    background: #fffcfa;
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -718,7 +717,7 @@
   .screen-main__wrapper {
     height: 323px;
     padding-left: 52px;
-    background-size: 230px, 161px;
+    background-size: 230px, 161px, cover;
   }
   .screen-main__title {
     font-size: 38px;
@@ -1627,10 +1626,10 @@
   }
 
   .screen-main__wrapper {
-    background: url(../img/bg-ellipsesM.svg), url(../img/bg-weed.svg), #fffefe;
+    background: url(../img/bg-ellipsesM.svg), url(../img/bg-weed.svg), url(../img/bg.svg);
     background-repeat: no-repeat;
-    background-size: 178px 158px, 69px 50px;
-    background-position: 100% 100%, 90% 0%;
+    background-size: 178px 158px, 69px 50px, cover;
+    background-position: 100% 100%, 90% 0%, center;
   }
   .screen-main__title {
     margin-bottom: 15px;

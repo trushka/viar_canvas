@@ -154,6 +154,22 @@ $(document).ready(function () {
     }
   }
 
+  function mediaChecker(max_min, resolution, width = "width") {
+    return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
+  }
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView(
+        {
+          behavior: "smooth",
+        },
+        { passive: true }
+      );
+    });
+  });
+
   // form validation
   $(".subscribe-form").validate({
     errorPlacement: function () {},
@@ -163,22 +179,27 @@ $(document).ready(function () {
         email: true,
       },
     },
-
   });
   $(".subscribe-form").change(function () {
     if ($(this).valid()) {
-      $(this).closest('.subscribe-inner').removeClass('error');
+      $(this).closest(".subscribe-inner").removeClass("error");
     } else {
-      $(this).closest('.subscribe-inner').addClass('error');
+      $(this).closest(".subscribe-inner").addClass("error");
     }
   });
   $(".subscribe-btn").click(function (e) {
     e.preventDefault();
     if ($(".subscribe-form").valid()) {
-      $(this).closest('.subscribe-inner').addClass('success').removeClass('error');
-      $('.subscribe-form')[0].reset();
+      $(this)
+        .closest(".subscribe-inner")
+        .addClass("success")
+        .removeClass("error");
+      $(".subscribe-form")[0].reset();
     } else {
-      $(this).closest('.subscribe-inner').removeClass('success');
+      $(this)
+        .closest(".subscribe-inner")
+        .removeClass("success")
+        .addClass("error");
     }
   });
   // media checker function
