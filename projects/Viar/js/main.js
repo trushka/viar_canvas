@@ -101,7 +101,6 @@ $(document).ready(function () {
   // trigger for comments
   document.querySelectorAll(".about-tab").forEach((element) => {
     element.addEventListener("click", function (e) {
-      console.log('hd')
       e.preventDefault();
       let _this = this;
       changeActiveTab(

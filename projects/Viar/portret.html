@@ -621,7 +621,7 @@
     </header>
 
     <main id="top">
-      <section class="portraits portrait__screen">
+      <div class="portraits portrait__screen">
         <div class="portraits-wrap">
           <article class="portraits-slide">
             <div class="section-frame">
@@ -645,7 +645,7 @@
                   </svg>
                   <a href="#" class="breadcrumbs__link"> Стили портретов </a>
                 </div>
-                <script type="text/javascript">
+                <script>
                   // <![CDATA[  <-- For SVG support
                   if ("WebSocket" in window) {
                     (function () {
@@ -762,7 +762,7 @@
             </div>
           </article>
         </div>
-      </section>
+      </div>
 
       <div class="ellipse">
         <img
@@ -1469,11 +1469,11 @@
                           <div class="courier-txt">
                             Для получения более подробной информации свяжитесь с
                             нами
-                            <a href="mailto: info@viarstudia"
+                            <a href="mailto:info@viarstudia"
                               >info@viarstudia</a
                             >
                             или по телефону
-                            <a href="tel:+371 25444744">+371 25444744</a>
+                            <a href="tel:+37125444744">+371 25444744</a>
                           </div>
                         </div>
                       </div>
@@ -1500,9 +1500,9 @@
               </div>
 
               <div class="ba-slider">
-                <img src="images/portrait1.jpg" />
+                <img src="images/portrait1.jpg" alt="" />
                 <div class="resize">
-                  <img src="images/portrait2.jpg" />
+                  <img src="images/portrait2.jpg" alt="" />
                 </div>
                 <span class="handle"></span>
               </div>
@@ -1692,9 +1692,9 @@
         <img src="./images/icon/ellipse-black.svg" alt="img" loading="lazy" />
       </div>
 
-      <section class="sizes__screen section-p">
+      <div class="sizes__screen section-p">
         <div class="section-frame"></div>
-      </section>
+      </div>
 
       <div class="ellipse ellipse_black ellipse_top">
         <a
@@ -1786,7 +1786,7 @@
                 <p>Стандарт: 3-8 дней</p>
               </div>
             </div>
-            <form action="">
+            <form>
               <div class="formalization__block">
                 <div class="formalization__block--top">
                   <div class="block-title">
@@ -2410,8 +2410,9 @@
                                   </label>
                                 </div>
                                 <div class="input-group input_disabled">
-                                  <label for="">Введите кол-во человек</label>
+                                  <label for="count1">Введите кол-во человек</label>
                                   <input
+                                    id="count1"
                                     class="kviz-input"
                                     type="text"
                                     disabled
@@ -2946,11 +2947,11 @@
                         <div class="formalization-content">
                           <div class="formalization-content--inner">
                             <div class="input-group input-comments">
-                              <label for=""
+                              <label for="comments1"
                                 >Добавьте комментарий (необязательно)</label
                               >
                               <div class="textarea-wrapper">
-                                <textarea name="comments"> </textarea>
+                                <textarea id="comments1" name="comments"> </textarea>
                               </div>
                             </div>
                             <div class="vz-art kviz-input">
@@ -2978,7 +2979,7 @@
                                 </div>
                                 <input
                                   type="file"
-                                  id="#file1"
+                                  id="#file12"
                                   class="file-input"
                                   name="file"
                                   accept="image/*"
@@ -3010,7 +3011,7 @@
                                 </div>
                                 <input
                                   type="file"
-                                  id="#file2"
+                                  id="#file21"
                                   class="file-input file-input_hide"
                                   name="file2"
                                   accept="image/*"
@@ -4381,7 +4382,7 @@
                 </div>
                 <input
                   type="file"
-                  id="#file1"
+                  id="#file13"
                   class="file-input"
                   name="file"
                   accept="image/*"
@@ -4409,7 +4410,7 @@
                 </div>
                 <input
                   type="file"
-                  id="#file2"
+                  id="#file22"
                   class="file-input file-input_hide"
                   name="file2"
                   accept="image/*"
@@ -5074,10 +5075,10 @@
       </div>
     </div>
 
-    <script src="js/script.js" defer></script>
-    <script data-defdel="js/fancybox.js" defer></script>
-    <script data-defdel="js/swal.js" defer></script>
-    <script defer src="js/before-after.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script data-defdel="js/fancybox.js"></script>
+    <script data-defdel="js/swal.js"></script>
+    <script src="js/before-after.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
