@@ -4,8 +4,8 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 4,
     lazyLoad: "ondemand",
-    prevArrow: ".examples-prev",
-    nextArrow: ".examples-next",
+    prevArrow: ".examples-prev.examples-prev1",
+    nextArrow: ".examples-next.examples-next1",
     responsive: [
       {
         breakpoint: 1350,
@@ -33,8 +33,8 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 2,
     lazyLoad: "ondemand",
-    prevArrow: ".examples-prev",
-    nextArrow: ".examples-next",
+    prevArrow: ".examples-prev.examples-prev2",
+    nextArrow: ".examples-next.examples-next2",
     responsive: [
       {
         breakpoint: 981,
@@ -52,13 +52,13 @@ $(document).ready(function () {
     infinite: false,
     slidesToShow: 2,
     lazyLoad: "ondemand",
-    prevArrow: ".examples-prev",
-    nextArrow: ".examples-next",
+    prevArrow: ".examples-prev3",
+    nextArrow: ".examples-next3",
     responsive: [
       {
-        breakpoint: 981,
+        breakpoint: 1180,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1
         },
       },
     ],

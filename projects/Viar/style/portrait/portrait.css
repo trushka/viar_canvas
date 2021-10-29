@@ -1334,3 +1334,12 @@
   background: #fb7e4d;
   color: #fff;
 }
+.others-slider--wrapper .slick-slide {
+  margin-bottom: 15px;
+}
+.others-slider--wrapper .examples-prev {
+  left: 20px;
+}
+.others-slider--wrapper .examples-next {
+  right: 20px;
+}
