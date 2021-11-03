@@ -910,6 +910,7 @@
   
   
   
+  
   @media only screen and (min-height: 1200px) and (min-width: 701px) {
     .portraits-slider {
       height: 1200px;
@@ -920,8 +921,13 @@
       height: 850px;
     }
   }
+  @media only screen and (max-width: 550px) {
+    .portraits-slider {
+      height: 750px;
+    }
+  }
   @media only screen and (max-height: 800px) {
     .portraits-slider {
-      height: 800px;
+      height: 750px;
     }
   }

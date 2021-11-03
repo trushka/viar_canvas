@@ -475,7 +475,8 @@ p {
 }
 .happy {
   padding-bottom: 730px;
-  background: center bottom/100% auto no-repeat;
+  background: url(../images/bg/happy-bg.jpg) center bottom no-repeat;
+  background-size: 100% auto;
 }
 .happy-list {
   padding: 0 90px;
@@ -786,7 +787,8 @@ p {
 
 .work {
   padding: 130px 0 910px;
-  background: center bottom/100% auto no-repeat;
+  background: url(../images/bg/work-bg.jpg) center bottom no-repeat;
+  background-size: 100% auto;
 }
 .work-title p {
   font-size: 20px;
@@ -950,7 +952,8 @@ p {
 }
 .why {
   padding: 100px 0 50px;
-  background: center bottom/100% auto no-repeat;
+  background: url(../images/bg/why-bg.jpg) center bottom no-repeat;
+  background-size: 100% auto;
 }
 .why-list {
   margin-top: 40px;
@@ -1143,8 +1146,13 @@ p {
 .certificate-gift {
   width: 187px;
   height: 187px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
-  background: url(../images/bg/gift-bg.svg) 0 0/187px;
+  background: url(../images/bg/gift-bg.svg);
+  background-size: 187px;
   position: absolute;
   top: 260px;
   right: -25px;

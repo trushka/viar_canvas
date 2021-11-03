@@ -296,7 +296,9 @@ body {
   height: 100%;
 }
 .vz-art.menu-frame[data-menu="1"],
-.vz-art.menu-list[data-link="1"] {
+.vz-art.menu-list[data-link="1"],
+.vz-art.menu-frame[data-menu="3"],
+.vz-art.menu-list[data-link="3"] {
   display: grid;
 }
 .vz-art.footer-social a:hover,
@@ -394,6 +396,9 @@ body {
 }
 .vz-art.header-bar {
   padding: 20px 0;
+}
+.vz-art.burge-menu__item h3 {
+  cursor: pointer;
 }
 .vz-art.burge-menu__item h3,
 .vz-art.burge-menu__item ul,

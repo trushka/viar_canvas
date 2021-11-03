@@ -1,3 +1,19 @@
+@media only screen and (max-width: 112.5em) {
+  .sizes__screen--inner {
+    margin-top: -6.5%;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .size-desc {
+    width: 100px;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .size-desc svg {
+    width: 16px;
+    height: 16px;
+  }
+}
 @media only screen and (max-width: 93.75em) {
   .about__first {
     margin-top: 100px;
@@ -96,6 +112,9 @@
   .examples-slider__block {
     width: 100%;
   }
+  .sizes__screen--inner .size-frame {
+    top: 12%;
+  }
 }
 @media only screen and (max-width: 75em) {
   .about__first .about-text {
@@ -126,6 +145,19 @@
   }
   .size-item p {
     margin: 10px 0 7px;
+  }
+  .sizes__screen--inner .size-frame {
+    top: 12%;
+  }
+  .size-title {
+    font-size: 35px;
+  }
+  .sizes__screen--inner {
+    margin-top: -7.5%;
+  }
+  .sizes__screen--inner > img:nth-child(2),
+  .sizes__screen--inner > img:nth-child(3) {
+    bottom: 6%;
   }
 }
 @media only screen and (max-width: 70.25em) {
@@ -249,6 +281,35 @@
   }
   .portait-why {
     background-position: center 397px;
+  }
+
+  .sizes__screen--inner {
+    margin-top: -9.5%;
+  }
+  .size-desc {
+    width: 80px;
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  .size-desc svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  /*  */
+  .about__second .hidden-trigger {
+    display: flex;
+  }
+  .brief-v .about__second .about--notes {
+    display: none;
+  }
+  .brief-v .about-offer:not(:last-child) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .sizes__screen--inner .size-frame {
+    top: 8%;
   }
 }
 @media only screen and (max-width: 43.75em) {
@@ -427,6 +488,88 @@
   .portait-why .why-form {
     margin-top: 400px;
   }
+  .size-title {
+    display: none;
+  }
+  .sizes__screen--inner > img:nth-child(3) {
+    display: none;
+  }
+  .c-examples + .ellipse {
+    padding-top: 10px;
+  }
+  .sizes__screen {
+    padding: 0 0 200px;
+    background-color: #1e2532;
+  }
+  .sizes__screen--inner .size-frame {
+    top: 14%;
+  }
+  .sizes__block {
+    width: 82%;
+    grid-template-areas:
+      "a a a a b b b b b b b b b b b b b b b c c c c c d d d d d"
+      "e e e e b b b b b b b b b b b b b b b c c c c c d d d d d"
+      "f f f f f f f f f f f f g g g g g g h h h h h h h h h h h"
+      "f f f f f f f f f f f f g g g g g g h h h h h h h h h h h";
+  }
+  .custom-ellipse {
+    display: none;
+  }
+  .mobile-ell {
+    display: flex;
+  }
+  .e {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .c {
+    display: flex;
+    align-items: center;
+  }
+  .sizes__screen--inner > img:nth-child(2) {
+    right: -2%;
+    width: 22%;
+    bottom: 8%;
+  }
+  .sizes__screen--inner {
+    margin-top: -2.5%;
+    margin-bottom: -15px;
+  }
+  .sizes__screen + .ellipse {
+    margin-top: -41px;
+  }
+  .sizes__screen + .ellipse {
+    display: none;
+  }
+  .mobile-sizes {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-sizes--inner {
+    padding: 50px 40px 40px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    background: url(../../images/sizes/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .size-desc {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mobile-sizes--inner {
+    padding: 50px 34px 23px;
+  }
+  .sizes__screen--inner .size-frame {
+    top: 18%;
+  }
+  .sizes__block {
+    width: 75%;
+  }
 }
 @media only screen and (max-width: 1380px) {
   .arts__title {
@@ -495,12 +638,14 @@
 }
 @media only screen and (max-width: 500px) {
   .stage-item {
-    flex: 0 0 100%;
+    flex: unset;
     margin-bottom: 65px;
   }
   .stage-img {
     margin: 0 auto;
     max-width: 280px;
+    display: flex;
+    justify-content: center;
   }
   .stage-img img {
     width: 100px;
@@ -545,7 +690,7 @@
     width: 400px;
   }
   .portraits__wrapper {
-    height: 520px;
+    height: 475px;
     position: relative;
   }
   .portrait__screen .portraits-slide {
@@ -618,11 +763,25 @@
   }
   .portait-why {
     background-size: 1200px;
-    background-position: 54% 59%
+    background-position: 54% 59%;
   }
   .portait-why .why-form {
     margin-top: 265px;
   }
+
+  .brief-v .size-item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
+    display: none;
+  }
+  .brief-v .size-item:nth-child(4) {
+    display: block !important;
+  }
+  .brief-v .about-size--inner {
+    grid-template-areas:
+    "a a a b b b"
+    "c c c d d d";
+    grid-template-rows: 1fr 1fr;
+  }
+
 }
 @media only screen and (max-width: 25em) {
   .portraits-image {

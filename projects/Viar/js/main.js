@@ -64,6 +64,28 @@ $(document).ready(function () {
     ],
   });
 
+
+  let stageSlider = $(".stages-row");
+  stageSlider.slick({
+    infinite: false,
+    slidesToShow: 1,
+    lazyLoad: "ondemand",
+    prevArrow: ".examples-prev4",
+    nextArrow: ".examples-next4",
+    responsive: [
+      {
+        breakpoint: 5000,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1
+        },
+      },
+    ],
+  });
+
   $('.ba-slider').beforeAfter();
 
   // TABS FUNCTIONS
@@ -180,5 +202,22 @@ $(document).ready(function () {
       playButton.fadeIn();
     }
   });
+
+
+
+
+  $('.hidden-trigger').click(function() {
+    $(this).toggleClass('active');
+    $(this).closest('.about__block').toggleClass('brief-v');
+    $('html, body').animate({
+      scrollTop: $(".about__screen--wrapper").offset().top
+  }, 2000);
+  })
+
+
+
+
+
+
   
 });
