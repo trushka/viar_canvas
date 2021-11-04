@@ -69,7 +69,6 @@ $(document).ready(function () {
   stageSlider.slick({
     infinite: false,
     slidesToShow: 1,
-    lazyLoad: "ondemand",
     prevArrow: ".examples-prev4",
     nextArrow: ".examples-next4",
     responsive: [
@@ -209,15 +208,26 @@ $(document).ready(function () {
   $('.hidden-trigger').click(function() {
     $(this).toggleClass('active');
     $(this).closest('.about__block').toggleClass('brief-v');
-    $('html, body').animate({
-      scrollTop: $(".about__screen--wrapper").offset().top
-  }, 2000);
+  //   $('html, body').animate({
+  //     scrollTop: $(".about__screen--wrapper").offset().top
+  // }, 2000);
   })
 
 
 
+  function mediaChecker(max_min, resolution, width = "width") {
+    return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
+  }
 
+  window.onresize = function() {
+    mediaAction();
+  }
+  mediaAction();
+  function mediaAction() {
+    if (mediaChecker('max', 500)) {
+      stageSlider[0]?.slick?.refresh();      
+    }
 
-
+  }
   
 });

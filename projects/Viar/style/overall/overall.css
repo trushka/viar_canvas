@@ -400,6 +400,22 @@ body {
 .vz-art.burge-menu__item h3 {
   cursor: pointer;
 }
+.icon-language {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 20px;
+}
+.lang__select {
+  width: 100%;
+  border: none;
+  height: 100%;
+  background: #fff;
+}
+.icon-language path {
+  fill: #1e2533;;
+}
 .vz-art.burge-menu__item h3,
 .vz-art.burge-menu__item ul,
 .vz-art.header-bar_burger {

@@ -718,15 +718,8 @@
   grid-area: h;
 }
 
-.a img {
-}
-
 .b img {
   max-height: 98%;
-}
-
-.c img {
-  max-width: ;
 }
 
 .d img {
@@ -737,17 +730,7 @@
   width: 75%;
 }
 
-.f img {
-  max-width: ;
-}
 
-.g img {
-  max-width: ;
-}
-
-.h img {
-  max-width: ;
-}
 
 .size-desc {
   position: absolute;

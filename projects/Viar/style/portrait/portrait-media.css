@@ -686,7 +686,7 @@
   .portraits-image {
     position: absolute;
     bottom: -55px;
-    height: 295px;
+    height: 270px;
     width: 400px;
   }
   .portraits__wrapper {
@@ -788,6 +788,7 @@
     left: 42%;
     height: 287px;
     width: 383px;
+    bottom: -20px;
   }
   .portrait__screen .portraits-title {
     font-size: 31px;
