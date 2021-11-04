@@ -45,8 +45,6 @@ $(document).ready(function () {
     ],
   });
 
-
-
   let othersSlider = $(".others-slider");
   othersSlider.slick({
     infinite: false,
@@ -58,12 +56,11 @@ $(document).ready(function () {
       {
         breakpoint: 1180,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
         },
       },
     ],
   });
-
 
   let stageSlider = $(".stages-row");
   stageSlider.slick({
@@ -74,18 +71,18 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 5000,
-        settings: 'unslick'
+        settings: "unslick",
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
         },
       },
     ],
   });
 
-  $('.ba-slider').beforeAfter();
+  $(".ba-slider").beforeAfter();
 
   // TABS FUNCTIONS
 
@@ -137,52 +134,41 @@ $(document).ready(function () {
     });
   });
 
-
-
-  $('.examples-slider__inner img').click(function() {
-    let first = $(this).attr('src');
-    let second = $(this).data('image');
-    $(".ba-slider > picture img").attr("srcset", first);
-    $(".ba-slider > picture source").attr("srcset", first);
-    $(".ba-slider .resize img").attr("srcset", second);
-    $(".ba-slider .resize source").attr("srcset", second);
-  })
-
-
-  $('.formalization-tab').click(function() {
+  $(".formalization-tab").click(function () {
     $(this).next().slideToggle();
-    $(this).toggleClass('opened-tab');
+    $(this).toggleClass("opened-tab");
     $(this).parent().next().fadeToggle();
-  })
+  });
 
-  $('.form-image').click(function() {
-    $('.form-image').removeClass('active');
-    $(this).toggleClass('active');
-  })
+  $(".form-image").click(function () {
+    $(".form-image").removeClass("active");
+    $(this).toggleClass("active");
+  });
 
-	$('.kviz-c-group .kviz-radio').click(function (e) {
-		$(this).closest(".kviz-c-group").find('.kviz-radio').removeClass('kviz-radio_active');
-		$(this).addClass('kviz-radio_active');
-	});
+  $(".kviz-c-group .kviz-radio").click(function (e) {
+    $(this)
+      .closest(".kviz-c-group")
+      .find(".kviz-radio")
+      .removeClass("kviz-radio_active");
+    $(this).addClass("kviz-radio_active");
+  });
 
-
-  $('.kviz-types').click(function() {
+  $(".kviz-types").click(function () {
     _this = $(this);
     _parent = _this.parent();
-    if (_this.data('count') == 1) {
-      _parent.find('.input-group').addClass('input_disabled');
-      _parent.next().addClass('input_disabled');
-      _parent.next().find('input').prop('disabled', true);
-      _parent.next().find('.kviz-radio').removeClass('kviz-radio_active');
-      _parent.find('.input-group input').prop('disabled', true);
+    if (_this.data("count") == 1) {
+      _parent.find(".input-group").addClass("input_disabled");
+      _parent.next().addClass("input_disabled");
+      _parent.next().find("input").prop("disabled", true);
+      _parent.next().find(".kviz-radio").removeClass("kviz-radio_active");
+      _parent.find(".input-group input").prop("disabled", true);
     } else {
-      _parent.find('.input-group').removeClass('input_disabled');
-      _parent.next().removeClass('input_disabled');
-      _parent.next().find('input').prop('disabled', false);
-      _parent.find('.input-group input').prop('disabled', false);
+      _parent.find(".input-group").removeClass("input_disabled");
+      _parent.next().removeClass("input_disabled");
+      _parent.next().find("input").prop("disabled", false);
+      _parent.find(".input-group input").prop("disabled", false);
     }
-  })
-
+  });
 
   var playVideo = $(".video-btn");
   var playButton = $(".video-btn");
@@ -204,32 +190,70 @@ $(document).ready(function () {
     }
   });
 
-
-
-
-  $('.hidden-trigger').click(function() {
-    $(this).toggleClass('active');
-    $(this).closest('.about__block').toggleClass('brief-v');
-  //   $('html, body').animate({
-  //     scrollTop: $(".about__screen--wrapper").offset().top
-  // }, 2000);
-  })
-
-
+  $(".hidden-trigger").click(function () {
+    $(this).toggleClass("active");
+    $(this).closest(".about__block").toggleClass("brief-v");
+    //   $('html, body').animate({
+    //     scrollTop: $(".about__screen--wrapper").offset().top
+    // }, 2000);
+  });
 
   function mediaChecker(max_min, resolution, width = "width") {
     return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
   }
 
-  window.onresize = function() {
+  window.onresize = function () {
     mediaAction();
-  }
+  };
   mediaAction();
   function mediaAction() {
-    if (mediaChecker('max', 500)) {
-      stageSlider[0]?.slick?.refresh();      
+    if (mediaChecker("max", 500)) {
+      stageSlider[0]?.slick?.refresh();
     }
-
   }
-  
+
+  let bf_obj = $(".bf-obj");
+
+  bf_obj.slick({
+    slidesToShow: 7,
+    infinite: false,
+    prevArrow: ".bf-arr_l",
+    nextArrow: ".bf-arr_r",
+  });
+
+  $(".examples-slider__inner img").click(function () {
+    let first = $(this).attr("src");
+    let second = $(this).data("image");
+    let slideTarget = $(this).closest('.examples-slide');
+    let index = [...slideTarget[0].parentElement.children].indexOf(slideTarget[0]) + 1;
+    fromSliderBeforeAfterSetter(first, second);
+    beforeAfterNavSetter(index)
+  });
+
+  $('.bf-obj li').click(function() {
+    $(`.bf-obj li`).removeClass("active");
+    $(this).addClass("active");
+    let first = $(this).data("imageb");
+    let second = $(this).data("imagea");
+    console.log(first, second)
+    fromSliderBeforeAfterSetter(first, second);
+  })
+
+  function fromSliderBeforeAfterSetter(first, second) {
+    $(".ba-slider > picture img").attr("srcset", first);
+    $(".ba-slider > picture source").attr("srcset", first);
+    $(".ba-slider .resize img").attr("srcset", second);
+    $(".ba-slider .resize source").attr("srcset", second);
+  }
+
+  let _beforeAfterCount = $(".bf-obj li").length;
+  let el = $(".examples-slider__inner .examples-slide:nth-child(3)");
+
+  function beforeAfterNavSetter(index) {
+    let slickIndex = index - 1;
+    $(`.bf-obj li`).removeClass("active");
+    $(`.bf-obj li:nth-child(${index})`).addClass("active");
+    console.log(slickIndex)
+    bf_obj.slick("slickGoTo", slickIndex);
+  }
 });

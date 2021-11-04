@@ -536,6 +536,9 @@
   max-height: 437px !important;
   transition: all 0.4s ease;
 }
+.ba-slider img {
+  /* height: 100%; */
+}
 .examples-slider__block .examples-arrow {
   top: calc(50% - 30px);
   transform: translateY(-50%);
@@ -730,8 +733,6 @@
   width: 75%;
 }
 
-
-
 .size-desc {
   position: absolute;
   width: 145px;
@@ -751,11 +752,10 @@
   background: url(../../images/sizes/borderMR.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
 }
 .e .size-desc {
   top: -20%;
-  left: 40%
+  left: 40%;
 }
 .a .size-desc {
   top: -18%;
@@ -1606,7 +1606,6 @@
   right: 20px;
 }
 
-
 /*  */
 
 .about__second .hidden-trigger {
@@ -1642,13 +1641,12 @@
 }
 .hidden-trigger span {
   color: #fa7846;
-
 }
 .hidden-trigger.active a {
   transform: rotate(180deg);
 }
 .brief-v .about__second .about--notes {
-  transition: all .3s linear 0s;
+  transition: all 0.3s linear 0s;
   display: block;
 }
 .brief-v .about--notes {
@@ -1656,14 +1654,61 @@
 }
 .brief-v .size-item:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
   display: none;
-  transition: all .3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 .brief-v .about-size--inner {
-  grid-template-areas:
-  "a a b b c c";
+  grid-template-areas: "a a b b c c";
   grid-template-rows: 1fr;
 }
 .brief-v .deadline-block:last-child {
-  transition: all .3s linear 0s;
+  transition: all 0.3s linear 0s;
   display: none;
+}
+
+/*  */
+
+.before-after__nav {
+  max-width: 290px;
+  width: 100%;
+  margin: 24px auto 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.before-after__nav,
+.bf-obj {
+  display: flex;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.bf-obj {
+  max-width: 235px;
+}
+.bf-obj li {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.bf-obj li.active {
+  background: #fa7846;
+  border: none;
+}
+.bf-obj li:hover {
+  background: #fa7846;
+  border: none;
+}
+.bf-obj li {
+  margin: 0 3.5px;
+}
+.bf-arr {
+  cursor: pointer;
 }
