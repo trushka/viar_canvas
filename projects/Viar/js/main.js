@@ -142,8 +142,10 @@ $(document).ready(function () {
   $('.examples-slider__inner img').click(function() {
     let first = $(this).attr('src');
     let second = $(this).data('image');
-    $(".ba-slider > img").attr("src", first);
-    $(".ba-slider .resize img").attr("src", second);
+    $(".ba-slider > picture img").attr("srcset", first);
+    $(".ba-slider > picture source").attr("srcset", first);
+    $(".ba-slider .resize img").attr("srcset", second);
+    $(".ba-slider .resize source").attr("srcset", second);
   })
 
 

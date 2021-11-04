@@ -996,6 +996,7 @@
 }
 .form-types {
   display: flex;
+  align-items: center;
 }
 .form-image {
   position: relative;
@@ -1007,8 +1008,15 @@
 .form-image:nth-child(1) {
   height: 105px;
 }
+.form-image img {
+  width: 100%;
+}
 .form-image {
+  width: 105px;
   height: 80px;
+}
+.form-image:nth-child(3) {
+  width: 105px;
 }
 .form-image:not(:last-child) {
   margin-right: 22px;
