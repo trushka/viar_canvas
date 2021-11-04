@@ -247,6 +247,12 @@ $(document).ready(function () {
   }
 
   let _beforeAfterCount = $(".bf-obj li").length;
+  console.log(_beforeAfterCount)
+  if (_beforeAfterCount <= 7) {
+    bf_obj.slick('unslick');
+    $('.bf-arr').remove();
+    $('.before-after__nav').css('justify-content', 'center');
+  }
   let el = $(".examples-slider__inner .examples-slide:nth-child(3)");
 
   function beforeAfterNavSetter(index) {
