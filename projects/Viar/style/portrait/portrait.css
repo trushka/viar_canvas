@@ -534,10 +534,11 @@
 }
 .ba-slider {
   max-height: 437px !important;
+  /* height: 437px; */
   transition: all 0.4s ease;
 }
 .ba-slider img {
-  /* height: 100%; */
+  /* object-fit: cover; */
 }
 .examples-slider__block .examples-arrow {
   top: calc(50% - 30px);
@@ -592,14 +593,14 @@
   object-fit: cover; */
   width: 100vw;
 }
-.sizes__screen--inner > img:nth-child(2) {
+.sizes__screen--inner .boy {
   position: absolute;
   right: 6%;
   bottom: 4%;
   width: 18%;
   z-index: 10;
 }
-.sizes__screen--inner > img:nth-child(3) {
+.sizes__screen--inner .girl {
   position: absolute;
   bottom: 4%;
   left: 5%;
@@ -1301,7 +1302,7 @@
 /* why portrait */
 
 .portait-why {
-  background: url(../../images/bg/portrait-why.png);
+  background: url(../../images/bg/portrait-why.jpg);
   background-position: 61% 215px;
   background-repeat: no-repeat;
   padding: 100px 0 5px;

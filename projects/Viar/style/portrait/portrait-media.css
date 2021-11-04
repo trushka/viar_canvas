@@ -155,8 +155,8 @@
   .sizes__screen--inner {
     margin-top: -7.5%;
   }
-  .sizes__screen--inner > img:nth-child(2),
-  .sizes__screen--inner > img:nth-child(3) {
+  .sizes__screen--inner .boy,
+  .sizes__screen--inner .girl {
     bottom: 6%;
   }
 }
@@ -491,7 +491,7 @@
   .size-title {
     display: none;
   }
-  .sizes__screen--inner > img:nth-child(3) {
+  .sizes__screen--inner .girl {
     display: none;
   }
   .c-examples + .ellipse {
@@ -527,7 +527,7 @@
     display: flex;
     align-items: center;
   }
-  .sizes__screen--inner > img:nth-child(2) {
+  .sizes__screen--inner .boy {
     right: -2%;
     width: 22%;
     bottom: 8%;
