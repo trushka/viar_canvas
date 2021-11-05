@@ -5,8 +5,19 @@
 }
 /* portrait page */
 
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .portrait__screen {
+    background: url(../../images/bg/bg-shadow-screen.png),
+      linear-gradient(95.97deg, #fdf8f4 0.93%, #f2e3df 97.39%);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    /* background-size: cover, contain; */
+  }
+
+}}
 .portrait__screen {
-  background: url(../../images/bg/bg-shadow-screen.png),
+  background: url(../../images/bg/bg-shadow-screen.webp),
     linear-gradient(95.97deg, #fdf8f4 0.93%, #f2e3df 97.39%);
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -688,8 +699,11 @@
   grid-area: a;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
+.a img {
+  max-width: 125px;
+}
 .b {
   grid-area: b;
   display: flex;
@@ -733,13 +747,32 @@
 .e img {
   width: 75%;
 }
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .size-desc {
+    transform: translateX(-50%);
+    background: url(../../images/sizes/borderM.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 
+}}
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .e .size-desc,
+  .a .size-desc {
+    background: url(../../images/sizes/borderMR.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+}}
 .size-desc {
   position: absolute;
   width: 145px;
   left: 50%;
   transform: translateX(-50%);
-  background: url(../../images/sizes/borderM.png);
+  background: url(../../images/sizes/borderM.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 21px;
@@ -748,9 +781,10 @@
   align-items: center;
   z-index: 11;
 }
+
 .e .size-desc,
 .a .size-desc {
-  background: url(../../images/sizes/borderMR.png);
+  background: url(../../images/sizes/borderMR.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -866,9 +900,19 @@
   border-radius: 10px;
   overflow: hidden;
 }
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .formalization__block--top {
+    background: url(../../images/formalizationHead.png),
+      url(../../images/formalizationBody.png);
+    background-repeat: no-repeat;
+    background-size: 100% 118px, 100% calc(100% - 108px);
+    background-position: 0 0, 0 110px;
+  }
+}}
 .formalization__block--top {
-  background: url(../../images/formalizationHead.png),
-    url(../../images/formalizationBody.png);
+  background: url(../../images/formalizationHead.webp),
+    url(../../images/formalizationBody.webp);
   background-repeat: no-repeat;
   background-size: 100% 118px, 100% calc(100% - 108px);
   background-position: 0 0, 0 110px;
@@ -948,12 +992,21 @@
   justify-content: space-between;
   border-radius: 4px;
 }
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .formalization-prompt--wrapper {
+    background: url(../../images/prompt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}}
 .formalization-prompt--wrapper {
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 5px;
-  background: url(../../images/prompt.png);
+  background: url(../../images/prompt.webp);
   box-shadow: 0px 20px 50px rgba(53, 64, 84, 0.1);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1301,8 +1354,18 @@
 
 /* why portrait */
 
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .portait-why {
+    background: url(../../images/bg/portrait-why.jpg);
+    background-position: 61% 215px;
+    background-repeat: no-repeat;
+    padding: 100px 0 5px;
+  }
+}}
+
 .portait-why {
-  background: url(../../images/bg/portrait-why.jpg);
+  background: url(../../images/bg/portrait-why.webp);
   background-position: 61% 215px;
   background-repeat: no-repeat;
   padding: 100px 0 5px;
@@ -1315,10 +1378,21 @@
 .portait-why .why-form {
   padding-bottom: 54px;
 }
+@media not all and (min-resolution:.001dpcm) 
+{ @supports (-webkit-appearance:none) {
+  .portait-why-form {
+    background: url(../../images/formalizationHead.png),
+      url(../../images/formalizationBody.png),
+      url(../../images/formalizationFooter.png);
+    background-repeat: no-repeat;
+    background-size: 100% 118px, 100% calc(100% - 108px - 50px), 100% 57px;
+    background-position: 0 0, 0 50px, 0 calc(100% - 57px);
+  }
+}}
 .portait-why-form {
-  background: url(../../images/formalizationHead.png),
-    url(../../images/formalizationBody.png),
-    url(../../images/formalizationFooter.png);
+  background: url(../../images/formalizationHead.webp),
+    url(../../images/formalizationBody.webp),
+    url(../../images/formalizationFooter.webp);
   background-repeat: no-repeat;
   background-size: 100% 118px, 100% calc(100% - 108px - 50px), 100% 57px;
   background-position: 0 0, 0 50px, 0 calc(100% - 57px);
