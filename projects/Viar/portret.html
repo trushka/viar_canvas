@@ -815,11 +815,16 @@
           <div class="about__screen--blocks">
             <div class="about__block about__first">
               <div class="about-portrait">
-                <img
+                <picture>
+                  <source srcset="images/about-borderB.webp" type="image/webp" />
+                  <source srcset="images/about-borderB.png" type="image/png" />
+                  <img
                   class="about-border big-border"
                   src="images/about-borderB.png"
                   alt=""
                 />
+                </picture>
+                
                 <div class="about__portrait-img">
                   <picture>
                     <source srcset="images/about1.webp" type="image/webp" />
@@ -877,7 +882,11 @@
                   </div>
                 </div>
                 <div class="fit-image--bg">
-                  <img src="images/about-m1.png" alt="" />
+                  <picture>
+                    <source srcset="images/about-m1.webp" type="image/webp" />
+                    <source srcset="images/about-m1.png" type="image/png" />
+                    <img srcset="images/about-m1.png" alt=""/>
+                  </picture>
                 </div>
               </div>
               <div class="about-offers">
@@ -4276,7 +4285,7 @@
                     height="566"
                     id="videoPlayer"
                     preload="none"
-                    poster="images/video.jpg"
+                    poster="images/video.webp"
                     controls="controls"
                   >
                     <source src="video.mp4" type="video/mp4" />
