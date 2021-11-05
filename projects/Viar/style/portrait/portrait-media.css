@@ -528,9 +528,12 @@
     align-items: center;
   }
   .sizes__screen--inner .boy {
-    right: -2%;
+    right: 0%;
     width: 22%;
     bottom: 8%;
+  }
+  .sizes-item img {
+    border-radius: 2px;
   }
   .sizes__screen--inner {
     margin-top: -2.5%;
