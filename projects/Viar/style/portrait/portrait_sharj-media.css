@@ -1,9 +1,9 @@
-@media only screen and (max-width: 112.5em) {
+@media only screen and (max-width: 1800px) {
   .sizes__screen--inner {
     margin-top: -6.5%;
   }
 }
-@media only screen and (max-width: 106.25em) {
+@media only screen and (max-width: 1700px) {
   .size-desc {
     width: 100px;
     font-size: 12px;
@@ -14,7 +14,7 @@
     height: 16px;
   }
 }
-@media only screen and (max-width: 93.75em) {
+@media only screen and (max-width: 1500px) {
   .about__first {
     margin-top: 100px;
   }
@@ -75,8 +75,19 @@
   .title-left .page-title {
     margin-bottom: 12px;
   }
+
+  /*  */
+  .about__first-sharj {
+    align-items: center;
+  }
+  .about__first-sharj .about-portrait {
+    height: 500px;
+  }
 }
-@media only screen and (max-width: 84.375em) {
+@media only screen and (max-width: 1360px) {
+  .sharj__portraits--wrapper .portraits-image {
+    flex: 0 0 55%;
+  }
   .portraits-image {
     flex: 0 0 65%;
   }
@@ -116,7 +127,7 @@
     top: 12%;
   }
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 1200px) {
   .about__first .about-text {
     max-width: 48%;
     margin-left: 0;
@@ -137,7 +148,8 @@
   .big-border {
     bottom: 3px;
   }
-  .about__first p:last-child {
+
+  .about__first .about-text > p:last-child {
     margin-top: 20px;
   }
   .about-size--inner {
@@ -158,6 +170,10 @@
   .sizes__screen--inner .boy,
   .sizes__screen--inner .girl {
     bottom: 6%;
+  }
+  /*  */
+  .about__first-sharj .about-portrait {
+    height: auto;
   }
 }
 @media only screen and (max-width: 70.25em) {
@@ -185,6 +201,11 @@
   .portraits__wrapper {
     flex-direction: column;
     height: 720px;
+    justify-content: unset;
+  }
+  .sharj__portraits--wrapper {
+    flex-direction: column;
+    height: 850px;
     justify-content: unset;
   }
   .portraits-image,
@@ -305,6 +326,11 @@
   }
   .brief-v .about-offer:not(:last-child) {
     display: none;
+  }
+
+  /*  */
+  .sharj__screen .portraits-slide {
+    padding-bottom: 75px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -562,6 +588,53 @@
   .size-desc {
     display: none;
   }
+
+  /*  */
+  .portraits-title {
+    margin: 0 auto;
+  }
+  .portrait-sharj__blocks {
+    justify-content: center;
+  }
+  .portraits-btn a {
+    max-width: 480px;
+  }
+  .portrait-sharj__blocks {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .portrait-sharj__blocks > div {
+    width: 100%;
+    max-width: 255px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .portrait-sharj__block:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .portrait-sharj__block:not(:last-child) {
+    margin-right: auto;
+  }
+  .portrait-sharj__block:last-child {
+    margin-bottom: 0;
+  }
+  /*  */
+  .about__row--blocks {
+    flex-direction: column;
+  }
+  .portraits-heading p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__row {
+    margin-top: 20px;
+  }
+  
+  .about__row-block {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+  
 }
 @media only screen and (max-width: 425px) {
   .mobile-sizes--inner {
@@ -785,6 +858,51 @@
       "c c c d d d";
     grid-template-rows: 1fr 1fr;
   }
+  /*  */
+  .sharj__portraits--wrapper.portraits__wrapper {
+    height: 620px;
+  }
+  /*  */
+  .inner-text p,
+  .about__text-title,
+  .about-o {
+    text-align: center;
+  }
+  .about-o {
+    max-width: 302px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about-o {
+    margin-top: 10px;
+  }
+  .about__text-title {
+    font-size: 16.3921px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .about__row-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .about__row {
+    flex-direction: column;
+  }
+  .about__row--blocks {
+    align-items: center;
+  }
+  .about__row--blocks > div {
+    width: 100%;
+  }
+  .inner-text p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .inner-text p {
+    font-size: 12.2941px;
+    line-height: 23px;
+  }
 }
 @media only screen and (max-width: 25em) {
   .form-image {
@@ -828,6 +946,10 @@
   .portrait__screen .portraits-slide {
     padding-bottom: 65px;
   }
+  /*  */
+  .sharj__screen .portraits-slide {
+    padding-bottom: 45px;
+  }
   .about__screen--wrapper {
     margin: 30px 0;
   }
@@ -837,10 +959,29 @@
   .about__first.about__block {
     margin-top: 55px;
   }
-  .about-text {
+  .about__block {
+    margin-bottom: 37px !important;
+  }
+  .portrait-sharj__block,
+  .about__row-block {
+    height: 54px;
+  }
+  .portrait-sharj__blocks {
+    margin-bottom: 13px;
+  }
+  .portrait-sharj__block--inner {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .about-text  {
     text-align: center;
     font-size: 12px;
     line-height: 21px;
+  }
+  .portrait-sharj__block--inner p {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: start;
   }
   .offer-text {
     font-size: 16px;
@@ -863,6 +1004,10 @@
   .about--note {
     font-size: 13px;
     line-height: 20px;
+  }
+  /*  */
+  .sharj__portraits--wrapper.portraits__wrapper {
+    height: 544px;
   }
 }
 @media only screen and (max-width: 20em) {

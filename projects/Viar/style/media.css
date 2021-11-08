@@ -126,7 +126,12 @@
     .top {
       margin-top: -42px;
     }
-
+    .examples-prev, .reviews-prev {
+      left: -15px;
+    }
+    .examples-right, .reviews-right {
+      right: -15px;
+    }
     .portraits-arrow {
       width: 110px;
       top: auto;
