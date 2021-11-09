@@ -84,6 +84,49 @@ $(document).ready(function () {
 
   $(".ba-slider").beforeAfter();
 
+
+
+
+
+
+
+    // sharj slider
+
+    let sharjBirthdaySlider = $(".sharj__birthday-slider");
+    sharjBirthdaySlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".birthday-arrow .sharj-prev",
+      nextArrow: ".birthday-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+
+
+
+
+
+
+
   // TABS FUNCTIONS
 
   function changeActiveTab(
@@ -193,11 +236,11 @@ $(document).ready(function () {
   $(".hidden-trigger").click(function () {
     $(this).toggleClass("active");
     $(this).closest(".about__block").toggleClass("brief-v");
-    if ($(this).closest(".about__block").hasClass('brief-v')) {
+    if ($(this).closest(".about__block").hasClass("brief-v")) {
       $(".about__screen")[0].scrollIntoView({
         behavior: "smooth", // or "auto" or "instant"
-        block: "start" // or "end"
-      })
+        block: "start", // or "end"
+      });
     }
   });
 
@@ -210,6 +253,9 @@ $(document).ready(function () {
   };
   mediaAction();
   function mediaAction() {
+    if (mediaChecker("max", 750)) {
+      sharjBirthdaySlider[0]?.slick?.refresh();
+    }
     if (mediaChecker("max", 500)) {
       stageSlider[0]?.slick?.refresh();
     }
@@ -227,20 +273,21 @@ $(document).ready(function () {
   $(".examples-slider__inner img").click(function () {
     let first = $(this).attr("src");
     let second = $(this).data("image");
-    let slideTarget = $(this).closest('.examples-slide');
-    let index = [...slideTarget[0].parentElement.children].indexOf(slideTarget[0]) + 1;
+    let slideTarget = $(this).closest(".examples-slide");
+    let index =
+      [...slideTarget[0].parentElement.children].indexOf(slideTarget[0]) + 1;
     fromSliderBeforeAfterSetter(first, second);
-    beforeAfterNavSetter(index)
+    beforeAfterNavSetter(index);
   });
 
-  $('.bf-obj li').click(function() {
+  $(".bf-obj li").click(function () {
     $(`.bf-obj li`).removeClass("active");
     $(this).addClass("active");
     let first = $(this).data("imageb");
     let second = $(this).data("imagea");
-    console.log(first, second)
+    console.log(first, second);
     fromSliderBeforeAfterSetter(first, second);
-  })
+  });
 
   function fromSliderBeforeAfterSetter(first, second) {
     $(".ba-slider > picture img").attr("srcset", first);
@@ -250,11 +297,11 @@ $(document).ready(function () {
   }
 
   let _beforeAfterCount = $(".bf-obj li").length;
-  console.log(_beforeAfterCount)
+  console.log(_beforeAfterCount);
   if (_beforeAfterCount <= 7) {
-    bf_obj.slick('unslick');
-    $('.bf-arr').remove();
-    $('.before-after__nav').css('justify-content', 'center');
+    bf_obj.slick("unslick");
+    $(".bf-arr").remove();
+    $(".before-after__nav").css("justify-content", "center");
   }
   let el = $(".examples-slider__inner .examples-slide:nth-child(3)");
 
@@ -262,16 +309,23 @@ $(document).ready(function () {
     let slickIndex = index - 1;
     $(`.bf-obj li`).removeClass("active");
     $(`.bf-obj li:nth-child(${index})`).addClass("active");
-    console.log(slickIndex)
+    console.log(slickIndex);
     bf_obj.slick("slickGoTo", slickIndex);
   }
 
+  $(".mobile-sizes--inner ul li").click(function () {
+    let index = [...$(this)[0].parentElement.children].indexOf($(this)[0]) + 1;
+    $(".sizes-item").removeClass("active");
+    $(`.sizes-item:nth-child(${index})`).addClass("active");
+  });
+
+  var docWidth = document.documentElement.offsetWidth;
+
+  [].forEach.call(document.querySelectorAll("*"), function (el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  });
 
 
-
-  $('.mobile-sizes--inner ul li').click(function() {
-    let index = [...($(this))[0].parentElement.children].indexOf($(this)[0]) + 1;
-    $('.sizes-item').removeClass('active');
-    $(`.sizes-item:nth-child(${index})`).addClass('active');
-  })
 });

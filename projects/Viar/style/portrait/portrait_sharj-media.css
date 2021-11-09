@@ -3,6 +3,7 @@
     margin-top: -6.5%;
   }
 }
+
 @media only screen and (max-width: 1700px) {
   .size-desc {
     width: 100px;
@@ -14,6 +15,8 @@
     height: 16px;
   }
 }
+
+
 @media only screen and (max-width: 1500px) {
   .about__first {
     margin-top: 100px;
@@ -84,6 +87,73 @@
     height: 500px;
   }
 }
+
+@media only screen and (max-width: 1380px) {
+  .arts__title {
+    font-size: 24px;
+    line-height: 56px;
+    margin-bottom: 0;
+  }
+  .arts__image_vertical {
+    width: 282px;
+    height: 335px;
+  }
+  .arts__image_vertical .arts__product-image {
+    width: 200px;
+    right: 47px;
+    height: 285px;
+    top: 3px;
+  }
+  .arts__image_horizontal {
+    width: 282px;
+    height: auto;
+  }
+  .arts__image_horizontal .arts__product-image {
+    width: 238px;
+    right: 40px;
+    height: 169px;
+    top: 65px;
+  }
+  .arts__image_clear {
+    width: 234px;
+    height: 288px;
+  }
+  .arts__image_clear .arts__bg {
+    width: 100%;
+    height: 100%;
+  }
+  .arts__image_clear .arts__product-image {
+    width: 120%;
+    height: auto;
+    top: 40px;
+  }
+  .arts__more {
+    width: 209px;
+    height: 46px;
+    font-size: 12px;
+    margin-top: 57px;
+  }
+  .arts__description {
+    width: 295px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .arts__price {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .arts__price span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .arts__btn {
+    width: 181px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 1360px) {
   .sharj__portraits--wrapper .portraits-image {
     flex: 0 0 55%;
@@ -126,7 +196,12 @@
   .sizes__screen--inner .size-frame {
     top: 12%;
   }
+  /*  */
+  .sharj__birthday-slider {
+    justify-content: center;
+  }
 }
+
 @media only screen and (max-width: 1200px) {
   .about__first .about-text {
     max-width: 48%;
@@ -176,14 +251,37 @@
     height: auto;
   }
 }
-@media only screen and (max-width: 70.25em) {
+
+
+@media only screen and (max-width: 1124px) {
   .portraits-image {
     flex: 0 0 70%;
   }
   .about-offer p {
     padding-right: 0;
   }
+  .sharj-flex {
+    flex-direction: column;
+  }
+  .mobile-title {
+    display: block;
+  }
+  .desk-title {
+    display: none;
+  }
+  .sharj__left {
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+  .sharj-image {
+    width: fit-content;
+  }
+  .sharj-title {
+    text-align: center;
+  }
 }
+
 @media only screen and (max-width: 1100px) {
   .formalization-prompt--wrapper {
     display: none;
@@ -197,7 +295,9 @@
     width: 0;
   }
 }
-@media only screen and (max-width: 61.25em) {
+
+
+@media only screen and (max-width: 980px) {
   .portraits__wrapper {
     flex-direction: column;
     height: 720px;
@@ -333,12 +433,30 @@
     padding-bottom: 75px;
   }
 }
+
+
 @media only screen and (max-width: 750px) {
   .sizes__screen--inner .size-frame {
     top: 8%;
   }
+  .sharj-arrow {
+    display: block;
+  }
+  .sharj__slider-item {
+    width: 315px;
+    flex: unset;
+    margin: 0 15px 10px;
+  }
+  .sharj__birthday-slider {
+    margin-bottom: 40px;
+  }
+  .sharj-adder {
+    margin-top: 40px;
+  }
 }
-@media only screen and (max-width: 43.75em) {
+
+
+@media only screen and (max-width: 700px) {
   .portrait__screen .portraits-slide {
     padding-top: 110px;
   }
@@ -636,6 +754,8 @@
   }
   
 }
+
+
 @media only screen and (max-width: 425px) {
   .mobile-sizes--inner {
     padding: 50px 34px 23px;
@@ -647,118 +767,8 @@
     width: 75%;
   }
 }
-@media only screen and (max-width: 1380px) {
-  .arts__title {
-    font-size: 24px;
-    line-height: 56px;
-    margin-bottom: 0;
-  }
-  .arts__image_vertical {
-    width: 282px;
-    height: 335px;
-  }
-  .arts__image_vertical .arts__product-image {
-    width: 200px;
-    right: 47px;
-    height: 285px;
-    top: 3px;
-  }
-  .arts__image_horizontal {
-    width: 282px;
-    height: auto;
-  }
-  .arts__image_horizontal .arts__product-image {
-    width: 238px;
-    right: 40px;
-    height: 169px;
-    top: 65px;
-  }
-  .arts__image_clear {
-    width: 234px;
-    height: 288px;
-  }
-  .arts__image_clear .arts__bg {
-    width: 100%;
-    height: 100%;
-  }
-  .arts__image_clear .arts__product-image {
-    width: 120%;
-    height: auto;
-    top: 40px;
-  }
-  .arts__more {
-    width: 209px;
-    height: 46px;
-    font-size: 12px;
-    margin-top: 57px;
-  }
-  .arts__description {
-    width: 295px;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 15px;
-  }
-  .arts__price {
-    font-size: 12px;
-    margin-bottom: 30px;
-  }
-  .arts__price span {
-    font-size: 18px;
-    line-height: 21px;
-  }
-  .arts__btn {
-    width: 181px;
-    height: 50px;
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .stage-item {
-    flex: unset;
-    margin-bottom: 65px;
-  }
-  .stage-img {
-    margin: 0 auto;
-    max-width: 280px;
-    display: flex;
-    justify-content: center;
-  }
-  .stage-img img {
-    width: 100px;
-    height: 100px;
-  }
-  .stage-num {
-    width: 32px;
-    height: 32px;
-    font-size: 12px;
-    left: 25%;
-  }
-  .c-ex-prev {
-    left: -14px;
-  }
-  .c-ex-next {
-    right: -14px;
-  }
-  .p-examples-top {
-    padding: 36px 0;
-  }
-  .p-examples-top .top-title {
-    margin-bottom: 10px;
-  }
-  .others .section-frame {
-    padding: 0;
-  }
-  .others-title {
-    padding: 0 15px;
-  }
-  .others-slider--wrapper .examples-prev {
-    left: 4px;
-  }
-  .others-slider--wrapper .examples-next {
-    right: 4px;
-  }
-}
-@media only screen and (max-width: 36em) {
+
+@media only screen and (max-width: 576px) {
   .portraits-image {
     position: absolute;
     bottom: -55px;
@@ -903,8 +913,102 @@
     font-size: 12.2941px;
     line-height: 23px;
   }
+  /*  */
+  .mid-pad {
+    padding: 36px 0 60px;
+  }
+  .sharj__content > *:not(:last-child),
+  .sharj__list > div:not(:last-child) {
+    margin-bottom: 19px;
+  }
+  .sharj-btn {
+    width: 336px;
+    max-width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+  .sharj__text,
+  .sharj__list-item {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .sharj__list-item img {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+  .sharj-image {
+    max-width: 320px;
+  }
+  .sharj-image img {
+    width: 100%;
+  }
+  .sharj-title {
+    margin-bottom: 20px;
+  }
+  .sharj-item--btn {
+    font-size: 14px;
+    height: 54px;
+  }
 }
-@media only screen and (max-width: 25em) {
+
+
+@media only screen and (max-width: 500px) {
+  .stage-item {
+    flex: unset;
+    margin-bottom: 65px;
+  }
+  .stage-img {
+    margin: 0 auto;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  .stage-img img {
+    width: 100px;
+    height: 100px;
+  }
+  .stage-num {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    left: 25%;
+  }
+  .c-ex-prev {
+    left: -14px;
+  }
+  .c-ex-next {
+    right: -14px;
+  }
+  .p-examples-top {
+    padding: 36px 0;
+  }
+  .p-examples-top .top-title {
+    margin-bottom: 10px;
+  }
+  .others .section-frame {
+    padding: 0;
+  }
+  .others-title {
+    padding: 0 15px;
+  }
+  .others-slider--wrapper .examples-prev {
+    left: 4px;
+  }
+  .others-slider--wrapper .examples-next {
+    right: 4px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
   .form-image {
     width: 50px;
     height: 50px;
@@ -1009,8 +1113,32 @@
   .sharj__portraits--wrapper.portraits__wrapper {
     height: 544px;
   }
+  .sharj-image::after {
+    top: 15%;
+    right: 2%;
+    width: 100%;
+    height: 85%;
+    border: 3px solid #000;
+    z-index: 0;
+  }
+  .sharj__slider-item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .sharj-arrow a {
+    width: 36px;
+    height: 36px;
+  }
+  .sharj-prev {
+    left: -8px;
+  }
+  .sharj-next {
+    right: -8px;
+  }
 }
-@media only screen and (max-width: 20em) {
+
+
+@media only screen and (max-width: 320px) {
   .about-portrait {
     max-width: 235px;
   }

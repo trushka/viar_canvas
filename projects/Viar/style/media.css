@@ -1,10 +1,10 @@
 
-  @media screen and (max-width: 106.25em) {
+  @media only screen and (max-width: 106.25em) {
     .why {
       background-size: 115% auto;
     }
   }
-  @media screen and (max-width: 100em) {
+  @media only screen and (max-width: 100em) {
     .happy {
       padding-bottom: 580px;
     }
@@ -22,7 +22,7 @@
       background-size: 130% auto;
     }
   }
-  @media screen and (max-width: 93.75em) {
+  @media only screen and (max-width: 93.75em) {
     .section-frame {
       max-width: 1200px;
     }
@@ -103,7 +103,13 @@
       min-height: 60px;
     }
   }
-  @media screen and (max-width: 84.375em) {
+  @media only screen and (max-width: 84.375em) {
+    .examples-next, .portraits-next {
+      right: 0;
+    }
+    .examples-prev, .portraits-prev {
+      left: 0;
+    }
     .services-item__title {
       min-height: auto;
     }
@@ -138,14 +144,9 @@
       right: 0;
       bottom: 0;
     }
-    .portraits-prev {
-      left: 0;
-    }
-    .portraits-next {
-      right: 0;
-    }
+
   }
-  @media screen and (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
 
     
     .services-list {
@@ -186,12 +187,12 @@
       background-size: 115% auto;
     }
   }
-  @media screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 68.75em) {
     .why {
       background-size: 130% auto;
     }
   }
-  @media screen and (max-width: 61.25em) {
+  @media only screen and (max-width: 61.25em) {
     .faq-info h2,
     .faq-photo {
       display: none;
@@ -336,7 +337,7 @@
       margin-top: 3px;
     }
   }
-  @media screen and (max-width: 61.25em) and (max-width: 43.75em) {
+  @media only screen and (max-width: 61.25em) and (max-width: 43.75em) {
     .work-list {
       grid-template-columns: repeat(
         auto-fill,
@@ -344,7 +345,7 @@
       );
     }
   }
-  @media screen and (max-width: 61.25em) and (max-width: 61.25em) {
+  @media only screen and (max-width: 61.25em) and (max-width: 61.25em) {
     .work-list {
       grid-template-columns: repeat(
         auto-fill,
@@ -352,7 +353,7 @@
       );
     }
   }
-  @media screen and (max-width: 61.25em) and (max-width: 75em) {
+  @media only screen and (max-width: 61.25em) and (max-width: 75em) {
     .work-list {
       grid-template-columns: repeat(
         auto-fill,
@@ -360,7 +361,7 @@
       );
     }
   }
-  @media screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 43.75em) {
     .certificate-info a,
     .examples-slide__btn,
     .faq-all,
@@ -571,7 +572,7 @@
       left: 0;
       right: 0;
       margin: 0 auto;
-      bottom: -100px;
+      bottom: 50px;
     }
     .examples-arrow a,
     .portraits-arrow a {
@@ -826,12 +827,12 @@
     }
 
   }
-  @media screen and (max-width: 43.75em) and (max-height: 37.5em) {
+  @media only screen and (max-width: 43.75em) and (max-height: 37.5em) {
     .happy {
       padding-bottom: 345px;
     }
   }
-  @media screen and (max-width: 43.75em) and (max-width: 43.75em) {
+  @media only screen and (max-width: 43.75em) and (max-width: 43.75em) {
     .happy-list,
     .services-list {
       grid-template-columns: repeat(
@@ -840,7 +841,7 @@
       );
     }
   }
-  @media screen and (max-width: 43.75em) and (max-width: 61.25em) {
+  @media only screen and (max-width: 43.75em) and (max-width: 61.25em) {
     .happy-list,
     .services-list {
       grid-template-columns: repeat(
@@ -849,7 +850,7 @@
       );
     }
   }
-  @media screen and (max-width: 43.75em) and (max-width: 75em) {
+  @media only screen and (max-width: 43.75em) and (max-width: 75em) {
     .services-list {
       grid-template-columns: repeat(
         auto-fill,
@@ -863,7 +864,7 @@
       );
     }
   }
-  @media (max-height: 36em) {
+ @media only screen and (max-height: 36em) {
     .fancybox-slide {
       padding-left: 6px;
       padding-right: 6px;
@@ -895,7 +896,7 @@
       }
     }
   }
-  @media (max-width: 36em) {
+ @media only screen and (max-width: 36em) {
     .fancybox-thumbs {
       width: 110px;
     }
@@ -906,7 +907,7 @@
       max-width: calc(100% - 10px);
     }
   }
-  @media screen and (max-width: 25em) {
+  @media only screen and (max-width: 25em) {
     .work {
       padding-bottom: 337px;
     }
