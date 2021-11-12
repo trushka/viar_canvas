@@ -347,7 +347,7 @@ $(document).ready(function () {
 			if (counterFile > 1) {
 
 				$(this).siblings('.js-file-preview').hide();
-				$(this).siblings('.js-file-upload').hide();;
+				$(this).siblings('.js-file-upload').hide();
 				$(this).siblings('.js-file-multiple').css({ 'display': 'flex' });
 				$(this).addClass('file-input_save');
 			} else {

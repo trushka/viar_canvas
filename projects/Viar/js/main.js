@@ -107,7 +107,7 @@ $(document).ready(function () {
           breakpoint: 750,
           settings: {
             slidesToShow: 1,
-            variableWidth: true
+            // variableWidth: true
           },
         },
         {
@@ -123,9 +123,235 @@ $(document).ready(function () {
 
 
 
+    let sharjWeddingSlider = $(".sharj__wedding-slider");
+    sharjWeddingSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".wedding-arrow .sharj-prev",
+      nextArrow: ".wedding-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+    let sharjCollegueSlider = $(".sharj__collegue-slider");
+    sharjCollegueSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".collegue-arrow .sharj-prev",
+      nextArrow: ".collegue-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+    let sharjGrouppedSlider = $(".sharj__groupped-slider");
+    sharjGrouppedSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".groupped-arrow .sharj-prev",
+      nextArrow: ".groupped-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
 
 
+    let sharjFamilySlider = $(".sharj__family-slider");
+    sharjFamilySlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".family-arrow .sharj-prev",
+      nextArrow: ".family-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
 
+    
+
+
+    let sharjWhiteblackSlider = $(".sharj__whiteblack-slider");
+    sharjWhiteblackSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".whiteblack-arrow .sharj-prev",
+      nextArrow: ".whiteblack-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+
+    let sharjPatternSlider = $(".sharj__pattern-slider");
+    sharjPatternSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".pattern-arrow .sharj-prev",
+      nextArrow: ".pattern-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+
+    let sharjEpisodesSlider = $(".sharj__episodes-slider");
+    sharjEpisodesSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".episodes-arrow .sharj-prev",
+      nextArrow: ".episodes-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
+
+    let sharjPopupSlider = $(".sharj__popup-slider");
+    sharjPopupSlider.slick({
+      slidesToShow: 1,
+      infinite: false,
+      prevArrow: ".popup-arrow .sharj-prev",
+      nextArrow: ".popup-arrow .sharj-next",
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick",
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
 
   // TABS FUNCTIONS
 
@@ -255,10 +481,25 @@ $(document).ready(function () {
   function mediaAction() {
     if (mediaChecker("max", 750)) {
       sharjBirthdaySlider[0]?.slick?.refresh();
+      sharjWeddingSlider[0]?.slick?.refresh();
+      sharjCollegueSlider[0]?.slick?.refresh();
+      sharjGrouppedSlider[0]?.slick?.refresh();
+      sharjFamilySlider[0]?.slick?.refresh();
+      sharjWhiteblackSlider[0]?.slick?.refresh();
+      sharjPatternSlider[0]?.slick?.refresh();
+      sharjEpisodesSlider[0]?.slick?.refresh();
+      sharjPopupSlider[0]?.slick?.refresh();
     }
     if (mediaChecker("max", 500)) {
       stageSlider[0]?.slick?.refresh();
     }
+
+
+
+    let whySharjHeight = $('.sharj-why__screen').height();
+
+    $('.sharj-why__screen').css('margin-top', `-${parseInt(whySharjHeight)}px`);
+    $('.sharj-formalization').css('padding-bottom', `${parseInt(whySharjHeight)}px`);
   }
 
   let bf_obj = $(".bf-obj");
@@ -327,5 +568,23 @@ $(document).ready(function () {
     }
   });
 
+  $('.sharj-btn').click(function (e) {
+		e.preventDefault();
+		$('body').addClass('open-frame');
+		$('.popup-frame').css("display", "flex").hide().fadeIn();
+    if (mediaChecker('max', 750)) {
+      sharjPopupSlider[0]?.slick?.refresh();
+    }
+		$('.popup-sharj').fadeIn();
+	});
+
+  $('.sharj-item--btn').click(function() {
+    $('body').addClass('open-frame');
+		$('.popup-frame').css("display", "flex").hide().fadeIn();
+    if (mediaChecker('max', 750)) {
+      sharjPopupSlider[0]?.slick?.refresh();
+    }
+		$('.popup-sharj-individual').fadeIn();
+  })
 
 });
