@@ -530,6 +530,34 @@
     grid-column: 1 / 3;
     grid-row: 3 / 4;
   }
+  /*  */
+  .canvas-portrait .portraits-title {
+    white-space: unset;
+  }
+  .about__canvas-row {
+    flex-direction: column;
+  }
+  .about__canvas-row > div {
+    flex: 0 0 100%;
+  }
+  .about__canvas-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .brief-v .about__canvas-item:not(:first-child) {
+    display: none;
+  }
+  .about__fit--row,
+  .about__canvas--offers {
+    display: block;
+  }
+  .about__fit--row > div:not(:last-child),
+  .about__canvas--offers > div:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .brief-v .about__fit--row > div:nth-child(2),
+  .brief-v .about__fit--row > div:nth-child(3) {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 750px) {
