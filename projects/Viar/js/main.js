@@ -527,7 +527,6 @@ $(document).ready(function () {
     $(this).addClass("active");
     let first = $(this).data("imageb");
     let second = $(this).data("imagea");
-    console.log(first, second);
     fromSliderBeforeAfterSetter(first, second);
   });
 
@@ -589,5 +588,14 @@ $(document).ready(function () {
 		$('.popup-sharj').fadeOut(0);
 		$('.popup-sharj-individual').fadeIn();
   })
+
+  $('.ba-canvas_nav-item').click(function() {
+    $('.ba-canvas_nav-item').removeClass('active');
+    $(this).addClass('active');
+    let first = $(this).data("imageb");
+    let second = $(this).data("imagea");
+    fromSliderBeforeAfterSetter(first, second);
+  })
+
 
 });

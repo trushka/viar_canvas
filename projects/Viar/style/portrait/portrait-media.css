@@ -85,6 +85,13 @@
   .about__first-sharj .about-portrait {
     height: 500px;
   }
+  /*  */
+  .price-block--inner {
+    flex-direction: column;
+  }
+  .price-note {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 1380px) {
@@ -209,6 +216,10 @@
   .sharj__birthday-slider {
     justify-content: center;
   }
+  /*  */
+  .type__features li:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -291,6 +302,10 @@
   }
   .sharj-title {
     text-align: center;
+  }
+  /*  */
+  .type__features li {
+    font-size: 16px;
   }
 }
 
@@ -557,6 +572,19 @@
   .brief-v .about__fit--row > div:nth-child(2),
   .brief-v .about__fit--row > div:nth-child(3) {
     display: none;
+  }
+  /*  */
+  .retouch__block {
+    flex-direction: column;
+  }
+  .type__features {
+    margin: 30px 0;
+  }
+  .price-note::after {
+    top: 105%;
+  }
+  .price-block--inner {
+    padding: 14px;
   }
 }
 
@@ -1175,7 +1203,24 @@
     font-size: 14px;
     line-height: 140%;
   }
-
+  /*  */
+  .price-amout {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .price-note {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .retouch-tabs {
+    margin: 30px auto;
+  }
+  .price-note::after {
+    width: 55px;
+    height: 79px;
+    background-position: center center;
+    background-size: 100% 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1222,6 +1267,10 @@
   }
   .others-slider--wrapper .examples-next {
     right: 4px;
+  }
+  /*  */
+  .absolute-block {
+    display: none;
   }
 }
 @media only screen and (max-width: 425px) {
