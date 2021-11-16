@@ -1272,6 +1272,26 @@
   .absolute-block {
     display: none;
   }
+  /*  */
+  .portrait-sharj__block--inner p {
+    font-size: 10px;
+  }
+  .portrait-sharj__block--inner svg {
+    flex: 0 0 16px;
+    margin-right: 10px;
+  }
+  .portrait-sharj__blocks > div {
+    max-width: 170px;
+    height: 50px;
+    flex: 0 0 48%;
+    min-width: unset;
+  }
+  .portrait-sharj__blocks {
+    flex-direction: row;
+  }
+  .sharj__portraits--wrapper.portraits__wrapper {
+    height: 500px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .mobile-sizes--inner {
@@ -1360,9 +1380,12 @@
     line-height: 21px;
   }
   .portrait-sharj__block--inner p {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 9px;
+    line-height: 12px;
     text-align: start;
+  }
+  .portrait-sharj__block--inner {
+    padding: 0 10px;
   }
   .offer-text {
     font-size: 16px;
