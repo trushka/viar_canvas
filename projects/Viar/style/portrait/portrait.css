@@ -3013,4 +3013,64 @@ div.sharj__text-icon:not(:last-child) {
 
 .canvas__formalization {
   margin-top: 65px;
+  position: relative;
+}
+.canvas__formalization::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 200%;
+  top: 20%;
+  left: -50%;
+  z-index: -1;
+  background: url(../../images/canvas/Union.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.canvas-formalization-row {
+  display: flex;
+  justify-content: space-between;
+}
+.photo-filter {
+  flex: 0 0 48%;
+}
+.canvas-individulal-block {
+  flex: 0 0 48%;
+  margin-top: 44px;
+}
+.canvas__formalization .formalization-box {
+  width: 100%;
+}
+.slider-tabs .tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.slider-tabs .tabs a {
+  width: 186.32px;
+  height: 50px;
+  display: flex;
+  background: rgba(173, 135, 128, 0.15);
+  border-radius: 8px;
+  color: #f7794b;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+.slider-tabs .tabs li:not(:last-child) {
+  margin-right: 17px;
+}
+.slider-tabs .tabs a.active {
+  background: #AD8780;
+  color: #fff;
+}
+.tabs-item {
+  display: none;
+}
+.tabs-item.active {
+  display: block;
 }
