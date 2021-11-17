@@ -2260,7 +2260,23 @@
 .sharj__list-item {
   display: flex;
 }
-
+.sharj__list-item--inner {
+  display: flex;
+}
+.ul-sharj-items .sharj__list-item--inner {
+  flex: 0 0 250px;
+}
+.sharj-ul-list li::before {
+  content: "•"; 
+  color: #FA7846;
+  display: inline-block; 
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+}
+.sharj-ul-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
 .sharj__list-item img {
   width: 24px;
   height: 24px;
