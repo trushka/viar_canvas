@@ -2675,7 +2675,7 @@ div.sharj__text-icon:not(:last-child) {
 
 .popup-sharj-individual {
   display: none;
-  max-width: 1350px;
+  max-width: 1050px;
   margin: 0 auto;
   position: relative;
 }
@@ -2685,7 +2685,7 @@ div.sharj__text-icon:not(:last-child) {
 }
 
 .sharj-individual-row .formalization-items {
-  width: 50%;
+  width: 75%;
 }
 
 .sharj-individulal-block {
