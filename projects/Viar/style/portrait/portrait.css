@@ -3074,3 +3074,6 @@ div.sharj__text-icon:not(:last-child) {
 .tabs-item.active {
   display: block;
 }
+.formalization-item > a {
+  width: 100%;
+}

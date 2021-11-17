@@ -578,7 +578,7 @@ $(document).ready(function () {
 		$('.popup-sharj').fadeIn();
 	});
 
-  $('.sharj-item--btn:not(.patterns-btn), .sharj-btn').click(function(e) {
+  $('.sharj-item--btn:not(.patterns-btn), .sharj-btn, .js-popup-photo-sharj').click(function(e) {
     e.preventDefault();
     $('body').addClass('open-frame');
 		$('.popup-frame').css("display", "flex").hide().fadeIn();
