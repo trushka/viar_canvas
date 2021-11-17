@@ -600,7 +600,7 @@
 }
 
 .example-flex {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
 .before-after__title,
@@ -1049,8 +1049,8 @@
       background: url(../../images/formalizationHead.png),
         url(../../images/formalizationBody.png);
       background-repeat: no-repeat;
-      background-size: 100% 118px, 100% calc(100% - 108px);
-      background-position: 0 0, 0 110px;
+      background-size: 100% 71px, 100% calc(100% - 69px);
+      background-position: 0 0, 0 70px;
     }
   }
 }
@@ -1059,8 +1059,8 @@
   background: url(../../images/formalizationHead.webp),
     url(../../images/formalizationBody.webp);
   background-repeat: no-repeat;
-  background-size: 100% 118px, 100% calc(100% - 108px);
-  background-position: 0 0, 0 110px;
+  background-size: 100% 71px, 100% calc(100% - 69px);
+  background-position: 0 0, 0 70px;
   padding: 80px 80px 50px;
 }
 
@@ -1624,7 +1624,7 @@
         url(../../images/formalizationBody.png),
         url(../../images/formalizationFooter.png);
       background-repeat: no-repeat;
-      background-size: 100% 118px, 100% calc(100% - 50px), 100% 57px;
+      background-size: 100% 71px, 100% calc(100% - 50px), 100% 57px;
       background-position: 0 0, 0 50px, 0 calc(100% - 57px);
     }
   }
@@ -1635,7 +1635,7 @@
     url(../../images/formalizationBody.webp),
     url(../../images/formalizationFooter.webp);
   background-repeat: no-repeat;
-  background-size: 100% 118px, 100% calc(100% - 50px), 100% 57px;
+  background-size: 100% 69px, 100% calc(100% - 50px), 100% 57px;
   background-position: 0 0, 0 50px, 0 calc(100% - 57px);
 }
 
@@ -2480,7 +2480,7 @@ div.sharj__text-icon:not(:last-child) {
 }
 
 .episode-title {
-  margin-bottom: 108px;
+  margin-bottom: 71px;
   color: #fff;
 }
 
@@ -2616,8 +2616,8 @@ div.sharj__text-icon:not(:last-child) {
       background: url(../../images/formalizationHead.png),
         url(../../images/formalizationBody.png);
       background-repeat: no-repeat;
-      background-size: 100% 118px, 100% calc(100% - 108px);
-      background-position: 0 0, 0 110px;
+      background-size: 100% 71px, 100% calc(100% - 69px);
+      background-position: 0 0, 0 70px;
     }
   }
 }
@@ -2626,8 +2626,8 @@ div.sharj__text-icon:not(:last-child) {
   background: url(../../images/formalizationHead.webp),
     url(../../images/formalizationBody.webp);
   background-repeat: no-repeat;
-  background-size: 100% 118px, 100% calc(100% - 108px);
-  background-position: 0 0, 0 110px;
+  background-size: 100% 71px, 100% calc(100% - 69px);
+  background-position: 0 0, 0 70px;
   padding: 80px 80px 50px;
   display: none;
   max-width: 1320px;
@@ -3031,6 +3031,7 @@ div.sharj__text-icon:not(:last-child) {
 .canvas-formalization-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 41px;
 }
 .photo-filter {
   flex: 0 0 48%;
