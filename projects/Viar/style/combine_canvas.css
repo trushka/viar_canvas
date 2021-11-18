@@ -2453,9 +2453,11 @@
 .generate .generate-content .gallery-photo {
     text-align: left
 }
+
 .generate .generate-content {
     width: 100%;
 }
+
 .generate .generate-content .gallery-photo .slider-tabs {
     margin-bottom: 20px
 }
@@ -2491,7 +2493,6 @@
     z-index: 1;
     padding: 20px;
     position: relative;
-    box-shadow: 0 3px 5px rgba(140, 166, 171, .23)
 }
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs-content .picture {
@@ -3444,39 +3445,43 @@
 
 .generate .generate-content .gallery-photo .tabs-item .accordion-title {
     text-align: left;
-    background-color: #ffedde
 }
 
 .generate .generate-content .gallery-photo .tabs-item .accordion-title a {
     width: 100%;
-    color: #2d2d2d;
-    display: block;
-    font-size: 10px;
-    font-weight: 400;
+    height: 50px;
+    color: #000;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 20px;
     position: relative;
-    padding: 6px 30px 6px 15px;
+    padding: 0 20px 0 20px;
     letter-spacing: .16px
 }
 
-.generate .generate-content .gallery-photo .tabs-item .accordion-title a::after {
-    content: '';
-    width: 0;
-    top: 50%;
-    height: 0;
-    right: 10px;
-    position: absolute;
-    border-top: 5px solid transparent;
-    border-left: 6px solid #2d2d2d;
-    border-bottom: 5px solid transparent;
-    transform: translate(0, -50%);
-    transition: all .5s
+#imgs {
+
 }
 
-.generate .generate-content .gallery-photo .tabs-item .accordion-title a span {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 22px
+.loader-canvas {
+    position: relative;
+}
+.loader-canvas button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+    z-index: 1;
+}
+.loader-canvas .file-save {
+    z-index: 0;
 }
 
 .generate .generate-content .gallery-photo .tabs-item .accordion-title.open a::after {
@@ -7297,19 +7302,10 @@
         font-size: 16px
     }
 
-    .generate .generate-content .gallery-photo .tabs-item .accordion-title a {
-        font-size: 14px;
-        line-height: 20px;
-        padding: 10px 40px 10px 20px
-    }
 
-    .generate .generate-content .gallery-photo .tabs-item .accordion-title a::after {
-        right: 20px
-    }
 
-    .generate .generate-content .gallery-photo .tabs-item .accordion-title a span {
-        font-size: 16px
-    }
+
+
 
     .compositions .compositions-block {
         padding: 70px 0
@@ -8103,15 +8099,8 @@
         line-height: 22px
     }
 
-    .generate .generate-content .gallery-photo .tabs-item .accordion-title a {
-        font-size: 16px;
-        line-height: 20px;
-        padding: 12px 50px 12px 30px
-    }
 
-    .generate .generate-content .gallery-photo .tabs-item .accordion-title a span {
-        font-size: 18px
-    }
+
 
     .compositions .compositions-block {
         margin-bottom: 45px
