@@ -4642,145 +4642,148 @@
         <div class="section-frame">
           
           <form action="#" target="_blank" method="POST" enctype="multipart/form-data" class="why-form submit-form portait-why-form sharj-why-form">
-            <h3 class="why-form__title">
-              Не нашёл, что искал?
-            </h3>
-            <p class="why-form__subtitle">
-              Закажи свой индивидуальный шарж
-            </p>
-            <div class="why-form__inner-sharj">
-              <picture>
-                <source srcset="images/sharj/men.webp" type="image/webp">
-                <source srcset="images/sharj/men.png" type="image/png">
-                <img width="auto" height="auto" src="images/sharj/men.png" alt="">
-              </picture>
-              <div class="why-form__group-sharj">
-                <div class="kviz-input">
-                  <p class="kviz-input__title">Укажите Ваш E-mail</p>
-                  <div class="page-input__item">
-                    <input type="email" name="email" placeholder="E-mail" required="">
-                    <svg class="kviz-input__icon">
-                      <use xlink:href="sprite.svg#mail"></use>
-                    </svg>
+            <div class="why-form-inner">
+              <h3 class="why-form__title">
+                Не нашёл, что искал?
+              </h3>
+              <p class="why-form__subtitle">
+                Закажи свой индивидуальный шарж
+              </p>
+              <div class="why-form__inner-sharj">
+                <picture>
+                  <source srcset="images/sharj/men.webp" type="image/webp">
+                  <source srcset="images/sharj/men.png" type="image/png">
+                  <img width="auto" height="auto" src="images/sharj/men.png" alt="">
+                </picture>
+                <div class="why-form__group-sharj">
+                  <div class="kviz-input">
+                    <p class="kviz-input__title">Укажите Ваш E-mail</p>
+                    <div class="page-input__item">
+                      <input type="email" name="email" placeholder="E-mail" required="">
+                      <svg class="kviz-input__icon">
+                        <use xlink:href="sprite.svg#mail"></use>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="kviz-input">
-                  <p class="kviz-input__title">Фото (необязательно)</p>
-                  <div class="file-save">
-                    <div class="file-save__item js-file-preview">
-                      <svg>
-                        <use xlink:href="sprite.svg#save"></use>
-                      </svg>
-                      <div class="file-save__title">
-                        <p>Загрузить фото</p>
-                        <span>Нажмите, чтобы добавить фото</span>
+                  <div class="kviz-input">
+                    <p class="kviz-input__title">Фото (необязательно)</p>
+                    <div class="file-save">
+                      <div class="file-save__item js-file-preview">
+                        <svg>
+                          <use xlink:href="sprite.svg#save"></use>
+                        </svg>
+                        <div class="file-save__title">
+                          <p>Загрузить фото</p>
+                          <span>Нажмите, чтобы добавить фото</span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="file-save__item js-file-upload">
-                      <svg>
-                        <use xlink:href="sprite.svg#picture"></use>
-                      </svg>
-                      <div class="file-save__title">
-                        <p>photo_34567.jpg</p>
-                        <span>2 Mb</span>
+                      <div class="file-save__item js-file-upload">
+                        <svg>
+                          <use xlink:href="sprite.svg#picture"></use>
+                        </svg>
+                        <div class="file-save__title">
+                          <p>photo_34567.jpg</p>
+                          <span>2 Mb</span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="file-save__item js-file-multiple">
-                      <svg>
-                        <use xlink:href="sprite.svg#check"></use>
-                      </svg>
-                      <div class="file-save__title">
-                        <p class="file-title_green">Файлы загружены</p>
+                      <div class="file-save__item js-file-multiple">
+                        <svg>
+                          <use xlink:href="sprite.svg#check"></use>
+                        </svg>
+                        <div class="file-save__title">
+                          <p class="file-title_green">Файлы загружены</p>
+                        </div>
                       </div>
+                      <input type="file" class="file-input" name="file[]" multiple="" accept="image/*" aria-label="file input">
                     </div>
-                    <input type="file" class="file-input" name="file[]" multiple="" accept="image/*" aria-label="file input">
                   </div>
-                </div>
-                <div class="kviz-input">
-                  <p class="kviz-input__title">Укажите Ваш номер телефона</p>
-                  <div class="page-input__item phone-input">
-                    <div class="country-item country-item-active">
-                      <img width="auto" height="auto" src="./images/flag/lv.svg" alt="img" loading="lazy">
-                    </div>
-                    <div class="country-list">
-                      <div class="country-item">
+                  <div class="kviz-input">
+                    <p class="kviz-input__title">Укажите Ваш номер телефона</p>
+                    <div class="page-input__item phone-input">
+                      <div class="country-item country-item-active">
                         <img width="auto" height="auto" src="./images/flag/lv.svg" alt="img" loading="lazy">
-                        <p>Латвия</p>
-                        <span data-mask="+371 99 99-99-99" data-placeholder="+371 00 00-00-00">+371</span>
                       </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/lt.svg" alt="img" loading="lazy">
-                        <p>Литва</p>
-                        <span data-mask="+370 999 9-99-99" data-placeholder="+370 000 0-00-00">+370</span>
+                      <div class="country-list">
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/lv.svg" alt="img" loading="lazy">
+                          <p>Латвия</p>
+                          <span data-mask="+371 99 99-99-99" data-placeholder="+371 00 00-00-00">+371</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/lt.svg" alt="img" loading="lazy">
+                          <p>Литва</p>
+                          <span data-mask="+370 999 9-99-99" data-placeholder="+370 000 0-00-00">+370</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/es.svg" alt="img" loading="lazy">
+                          <p>Эстония</p>
+                          <span data-mask="+372 99 999-99-99" data-placeholder="+372 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/fl.svg" alt="img" loading="lazy">
+                          <p>Финляндия</p>
+                          <span data-mask="+358 99 999-99-99" data-placeholder="+358 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/no.svg" alt="img" loading="lazy">
+                          <p>Норвегия</p>
+                          <span data-mask="+47 99 999-99-99" data-placeholder="+47 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/pl.svg" alt="img" loading="lazy">
+                          <p>Польша</p>
+                          <span data-mask="+48 99 999-99-99" data-placeholder="+48 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/ge.svg" alt="img" loading="lazy">
+                          <p>Германия</p>
+                          <span data-mask="+49 99 999-99-99" data-placeholder="+49 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/da.svg" alt="img" loading="lazy">
+                          <p>Дания</p>
+                          <span data-mask="+45 99 999-99-99" data-placeholder="+45 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/cz.svg" alt="img" loading="lazy">
+                          <p>Чехия</p>
+                          <span data-mask="+420 99 999-99-99" data-placeholder="+420 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/se.svg" alt="img" loading="lazy">
+                          <p>Швеция</p>
+                          <span data-mask="+46 99 999-99-99" data-placeholder="+46 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/nl.svg" alt="img" loading="lazy">
+                          <p>Нидерланды</p>
+                          <span data-mask="+31 99 999-99-99" data-placeholder="+31 00 000-00-00">+359</span>
+                        </div>
+                        <div class="country-item">
+                          <img width="auto" height="auto" src="./images/flag/be.svg" alt="img" loading="lazy">
+                          <p>Бельгия</p>
+                          <span data-mask="+32 99 999-99-99" data-placeholder="+32 00 000-00-00">+359</span>
+                        </div>
                       </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/es.svg" alt="img" loading="lazy">
-                        <p>Эстония</p>
-                        <span data-mask="+372 99 999-99-99" data-placeholder="+372 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/fl.svg" alt="img" loading="lazy">
-                        <p>Финляндия</p>
-                        <span data-mask="+358 99 999-99-99" data-placeholder="+358 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/no.svg" alt="img" loading="lazy">
-                        <p>Норвегия</p>
-                        <span data-mask="+47 99 999-99-99" data-placeholder="+47 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/pl.svg" alt="img" loading="lazy">
-                        <p>Польша</p>
-                        <span data-mask="+48 99 999-99-99" data-placeholder="+48 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/ge.svg" alt="img" loading="lazy">
-                        <p>Германия</p>
-                        <span data-mask="+49 99 999-99-99" data-placeholder="+49 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/da.svg" alt="img" loading="lazy">
-                        <p>Дания</p>
-                        <span data-mask="+45 99 999-99-99" data-placeholder="+45 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/cz.svg" alt="img" loading="lazy">
-                        <p>Чехия</p>
-                        <span data-mask="+420 99 999-99-99" data-placeholder="+420 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/se.svg" alt="img" loading="lazy">
-                        <p>Швеция</p>
-                        <span data-mask="+46 99 999-99-99" data-placeholder="+46 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/nl.svg" alt="img" loading="lazy">
-                        <p>Нидерланды</p>
-                        <span data-mask="+31 99 999-99-99" data-placeholder="+31 00 000-00-00">+359</span>
-                      </div>
-                      <div class="country-item">
-                        <img width="auto" height="auto" src="./images/flag/be.svg" alt="img" loading="lazy">
-                        <p>Бельгия</p>
-                        <span data-mask="+32 99 999-99-99" data-placeholder="+32 00 000-00-00">+359</span>
-                      </div>
-                    </div>
-                    <input type="text" name="phone" class="input-mask input-counter" autocomplete="off" placeholder="+371" required="" data-mask="## ##-##-##" data-mask-raw-value="" data-mask-inited="true">
-                    <svg class="kviz-input__icon">
-                      <use xlink:href="sprite.svg#phone"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="kviz-input">
-                  <p class="kviz-input__title">Добавьте комментарий</p>
-                  <div class="page-input__item">
-                    <div class="kviz-textarea">
-                      <textarea name="comments"></textarea>
+                      <input type="text" name="phone" class="input-mask input-counter" autocomplete="off" placeholder="+371" required="" data-mask="## ##-##-##" data-mask-raw-value="" data-mask-inited="true">
+                      <svg class="kviz-input__icon">
+                        <use xlink:href="sprite.svg#phone"></use>
+                      </svg>
                     </div>
                   </div>
+                  <div class="kviz-input">
+                    <p class="kviz-input__title">Добавьте комментарий</p>
+                    <div class="page-input__item">
+                      <div class="kviz-textarea">
+                        <textarea name="comments"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <label class="why-sub"> <input type="submit">Отправить </label>
                 </div>
-                <label class="why-sub"> <input type="submit">Отправить </label>
-              </div>
+              </div>              
             </div>
+
 
 
           </form>
@@ -7035,650 +7038,673 @@
       <div class="popup-sharj-individual target-box js-popup">
         <i class="vz-art fa-close popup-close"></i>
         <div class="formalization__block--top">
-          <h2 class="vz-art page-c-title sharj-popup--title">
-            Заказать шарж  с <br>
-            <span> индивидуальным сюжетом</span>           
-          </h2>
-          <div class="sharj-individual-row">
-            <div class="formalization-items">
-              <div class="formalization-item">
-                <div class="formalization-box">
-                  <div class="formalization-tab">
-                    <p>1. Выберите фото</p>
-                    <span class="tab-icon"></span>
-                  </div>
-                  <div class="formalization-content">
-                    <div class="formalization-content--inner">
-                      <div class="vz-art kviz-input">
-                        <p class="vz-art kviz-input__title">
-                          Фото для портрета
-                        </p>
-                        <div class="file-save file-save__popup">
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            id="#file1"
-                            class="file-input"
-                            name="file"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            id="#file2"
-                            class="file-input file-input_hide"
-                            name="file2"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file3[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file4[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file5[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file6[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file7[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file8[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file9[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                        <div
-                          class="
-                            file-save file-save__popup file-save_hide
-                          "
-                        >
-                          <div class="file-save__item js-file-preview">
-                            <svg>
-                              <use xlink:href="sprite.svg#save"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>Загрузить фото</p>
-                              <span>Нажмите, чтобы добавить фото</span>
-                            </div>
-                          </div>
-                          <div class="file-save__item js-file-upload">
-                            <svg>
-                              <use xlink:href="sprite.svg#picture"></use>
-                            </svg>
-                            <div class="file-save__title">
-                              <p>photo_34567.jpg</p>
-                              <span>2 Mb</span>
-                            </div>
-                          </div>
-                          <input
-                            type="file"
-                            class="file-input file-input_hide"
-                            name="file10[]"
-                            accept="image/*"
-                            aria-label="file input"
-                          />
-                        </div>
-                      </div>
-                      <a href="#" class="file-add">
-                        <svg>
-                          <use xlink:href="sprite.svg#plus"></use>
-                        </svg>
-                        <span>Добавить еще фото</span>
-                      </a>
+          <div class="formalization__block--top-inner">
+            <h2 class="vz-art page-c-title sharj-popup--title">
+              Заказать шарж  с <br>
+              <span> индивидуальным сюжетом</span>           
+            </h2>
+            <div class="sharj-individual-row">
+              <div class="formalization-items">
+                <div class="formalization-item">
+                  <div class="formalization-box">
+                    <div class="formalization-tab">
+                      <p>1. Выберите фото</p>
+                      <span class="tab-icon"></span>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="formalization-item">
-                <div class="formalization-box">
-                  <div class="formalization-tab">
-                    <p>2. Выберите размер</p>
-                    <span class="tab-icon"></span>
-                  </div>
-                  <div class="formalization-content">
-                    <div class="formalization-content--inner">
-                      <div class="kviz-row kviz-c-group">
-                        <div class="kviz-group__item">
-                          <div
-                            class="
-                              kviz-radio
-                              js-checkbox
-                              kviz-radio_active
-                            "
-                            data-stock="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>30x40 см - 25€ <b>15€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="30x40 см - 25€ 15€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>40x60 см - 30€ <b>20€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="40x60 см - 30€ 20€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>50x70 см - 37€ <b>27€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="50x70 см - 37€ 27€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>55x80 см - 50€ <b>37€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="55x80 см - 50€ 37€"
-                              />
-                            </label>
-                          </div>
-                        </div>
-                        <div class="kviz-group__item">
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>60x90 см - 65€ <b>42€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="60x90 см - 65€ 42€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>100x70 см - 75€ <b>52€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="100x70 см - 75€ 52€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>120x80 см - 88€ <b>60€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="120x80 см - 88€ 60€"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>140x80 см - 88€ <b>60€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="140x80 см - 88€ 60€"
-                              />
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="formalization-item">
-                <div class="formalization-box">
-                  <div class="formalization-tab">
-                    <p>3. Выберите количество человек</p>
-                    <span class="tab-icon"></span>
-                  </div>
-                  <div class="formalization-content">
-                    <div class="formalization-content--inner">
-                      <div class="kviz-row">
-                        <div
-                          class="
-                            kviz-group__item
-                            kviz-c-group kviz-custom-flexcol
-                          "
-                        >
-                          <div
-                            class="
-                              kviz-radio
-                              js-checkbox
-                              kviz-radio_active
-                              kviz-types
-                            "
-                            data-stock="1"
-                            data-count="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>Персональная</span>
-                              <input
-                                type="radio"
-                                name="count"
-                                value="Personal"
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="2"
-                            data-count="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>Групповая</span>
-                              <input
-                                type="radio"
-                                name="count"
-                                value="Group"
-                              />
-                            </label>
-                          </div>
-                          <div class="input-group input_disabled">
-                            <label for="count1"
-                              >Введите кол-во человек</label
-                            >
+                    <div class="formalization-content">
+                      <div class="formalization-content--inner">
+                        <div class="vz-art kviz-input">
+                          <p class="vz-art kviz-input__title">
+                            Фото для портрета
+                          </p>
+                          <div class="file-save file-save__popup">
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
                             <input
-                              id="count1"
-                              class="kviz-input"
-                              type="text"
-                              disabled
+                              type="file"
+                              id="#file1"
+                              class="file-input"
+                              name="file"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              id="#file2"
+                              class="file-input file-input_hide"
+                              name="file2"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file3[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file4[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file5[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file6[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file7[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file8[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file9[]"
+                              accept="image/*"
+                              aria-label="file input"
+                            />
+                          </div>
+                          <div
+                            class="
+                              file-save file-save__popup file-save_hide
+                            "
+                          >
+                            <div class="file-save__item js-file-preview">
+                              <svg>
+                                <use xlink:href="sprite.svg#save"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>Загрузить фото</p>
+                                <span>Нажмите, чтобы добавить фото</span>
+                              </div>
+                            </div>
+                            <div class="file-save__item js-file-upload">
+                              <svg>
+                                <use xlink:href="sprite.svg#picture"></use>
+                              </svg>
+                              <div class="file-save__title">
+                                <p>photo_34567.jpg</p>
+                                <span>2 Mb</span>
+                              </div>
+                            </div>
+                            <input
+                              type="file"
+                              class="file-input file-input_hide"
+                              name="file10[]"
+                              accept="image/*"
+                              aria-label="file input"
                             />
                           </div>
                         </div>
-                        <div
-                          class="
-                            kviz-group__item
-                            kviz-c-group
-                            input_disabled
-                          "
-                        >
+                        <a href="#" class="file-add">
+                          <svg>
+                            <use xlink:href="sprite.svg#plus"></use>
+                          </svg>
+                          <span>Добавить еще фото</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formalization-item">
+                  <div class="formalization-box">
+                    <div class="formalization-tab">
+                      <p>2. Выберите размер</p>
+                      <span class="tab-icon"></span>
+                    </div>
+                    <div class="formalization-content">
+                      <div class="formalization-content--inner">
+                        <div class="kviz-row kviz-c-group">
+                          <div class="kviz-group__item">
+                            <div
+                              class="
+                                kviz-radio
+                                js-checkbox
+                                kviz-radio_active
+                              "
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>30x40 см - 25€ <b>15€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="30x40 см - 25€ 15€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>40x60 см - 30€ <b>20€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="40x60 см - 30€ 20€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>50x70 см - 37€ <b>27€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="50x70 см - 37€ 27€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>55x80 см - 50€ <b>37€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="55x80 см - 50€ 37€"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                          <div class="kviz-group__item">
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>60x90 см - 65€ <b>42€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="60x90 см - 65€ 42€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>100x70 см - 75€ <b>52€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="100x70 см - 75€ 52€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>120x80 см - 88€ <b>60€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="120x80 см - 88€ 60€"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>140x80 см - 88€ <b>60€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="140x80 см - 88€ 60€"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formalization-item">
+                  <div class="formalization-box">
+                    <div class="formalization-tab">
+                      <p>3. Выберите количество человек</p>
+                      <span class="tab-icon"></span>
+                    </div>
+                    <div class="formalization-content">
+                      <div class="formalization-content--inner">
+                        <div class="kviz-row">
                           <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="1"
+                            class="
+                              kviz-group__item
+                              kviz-c-group kviz-custom-flexcol
+                            "
                           >
-                            <div class="check"></div>
-                            <label>
-                              <span>2 чел. + <b>20€</b></span>
+                            <div
+                              class="
+                                kviz-radio
+                                js-checkbox
+                                kviz-radio_active
+                                kviz-types
+                              "
+                              data-stock="1"
+                              data-count="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>Персональная</span>
+                                <input
+                                  type="radio"
+                                  name="count"
+                                  value="Personal"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="2"
+                              data-count="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>Групповая</span>
+                                <input
+                                  type="radio"
+                                  name="count"
+                                  value="Group"
+                                />
+                              </label>
+                            </div>
+                            <div class="input-group input_disabled">
+                              <label for="count1"
+                                >Введите кол-во человек</label
+                              >
                               <input
-                                type="radio"
-                                name="size"
-                                value="60x90 см - 65€ 42€"
+                                id="count1"
+                                class="kviz-input"
+                                type="text"
                                 disabled
                               />
-                            </label>
+                            </div>
                           </div>
                           <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="2"
+                            class="
+                              kviz-group__item
+                              kviz-c-group
+                              input_disabled
+                            "
                           >
-                            <div class="check"></div>
-                            <label>
-                              <span>3 чел. + <b>30€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="100x70 см - 75€ 52€"
-                                disabled
-                              />
-                            </label>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>2 чел. + <b>20€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="60x90 см - 65€ 42€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>3 чел. + <b>30€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="100x70 см - 75€ 52€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>4 чел. + <b>40€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="120x80 см - 88€ 60€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>5 чел. + <b>50€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="140x80 см - 88€ 60€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>6 чел. + <b>60€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="100x70 см - 75€ 52€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="1"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>7 чел. + <b>70€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="120x80 см - 88€ 60€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
+                            <div
+                              class="kviz-radio js-checkbox kviz-types"
+                              data-stock="2"
+                            >
+                              <div class="check"></div>
+                              <label>
+                                <span>8 чел. + <b>80€</b></span>
+                                <input
+                                  type="radio"
+                                  name="size"
+                                  value="140x80 см - 88€ 60€"
+                                  disabled
+                                />
+                              </label>
+                            </div>
                           </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="1"
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formalization-item">
+                  <div class="formalization-box">
+                    <div class="formalization-tab">
+                      <p>4. Комментарии</p>
+                      <span class="tab-icon"></span>
+                    </div>
+                    <div class="formalization-content">
+                      <div class="formalization-content--inner">
+                        <div class="input-group input-comments">
+                          <label for="comments1"
+                            >Напишите ваши пожелания и идеи</label
                           >
-                            <div class="check"></div>
-                            <label>
-                              <span>4 чел. + <b>40€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="120x80 см - 88€ 60€"
-                                disabled
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>5 чел. + <b>50€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="140x80 см - 88€ 60€"
-                                disabled
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>6 чел. + <b>60€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="100x70 см - 75€ 52€"
-                                disabled
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="1"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>7 чел. + <b>70€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="120x80 см - 88€ 60€"
-                                disabled
-                              />
-                            </label>
-                          </div>
-                          <div
-                            class="kviz-radio js-checkbox kviz-types"
-                            data-stock="2"
-                          >
-                            <div class="check"></div>
-                            <label>
-                              <span>8 чел. + <b>80€</b></span>
-                              <input
-                                type="radio"
-                                name="size"
-                                value="140x80 см - 88€ 60€"
-                                disabled
-                              />
-                            </label>
+                          <div class="textarea-wrapper">
+                            <textarea id="comments1" name="comments">
+                            </textarea>
                           </div>
                         </div>
                       </div>
@@ -7686,41 +7712,21 @@
                   </div>
                 </div>
               </div>
-              <div class="formalization-item">
-                <div class="formalization-box">
-                  <div class="formalization-tab">
-                    <p>4. Комментарии</p>
-                    <span class="tab-icon"></span>
-                  </div>
-                  <div class="formalization-content">
-                    <div class="formalization-content--inner">
-                      <div class="input-group input-comments">
-                        <label for="comments1"
-                          >Напишите ваши пожелания и идеи</label
-                        >
-                        <div class="textarea-wrapper">
-                          <textarea id="comments1" name="comments">
-                          </textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="sharj-individulal-block">
+                <div class="sharj-individual-text">
+                  Шарж для начальника № 124
                 </div>
-              </div>
-            </div>
-            <div class="sharj-individulal-block">
-              <div class="sharj-individual-text">
-                Шарж для начальника № 124
-              </div>
-              <div class="sharj-individual-img">
-                <picture>
-                  <source srcset="images/sharj/individual.webp" type="image/webp">
-                  <source src="images/sharj/individual.jpg" type="image/jpeg">
-                  <img width="auto" height="auto" src="images/sharj/individual.jpg" alt="">
-                </picture>
+                <div class="sharj-individual-img">
+                  <picture>
+                    <source srcset="images/sharj/individual.webp" type="image/webp">
+                    <source src="images/sharj/individual.jpg" type="image/jpeg">
+                    <img width="auto" height="auto" src="images/sharj/individual.jpg" alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
         <div class="formalization__block--bottom">
           <div class="formalization__final">

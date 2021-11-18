@@ -270,6 +270,27 @@
   .about__first-sharj .about-portrait {
     height: auto;
   }
+  /*  */
+  .formalization__block--top {
+    background: #FFF2EE !important;
+    padding: 10px 10px 0 !important;
+  }
+  .why-form {
+    padding: 10px !important;
+    background: #FFF2EE !important;
+  }
+  .why-form-inner {
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+  .formalization__block--top-inner {
+    padding: 80px 80px 50px;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
 
 @media only screen and (max-width: 1124px) {
@@ -350,6 +371,9 @@
 }
 
 @media only screen and (max-width: 980px) {
+  .formalization__block--top-inner {
+    padding: 40px 50px 50px;
+  }
   .portraits__wrapper {
     flex-direction: column;
     height: 720px;
@@ -650,6 +674,9 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .formalization__block--top-inner {
+    padding: 38px 20px 20px;
+  }
   .portrait__screen .portraits-slide {
     padding-top: 110px;
   }
