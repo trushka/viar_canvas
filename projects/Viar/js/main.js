@@ -564,7 +564,7 @@ $(document).ready(function () {
 
   [].forEach.call(document.querySelectorAll("*"), function (el) {
     if (el.offsetWidth > docWidth) {
-      console.log(el);
+      // console.log(el);
     }
   });
 
@@ -597,5 +597,18 @@ $(document).ready(function () {
     fromSliderBeforeAfterSetter(first, second);
   })
 
+  var fileCounter = 0;
+  $(".canvas-loader--add").click(function (e) {
+    e.preventDefault();
+    fileCounter++;
+    $(".loader-canvas:eq(" + fileCounter + ")")
+      .fadeIn();
+    $(".loader-canvas:eq(" + fileCounter + ")")
+      .find("input")
+      .removeClass("file-input_hide");
+    if (fileCounter == 9) {
+      $(".canvas-loader--add").hide();
+    }
+  });
 
 });

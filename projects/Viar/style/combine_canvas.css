@@ -3446,7 +3446,9 @@
 .generate .generate-content .gallery-photo .tabs-item .accordion-title {
     text-align: left;
 }
-
+.accordion-title:not(:last-child):not(.open) {
+    margin-bottom: 10px;
+}
 .generate .generate-content .gallery-photo .tabs-item .accordion-title a {
     width: 100%;
     height: 50px;
@@ -3464,12 +3466,17 @@
     letter-spacing: .16px
 }
 
-#imgs {
-
+#imgs .file-save {
+    max-width: 355px;
 }
 
 .loader-canvas {
     position: relative;
+    width: 100%;
+    max-width: 355px;
+}
+.loader-canvas:not(:first-child) {
+    margin-top: 10px;
 }
 .loader-canvas button {
     position: absolute;
