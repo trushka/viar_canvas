@@ -274,10 +274,13 @@
   .formalization__block--top {
     background: #FFF2EE !important;
     padding: 10px 10px 0 !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   .why-form {
     padding: 10px !important;
     background: #FFF2EE !important;
+    border-radius: 8px;
   }
   .why-form-inner {
     padding: 40px;
