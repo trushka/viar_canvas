@@ -585,6 +585,12 @@ $(document).ready(function () {
     if (mediaChecker('max', 750)) {
       sharjPopupSlider[0]?.slick?.refresh();
     }
+    console.log($(this))
+    if ($(this).hasClass('sharj-btn-text')) {
+      $('.popup-sharj-individual').find('.sharj-individual-text').fadeOut(0);
+    } else {
+      $('.popup-sharj-individual').find('.sharj-individual-text').fadeIn(0);
+    }
 		$('.popup-sharj').fadeOut(0);
 		$('.popup-sharj-individual').fadeIn();
   })
