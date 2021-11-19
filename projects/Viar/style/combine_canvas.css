@@ -2418,8 +2418,7 @@
 
 .generate {
     position: relative;
-    padding: 20px 0 40px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .generate .generate-content {
@@ -2458,9 +2457,6 @@
     width: 100%;
 }
 
-.generate .generate-content .gallery-photo .slider-tabs {
-    margin-bottom: 20px
-}
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs {
     z-index: 2;
@@ -2469,30 +2465,30 @@
 }
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs li a {
-    width: 100%;
-    color: #858585;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 6px 15px;
-    display: inline-block;
-    border-radius: 3px 3px 0 0;
-    transition: all .5s
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    background: rgba(173, 135, 128, 0.15);
+    border-radius: 8px;
+    transition: all .3s ease;
+    width: 186.32px;
+    height: 50px;
 }
 
-.generate .generate-content .gallery-photo .slider-tabs .tabs li a:hover {
-    color: #9e525b
-}
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs li a.active {
-    color: #9e525b;
-    box-shadow: 0 -3px 5px rgba(140, 166, 171, .23)
+    background: #AD8780;
+    border-radius: 8px;  
+    color: #FFFFFF;
 }
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs-content {
     z-index: 1;
-    padding: 20px;
     position: relative;
+    margin-left: 30px;
 }
 
 .generate .generate-content .gallery-photo .slider-tabs .tabs-content .picture {
@@ -2535,7 +2531,7 @@
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content {
-    padding: 15px 15px 10px
+    padding: 15px 15px 20px 15px;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .shapes ul {
@@ -2637,18 +2633,18 @@
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item {
     width: 48%;
     margin: 0 1% 10px;
-    text-align: center
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item:hover p {
-    color: #9e525b
-}
+
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item .img {
     display: flex;
     position: relative;
     align-items: center;
-    margin-bottom: 10px;
+    margin-right: 20px;
     justify-content: center
 }
 
@@ -2659,34 +2655,17 @@
     max-width: 100px
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item .img i {
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    font-size: 30px;
-    color: #6ac259;
-    position: absolute;
-    transform: translate(-50%, -50%) scale(0);
-    transition: all .3s
-}
+
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item p {
     color: #2d2d2d;
     font-size: 14px;
-    font-weight: 700;
     line-height: 18px;
     letter-spacing: .14px;
-    text-transform: uppercase;
-    transition: all .5s
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item.active .img i {
-    transform: translate(-50%, -50%) scale(1)
-}
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .execution .execution-item.active p {
-    color: #9e525b
-}
+
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .canvas-items .canvas-item {
     padding-left: 22px;
@@ -2932,19 +2911,25 @@
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .interior-slider {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    height: 120px;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .interior-slider .interior-item {
     padding: 4px;
     cursor: pointer;
-    position: relative
+    position: relative;
+    height: 100%;
 }
-
+.interio-img {
+    height: 100%;
+}
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .interior-slider .interior-item img {
     z-index: 0;
     width: 100%;
-    position: relative
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .interior-slider .interior-item i {
@@ -3001,11 +2986,11 @@
     margin-bottom: 0
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .interior-sizes .size-item span {
-    color: #939393;
-    font-size: 15px;
+.size-item span {
+    color: #9CA5B5;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 17px;
     margin-bottom: 5px;
     display: inline-block
 }
@@ -3055,6 +3040,7 @@
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .range_box {
+    margin-top: 10px;
     margin-bottom: 10px
 }
 
@@ -3071,9 +3057,9 @@
     width: 100%;
     height: 4px;
     position: relative;
-    border-radius: 10px;
-    border: 1px solid #8c535b;
-    background-color: #8c535b
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .range_box .jcf-range .jcf-range-wrapper .jcf-range-display-wrapper {
@@ -3104,18 +3090,13 @@
     justify-content: space-between
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .range_box .changeSm span {
-    color: #313131;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px;
-    display: inline-block
+.changeSm span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #1E2533;
+    margin: 0;
 }
 
-.generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .range_box .changeSm span i {
-    color: #a6a6a6;
-    font-style: normal
-}
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider {
     padding: 0 5px;
@@ -3131,12 +3112,16 @@
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider .ramu-item .img {
     display: flex;
     position: relative;
-    align-items: center
+    align-items: center;
+    max-width: 80px;
+    height: 30px;
+    margin: 10px 0;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider .ramu-item img {
     z-index: 0;
     width: 100%;
+    height: 100%;
     position: relative
 }
 
@@ -3152,25 +3137,17 @@
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider .ramu-item .code {
-    display: block;
-    color: #313131;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 18px;
-    text-align: center;
-    padding-bottom: 5px;
-    letter-spacing: .14px
+    font-size: 16px;
+    line-height: 19px;    
+    color: #1E2533;
+    margin-bottom: auto;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider .ramu-item .price {
-    display: block;
-    color: #8c535b;
-    font-size: 12px;
-    font-weight: 700;
-    padding-top: 5px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: .14px
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FC8C5F;
 }
 
 .generate .generate-content .gallery-photo .photo-filter .filter-accordion .accordion-content .ramu-slider .ramu-item.active i {
@@ -5501,9 +5478,7 @@
         display: block
     }
 
-    .generate {
-        padding: 20px 0 80px
-    }
+
 
     .generate .generate-content {
         /* width: 700px; */
@@ -7290,12 +7265,9 @@
     .generate .generate-content .gallery-photo .photo-content .slider-tabs .tabs li a {
         font-size: 15px;
         line-height: 20px;
-        padding: 10px 24px
     }
 
-    .generate .generate-content .gallery-photo .photo-content .slider-tabs .tabs-content {
-        padding: 30px
-    }
+
 
     .generate .generate-content .gallery-photo .photo-content .photo-filter {
         width: 38%
@@ -7963,15 +7935,8 @@
         width: 64%
     }
 
-    .generate .generate-content .gallery-photo .photo-content .slider-tabs .tabs li a {
-        font-size: 20px;
-        line-height: 28px;
-        padding: 12px 30px
-    }
 
-    .generate .generate-content .gallery-photo .photo-content .slider-tabs .tabs-content {
-        padding: 40px 60px
-    }
+
 
     .generate .generate-content .gallery-photo .photo-content .slider-tabs .tabs-content .picture {
         padding: 0 80px
@@ -7994,7 +7959,7 @@
     }
 
     .generate .generate-content .gallery-photo .photo-content .photo-filter .filter-accordion .accordion-content {
-        padding: 20px 25px 15px 30px
+        padding: 15px 20px 15px 30px
     }
 
     .generate .generate-content .gallery-photo .photo-content .photo-filter .filter-accordion .accordion-content .size li a {
@@ -8010,11 +7975,6 @@
         width: 44%;
         margin: 0 3% 10px
     }
-
-    .generate .generate-content .gallery-photo .photo-content .photo-filter .filter-accordion .accordion-content .execution .execution-item p {
-        padding: 0 20px
-    }
-
     .generate .generate-content .gallery-photo .photo-content .photo-filter .filter-accordion .accordion-content .canvas-items .canvas-item {
         margin-bottom: 10px
     }
@@ -9634,14 +9594,6 @@
         line-height: 23px
     }
 
-    .generate {
-        padding: 58px 0 170px
-    }
-
-    .generate .generate-content {
-        /* width: 1500px */
-    }
-
     .generate .generate-content .title {
         margin-bottom: 87px
     }
@@ -10324,7 +10276,8 @@
     margin: 3px;
     float: left;
     font-size: 28px;
-    color: #ff9118;
+    color: #000;
+    font-weight: 900;
     text-align: center
 }
 
@@ -10640,4 +10593,108 @@
 .interior_fullscreen .interior_container canvas {
     text-align: center;
     pointer-events: all
+}
+
+#generate .kviz-radio {
+    position: relative;
+}
+#generate .kviz-radio > label > span {
+    padding-left: 30px;
+}
+#generate .kviz-radio .check {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/*  */
+.additional-image {
+    border: 1px solid #AD8780;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 16px;
+}
+.additional-image .kviz-c-row > div:not(:last-child) {
+    margin-right: 20px;
+}
+.additional-image .kviz-c-row > div {
+    margin-top: 10px;
+}
+.additional-image .kviz-c-group {
+    flex-wrap: wrap;
+}
+.additional-hidden {
+    margin-top: 15px;
+    display: none;
+}
+.additional-row {
+    display: flex;
+}
+.additional-img {
+    margin-right: 20px;
+}
+.additional-image .kviz-wrap:first-child {
+    margin: 0;
+}
+.additional-image .popup-log-check {
+    align-items: unset;
+}
+.additional-image .popup-log-check p {
+    color: #AD8780;
+}
+.additional-image .vz-art.log-check {
+    background: #fff;
+    transition: all .3s ease;
+}
+.additional-image .log-check_active .vz-art.log-check {
+    background: #F7794B;
+}
+.execution-item.active .selected-icon {
+    display: flex;
+    z-index: 10;
+}
+.execution-wrapper {
+    position: relative;
+}
+.interior-item.active .selected-icon,
+.ramu-item.active .selected-icon {
+    display: flex;
+    z-index: 10;
+}
+.main__input--wall {
+    border: none;
+    height: 42px;
+    padding: 0 9px;
+    background: #FFFFFF;
+    border: 1px solid #FBF2EA;
+    border-radius: 8px;
+}
+
+.jcf-range-wrapper .bg-size {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FC8C5F;
+
+}
+
+.ramu-slider label {
+    display: flex;
+}
+.ramu-slider {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-between;
+}
+.ramu-slider span {
+    display: block;
+}
+.ramu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

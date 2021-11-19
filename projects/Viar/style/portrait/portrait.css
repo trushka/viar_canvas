@@ -1242,8 +1242,9 @@
 }
 
 .form-image {
-  width: 105px;
+  width: 80px;
   height: 80px;
+  background-color: #EDE4D8;
 }
 
 .form-image:nth-child(3) {
@@ -1284,7 +1285,7 @@
 }
 
 .kviz-row>div {
-  flex: 0 0 40%;
+  flex: 0 0 46%;
 }
 
 .kviz-row>div b {

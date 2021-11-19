@@ -617,4 +617,19 @@ $(document).ready(function () {
     }
   });
 
+
+  $('.loader-canvas input').on('change', function() {
+    let container = $(this).closest('.loader-canvas');
+    let target = container.find('.file-save__title p:first-child');
+    container.find('svg').html(`<use xlink:href="sprite.svg#picture"></use>`)
+    container.find('.file-save__title span:nth-child(2)').text(`${(this.files[0].size / 1024).toFixed(2)} KB`)
+    console.log(this.files[0])
+    target.text(this.files[0].name);
+  })
+
+
+
+  $('.popup-log-check').on('click', function() {
+      $('.additional-hidden').fadeToggle();
+  })
 });
