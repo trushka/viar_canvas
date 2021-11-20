@@ -2863,6 +2863,7 @@ div.sharj__text-icon:not(:last-child) {
 
 .retouch__screen {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .retouch-tabs {
   max-width: fit-content;

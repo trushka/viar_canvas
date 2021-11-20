@@ -663,6 +663,16 @@
   .canvas-feature__image {
     margin-bottom: 30px;
   }
+
+  /*  */
+  .price-note::after {
+    width: 70px;
+    background-size: cover;
+    height: 100px;
+  }
+  .canvas__formalization {
+    margin-top: 48px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -1321,6 +1331,17 @@
   }
   .sharj-ul-list {
     padding-left: 12px;
+  }
+  /*  */
+  .retouch-tab {
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 37px;
   }
 }
 
