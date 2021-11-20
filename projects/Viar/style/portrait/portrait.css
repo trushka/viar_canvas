@@ -3053,7 +3053,7 @@ div.sharj__text-icon:not(:last-child) {
   top: 600px;
   left: 0;
   z-index: -1;
-  border-radius: 50% 50% 50% 50% / 2% 2% 0% 0% ;
+  border-radius: 50% 50% 50% 50% / 1% 1% 0% 0% ;
   overflow: hidden;
   background-color: #1E2533;
 }
