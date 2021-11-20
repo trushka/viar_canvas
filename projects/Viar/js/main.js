@@ -82,9 +82,9 @@ $(document).ready(function () {
     ],
   });
 
-  $(".ba-slider").beforeAfter();
-
-
+  $(".ba-slider1").beforeAfter();
+  $(".ba-slider2").beforeAfter();
+  $(".ba-slider3").beforeAfter();
 
 
 
