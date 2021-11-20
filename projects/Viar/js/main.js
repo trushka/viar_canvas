@@ -646,6 +646,11 @@ $(document).ready(function () {
   })
 
 
+  $('.form-image').click(function() {
+    targetId = $(this).data('id');
+    $('.accordion__sizes-block').addClass('hidden-block');
+    $(`.accordion__sizes-block[data-id="${targetId}"]`).removeClass('hidden-block');
+  })
 
   
 

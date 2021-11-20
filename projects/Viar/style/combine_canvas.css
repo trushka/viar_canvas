@@ -10700,6 +10700,9 @@
 .tools__mob {
     display: none;
 }
+.accordion__sizes-block.hidden-block {
+    display: none;
+}
 
 @media only screen and (max-width: 1300px) {
     .generate .generate-content .gallery-photo .slider-tabs .tabs li a {
