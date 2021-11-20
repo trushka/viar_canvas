@@ -3059,14 +3059,12 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
                                         <span class="tab-icon"></span>
                                       </h2>
                                       <div class="accordion-content">
-                                          <script
-                                            type="6c82bb225fa213b601dcfa94-text/javascript"
-                                          >
+                                          <script>
                                             window.onload = function(){setForm(0);}
                                           </script>
                                         <div class="form-types">
                                           <div class="form-image calcForm active" href="javascript:void(0)"
-                                          onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(0)"
+                                          onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(0, this)"
                                           data-id="1"
                                           data-cf-modified-6c82bb225fa213b601dcfa94-="">
                                             <picture>
@@ -3080,7 +3078,7 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
                                               </svg>
                                             </div>
                                           </div>
-                                          <div class="form-image calcForm" onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(1)"
+                                          <div class="form-image calcForm" onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(1, this)"
                                           class="calcForm"
                                           href="javascript:void(0)"
                                           data-id="2"
@@ -3096,7 +3094,7 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
                                               </svg>
                                             </div>
                                           </div>
-                                          <div class="form-image calcForm" onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(2)"
+                                          <div class="form-image calcForm" onclick="if (!window.__cfRLUnblockHandlers) return false; setForm(2, this)"
                                           class="calcForm"
                                           href="javascript:void(0)"
                                           data-id="3"
@@ -3304,6 +3302,12 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
                                             </div>
                                           </div>
                                         </div>
+                                      </div>
+                                      <h2 class="accordion-title open">
+                                        <span>3.</span> Выберите <span>Размер</span>
+                                      </h2>
+                                      <div class="accordion-content">
+                                        <div class="size" id="sizes"></div>
                                       </div>
                                       <h2 class="accordion-title open">
                                         <span>4. Выберите тип исполнения</span>
@@ -7324,8 +7328,10 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
         resize();
     }
 
-    function setForm(index)
+    function setForm(index, _this = null)
     {
+
+      console.log(_this)
         var item = sizes[index];
 
         var s_html = '';
@@ -7409,6 +7415,7 @@ type="6c82bb225fa213b601dcfa94-text/javascript"
             $('#sizes').html('<ul>'+s_html+'</ul>');
 
             if(act != ''){
+              console.log(act_h, act_w, act_depth, act_price)
                 setSize(act_h,act_w,act_depth);
                 calcTotalPrice(act_w+'x'+act_h,act_price);
             }
