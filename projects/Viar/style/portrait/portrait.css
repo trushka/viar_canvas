@@ -1067,6 +1067,8 @@
 .formalization__block--bottom {
   background: #fff;
   padding: 50px 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .block-title {
@@ -2862,7 +2864,7 @@ div.sharj__text-icon:not(:last-child) {
 /* retouch */
 
 .retouch__screen {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 .retouch-tabs {
@@ -2906,6 +2908,9 @@ div.sharj__text-icon:not(:last-child) {
 .retouch__block {
   display: flex;
   justify-content: space-between;
+}
+.retouch__block.hidden-block {
+  display: none;
 }
 .ba-canvas_nav {
   display: flex;
@@ -3033,18 +3038,38 @@ div.sharj__text-icon:not(:last-child) {
   margin-top: 65px;
   position: relative;
 }
-.canvas__formalization::after {
+.retouch__screen {
+  /* background: url(../../images/canvas/Union.svg); */
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 100% 1380px;
+  position: relative;
+
+}
+.form-bg {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 600px;
+  left: 0;
+  z-index: -1;
+  border-radius: 50% 50% 50% 50% / 2% 2% 0% 0% ;
+  overflow: hidden;
+  background-color: #1E2533;
+}
+.form-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.canvas__formalization::after {
+  /* position: absolute;
   content: "";
   height: 100%;
   width: 200%;
   top: 20%;
   left: -50%;
-  z-index: -1;
-  background: url(../../images/canvas/Union.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  z-index: -1; */
 }
 .canvas-formalization-row {
   display: flex;

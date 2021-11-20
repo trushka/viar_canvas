@@ -403,6 +403,23 @@ $(document).ready(function () {
     });
   });
 
+  document.querySelectorAll(".retouch-tab").forEach((element) => {
+    element.addEventListener("click", function (e) {
+      e.preventDefault();
+      let _this = this;
+      changeActiveTab(
+        _this,
+        ".retouch__inner",
+        ".retouch__block",
+        ".retouch-tab",
+        "active"
+      );
+      exampleSlider[0]?.slick?.refresh();
+
+      return false;
+    });
+  });
+
   $(".formalization-tab").click(function () {
     $(this).next().slideToggle();
     $(this).toggleClass("opened-tab");
@@ -495,7 +512,8 @@ $(document).ready(function () {
       stageSlider[0]?.slick?.refresh();
     }
 
-
+    var bgPos = `${parseInt($('.retouch__blocks').height() + 600)}px`;
+    $('.form-bg').css('top', bgPos)
 
     let whySharjHeight = $('.sharj-why__screen').height();
 
@@ -628,6 +646,8 @@ $(document).ready(function () {
   })
 
 
+
+  
 
   $('.popup-log-check').on('click', function() {
       $('.additional-hidden').fadeToggle();

@@ -653,7 +653,7 @@
     padding: 30px 20px;
   }
   .retouch__screen {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
   /*  */
   .canvas-features {
@@ -737,6 +737,12 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .form-bg {
+    border-radius: 50% 50% 50% 50% / 1% 1% 0% 0% ;
+  }
+  .retouch__inner {
+    margin-bottom: 0;
+  }
   .formalization__block--top-inner {
     padding: 38px 20px 20px;
   }
