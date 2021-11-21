@@ -10760,8 +10760,14 @@
     .PhotoEditor .canvas_container {
         width: 100%;
     }
-    .tools__mob {
-        display: flex;
+
+    .generate .generate-content .gallery-photo .slider-tabs .tabs li a {
+        font-size: 12px;
+        width: 140px;
     }
-    
+}
+
+
+.accordion-title.hidden {
+    display: none;
 }

@@ -2771,6 +2771,7 @@ div.sharj__text-icon:not(:last-child) {
   padding-left: 15px;
 }
 
+
 .about__canvas-content li:not(:last-child) {
   margin-bottom: 25px;
 }
@@ -3334,4 +3335,30 @@ div.sharj__text-icon:not(:last-child) {
 /*  */
 .pattern__screen {
   background: #FBF2EA;
+}
+
+/*  */
+
+.retouch__screen .ba-slider .handle:after {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  margin: -32px 0 0 -15px;
+  content: "";
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 64px;
+  background: url(../../images/canvas/scroll.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+.retouch__screen .ba-slider .handle {
+  background: #FBF2EA !important;
 }
