@@ -3045,6 +3045,9 @@ div.sharj__text-icon:not(:last-child) {
   line-height: 22px;
 }
 
+.formalization__col {
+  margin-top: 40px;
+}
 /* canvas formalization */
 
 .canvas__formalization {

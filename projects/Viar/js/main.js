@@ -641,7 +641,13 @@ $(document).ready(function () {
     }
 		$('.popup-sharj').fadeIn();
 	});
+  $('.formalization-btn').click(function (e) {
+		e.preventDefault();
+		$('body').addClass('open-frame');
+		$('.popup-frame').css("display", "flex").hide().fadeIn();
 
+		$('.popup-cart').fadeIn();
+	});
   $('.sharj-item--btn:not(.patterns-btn), .sharj-btn, .js-popup-photo-sharj, .js-examples-sharj').click(function(e) {
     e.preventDefault();
     $('body').addClass('open-frame');

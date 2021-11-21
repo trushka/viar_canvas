@@ -3135,3 +3135,112 @@ svg {
 .kviz-group__item del {
   font-weight: bold;
 }
+
+.popup-cart {
+  padding: 8px;
+  width: 100%;
+  max-width: 660px;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  background: #FBF2EA;
+  overflow: hidden;
+}
+.popup-cart::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  background: url(../../images/canvas/cart-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popup-cart--wrapper {
+  border: 1.5px solid #fff;
+  border-radius: 10px;
+  padding: 65px 20px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-image {
+  position: relative;
+  z-index: 1;
+}
+.popup-photo-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.popup-photo-title span {
+  color: #fa7846;
+}
+.cart-image--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../../images/canvas/tooltip-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 255px;
+  height: 67px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.cart-image--text img {
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+}
+.popup-cart .portraits-btn__style {
+  display: flex;
+}
+.popup-cart .portraits-btn {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+.popup-cart .portraits-btn a {
+  width: 240px;
+  height: 60px;
+}
+@media only screen and (max-width: 700px) {
+  .popup-cart .portraits-btn a {
+    max-width: 290px;
+    width: 100%;
+    height: 52px;
+  }
+  .popup-cart {
+    max-width: 425px;
+  }
+  .popup-cart--wrapper {
+    padding: 60px 35px 45px;
+  }
+  .cart-image {
+    margin-bottom: -80px;
+  }
+  .cart-image > img {
+    width: 332px;
+  }
+  .popup-photo-title {
+    margin-bottom: 70px;
+  }
+  .cart-image--text {
+    top: -50px;
+    width: 235px;
+    height: 62px;
+    font-size: 14.583px;
+    line-height: 20px;
+  }
+  .cart-image--text img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+  }
+}

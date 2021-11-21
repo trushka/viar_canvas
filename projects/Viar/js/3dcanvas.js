@@ -2931,10 +2931,10 @@ function Canvas3D(canvas_ViewPort)
 				
 	//this.renderer.shadowMap.enabled = true;
 	//this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-	this.renderer.setClearColor( 0xffffff, 1);
+	this.renderer.setClearColor( 0xFFF2EE, 1);
 	this.renderer.setPixelRatio(window.devicePixelRatio);
 	//this.renderer.setPixelRatio(2.5);
-	this.light = new THREE.DirectionalLight( 0xffffff, 1.8 );
+	this.light = new THREE.DirectionalLight( 0xFFF2EE, 1.8 );
 	this.light.position.set( -1, 6, 5 ); 			
 	//this.light.castShadow = true;            
 	this.scene.add(this.light);
@@ -2948,7 +2948,7 @@ function Canvas3D(canvas_ViewPort)
 	
 	this.raycaster = new THREE.Raycaster();
 				
-	this.scene.background = 0xffffff;
+	this.scene.background = 0xFFF2EE;
 	
 	this.canvas.width = 500;
 	this.canvas.height = 500;

@@ -143,8 +143,8 @@ $(document).ready(function () {
 		let href = $(this).attr('href'),
 			top = $(href).offset().top;
 		$('body,html').animate({ scrollTop: top }, 1500);
-		frameClose();
-	});
+		frameClose();	
+	});				
 	// Событие закрытия попапов по клику в свободное место
 	$(".target-frame").click(function (e) { // событие клика по веб-документу
 		var popup = $(".target-box"); // тут указываем ID элемента
@@ -154,6 +154,9 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.popup-cart a').click(function() {
+		frameClose();
+	})
 	$('.portraits-slider').slick({
 		infinite: true,
 		slidesToShow: 1,
