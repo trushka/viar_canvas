@@ -343,6 +343,7 @@ $(document).ready(function () {
 			i = 0; while (_size > 900) { _size /= 1024; i++; }
 		var exactSize = (Math.round(_size * 100) / 100) + ' ' + fSExt[i];
 		let counterFile = $(this).get(0).files.length;
+		console.log(filename)
 		if (filename) {
 			if (counterFile > 1) {
 

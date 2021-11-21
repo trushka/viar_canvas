@@ -403,22 +403,6 @@ $(document).ready(function () {
     });
   });
 
-  document.querySelectorAll(".retouch-tab").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let _this = this;
-      changeActiveTab(
-        _this,
-        ".retouch__inner",
-        ".retouch__block",
-        ".retouch-tab",
-        "active"
-      );
-      exampleSlider[0]?.slick?.refresh();
-
-      return false;
-    });
-  });
 
   $(".formalization-tab").click(function () {
     $(this).next().slideToggle();
@@ -521,15 +505,76 @@ $(document).ready(function () {
     $('.sharj-formalization').css('padding-bottom', `${parseInt(whySharjHeight)}px`);
   }
 
-  let bf_obj = $(".bf-obj");
+  // let bf_obj = $(".bf-obj");
 
-  bf_obj.slick({
+  // bf_obj.each((i,e)=>{
+  //   $(e).slick({
+  //     slidesToShow: 7,
+  //     infinite: false,
+  //     prevArrow: ".bf-arr_l",
+  //     nextArrow: ".bf-arr_r",
+  //   });
+  
+  // })
+
+
+
+
+
+
+
+  let bf_objP = $(".bf-objP");
+  let bf_obj1 = $(".bf-obj1");
+  let bf_obj2 = $(".bf-obj2");
+  let bf_obj3 = $(".bf-obj3");
+
+  
+  bf_objP.slick({
     slidesToShow: 7,
     infinite: false,
-    prevArrow: ".bf-arr_l",
-    nextArrow: ".bf-arr_r",
+    prevArrow: ".before-after__navP .bf-arr_l",
+    nextArrow: ".before-after__navP .bf-arr_r",
+  });
+  bf_obj1.slick({
+    slidesToShow: 7,
+    infinite: false,
+    prevArrow: ".before-after__nav1 .bf-arr_l",
+    nextArrow: ".before-after__nav1 .bf-arr_r",
+  });
+  bf_obj2.slick({
+    slidesToShow: 7,
+    infinite: false,
+    prevArrow: ".before-after__nav2 .bf-arr_l",
+    nextArrow: ".before-after__nav2 .bf-arr_r",
+  });
+  bf_obj3.slick({
+    slidesToShow: 7,
+    infinite: false,
+    prevArrow: ".before-after__nav3 .bf-arr_l",
+    nextArrow: ".before-after__nav3 .bf-arr_r",
   });
 
+  document.querySelectorAll(".retouch-tab").forEach((element) => {
+    element.addEventListener("click", function (e) {
+      e.preventDefault();
+      let _this = this;
+      changeActiveTab(
+        _this,
+        ".retouch__inner",
+        ".retouch__block",
+        ".retouch-tab",
+        "active"
+      );
+
+
+        bf_obj1[0]?.slick?.refresh();
+        bf_obj2[0]?.slick?.refresh();
+        bf_obj3[0]?.slick?.refresh();
+
+
+      return false;
+    });
+  });
   $(".examples-slider__inner img").click(function () {
     let first = $(this).attr("src");
     let second = $(this).data("image");
@@ -541,7 +586,7 @@ $(document).ready(function () {
   });
 
   $(".bf-obj li").click(function () {
-    $(`.bf-obj li`).removeClass("active");
+    $(this).parent().find(`li`).removeClass("active");
     $(this).addClass("active");
     let first = $(this).data("imageb");
     let second = $(this).data("imagea");
@@ -565,6 +610,7 @@ $(document).ready(function () {
   let el = $(".examples-slider__inner .examples-slide:nth-child(3)");
 
   function beforeAfterNavSetter(index) {
+    console.log(_this);
     let slickIndex = index - 1;
     $(`.bf-obj li`).removeClass("active");
     $(`.bf-obj li:nth-child(${index})`).addClass("active");
