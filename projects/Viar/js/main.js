@@ -711,7 +711,10 @@ $(document).ready(function () {
     $(`.accordion__sizes-block[data-id="${targetId}"]`).removeClass('hidden-block');
   })
 
-  
+  $('.kviz-row-single .kviz-radio img, .kviz-c-row>div label span img').hover(function() {
+    console.log(this);
+    $(this).closest('label').find('.window-prompt').fadeToggle(100);
+  })
 
   $('.popup-log-check').on('click', function() {
       $('.additional-hidden').fadeToggle();

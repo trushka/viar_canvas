@@ -10771,3 +10771,24 @@
 .accordion-title.hidden {
     display: none;
 }
+label > div.window-prompt {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 140%;
+    color: #575C65;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 250px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    z-index: 1;
+}
+.kviz-radio > label {
+    position: relative;
+}
+/* .kviz-row-single .kviz-radio img:hover {
+    display: block !important;
+} */
