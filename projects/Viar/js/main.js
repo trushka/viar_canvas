@@ -609,7 +609,7 @@ $(document).ready(function () {
   }
 
   let _beforeAfterCount = $(".bf-obj li").length;
-  console.log(_beforeAfterCount);
+ 
   if (_beforeAfterCount <= 7) {
     bf_objP.slick("unslick");
     $(".bf-arr").remove();
@@ -621,7 +621,7 @@ $(document).ready(function () {
     let slickIndex = index - 1;
     $(`.bf-obj li`).removeClass("active");
     $(`.bf-obj li:nth-child(${index})`).addClass("active");
-    console.log(slickIndex);
+    
     bf_objP.slick("slickGoTo", slickIndex);
   }
 
@@ -662,7 +662,7 @@ $(document).ready(function () {
     if (mediaChecker('max', 750)) {
       sharjPopupSlider[0]?.slick?.refresh();
     }
-    console.log($(this))
+    
     if ($(this).hasClass('sharj-btn-text')) {
       $('.popup-sharj-individual').find('.sharj-individual-text').fadeOut(0);
     } else {
@@ -700,7 +700,7 @@ $(document).ready(function () {
     let target = container.find('.file-save__title p:first-child');
     container.find('svg').html(`<use xlink:href="sprite.svg#picture"></use>`)
     container.find('.file-save__title span:nth-child(2)').text(`${(this.files[0].size / 1024).toFixed(2)} KB`)
-    console.log(this.files[0])
+    
     target.text(this.files[0].name);
   })
 
@@ -712,7 +712,7 @@ $(document).ready(function () {
   })
 
   $('.kviz-row-single .kviz-radio img, .kviz-c-row>div label span img').hover(function() {
-    console.log(this);
+    
     $(this).closest('label').find('.window-prompt').fadeToggle(100);
   })
 

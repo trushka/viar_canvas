@@ -346,7 +346,7 @@ $(document).ready(function () {
 			i = 0; while (_size > 900) { _size /= 1024; i++; }
 		var exactSize = (Math.round(_size * 100) / 100) + ' ' + fSExt[i];
 		let counterFile = $(this).get(0).files.length;
-		console.log(filename)
+
 		if (filename) {
 			if (counterFile > 1) {
 
@@ -370,7 +370,7 @@ $(document).ready(function () {
 			$(this).removeClass('file-input_save');
 		}
 
-		console.log($(this).get(0).files.length);
+
 	});
 	var fileValid = false;
 	var messegeValid = false;
@@ -733,9 +733,9 @@ let _slideToggle = (target, duration = 500) => {
 };
 //SlideToggle
 
+$(document).ready(function() {
+	let spollers = document.querySelectorAll("._spoller");
 
-//Spollers
-let spollers = document.querySelectorAll("._spoller");
 let spollersGo = true;
 if (spollers.length > 0) {
     for (let index = 0; index < spollers.length; index++) {
@@ -755,6 +755,7 @@ if (spollers.length > 0) {
             }
         });
         spoller.addEventListener("click", (e) => {
+
             if (spollersGo) {
                 spollersGo = false;
                 if (spoller.closest('._spollers').classList.contains('_one')) {
@@ -786,3 +787,5 @@ if (spollers.length > 0) {
         });
     }
 };
+})
+//Spollers
