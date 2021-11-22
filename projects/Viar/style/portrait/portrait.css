@@ -65,7 +65,15 @@
   flex: 0 0 58%;
   margin-top: -14%;
 }
-
+.portraits-image-other {
+  position: relative;
+  height: 440px;
+  flex: 0 0 58%;
+  margin-top: -10%;
+}
+.portraits-image-other img {
+  width: 100%;
+}
 .portraits-image__inner {
   position: absolute;
   width: 55%;

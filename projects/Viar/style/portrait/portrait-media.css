@@ -366,6 +366,10 @@
   .bottom-note {
     left: 10%;
   }
+  /*  */
+  .portraits-image-other {
+    height: 333px;
+  }
 }
 
 @media only screen and (max-width: 1124px) {
@@ -830,6 +834,14 @@
 
   .canvas__formalization {
     margin-top: 48px;
+  }
+  /*  */
+  .canvas-portrait .portraits__wrapper {
+    height: unset;
+
+  }
+  .portraits-image-other {
+    margin-top: 20px;
   }
 }
 
@@ -1309,6 +1321,9 @@
     flex: 0 0 34px;
     height: 34px;
     margin-right: 15px;
+  }
+  .canvas-portrait .portraits-slide {
+    padding-bottom: 40px;
   }
 }
 
@@ -1819,7 +1834,12 @@
   .portrait__screen .portraits-slide {
     padding-bottom: 65px;
   }
-
+  .canvas-portrait .portraits-slide {
+    padding-bottom: 30px;
+  }
+  .about__canvas-row>div {
+    font-size: 16px;
+  }
   /*  */
   .sharj__screen .portraits-slide {
     padding-bottom: 45px;

@@ -774,54 +774,13 @@
                     <a href="#" class="js-popup-photo">Заказать портрет</a>
                   </div>
                 </div>
-                <div class="portraits-image">
-                  <div class="portraits-image__inner">
-                    <div class="portrait-image">
-                      <picture>
-                        <source
-                        srcset="images/portrait1.webp"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="images/portrait1.jpg"
-                        type="image/jpg"
-                      />
-                        <source
-                          srcset="images/portrait1.jpg"
-                          type="image/jpg"
-                        />
-                        <img src="images/portrait1.jpg" alt="" />
-                      </picture>
-                    </div>
-                    <div class="portrait-image">
-                      <picture>
-                        <source
-                          srcset="images/portrait2.webp"
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="images/portrait2.jpg"
-                          type="image/jpg"
-                        />
-                        <img src="images/portrait2.jpg" alt="" />
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="portraits-images--bg">
-                    <picture>
-                      <source
-                        srcset="images/portrait-bg.webp"
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="images/portrait-bg.png"
-                        type="image/png"
-                      />
-                      <source srcset="images/portrait-bg.png" />
-                      <img src="images/portrait-bg.png" alt="" />
-                    </picture>
-                  </div>
-                </div>
+                <div class="portraits-image-other">
+                  <picture>
+                    <source media="(max-width: 700px)" srcset="images/canvas/canvasMin.png">
+                    <source srcset="images/canvas/canvas.png">
+                    <img src="images/canvas/canvas.png" alt="">
+                  </picture>
+                </div>  
               </div>
             </div>
           </article>
