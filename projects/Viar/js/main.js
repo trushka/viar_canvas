@@ -611,7 +611,7 @@ $(document).ready(function () {
   let _beforeAfterCount = $(".bf-obj li").length;
   console.log(_beforeAfterCount);
   if (_beforeAfterCount <= 7) {
-    bf_obj.slick("unslick");
+    bf_objP.slick("unslick");
     $(".bf-arr").remove();
     $(".before-after__nav").css("justify-content", "center");
   }
@@ -622,7 +622,7 @@ $(document).ready(function () {
     $(`.bf-obj li`).removeClass("active");
     $(`.bf-obj li:nth-child(${index})`).addClass("active");
     console.log(slickIndex);
-    bf_obj.slick("slickGoTo", slickIndex);
+    bf_objP.slick("slickGoTo", slickIndex);
   }
 
   $(".mobile-sizes--inner ul li").click(function () {
