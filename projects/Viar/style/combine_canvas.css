@@ -10748,6 +10748,9 @@
     .generate .generate-content .gallery-photo .tabs-item .accordion-title a span {
         padding-right: 10px;
     }
+    .form-bg {
+        border-radius: 50% 50% 50% 50% / 0.5% 0.5% 0% 0%;
+    }
 }
 
 @media only screen and (max-width: 475px) {

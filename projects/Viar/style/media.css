@@ -911,6 +911,11 @@
     .work {
       padding-bottom: 337px;
     }
+    .ellipse img {
+      width: calc(100% + 200px);
+      display: block;
+      margin-left: -100px;
+    }
   }
   
   
