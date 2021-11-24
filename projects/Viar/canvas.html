@@ -2926,7 +2926,7 @@
                                             <div data-item="0"
                                               class="interior-item active"
                                               data-size="250,300"
-                                              data-interior="https://viarcanvas.com/storage/canvas-interiers/July2020/EMqsLjpz7eQIZbI8fZmb.jpg"
+                                              data-interior="images/canvas/interio1.jpg"
                                             >                                              
                                               <div class="selected-icon">
                                                 <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2934,11 +2934,11 @@
                                                 </svg>
                                               </div>
                                               <div class="interio-img">
-                                                <img
-                                                    src="https://viarcanvas.com/storage/canvas-interiers/July2020/EMqsLjpz7eQIZbI8fZmb.jpg"
-                                                    alt=""
-                                                />
-
+                                                <picture>
+                                                  <source srcset="images/canvas/interio1.webp" type="image/webp">
+                                                  <source srcset="images/canvas/interio1.jpg" type="image/jpeg">
+                                                  <img src="images/canvas/interio1.jpg" alt=""/>
+                                                </picture>
                                               </div>
                                             </div>
                                           </div>
@@ -2947,7 +2947,7 @@
                                               data-item="1"
                                               class="interior-item"
                                               data-size="300,400"
-                                              data-interior="https://viarcanvas.com/storage/canvas-interiers/July2020/ZfUC0pxLdQeBnngIukDj.jpg"
+                                              data-interior="images/canvas/interio2.jpg"
                                             >
                                               
                                             <div class="selected-icon">
@@ -2956,10 +2956,11 @@
                                               </svg>
                                             </div>
                                             <div class="interio-img">
-                                              <img
-                                                src="https://viarcanvas.com/storage/canvas-interiers/July2020/ZfUC0pxLdQeBnngIukDj.jpg"
-                                                alt=""
-                                              />                                              
+                                              <picture>
+                                                <source srcset="images/canvas/interio2.webp" type="image/webp">
+                                                <source srcset="images/canvas/interio2.jpg" type="image/jpeg">
+                                                <img src="images/canvas/interio2.jpg" alt=""/>
+                                              </picture>                                          
                                             </div>
                                             </div>
                                           </div>
@@ -2968,7 +2969,7 @@
                                               data-item="2"
                                               class="interior-item"
                                               data-size="350,400"
-                                              data-interior="https://viarcanvas.com/storage/canvas-interiers/August2020/AQIDeX4EAUhW0GPiqoWT.jpeg"
+                                              data-interior="images/canvas/interio3.jpg"
                                             >
                                               
                                             <div class="selected-icon">
@@ -2977,10 +2978,11 @@
                                               </svg>
                                             </div>
                                             <div class="interio-img">
-                                              <img
-                                                src="https://viarcanvas.com/storage/canvas-interiers/August2020/AQIDeX4EAUhW0GPiqoWT.jpeg"
-                                                alt=""
-                                              />                                              
+                                              <picture>
+                                                <source srcset="images/canvas/interio3.webp" type="image/webp">
+                                                <source srcset="images/canvas/interio3.jpg" type="image/jpeg">
+                                                <img src="images/canvas/interio3.jpg" alt=""/>
+                                              </picture>                                          
                                             </div>
 
                                             </div>
@@ -2990,7 +2992,7 @@
                                               data-item="3"
                                               class="interior-item"
                                               data-size="250,300"
-                                              data-interior="https://viarcanvas.com/storage/canvas-interiers/August2020/ojFmVavio4Zg8W2ZVsT1.jpeg"
+                                              data-interior="images/canvas/interio4.jpg"
                                             >
                                               
                                             <div class="selected-icon">
@@ -2999,10 +3001,11 @@
                                               </svg>
                                             </div>
                                             <div class="interio-img">
-                                              <img
-                                                src="https://viarcanvas.com/storage/canvas-interiers/August2020/ojFmVavio4Zg8W2ZVsT1.jpeg"
-                                                alt=""
-                                              />                                              
+                                              <picture>
+                                                <source srcset="images/canvas/interio4.webp" type="image/webp">
+                                                <source srcset="images/canvas/interio4.jpg" type="image/jpeg">
+                                                <img src="images/canvas/interio4.jpg" alt=""/>
+                                              </picture>                                           
                                             </div>
 
                                             </div>
@@ -3012,7 +3015,7 @@
                                               data-item="4"
                                               class="interior-item"
                                               data-size="350,400"
-                                              data-interior="https://viarcanvas.com/storage/canvas-interiers/August2020/9KxzMTd5JxueFxCbb43f.jpeg"
+                                              data-interior="images/canvas/interio5.jpg"
                                             >
                                               
                                             <div class="selected-icon">
@@ -3021,10 +3024,11 @@
                                               </svg>
                                             </div>
                                             <div class="interio-img">
-                                                <img
-                                                  src="https://viarcanvas.com/storage/canvas-interiers/August2020/9KxzMTd5JxueFxCbb43f.jpeg"
-                                                  alt=""
-                                                />                                              
+                                              <picture>
+                                                <source srcset="images/canvas/interio5.webp" type="image/webp">
+                                                <source srcset="images/canvas/interio5.jpg" type="image/jpeg">
+                                                <img src="images/canvas/interio5.jpg" alt=""/>
+                                              </picture>                                             
                                             </div>
 
                                             </div>
@@ -7012,7 +7016,6 @@
       function setSize(centimeter_h,centimeter_w,centimeter_depth = 0)
       {
         
-
           size_centimeter_h = centimeter_h;
           size_centimeter_w = centimeter_w;
           if (!centimeter_depth) {
@@ -7022,7 +7025,6 @@
           var h = (1 / mx) * centimeter_h;
           var w = (1 / mx) * centimeter_w;
           var depth = (1 / mx) * centimeter_depth;
-            console.log(h, w, depth)
           
           editor.setSizeBox(h,w,depth);
           resize();
