@@ -3426,9 +3426,10 @@
 .generate .generate-content .gallery-photo .tabs-item .accordion-title {
     text-align: left;
 }
-.accordion-title:not(:last-child):not(.open) {
+.accordion-title {
     margin-bottom: 10px;
 }
+
 .generate .generate-content .gallery-photo .tabs-item .accordion-title a {
     width: 100%;
     height: 50px;
@@ -10782,7 +10783,9 @@ label > div.window-prompt {
     background: #fff;
     border-radius: 8px;
     padding: 5px 10px;
-    width: 250px;
+    max-width: 250px;
+    width: fit-content;
+    min-width: 150px;
     display: none;
     position: absolute;
     top: 0;

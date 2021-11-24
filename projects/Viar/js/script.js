@@ -84,6 +84,7 @@ $(document).ready(function () {
 			$('.kviz-item__title').hide();
 		}
 	});
+	document.addEventListener('touchstart', onTouchStart, {passive: true});
 });
 
 
