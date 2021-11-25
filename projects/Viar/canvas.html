@@ -4141,7 +4141,11 @@
               <div class="stages-row">
                 <div class="stage-item">
                   <div class="stage-img">
-                    <img src="images/photo.png" alt="" />
+                    <picture>
+                      <source srcset="images/photo.webp">
+                      <source srcset="images/photo.png">
+                      <img src="images/photo.png" alt="" />
+                    </picture>
                     <div class="stage-num">1</div>
                   </div>
                   <div class="stage-name">Фото</div>
@@ -4152,7 +4156,11 @@
                 </div>
                 <div class="stage-item">
                   <div class="stage-img">
-                    <img src="images/conversation.png" alt="" />
+                    <picture>
+                      <source srcset="images/conversation.webp">
+                      <source srcset="images/conversation.png">
+                      <img src="images/conversation.png" alt="" />
+                    </picture>
                     <div class="stage-num">2</div>
                   </div>
                   <div class="stage-name">Обсуждение</div>
@@ -4163,7 +4171,11 @@
                 </div>
                 <div class="stage-item">
                   <div class="stage-img">
-                    <img src="images/portrait.png" alt="" />
+                    <picture>
+                      <source srcset="images/portrait.webp">
+                      <source srcset="images/portrait.png">
+                      <img src="images/portrait.png" alt="" />
+                    </picture>
                     <div class="stage-num">3</div>
                   </div>
                   <div class="stage-name">Портрет</div>
@@ -4173,7 +4185,11 @@
                 </div>
                 <div class="stage-item">
                   <div class="stage-img">
-                    <img src="images/canvas.png" alt="" />
+                    <picture>
+                      <source srcset="images/canvas.webp">
+                      <source srcset="images/canvas.png">
+                      <img src="images/canvas.png" alt="" />
+                    </picture>
                     <div class="stage-num">4</div>
                   </div>
                   <div class="stage-name">Изготовление</div>
@@ -4184,7 +4200,11 @@
                 </div>
                 <div class="stage-item">
                   <div class="stage-img">
-                    <img src="images/delivery1.png" alt="" />
+                    <picture>
+                      <source srcset="images/delivery1.webp">
+                      <source srcset="images/delivery1.png">
+                      <img src="images/delivery1.png" alt="" />
+                    </picture>
                     <div class="stage-num">5</div>
                   </div>
                   <div class="stage-name">Доставка</div>
@@ -5733,7 +5753,13 @@
                 <img src="images/canvas/love.svg" alt="">
                 <span>Здесь будет Ваше фото</span>
               </div>
-              <img src="images/canvas/canvas-popup.png" alt="">
+              <picture>               
+                <source media="(max-width: 550px)" srcset="images/canvas/canvas-popup.png">
+                <source media="(max-width: 550px)" srcset="images/canvas/canvas-popup.webp">
+                <source srcset="images/canvas/canvas-popup.webp">
+                <source srcset="images/canvas/canvas-popup.png">
+                <img src="images/canvas/canvas-popup.png" alt="">
+              </picture>
             </div>
             <div class="portraits-btn">
               <a href="#" class="portraits-btn__style" tabindex="0">Продолжить покупки </a>
@@ -6230,64 +6256,6 @@
     
       });
     </script>
-    <script type="6c82bb225fa213b601dcfa94-text/javascript">
-      (function($) {
-          $.fn.jmspinner = function(value) {
-              var small = 'small';
-              var custom = 'custom';
-              var large = 'large';
-              var div_bounces = '';
-              var div = document.createElement('div');
-              var plc = $(div).prop('class', 'spin_loading');
-              var inner = document.createElement('div');
-              var center_loading = $(inner).prop('class', 'spinner');
-              var made = $(plc).html(center_loading);
-              var bce1 = document.createElement('div');
-              var bce2 = document.createElement('div');
-              var bce3 = document.createElement('div');
-              var div_btn_1 = $(bce1).prop('class', 'bounce1');
-              var div_btn_2 = $(bce2).prop('class', 'bounce2');
-              var div_btn_3 = $(bce3).prop('class', 'bounce3');
-              // returning the bounce divs to the template
-    
-              //var div_inner_bounces = $(div_bounces).html(div_btn);
-              var divs_bts;
-              var index = 0;
-              var loading = [];
-              loading.push(div_btn_1, div_btn_2, div_btn_3);
-    
-    
-              $.each(loading, function(i, index) {
-    
-                  divs_bts = $(center_loading).append(index);
-    
-              });
-    
-              if (value == 'small') {
-                  var small = $(divs_bts).addClass('small');
-                  this.html(small);
-                  return this;
-              }
-              if (value == 'large') {
-                  var large = $(divs_bts).addClass('large');
-                  this.html(large);
-                  return this;
-              }
-              if (value == null) {
-                  var detf = $(divs_bts).addClass('default');
-                  this.html(detf);
-                  return this;
-              }
-    
-              if (value == false) {
-                  this.find('.spinner').remove();
-                  return this;
-              }
-    
-          }
-    
-      }(jQuery));
-    </script>
     <script
       src="js/InteriorGenerator.js"
       type="6c82bb225fa213b601dcfa94-text/javascript"
@@ -6298,7 +6266,7 @@
     data-cf-settings="6c82bb225fa213b601dcfa94-|49"
     ></script>
     
-    <script type="6c82bb225fa213b601dcfa94-text/javascript">
+    <script>
     function testWebP(callback) {
         var webP = new Image();
         webP.onload = webP.onerror = function() {
@@ -6429,7 +6397,7 @@
     
     });
     </script>
-    <script type="6c82bb225fa213b601dcfa94-text/javascript">
+    <script>
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

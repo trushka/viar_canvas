@@ -3227,7 +3227,7 @@ svg {
   .cart-image {
     margin-bottom: -80px;
   }
-  .cart-image > img {
+  .cart-image >  picture img {
     width: 332px;
   }
   .popup-photo-title {
