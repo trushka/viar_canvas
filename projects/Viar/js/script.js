@@ -792,4 +792,4 @@ if (spollers.length > 0) {
 
 
 })
-//Spollers
+//Spollers  type="image/webp"
