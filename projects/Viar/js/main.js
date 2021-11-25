@@ -663,7 +663,7 @@ $(document).ready(function () {
       sharjPopupSlider[0]?.slick?.refresh();
     }
     
-    if ($(this).hasClass('sharj-btn-text')) {
+    if (!$(this).hasClass('sharj-btn-text')) {
       $('.popup-sharj-individual').find('.sharj-individual-text').fadeOut(0);
     } else {
       $('.popup-sharj-individual').find('.sharj-individual-text').fadeIn(0);
@@ -718,5 +718,10 @@ $(document).ready(function () {
 
   $('.popup-log-check').on('click', function() {
       $('.additional-hidden').fadeToggle();
+  })
+
+  $('img').each(function(i,e) {
+    $(e).attr('width', `${$(e).width()}`);
+    $(e).attr('height', `${$(e).height()}`);
   })
 });
