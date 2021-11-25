@@ -10771,7 +10771,9 @@
     }
 }
 
-
+.tabs li {
+    cursor: pointer;
+}
 .accordion-title.hidden {
     display: none;
 }

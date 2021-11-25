@@ -102,6 +102,8 @@ sup {
 
 img {
   border-style: none;
+  width: unset;
+  height: unset;
 }
 
 button,
