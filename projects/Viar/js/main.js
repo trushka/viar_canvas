@@ -722,6 +722,7 @@ $(document).ready(function () {
 
   $('.popup-log-check').on('click', function() {
       $('.additional-hidden').fadeToggle();
+      
   })
 
 });
