@@ -479,21 +479,24 @@ $(document).ready(function () {
   window.onresize = function () {
     mediaAction();
   };
+	  var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
   mediaAction();
   function mediaAction() {
-    if (mediaChecker("max", 750)) {
-      sharjBirthdaySlider[0]?.slick?.refresh();
-      sharjWeddingSlider[0]?.slick?.refresh();
-      sharjCollegueSlider[0]?.slick?.refresh();
-      sharjGrouppedSlider[0]?.slick?.refresh();
-      sharjFamilySlider[0]?.slick?.refresh();
-      sharjWhiteblackSlider[0]?.slick?.refresh();
-      sharjPatternSlider[0]?.slick?.refresh();
-      sharjEpisodesSlider[0]?.slick?.refresh();
-      sharjPopupSlider[0]?.slick?.refresh();
-    }
-    if (mediaChecker("max", 500)) {
-      stageSlider[0]?.slick?.refresh();
+    if (!iOS) {
+      if (mediaChecker("max", 750)) {
+        sharjBirthdaySlider[0]?.slick?.refresh();
+        sharjWeddingSlider[0]?.slick?.refresh();
+        sharjCollegueSlider[0]?.slick?.refresh();
+        sharjGrouppedSlider[0]?.slick?.refresh();
+        sharjFamilySlider[0]?.slick?.refresh();
+        sharjWhiteblackSlider[0]?.slick?.refresh();
+        sharjPatternSlider[0]?.slick?.refresh();
+        sharjEpisodesSlider[0]?.slick?.refresh();
+        sharjPopupSlider[0]?.slick?.refresh();
+      }
+      if (mediaChecker("max", 500)) {
+        stageSlider[0]?.slick?.refresh();
+      }
     }
 
     // $('img').each(function(i,e) {
@@ -579,9 +582,12 @@ $(document).ready(function () {
       );
 
 
+      if (!iOS) {
         bf_obj1[0]?.slick?.refresh();
         bf_obj2[0]?.slick?.refresh();
         bf_obj3[0]?.slick?.refresh();
+
+      }
 
 
       return false;
