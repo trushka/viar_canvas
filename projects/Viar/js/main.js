@@ -397,7 +397,10 @@ $(document).ready(function () {
         ".about-tab",
         "active"
       );
-      exampleSlider[0]?.slick?.refresh();
+    if (!iOS) {
+	exampleSlider[0]?.slick?.refresh();
+
+    }
 
       return false;
     });
