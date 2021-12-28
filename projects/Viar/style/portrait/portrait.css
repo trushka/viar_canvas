@@ -168,6 +168,7 @@
 
 .about-portrait {
   flex: 0 0 40%;
+  height: fit-content;
 }
 
 .about__first .about-text {

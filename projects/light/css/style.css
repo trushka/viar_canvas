@@ -1,0 +1,301 @@
+/* --------------------------------------------------------
+version: 1.0
+author: Asryan Babken
+email: ababken10@gamail.com
+website: https://freelancehunt.com/freelancer/ababken.html
+----------------------------------------------------------*/
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+li::marker {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+.no-boot ul {
+    list-style: none;
+    margin: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+a,
+input,
+button,
+textarea {
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-wrapper {
+    display: flex;
+    padding: 12px 0 0;
+}
+
+.screen-title {
+    max-width: 229px;
+    font-family: Source Sans Pro, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.input-wrapper input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #828282;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.input-wrapper input:-ms-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #828282;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.input-wrapper input::-ms-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #828282;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.form {
+    margin: 24px 0 40px;
+}
+form > div:not(:last-child) {
+    margin-bottom: 16px;
+}
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.select-wrapper > span {
+    color: #828282;
+}
+.ss-main {
+    color: #000;
+}
+.ss-content {
+    margin-top: 4px;
+}
+.ss-main .ss-single-selected {
+    border: none;
+}
+.types-wrapper > span {
+    color: #828282;
+}
+.types-row {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.type-item {
+    margin: 6px 6px 6px 0;
+    font-family: Source Sans Pro;
+    display: flex;
+    align-items: center;
+    border-radius: 27px;
+    padding: 8px 10px;
+    border: 1px solid #E1E1E1;
+    font-size: 18px;
+    line-height: 26px;
+    transition: all .3s ease;
+}
+.type-item svg {
+    margin-right: 5px;
+}
+.type-item.active {
+    background: #FF6666;
+    border: 1px solid #FF6666;
+    color: #fff;
+}
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;  
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    background: #FF6666;
+}
+.btn:disabled {  
+    background: #000000;
+    opacity: 0.1;
+}
