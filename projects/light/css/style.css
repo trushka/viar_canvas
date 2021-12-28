@@ -260,7 +260,7 @@ form > div:not(:last-child) {
     border: none;
 }
 .ss-main .ss-single-selected .ss-arrow span {
-    border: solid 828282;
+    border: solid #828282;
     border-width: 0 1px 1px 0;
     padding: 4px;
 }
