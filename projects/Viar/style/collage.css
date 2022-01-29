@@ -3,7 +3,8 @@
     background: url('../images/collage/hero-img.webp') no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 200px 0 0;
+    padding: 200px 0 80px;
+    margin-bottom: -130px;
 }
 @media not all and (min-resolution: 0.001dpcm) {
     @supports(-webkit-appearance:none) {
@@ -33,4 +34,11 @@
 }
 .collage__list--item strong {
     color: #F7794B;
+}
+.collage-m-bg {
+    display: none;
+    height: 450px;
+}
+.el-mobile {
+    display: none;
 }
