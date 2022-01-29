@@ -1,1825 +1,1521 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta
-      content="описание, 70-150 символов, уникальное для всех страниц, не повторяет Title"
-      name="description"
-    />
-    <meta content="Заголовок" property="og:title" />
-    <meta content="Описание" property="og:description" />
-    <meta content="https://siteurl.ru" property="og:url" />
-    <meta content="./images/logo.svg" property="og:image" />
-    <title>Главная</title>
-    <link href="./images/fav.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://url.com/" rel="alternate" hreflang="ru" />
-    <link
-      href="./fonts/Trajan-Pro-3.woff2"
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="style/main.min.css" media="all" />
-    <link rel="stylesheet" href="style/overall/overall.css"  media="all"/>
-    <link rel="stylesheet" href="style/media.css" media="all" />
-    <link rel="stylesheet" href="style/before-after.min.css"  media="all"/>
-    <link rel="stylesheet" href="style/portrait/portrait.css"  media="all"/>
-    <link rel="stylesheet" href="style/portrait/portrait-media.css" media="all" />
-    <link rel="stylesheet" href="style/collage.css" media="all">
-    <link rel="stylesheet" href="style/collage-media.css" media="all">
-  </head>
 
-  <body class="vz-art load">
-    <div class="vz-art menu">
-      <div class="vz-art menu-frame" data-menu="1">
-        <div class="vz-art section-frame">
-          <nav class="vz-art menu-frame__content">
-            <ul class="vz-art menu-link">
-              <li>
-                <a href="#" data-link="1">
-                  <span>Канвас/Фото на холсте</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Фото коллажи</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Модульные картины</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Портреты по фото</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Стилизация фотопортретов</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Картины маслом</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Канвас/Фото на холсте</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Фото коллажи</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Модульные картины</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Портреты по фото</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Стилизация фотопортретов</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Картины маслом</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="vz-art menu-list" data-link="1">
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-1.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-1.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="описание, 70-150 символов, уникальное для всех страниц, не повторяет Title" name="description" />
+  <meta content="Заголовок" property="og:title" />
+  <meta content="Описание" property="og:description" />
+  <meta content="https://siteurl.ru" property="og:url" />
+  <meta content="./images/logo.svg" property="og:image" />
+  <title>Главная</title>
+  <link href="./images/fav.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://url.com/" rel="alternate" hreflang="ru" />
+  <link href="./fonts/Trajan-Pro-3.woff2" rel="preload" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style/main.min.css" media="all" />
+  <link rel="stylesheet" href="style/overall/overall.css" media="all" />
+  <link rel="stylesheet" href="style/media.css" media="all" />
+  <link rel="stylesheet" href="style/before-after.min.css" media="all" />
+  <link rel="stylesheet" href="style/portrait/portrait.css" media="all" />
+  <link rel="stylesheet" href="style/portrait/portrait-media.css" media="all" />
+  <link rel="stylesheet" href="style/collage.css" media="all">
+  <link rel="stylesheet" href="style/collage-media.css" media="all">
+</head>
+
+<body class="vz-art load collage-bg">
+  <div class="vz-art menu">
+    <div class="vz-art menu-frame" data-menu="1">
+      <div class="vz-art section-frame">
+        <nav class="vz-art menu-frame__content">
+          <ul class="vz-art menu-link">
+            <li>
+              <a href="#" data-link="1">
+                <span>Канвас/Фото на холсте</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-2.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-2.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Фото коллажи</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-3.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-3.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Модульные картины</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-4.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-4.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Портреты по фото</span>
+                <i class="fa-arrow-next"></i>
               </a>
-            </div>
-            <div class="vz-art menu-list" data-link="2">
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-3.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-3.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Стилизация фотопортретов</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-4.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-4.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Картины маслом</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-1.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-1.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Канвас/Фото на холсте</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-2.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-2.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Фото коллажи</span>
+                <i class="fa-arrow-next"></i>
               </a>
-            </div>
-          </nav>
-        </div>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Модульные картины</span>
+                <i class="fa-arrow-next"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Портреты по фото</span>
+                <i class="fa-arrow-next"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Стилизация фотопортретов</span>
+                <i class="fa-arrow-next"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Картины маслом</span>
+                <i class="fa-arrow-next"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="vz-art menu-list" data-link="1">
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-1.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-1.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-2.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-2.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-3.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-3.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-4.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-4.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+          <div class="vz-art menu-list" data-link="2">
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-3.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-3.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-4.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-4.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-1.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-1.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item">
+              <picture>
+                <source srcset="./images/menu/menu-2.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-2.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+        </nav>
       </div>
-      <div class="vz-art menu-frame" data-menu="2">
-        <div class="vz-art section-frame">
-          <div class="vz-art menu-frame__content">
-            <ul class="vz-art menu-link">
-              <li>
-                <a href="#" data-link="1">
-                  <span>Канвас/Фото на холсте</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Фото коллажи</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Модульные картины</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Портреты по фото</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="1">
-                  <span>Стилизация фотопортретов</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-link="2">
-                  <span>Картины маслом</span>
-                  <i class="fa-arrow-next"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="vz-art menu-list" data-link="1">
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-3.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-3.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+    </div>
+    <div class="vz-art menu-frame" data-menu="2">
+      <div class="vz-art section-frame">
+        <div class="vz-art menu-frame__content">
+          <ul class="vz-art menu-link">
+            <li>
+              <a href="#" data-link="1">
+                <span>Канвас/Фото на холсте</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-4.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-4.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Фото коллажи</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-1.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-1.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Модульные картины</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-2.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-2.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Портреты по фото</span>
+                <i class="fa-arrow-next"></i>
               </a>
-            </div>
-            <div class="vz-art menu-list" data-link="2">
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-1.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-1.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="1">
+                <span>Стилизация фотопортретов</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-2.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-2.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
+            </li>
+            <li>
+              <a href="#" data-link="2">
+                <span>Картины маслом</span>
+                <i class="fa-arrow-next"></i>
               </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-3.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-3.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
-              </a>
-              <a href="#" class="vz-art menu-item" aria-label="menu link">
-                <picture>
-                  <source
-                    srcset="./images/menu/menu-4.webp"
-                    type="image/webp"
-                  />
-                  <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
-                  <img
-                    src="./images/menu/menu-4.jpg"
-                    alt="img"
-                    loading="lazy"
-                  />
-                </picture>
-              </a>
-            </div>
+            </li>
+          </ul>
+          <div class="vz-art menu-list" data-link="1">
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-3.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-3.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-4.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-4.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-1.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-1.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-2.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-2.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+          <div class="vz-art menu-list" data-link="2">
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-1.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-1.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-1.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-2.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-2.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-2.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-3.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-3.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-3.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#" class="vz-art menu-item" aria-label="menu link">
+              <picture>
+                <source srcset="./images/menu/menu-4.webp" type="image/webp" />
+                <source srcset="./images/menu/menu-4.jpg" type="image/jpeg" />
+                <img src="./images/menu/menu-4.jpg" alt="img" loading="lazy" />
+              </picture>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="vz-art burge-menu">
-      <div class="vz-art header-bar header-bar_burger">
-        <a href="#" class="vz-art logo" aria-label="logo link">
-          <img src="./images/logo.svg" alt="Logo" />
+  <div class="vz-art burge-menu">
+    <div class="vz-art header-bar header-bar_burger">
+      <a href="#" class="vz-art logo" aria-label="logo link">
+        <img src="./images/logo.svg" alt="Logo" />
+      </a>
+      <div class="vz-art header-button">
+        <a href="#" class="vz-art header-user" aria-label="user link">
+          <i class="fa-user"></i>
         </a>
+        <a href="#" class="vz-art header-cart" aria-label="cart link">
+          <i class="fa-cart"></i>
+        </a>
+      </div>
+      <div class="vz-art burger burger-close">
+        <i class="fa-close"></i>
+      </div>
+    </div>
+    <div class="vz-art burge-menu__list">
+      <div class="vz-art burge-menu__item">
+        <h3>Портрет по фото <i class="fa-arrow-down"></i></h3>
+        <ul>
+          <li>
+            <a href="#">Канвас/Фото на холсте</a>
+          </li>
+          <li>
+            <a href="#">Фото коллажи</a>
+          </li>
+          <li>
+            <a href="#">Модульные картины</a>
+          </li>
+          <li>
+            <a href="#">Портреты по фото</a>
+          </li>
+          <li>
+            <a href="#">Стилизация фотопортретов</a>
+          </li>
+          <li>
+            <a href="#">Картины маслом</a>
+          </li>
+        </ul>
+      </div>
+      <div class="vz-art burge-menu__item">
+        <h3>Печать фото на холсте <i class="fa-arrow-down"></i></h3>
+        <ul>
+          <li>
+            <a href="#">Канвас/Фото на холсте</a>
+          </li>
+          <li>
+            <a href="#">Фото коллажи</a>
+          </li>
+          <li>
+            <a href="#">Модульные картины</a>
+          </li>
+          <li>
+            <a href="#">Портреты по фото</a>
+          </li>
+          <li>
+            <a href="#">Стилизация фотопортретов</a>
+          </li>
+          <li>
+            <a href="#">Картины маслом</a>
+          </li>
+        </ul>
+      </div>
+      <div class="vz-art burge-menu__item">
+        <h3>Коллажи <i class="fa-arrow-down"></i></h3>
+        <ul>
+          <li>
+            <a href="#">Канвас/Фото на холсте</a>
+          </li>
+          <li>
+            <a href="#">Фото коллажи</a>
+          </li>
+          <li>
+            <a href="#">Модульные картины</a>
+          </li>
+          <li>
+            <a href="#">Портреты по фото</a>
+          </li>
+          <li>
+            <a href="#">Стилизация фотопортретов</a>
+          </li>
+          <li>
+            <a href="#">Картины маслом</a>
+          </li>
+        </ul>
+      </div>
+      <div class="vz-art burge-menu__item">
+        <h3>Идеи <i class="fa-arrow-down"></i></h3>
+        <ul>
+          <li>
+            <a href="#">Канвас/Фото на холсте</a>
+          </li>
+          <li>
+            <a href="#">Фото коллажи</a>
+          </li>
+          <li>
+            <a href="#">Модульные картины</a>
+          </li>
+          <li>
+            <a href="#">Портреты по фото</a>
+          </li>
+          <li>
+            <a href="#">Стилизация фотопортретов</a>
+          </li>
+          <li>
+            <a href="#">Картины маслом</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="vz-art language language_burger">
+      <p>Русский <i class="fa-arrow-down"></i></p>
+      <ul>
+        <li>
+          <a href="#">Eng</a>
+        </li>
+        <li>
+          <a href="#">Lv</a>
+        </li>
+        <li>
+          <a href="#">Ee</a>
+        </li>
+        <li>
+          <a href="#">Lt</a>
+        </li>
+        <li>
+          <a href="#">De</a>
+        </li>
+        <li>
+          <a href="#">Pl</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="vz-art vz-header">
+    <div class="vz-art section-frame">
+      <div class="vz-art header-bar">
+        <a href="#" class="vz-art logo">
+          <img src="./images/logo.svg" alt="Logo" width="170" height="68" />
+        </a>
+        <ul class="vz-art header-social">
+          <li>
+            <a href="#">
+              <i class="fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <nav class="vz-art header-menu header-item_pc">
+          <ul>
+            <li>
+              <a href="#" class="js-drop-menu" data-menu="1">
+                <span>Портрет по фото</span>
+                <i class="fa-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="js-drop-menu" data-menu="2">
+                <span>Печать фото на холсте</span>
+                <i class="fa-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="js-drop-menu" data-menu="1">
+                <span>Коллажи</span>
+                <i class="fa-arrow-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-menu="2">
+                <span>Идеи</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
         <div class="vz-art header-button">
-          <a href="#" class="vz-art header-user" aria-label="user link">
+          <a href="#" class="vz-art header-user js-popup-login" aria-label="user link">
             <i class="fa-user"></i>
           </a>
           <a href="#" class="vz-art header-cart" aria-label="cart link">
             <i class="fa-cart"></i>
           </a>
         </div>
-        <div class="vz-art burger burger-close">
-          <i class="fa-close"></i>
+        <div class="vz-art language header-item_pc _spollers _one _esc">
+          <p class="_spoller">
+            <img src="images/flag/ru.svg" alt="Ru" /> Рус
+            <i class="fa-arrow-down"></i>
+          </p>
+          <ul>
+            <li>
+              <a href="#"> <img src="images/flag/ru.svg" alt="Ru" /> Ru </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/en.svg" alt="Eng" /> Eng </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/lv.svg" alt="Lv" /> Lv </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/es.svg" alt="Es" /> Es </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/lt.svg" alt="Lt" /> Lt </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/ge.svg" alt="De" /> De </a>
+            </li>
+            <li>
+              <a href="#"> <img src="images/flag/pl.svg" alt="Pl" /> Pl </a>
+            </li>
+          </ul>
+        </div>
+        <div class="vz-art burger burger-open">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <div class="vz-art burge-menu__list">
-        <div class="vz-art burge-menu__item">
-          <h3>Портрет по фото <i class="fa-arrow-down"></i></h3>
-          <ul>
-            <li>
-              <a href="#">Канвас/Фото на холсте</a>
-            </li>
-            <li>
-              <a href="#">Фото коллажи</a>
-            </li>
-            <li>
-              <a href="#">Модульные картины</a>
-            </li>
-            <li>
-              <a href="#">Портреты по фото</a>
-            </li>
-            <li>
-              <a href="#">Стилизация фотопортретов</a>
-            </li>
-            <li>
-              <a href="#">Картины маслом</a>
-            </li>
-          </ul>
-        </div>
-        <div class="vz-art burge-menu__item">
-          <h3>Печать фото на холсте <i class="fa-arrow-down"></i></h3>
-          <ul>
-            <li>
-              <a href="#">Канвас/Фото на холсте</a>
-            </li>
-            <li>
-              <a href="#">Фото коллажи</a>
-            </li>
-            <li>
-              <a href="#">Модульные картины</a>
-            </li>
-            <li>
-              <a href="#">Портреты по фото</a>
-            </li>
-            <li>
-              <a href="#">Стилизация фотопортретов</a>
-            </li>
-            <li>
-              <a href="#">Картины маслом</a>
-            </li>
-          </ul>
-        </div>
-        <div class="vz-art burge-menu__item">
-          <h3>Коллажи <i class="fa-arrow-down"></i></h3>
-          <ul>
-            <li>
-              <a href="#">Канвас/Фото на холсте</a>
-            </li>
-            <li>
-              <a href="#">Фото коллажи</a>
-            </li>
-            <li>
-              <a href="#">Модульные картины</a>
-            </li>
-            <li>
-              <a href="#">Портреты по фото</a>
-            </li>
-            <li>
-              <a href="#">Стилизация фотопортретов</a>
-            </li>
-            <li>
-              <a href="#">Картины маслом</a>
-            </li>
-          </ul>
-        </div>
-        <div class="vz-art burge-menu__item">
-          <h3>Идеи <i class="fa-arrow-down"></i></h3>
-          <ul>
-            <li>
-              <a href="#">Канвас/Фото на холсте</a>
-            </li>
-            <li>
-              <a href="#">Фото коллажи</a>
-            </li>
-            <li>
-              <a href="#">Модульные картины</a>
-            </li>
-            <li>
-              <a href="#">Портреты по фото</a>
-            </li>
-            <li>
-              <a href="#">Стилизация фотопортретов</a>
-            </li>
-            <li>
-              <a href="#">Картины маслом</a>
-            </li>
-          </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- main screen -->
+
+    <div class="collage__screen" style="">
+      <div class="collage-m-bg">
+        <picture>
+          <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.webp" type="image/webp">
+          <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.jpg" type="image/jpeg">
+          <img width="520" height="400" src="images/collage/hero-imgM.jpg" alt="">
+        </picture>
+      </div>
+      <div class="collage__inner">
+        <div class="section-frame">
+          <h2 class="portraits-title collage-title">
+            <span>КОЛЛАЖ</span> - из ваших любимых фото!
+          </h2>
+          <div class="collage__inner--list">
+            <div class="collage__list--item">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z"
+                  fill="url(#paint0_linear_1_915)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7846" />
+                    <stop offset="1" stop-color="#91665E" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Можно загрузить фото <strong>с телефона!</strong></span>
+            </div>
+            <div class="collage__list--item">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z"
+                  fill="url(#paint0_linear_1_915)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7846" />
+                    <stop offset="1" stop-color="#91665E" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Любое <strong>количество</strong> фотографий!</span>
+            </div>
+            <div class="collage__list--item">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z"
+                  fill="url(#paint0_linear_1_915)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7846" />
+                    <stop offset="1" stop-color="#91665E" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Супер удобный и <strong>простой конструктор!</strong></span>
+            </div>
+            <div class="collage__list--item">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z"
+                  fill="url(#paint0_linear_1_915)" />
+                <defs>
+                  <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7846" />
+                    <stop offset="1" stop-color="#91665E" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>Лучший <strong>ПОДАРОК</strong> на пямять!</span>
+            </div>
+          </div>
+          <div class="portraits-btn collage-btn">
+            <a href="#" class="js-popup-photo-header" tabindex="-1">Создайте свой фотоколлаж</a>
+          </div>
+
         </div>
       </div>
-      <div class="vz-art language language_burger">
-        <p>Русский <i class="fa-arrow-down"></i></p>
-        <ul>
-          <li>
-            <a href="#">Eng</a>
-          </li>
-          <li>
-            <a href="#">Lv</a>
-          </li>
-          <li>
-            <a href="#">Ee</a>
-          </li>
-          <li>
-            <a href="#">Lt</a>
-          </li>
-          <li>
-            <a href="#">De</a>
-          </li>
-          <li>
-            <a href="#">Pl</a>
-          </li>
-        </ul>
+      <div class="absolute-elements">
+        <div class="collage-express">
+          <img width="87" height="87" src="images/collage/express.svg" alt="">
+          <p><span>Бесплатная</span> экспрес доставка 1-2 дня!</p>
+        </div>
+        <div class="collage-gift">
+          <img width="149" height="138" src="images/collage/gift.svg" alt="">
+          <p> <span>Бесплатная</span> подарочная упаковка</p>
+        </div>
+        <div class="collage-shape">
+          <svg width="884" height="1203" viewBox="0 0 884 1203" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_1_170)">
+              <path
+                d="M883.254 576C883.254 701.369 775.074 803 641.627 803C508.18 803 400 701.369 400 576C400 450.631 508.18 349 641.627 349C775.074 349 883.254 450.631 883.254 576Z"
+                fill="#FA7846" fill-opacity="0.15" />
+            </g>
+            <defs>
+              <filter id="filter0_f_1_170" x="0" y="-51" width="1283.25" height="1254" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_170" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </div>
     </div>
 
-    <header class="vz-art vz-header">
-      <div class="vz-art section-frame">
-        <div class="vz-art header-bar">
-          <a href="#" class="vz-art logo">
-            <img src="./images/logo.svg" alt="Logo" width="170" height="68" />
-          </a>
-          <ul class="vz-art header-social">
-            <li>
-              <a href="#">
-                <i class="fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <nav class="vz-art header-menu header-item_pc">
-            <ul>
-              <li>
-                <a href="#" class="js-drop-menu" data-menu="1">
-                  <span>Портрет по фото</span>
-                  <i class="fa-arrow-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="js-drop-menu" data-menu="2">
-                  <span>Печать фото на холсте</span>
-                  <i class="fa-arrow-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="js-drop-menu" data-menu="1">
-                  <span>Коллажи</span>
-                  <i class="fa-arrow-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-menu="2">
-                  <span>Идеи</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="vz-art header-button">
-            <a
-              href="#"
-              class="vz-art header-user js-popup-login"
-              aria-label="user link"
-            >
-              <i class="fa-user"></i>
-            </a>
-            <a href="#" class="vz-art header-cart" aria-label="cart link">
-              <i class="fa-cart"></i>
-            </a>
+
+    <!-- ellipse -->
+
+
+    <div class="ellipse el-desk col-main-el">
+      <a href="#services" class="anchor ellipse-arrow ellipse-arrow_white" aria-label="anchor link">
+        <i class="fa-arrow-down"></i>
+      </a>
+      <img src="https://viarcanvas.com/images/icon/ellipse-whete.svg" alt="img" loading="eager" width="1374"
+        height="99">
+    </div>
+
+
+    <!-- why collage -->
+
+
+    <div class="collage-why__screen">
+      <div class="section-frame">
+        <div class="collage-why--inner">
+          <div class="page-title--row">
+            <div class="page-title page-collage-title">
+              Почему стоит выбрать <span>КОЛЛАЖ</span>?
+            </div>
+            <div class="col-subtitle">
+              Ну и почему?
+            </div>
+            <div class="col-subtitle-m">
+              <span>Коллаж</span> - это воспоминание которые оживают на холсте!
+            </div>
           </div>
-          <div class="vz-art language header-item_pc _spollers _one _esc">
-            <p class="_spoller">
-              <img src="images/flag/ru.svg" alt="Ru" /> Рус
-              <i class="fa-arrow-down"></i>
-            </p>
-            <ul>
-              <li>
-                <a href="#"> <img src="images/flag/ru.svg" alt="Ru" /> Ru </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/en.svg" alt="Eng" /> Eng </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/lv.svg" alt="Lv" /> Lv </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/es.svg" alt="Es" /> Es </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/lt.svg" alt="Lt" /> Lt </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/ge.svg" alt="De" /> De </a>
-              </li>
-              <li>
-                <a href="#"> <img src="images/flag/pl.svg" alt="Pl" /> Pl </a>
-              </li>
-            </ul>
-          </div>
-          <div class="vz-art burger burger-open">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="collage-why--content">
+            <a href="https://viarcanvas.com/photo_portrait" class="services-item col-service-item">
+              <div class="services-item__title"> Для себя</div>
+              <div class="services-photo">
+                <picture>
+                  <source media="(max-width: 425px)" srcset="images/collage/1M.webp" type="image/webp">
+                  <source media="(max-width: 425px)" srcset="images/collage/1M.jpg" type="image/jpeg">
+                  <source srcset="images/collage/1.webp" type="image/webp">
+                  <source srcset="images/collage/1.jpg" type="image/jpeg">
+                  <img class="lozad" width="315" height="450" src="images/collage/1.jpg" data-src="" alt="Портрет по фото" loading="lazy" data-loaded="true">
+              </picture>
+                <div class="a-btn">Подробнее <i class="fa-arrow-next"></i>
+                </div>
+              </div>
+              <div class="services-info">
+                <p>Потому что фото на телефоне не вечны!
+                  Распечатайте семейный архив!</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <main id="top">
-      
-        <div class="collage__screen" style="">
-            <div class="collage-m-bg">
-                <picture> 
-                  <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.webp" type="image/webp">
-                  <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.jpg">
-                  <img width="520" height="400" src="images/collage/hero-imgM.jpg" alt="">
-                </picture>
-            </div>
-            <div class="collage__inner">
-              <div class="section-frame">
-                  <h2 class="portraits-title collage-title">
-                    <span>КОЛЛАЖ</span> - из ваших любимых фото!
-                  </h2>
-                  <div class="collage__inner--list">
-                    <div class="collage__list--item">
-                      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z" fill="url(#paint0_linear_1_915)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FA7846"/>
-                        <stop offset="1" stop-color="#91665E"/>
-                        </linearGradient>
-                        </defs>
-                      </svg>
-                        <span>Можно загрузить фото <strong>с телефона!</strong></span>
-                    </div>
-                    <div class="collage__list--item">
-                      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z" fill="url(#paint0_linear_1_915)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FA7846"/>
-                        <stop offset="1" stop-color="#91665E"/>
-                        </linearGradient>
-                        </defs>
-                      </svg>
-                        <span>Любое <strong>количество</strong> фотографий!</span>
-                    </div>
-                    <div class="collage__list--item">
-                      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z" fill="url(#paint0_linear_1_915)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FA7846"/>
-                        <stop offset="1" stop-color="#91665E"/>
-                        </linearGradient>
-                        </defs>
-                      </svg>
-                        <span>Супер удобный и <strong>простой конструктор!</strong></span>
-                    </div>
-                    <div class="collage__list--item">
-                      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M34.5928 25.7594C34.492 23.5318 33.543 21.4651 31.9207 19.9401C31.8605 19.8834 31.6612 19.7047 31.6249 19.6725C30.6376 18.7937 29.368 18.3662 28.0497 18.4682C27.9913 18.4727 27.9335 18.4795 27.8757 18.486L4.95924 0.308366C4.36766 -0.161007 3.5109 -0.0866146 3.00882 0.477423C2.50705 1.04122 2.53242 1.90064 3.06665 2.43391L23.6221 22.9494C23.5322 24.3317 24.0323 25.7402 25.0986 26.7557C25.7258 27.3529 26.4998 27.7705 27.3368 27.9633C29.1164 28.3734 30.4676 29.6731 30.8632 31.3553C30.8983 31.5046 30.9284 31.6561 30.9545 31.8081C27.7182 33.2352 23.656 34.0187 19.4672 34.0187C18.1153 34.0187 16.7866 33.9392 15.4985 33.785C12.7048 33.3805 10.1475 32.4853 8.0913 31.1667C5.26238 29.3527 3.70944 26.9358 3.70944 24.3612C3.70944 21.007 5.79831 18.3882 10.2748 16.1456C10.5156 16.025 10.6264 15.7417 10.5291 15.4905C10.4294 15.2329 10.1454 15.0973 9.88244 15.1819C7.15934 16.0586 4.86118 17.3012 3.21398 18.7909C1.37187 20.4569 0.398071 22.387 0.398071 24.3726C0.398071 27.2642 2.42095 29.9593 6.0941 31.9615C8.69306 33.3783 11.9086 34.3324 15.4052 34.7493C16.5591 34.9148 17.7483 34.9999 18.9541 34.9999V34.9839C19.1248 34.9864 19.2958 34.9879 19.4673 34.9879C23.7139 34.9879 27.8225 34.1509 31.1728 32.7703C31.5749 32.6047 32.249 32.0295 32.4458 31.8085C33.9315 30.1395 34.6939 27.9912 34.5928 25.7594ZM1.36735 24.3726C1.36735 22.1765 2.7934 20.0783 5.29187 18.3976C3.56639 20.1268 2.7379 22.085 2.7379 24.3611C2.7379 26.7105 3.85079 28.9235 5.91261 30.7401C2.97497 28.9679 1.36735 26.7259 1.36735 24.3726ZM3.73287 1.12175C3.8936 0.941222 4.16775 0.917637 4.357 1.06771L24.5903 17.1171C23.8857 17.4167 23.2648 17.8807 22.7643 18.4888C22.4136 18.9151 22.1412 19.3993 21.9565 19.9175L3.75136 1.74782C3.58045 1.57723 3.57229 1.3022 3.73287 1.12175ZM22.738 20.6977C22.8682 20.1128 23.1331 19.566 23.5127 19.1047C24.0315 18.4744 24.7117 18.0375 25.4898 17.8306L26.6829 18.777C25.9188 19.0715 25.2388 19.5593 24.7011 20.2126C24.3054 20.6935 24.0188 21.2321 23.839 21.7965L22.738 20.6977ZM31.7943 31.0814C31.2983 29.0624 29.6785 27.5081 27.5546 27.0187C26.8866 26.8648 26.2685 26.5311 25.767 26.0536C24.3151 24.6711 24.1757 22.376 25.4495 20.8285C26.1223 20.0112 27.0723 19.5161 28.1246 19.4345C28.227 19.4266 28.3289 19.4227 28.4303 19.4227C29.3726 19.4227 30.2684 19.7627 30.9803 20.3964C31.02 20.4318 31.2045 20.5972 31.2567 20.6462C32.6942 21.9976 33.5351 23.8291 33.6245 25.8033C33.7125 27.7445 33.0633 29.6144 31.7943 31.0814Z" fill="url(#paint0_linear_1_915)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_1_915" x1="17.4999" y1="0" x2="17.4999" y2="34.9999" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FA7846"/>
-                        <stop offset="1" stop-color="#91665E"/>
-                        </linearGradient>
-                        </defs>
-                      </svg>
-                        <span>Лучший <strong>ПОДАРОК</strong> на пямять!</span>
-                    </div>
-                  </div>
-                  <div class="portraits-btn collage-btn">
-                    <a href="#" class="js-popup-photo-header" tabindex="-1">Создайте свой фотоколлаж</a>
-                  </div>
+  </main>
 
-              </div>
-            </div>
-            <div class="absolute-elements">
-              <div class="collage-express">
-                <img width="200" height="200" src="images/collage/express.svg" alt="">
-                <p><span>Бесплатная</span> экспрес доставка 1-2 дня!</p>
-              </div>
-              <div class="collage-gift">
-                <img width="200" height="200" src="images/collage/gift.svg" alt="">
-                <p> <span>Бесплатная</span> подарочная упаковка</p>
-              </div>
-              <div class="collage-shape"></div>
-            </div>
-        </div>
-        <div class="ellipse el-desk">
-          <a href="#services" class="anchor ellipse-arrow ellipse-arrow_white" aria-label="anchor link">
-            <i class="fa-arrow-down"></i>
+  <footer class="vz-art vz-footer">
+    <div class="section-frame">
+      <div class="vz-art footer-bar">
+        <div class="vz-art footer-info">
+          <div class="vz-art footer-logo">
+            <a href="#" class="vz-art footer-logo__item" aria-label="footer logo">
+              <img src="./images/logo.svg" width="180" height="68" alt="img" loading="lazy" />
             </a>
-          <img src="https://viarcanvas.com/images/icon/ellipse-whete.svg" alt="img" loading="eager" width="1374" height="99">
-        </div>
-        
-    </main>
-
-    <footer class="vz-art vz-footer">
-      <div class="section-frame">
-        <div class="vz-art footer-bar">
-          <div class="vz-art footer-info">
-            <div class="vz-art footer-logo">
-              <a
-                href="#"
-                class="vz-art footer-logo__item"
-                aria-label="footer logo"
-              >
-                <img src="./images/logo.svg" width="180" height="68" alt="img" loading="lazy" />
-              </a>
-              <div class="vz-art footer-social footer-social_mob">
-                <ul>
-                  <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      aria-label="footer social"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      aria-label="footer social"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="vz-art footer-contact">
-              <a href="tel:+371270444470" class="vz-art footer-contact__item">
-                <svg>
-                  <use xlink:href="sprite.svg#footer-phone"></use>
-                </svg>
-                <span>
-                  <b>+371 270444470</b>
-                </span>
-              </a>
-              <a href="tel:+37125444744" class="vz-art footer-contact__item">
-                <svg>
-                  <use xlink:href="sprite.svg#footer-phone"></use>
-                </svg>
-                <span>
-                  <b>+371 25444744</b>
-                </span>
-              </a>
-              <a
-                href="mailto:orders@viarcanvas.com"
-                class="vz-art footer-contact__item"
-              >
-                <svg>
-                  <use xlink:href="sprite.svg#footer-mail"></use>
-                </svg>
-                <span>orders@viarcanvas.com</span>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                class="vz-art footer-contact__item"
-                rel="noopener noreferrer"
-              >
-                <svg>
-                  <use xlink:href="sprite.svg#map"></use>
-                </svg>
-                <span
-                  >Riga, Lubanas 65, LV1073 Daugavpils, Stacijas 129R,
-                  LV5401</span
-                >
-              </a>
-            </div>
-            <div class="vz-art footer-social footer-social_pc">
-              <h3>Мы в соцсетях:</h3>
+            <div class="vz-art footer-social footer-social_mob">
               <ul>
                 <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="footer social facebok"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" target="_blank" aria-label="footer social" rel="noopener noreferrer">
                     <i class="fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    aria-label="footer social instagram"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="#" target="_blank" aria-label="footer social" rel="noopener noreferrer">
                     <i class="fa-instagram"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="vz-art footer-list">
-            <h3><span class="vz-art faq-icon"></span> Стили портрета</h3>
-            <ul>
-              <li>
-                <a href="#">Печать фото на холсте</a>
-              </li>
-              <li>
-                <a href="#">Портрет по фото</a>
-              </li>
-              <li>
-                <a href="#">Каталог готовых картин</a>
-              </li>
-              <li>
-                <a href="#">Карикатура/шарж</a>
-              </li>
-              <li>
-                <a href="#">Модульные картины</a>
-              </li>
-              <li>
-                <a href="#">Дигитальный портрет</a>
-              </li>
-              <li>
-                <a href="#">Портрет маслом и акрилом</a>
-              </li>
-              <li>
-                <a href="#">Репродукции художников</a>
-              </li>
-              <li>
-                <a href="#">Коллаж на холсте</a>
-              </li>
-              <li>
-                <a href="#">Портрет в образе</a>
-              </li>
-            </ul>
-          </div>
-          <div class="vz-art footer-list">
-            <h3><span class="vz-art faq-icon"></span> Виды портрета</h3>
-            <ul>
-              <li>
-                <a href="#">Женский портрет</a>
-              </li>
-              <li>
-                <a href="#">Мужской портрет</a>
-              </li>
-              <li>
-                <a href="#">Парный портрет</a>
-              </li>
-              <li>
-                <a href="#">Семейный портрет</a>
-              </li>
-              <li>
-                <a href="#">Свадебный портрет</a>
-              </li>
-              <li>
-                <a href="#">Портрет родителей</a>
-              </li>
-              <li>
-                <a href="#">Портрет руководителя</a>
-              </li>
-              <li>
-                <a href="#">Портрет на юбилей</a>
-              </li>
-              <li>
-                <a href="#">Детский портрет</a>
-              </li>
-              <li>
-                <a href="#">Портрет питомца</a>
-              </li>
-            </ul>
-          </div>
-          <div class="vz-art footer-list">
-            <h3><span class="vz-art faq-icon"></span> Информация</h3>
-            <ul>
-              <li>
-                <a href="#">Подарочная карта</a>
-              </li>
-              <li>
-                <a href="#">Оплата и доставка</a>
-              </li>
-              <li>
-                <a href="#">Акции</a>
-              </li>
-              <li>
-                <a href="#">Сервис клиента</a>
-              </li>
-              <li>
-                <a href="#">Советы и идеи</a>
-              </li>
-              <li>
-                <a href="#">Все стили</a>
-              </li>
-              <li>
-                <a href="#">Размеры и цены</a>
-              </li>
-              <li>
-                <a href="#">Обрамление картин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-              <li>
-                <a href="#">Вопросы и ответы</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="vz-art footer-copy">
-        <div class="section-frame">
-          <div class="vz-art footer-copy__content">
-            <p class="vz-art copy-title">© 2021 VIARCANVAS ®</p>
-            <div class="vz-art footer-pay">
-              <img src="./images/icon/visa.svg" width="76" height="26" alt="img" loading="lazy" />
-              <img src="./images/icon/master.svg" width="140" height="26" alt="img" loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <a href="#top" class="vz-art scroll-button anchor" aria-label="anchor link">
-      <i class="fa-arrow-next"></i>
-    </a>
-
-    <div class="vz-art popup-frame target-frame">
-      <form
-        action="#"
-        method="POST"
-        enctype="multipart/form-data"
-        class="vz-art js-popup target-box popup-photo submit-form"
-      >
-        <i class="vz-art fa-close popup-close"></i>
-        <h2 class="vz-art page-title popup-photo-title">
-          Заказать портрет по фото
-        </h2>
-        <div class="vz-art popup-group">
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Укажите Ваш E-mail</p>
-            <div class="vz-art page-input__item">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required=""
-              />
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#mail"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Укажите Ваш номер телефона</p>
-            <div class="vz-art page-input__item phone-input">
-              <div class="country-item country-item-active">
-                <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
-              </div>
-              <div class="country-list">
-                <div class="country-item">
-                  <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
-                  <p>Латвия</p>
-                  <span
-                    data-mask="+371 99 99-99-99"
-                    data-placeholder="+371 00 00-00-00"
-                    >+371</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/lt.svg" alt="img" loading="lazy" />
-                  <p>Литва</p>
-                  <span
-                    data-mask="+370 999 9-99-99"
-                    data-placeholder="+370 000 0-00-00"
-                    >+370</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/es.svg" alt="img" loading="lazy" />
-                  <p>Эстония</p>
-                  <span
-                    data-mask="+372 99 999-99-99"
-                    data-placeholder="+372 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/fl.svg" alt="img" loading="lazy" />
-                  <p>Финляндия</p>
-                  <span
-                    data-mask="+358 99 999-99-99"
-                    data-placeholder="+358 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/no.svg" alt="img" loading="lazy" />
-                  <p>Норвегия</p>
-                  <span
-                    data-mask="+47 99 999-99-99"
-                    data-placeholder="+47 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/pl.svg" alt="img" loading="lazy" />
-                  <p>Польша</p>
-                  <span
-                    data-mask="+48 99 999-99-99"
-                    data-placeholder="+48 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/ge.svg" alt="img" loading="lazy" />
-                  <p>Германия</p>
-                  <span
-                    data-mask="+49 99 999-99-99"
-                    data-placeholder="+49 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/da.svg" alt="img" loading="lazy" />
-                  <p>Дания</p>
-                  <span
-                    data-mask="+45 99 999-99-99"
-                    data-placeholder="+45 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/cz.svg" alt="img" loading="lazy" />
-                  <p>Чехия</p>
-                  <span
-                    data-mask="+420 99 999-99-99"
-                    data-placeholder="+420 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/se.svg" alt="img" loading="lazy" />
-                  <p>Швеция</p>
-                  <span
-                    data-mask="+46 99 999-99-99"
-                    data-placeholder="+46 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/nl.svg" alt="img" loading="lazy" />
-                  <p>Нидерланды</p>
-                  <span
-                    data-mask="+31 99 999-99-99"
-                    data-placeholder="+31 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/be.svg" alt="img" loading="lazy" />
-                  <p>Бельгия</p>
-                  <span
-                    data-mask="+32 99 999-99-99"
-                    data-placeholder="+32 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-              </div>
-              <input
-                type="text"
-                name="phone"
-                class="input-mask input-counter"
-                autocomplete="off"
-                placeholder="+371"
-                required=""
-              />
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#phone"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="vz-art popup-grid">
-          <div class="vz-art popup-grid__file">
-            <div class="vz-art kviz-input">
-              <p class="vz-art kviz-input__title">Фото для портрета</p>
-              <div class="file-save file-save__popup">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  id="#file13"
-                  class="file-input"
-                  name="file"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  id="#file22"
-                  class="file-input file-input_hide"
-                  name="file2"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file3[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file4[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file5[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file6[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file7[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file8[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file9[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-              <div class="file-save file-save__popup file-save_hide">
-                <div class="file-save__item js-file-preview">
-                  <svg>
-                    <use xlink:href="sprite.svg#save"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>Загрузить фото</p>
-                    <span>Нажмите, чтобы добавить фото</span>
-                  </div>
-                </div>
-                <div class="file-save__item js-file-upload">
-                  <svg>
-                    <use xlink:href="sprite.svg#picture"></use>
-                  </svg>
-                  <div class="file-save__title">
-                    <p>photo_34567.jpg</p>
-                    <span>2 Mb</span>
-                  </div>
-                </div>
-                <input
-                  type="file"
-                  class="file-input file-input_hide"
-                  name="file10[]"
-                  accept="image/*"
-                  aria-label="file input"
-                />
-              </div>
-            </div>
-            <a href="#" class="file-add">
+          <div class="vz-art footer-contact">
+            <a href="tel:+371270444470" class="vz-art footer-contact__item">
               <svg>
-                <use xlink:href="sprite.svg#plus"></use>
+                <use xlink:href="sprite.svg#footer-phone"></use>
               </svg>
-              <span>Добавить еще фото</span>
+              <span>
+                <b>+371 270444470</b>
+              </span>
             </a>
-            <div class="kviz-input kviz-input_mob">
-              <p class="vz-art kviz-input__title">
-                Укажите желаемый размер потрета
-              </p>
-              <select name="size" class="select-page select-size">
-                <option value="100x70 см">100x70 см</option>
-                <option value="200x70 см">200x70 см</option>
-                <option value="300x70 см">300x70 см</option>
-                <option value="400x70 см">400x70 см</option>
-              </select>
-            </div>
-            <div class="kviz-input kviz-input_mob">
-              <p class="vz-art kviz-input__title">Укажите желаемый стиль</p>
-              <select name="styles" class="select-page select-style">
-                <option value="Бьюти шарж">Бьюти шарж</option>
-                <option value="Бьюти арт">Бьюти арт</option>
-                <option value="Бьюти гранж">Бьюти гранж</option>
-                <option value="Бьюти шарж">Бьюти шарж</option>
-              </select>
-            </div>
-            <div class="box">
-              <h3>Подарочная упаковка</h3>
-              <div class="box-list">
-                <div class="kviz-radio box-radio kviz-radio_active js-checkbox">
-                  <div class="vz-art check"></div>
-                  <label>
-                    <span>Без упаковки</span>
-                    <input
-                      type="radio"
-                      checked="checked"
-                      name="box"
-                      value="Без упаковки"
-                    />
-                  </label>
-                </div>
-                <div class="kviz-radio box-radio js-checkbox">
-                  <div class="vz-art check"></div>
-                  <label>
-                    <span>Бумага</span>
-                    <input type="radio" name="box" value="Бумага" />
-                  </label>
-                </div>
-                <div class="kviz-radio box-radio js-checkbox">
-                  <div class="vz-art check"></div>
-                  <label>
-                    <span>Кейс</span>
-                    <input type="radio" name="box" value="Кейс" />
-                  </label>
-                </div>
-              </div>
-            </div>
-            <label class="popup-photo__submit">
-              <input type="submit" />Отправить
-            </label>
-            <div class="kviz-politics">
+            <a href="tel:+37125444744" class="vz-art footer-contact__item">
               <svg>
-                <use xlink:href="sprite.svg#lock"></use>
+                <use xlink:href="sprite.svg#footer-phone"></use>
               </svg>
-              <p>
-                Ваши данные в безопасности. Нажимая на кнопку «Отправить», вы
-                соглашаетесь с
-                <a
-                  href="politics.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Политикой конфиденциальности</a
-                >
-              </p>
-            </div>
+              <span>
+                <b>+371 25444744</b>
+              </span>
+            </a>
+            <a href="mailto:orders@viarcanvas.com" class="vz-art footer-contact__item">
+              <svg>
+                <use xlink:href="sprite.svg#footer-mail"></use>
+              </svg>
+              <span>orders@viarcanvas.com</span>
+            </a>
+            <a href="#" target="_blank" class="vz-art footer-contact__item" rel="noopener noreferrer">
+              <svg>
+                <use xlink:href="sprite.svg#map"></use>
+              </svg>
+              <span>Riga, Lubanas 65, LV1073 Daugavpils, Stacijas 129R,
+                LV5401</span>
+            </a>
           </div>
-          <div class="vz-art popup-grid__select kviz-input_pc">
-            <div class="vz-art kviz-input">
-              <p class="vz-art kviz-input__title">
-                Укажите желаемый размер потрета
-              </p>
-              <select name="size" class="select-page select-size">
-                <option value="100x70 см">100x70 см</option>
-                <option value="200x70 см">200x70 см</option>
-                <option value="300x70 см">300x70 см</option>
-                <option value="400x70 см">400x70 см</option>
-              </select>
-            </div>
-            <div class="vz-art kviz-input">
-              <p class="vz-art kviz-input__title">Укажите желаемый стиль</p>
-              <select name="styles" class="select-page select-style">
-                <option value="Бьюти шарж">Бьюти шарж</option>
-                <option value="Бьюти арт">Бьюти арт</option>
-                <option value="Бьюти гранж">Бьюти гранж</option>
-                <option value="Бьюти шарж">Бьюти шарж</option>
-              </select>
-            </div>
+          <div class="vz-art footer-social footer-social_pc">
+            <h3>Мы в соцсетях:</h3>
+            <ul>
+              <li>
+                <a href="#" target="_blank" aria-label="footer social facebok" rel="noopener noreferrer">
+                  <i class="fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="footer social instagram" rel="noopener noreferrer">
+                  <i class="fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <picture>
-          <source srcset="./images/portrait-form.webp" type="image/webp" />
-          <source srcset="./images/portrait-form.png" />
-          <img
-            src="./images/portrait-form.png"
-            class="vz-art photo-mokap"
-            alt="img"
-            loading="lazy"
-          />
-        </picture>
-      </form>
-      <form
-        action="#"
-        method="POST"
-        class="vz-art js-popup target-box popup-login"
-      >
-        <i class="vz-art fa-close popup-close"></i>
-        <h2 class="vz-art page-title popup-photo-title">Войти</h2>
-        <div class="vz-art popup-log-group">
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Укажите Ваш E-mail</p>
-            <div class="vz-art page-input__item">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required=""
-              />
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#mail"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Введите пароль</p>
-            <div class="vz-art page-input__item">
-              <input type="password" name="password" required="" />
-              <svg
-                class="vz-art kviz-input__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use xlink:href="sprite.svg#lock-popup"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="popup-log-save">
-          <div class="vz-art popup-log-check log-check_active js-checkbox">
-            <span class="vz-art log-check">
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#log"></use>
-              </svg>
-            </span>
-            <p>Запомнить меня</p>
-            <input type="checkbox" checked="checked" name="save" />
-          </div>
-          <a href="#">Забыли пароль?</a>
-        </div>
-        <label class="vz-art log-sub"> <input type="submit" />Войти </label>
-        <div class="vz-art log-creat">
-          <p>Еще не зарегистрированы?</p>
-          <a href="#" class="js-popup-registration">Создать аккаунт</a>
-        </div>
-        <div class="vz-art log-social">
-          <h3>
-            <span>Или</span>
-          </h3>
-          <p>Войти с помощью:</p>
+        <div class="vz-art footer-list">
+          <h3><span class="vz-art faq-icon"></span> Стили портрета</h3>
           <ul>
             <li>
-              <a href="#">
-                <i class="fa-facebook"></i>
-              </a>
+              <a href="#">Печать фото на холсте</a>
+            </li>
+            <li>
+              <a href="#">Портрет по фото</a>
+            </li>
+            <li>
+              <a href="#">Каталог готовых картин</a>
+            </li>
+            <li>
+              <a href="#">Карикатура/шарж</a>
+            </li>
+            <li>
+              <a href="#">Модульные картины</a>
+            </li>
+            <li>
+              <a href="#">Дигитальный портрет</a>
+            </li>
+            <li>
+              <a href="#">Портрет маслом и акрилом</a>
+            </li>
+            <li>
+              <a href="#">Репродукции художников</a>
+            </li>
+            <li>
+              <a href="#">Коллаж на холсте</a>
+            </li>
+            <li>
+              <a href="#">Портрет в образе</a>
             </li>
           </ul>
         </div>
-      </form>
-      <form
-        action="#"
-        method="POST"
-        class="vz-art js-popup target-box popup-registration"
-      >
-        <i class="vz-art fa-close popup-close"></i>
-        <h2 class="vz-art page-title popup-photo-title">Создать аккаунт</h2>
-        <div class="vz-art registration-group">
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">
-              Введите Ваше Имя<span>*</span>
-            </p>
-            <div class="vz-art page-input__item">
-              <input type="text" name="name" placeholder="Имя" required="" />
-              <svg
-                class="vz-art kviz-input__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use xlink:href="sprite.svg#user-popup"></use>
-              </svg>
-            </div>
+        <div class="vz-art footer-list">
+          <h3><span class="vz-art faq-icon"></span> Виды портрета</h3>
+          <ul>
+            <li>
+              <a href="#">Женский портрет</a>
+            </li>
+            <li>
+              <a href="#">Мужской портрет</a>
+            </li>
+            <li>
+              <a href="#">Парный портрет</a>
+            </li>
+            <li>
+              <a href="#">Семейный портрет</a>
+            </li>
+            <li>
+              <a href="#">Свадебный портрет</a>
+            </li>
+            <li>
+              <a href="#">Портрет родителей</a>
+            </li>
+            <li>
+              <a href="#">Портрет руководителя</a>
+            </li>
+            <li>
+              <a href="#">Портрет на юбилей</a>
+            </li>
+            <li>
+              <a href="#">Детский портрет</a>
+            </li>
+            <li>
+              <a href="#">Портрет питомца</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vz-art footer-list">
+          <h3><span class="vz-art faq-icon"></span> Информация</h3>
+          <ul>
+            <li>
+              <a href="#">Подарочная карта</a>
+            </li>
+            <li>
+              <a href="#">Оплата и доставка</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Сервис клиента</a>
+            </li>
+            <li>
+              <a href="#">Советы и идеи</a>
+            </li>
+            <li>
+              <a href="#">Все стили</a>
+            </li>
+            <li>
+              <a href="#">Размеры и цены</a>
+            </li>
+            <li>
+              <a href="#">Обрамление картин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Вопросы и ответы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="vz-art footer-copy">
+      <div class="section-frame">
+        <div class="vz-art footer-copy__content">
+          <p class="vz-art copy-title">© 2021 VIARCANVAS ®</p>
+          <div class="vz-art footer-pay">
+            <img src="./images/icon/visa.svg" width="76" height="26" alt="img" loading="lazy" />
+            <img src="./images/icon/master.svg" width="140" height="26" alt="img" loading="lazy" />
           </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Введите Фамилию</p>
-            <div class="vz-art page-input__item">
-              <input type="text" name="surname" placeholder="Фамилия" />
-              <svg
-                class="vz-art kviz-input__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use xlink:href="sprite.svg#user-popup"></use>
-              </svg>
-            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="vz-art scroll-button anchor" aria-label="anchor link">
+    <i class="fa-arrow-next"></i>
+  </a>
+
+  <div class="vz-art popup-frame target-frame">
+    <form action="#" method="POST" enctype="multipart/form-data"
+      class="vz-art js-popup target-box popup-photo submit-form">
+      <i class="vz-art fa-close popup-close"></i>
+      <h2 class="vz-art page-title popup-photo-title">
+        Заказать портрет по фото
+      </h2>
+      <div class="vz-art popup-group">
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Укажите Ваш E-mail</p>
+          <div class="vz-art page-input__item">
+            <input type="email" name="email" placeholder="E-mail" required="" />
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#mail"></use>
+            </svg>
           </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">
-              Укажите Ваш E-mail<span>*</span>
-            </p>
-            <div class="vz-art page-input__item">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required=""
-              />
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#mail"></use>
-              </svg>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Укажите Ваш номер телефона</p>
+          <div class="vz-art page-input__item phone-input">
+            <div class="country-item country-item-active">
+              <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
             </div>
-          </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">
-              Укажите Ваш номер телефона<span>*</span>
-            </p>
-            <div class="vz-art page-input__item phone-input">
-              <div class="country-item country-item-active">
+            <div class="country-list">
+              <div class="country-item">
                 <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
+                <p>Латвия</p>
+                <span data-mask="+371 99 99-99-99" data-placeholder="+371 00 00-00-00">+371</span>
               </div>
-              <div class="country-list">
-                <div class="country-item">
-                  <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
-                  <p>Латвия</p>
-                  <span
-                    data-mask="+371 99 99-99-99"
-                    data-placeholder="+371 00 00-00-00"
-                    >+371</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/lt.svg" alt="img" loading="lazy" />
-                  <p>Литва</p>
-                  <span
-                    data-mask="+370 999 9-99-99"
-                    data-placeholder="+370 000 0-00-00"
-                    >+370</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/es.svg" alt="img" loading="lazy" />
-                  <p>Эстония</p>
-                  <span
-                    data-mask="+372 99 999-99-99"
-                    data-placeholder="+372 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/fl.svg" alt="img" loading="lazy" />
-                  <p>Финляндия</p>
-                  <span
-                    data-mask="+358 99 999-99-99"
-                    data-placeholder="+358 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/no.svg" alt="img" loading="lazy" />
-                  <p>Норвегия</p>
-                  <span
-                    data-mask="+47 99 999-99-99"
-                    data-placeholder="+47 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/pl.svg" alt="img" loading="lazy" />
-                  <p>Польша</p>
-                  <span
-                    data-mask="+48 99 999-99-99"
-                    data-placeholder="+48 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/ge.svg" alt="img" loading="lazy" />
-                  <p>Германия</p>
-                  <span
-                    data-mask="+49 99 999-99-99"
-                    data-placeholder="+49 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/da.svg" alt="img" loading="lazy" />
-                  <p>Дания</p>
-                  <span
-                    data-mask="+45 99 999-99-99"
-                    data-placeholder="+45 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/cz.svg" alt="img" loading="lazy" />
-                  <p>Чехия</p>
-                  <span
-                    data-mask="+420 99 999-99-99"
-                    data-placeholder="+420 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/se.svg" alt="img" loading="lazy" />
-                  <p>Швеция</p>
-                  <span
-                    data-mask="+46 99 999-99-99"
-                    data-placeholder="+46 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/nl.svg" alt="img" loading="lazy" />
-                  <p>Нидерланды</p>
-                  <span
-                    data-mask="+31 99 999-99-99"
-                    data-placeholder="+31 00 000-00-00"
-                    >+359</span
-                  >
-                </div>
-                <div class="country-item">
-                  <img src="./images/flag/be.svg" alt="img" loading="lazy" />
-                  <p>Бельгия</p>
-                  <span
-                    data-mask="+32 99 999-99-99"
-                    data-placeholder="+32 00 000-00-00"
-                    >+359</span
-                  >
+              <div class="country-item">
+                <img src="./images/flag/lt.svg" alt="img" loading="lazy" />
+                <p>Литва</p>
+                <span data-mask="+370 999 9-99-99" data-placeholder="+370 000 0-00-00">+370</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/es.svg" alt="img" loading="lazy" />
+                <p>Эстония</p>
+                <span data-mask="+372 99 999-99-99" data-placeholder="+372 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/fl.svg" alt="img" loading="lazy" />
+                <p>Финляндия</p>
+                <span data-mask="+358 99 999-99-99" data-placeholder="+358 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/no.svg" alt="img" loading="lazy" />
+                <p>Норвегия</p>
+                <span data-mask="+47 99 999-99-99" data-placeholder="+47 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/pl.svg" alt="img" loading="lazy" />
+                <p>Польша</p>
+                <span data-mask="+48 99 999-99-99" data-placeholder="+48 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/ge.svg" alt="img" loading="lazy" />
+                <p>Германия</p>
+                <span data-mask="+49 99 999-99-99" data-placeholder="+49 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/da.svg" alt="img" loading="lazy" />
+                <p>Дания</p>
+                <span data-mask="+45 99 999-99-99" data-placeholder="+45 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/cz.svg" alt="img" loading="lazy" />
+                <p>Чехия</p>
+                <span data-mask="+420 99 999-99-99" data-placeholder="+420 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/se.svg" alt="img" loading="lazy" />
+                <p>Швеция</p>
+                <span data-mask="+46 99 999-99-99" data-placeholder="+46 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/nl.svg" alt="img" loading="lazy" />
+                <p>Нидерланды</p>
+                <span data-mask="+31 99 999-99-99" data-placeholder="+31 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/be.svg" alt="img" loading="lazy" />
+                <p>Бельгия</p>
+                <span data-mask="+32 99 999-99-99" data-placeholder="+32 00 000-00-00">+359</span>
+              </div>
+            </div>
+            <input type="text" name="phone" class="input-mask input-counter" autocomplete="off" placeholder="+371"
+              required="" />
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#phone"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="vz-art popup-grid">
+        <div class="vz-art popup-grid__file">
+          <div class="vz-art kviz-input">
+            <p class="vz-art kviz-input__title">Фото для портрета</p>
+            <div class="file-save file-save__popup">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
                 </div>
               </div>
-              <input
-                type="text"
-                name="phone"
-                class="input-mask input-counter"
-                autocomplete="off"
-                placeholder="+371"
-                required=""
-              />
-              <svg class="vz-art kviz-input__icon">
-                <use xlink:href="sprite.svg#phone"></use>
-              </svg>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" id="#file13" class="file-input" name="file" accept="image/*" aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" id="#file22" class="file-input file-input_hide" name="file2" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file3[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file4[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file5[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file6[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file7[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file8[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file9[]" accept="image/*"
+                aria-label="file input" />
+            </div>
+            <div class="file-save file-save__popup file-save_hide">
+              <div class="file-save__item js-file-preview">
+                <svg>
+                  <use xlink:href="sprite.svg#save"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>Загрузить фото</p>
+                  <span>Нажмите, чтобы добавить фото</span>
+                </div>
+              </div>
+              <div class="file-save__item js-file-upload">
+                <svg>
+                  <use xlink:href="sprite.svg#picture"></use>
+                </svg>
+                <div class="file-save__title">
+                  <p>photo_34567.jpg</p>
+                  <span>2 Mb</span>
+                </div>
+              </div>
+              <input type="file" class="file-input file-input_hide" name="file10[]" accept="image/*"
+                aria-label="file input" />
             </div>
           </div>
-          <div class="vz-art kviz-input">
-            <p class="vz-art kviz-input__title">Введите пароль<span>*</span></p>
-            <div class="vz-art page-input__item">
-              <input type="password" name="password" required="" />
-              <svg
-                class="vz-art kviz-input__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use xlink:href="sprite.svg#lock-popup"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="vz-art kviz-input">
+          <a href="#" class="file-add">
+            <svg>
+              <use xlink:href="sprite.svg#plus"></use>
+            </svg>
+            <span>Добавить еще фото</span>
+          </a>
+          <div class="kviz-input kviz-input_mob">
             <p class="vz-art kviz-input__title">
-              Повторите пароль<span>*</span>
+              Укажите желаемый размер потрета
             </p>
-            <div class="vz-art page-input__item">
-              <input type="password" name="password2" required="" />
-              <svg
-                class="vz-art kviz-input__icon"
-                style="width: 24px; height: 24px"
-              >
-                <use xlink:href="sprite.svg#lock-popup"></use>
-              </svg>
+            <select name="size" class="select-page select-size">
+              <option value="100x70 см">100x70 см</option>
+              <option value="200x70 см">200x70 см</option>
+              <option value="300x70 см">300x70 см</option>
+              <option value="400x70 см">400x70 см</option>
+            </select>
+          </div>
+          <div class="kviz-input kviz-input_mob">
+            <p class="vz-art kviz-input__title">Укажите желаемый стиль</p>
+            <select name="styles" class="select-page select-style">
+              <option value="Бьюти шарж">Бьюти шарж</option>
+              <option value="Бьюти арт">Бьюти арт</option>
+              <option value="Бьюти гранж">Бьюти гранж</option>
+              <option value="Бьюти шарж">Бьюти шарж</option>
+            </select>
+          </div>
+          <div class="box">
+            <h3>Подарочная упаковка</h3>
+            <div class="box-list">
+              <div class="kviz-radio box-radio kviz-radio_active js-checkbox">
+                <div class="vz-art check"></div>
+                <label>
+                  <span>Без упаковки</span>
+                  <input type="radio" checked="checked" name="box" value="Без упаковки" />
+                </label>
+              </div>
+              <div class="kviz-radio box-radio js-checkbox">
+                <div class="vz-art check"></div>
+                <label>
+                  <span>Бумага</span>
+                  <input type="radio" name="box" value="Бумага" />
+                </label>
+              </div>
+              <div class="kviz-radio box-radio js-checkbox">
+                <div class="vz-art check"></div>
+                <label>
+                  <span>Кейс</span>
+                  <input type="radio" name="box" value="Кейс" />
+                </label>
+              </div>
             </div>
           </div>
-          <label class="registration-sub">
-            <input type="submit" />Зарегистрироваться
+          <label class="popup-photo__submit">
+            <input type="submit" />Отправить
           </label>
-          <div class="kviz-politics registration-politics">
+          <div class="kviz-politics">
             <svg>
               <use xlink:href="sprite.svg#lock"></use>
             </svg>
             <p>
               Ваши данные в безопасности. Нажимая на кнопку «Отправить», вы
               соглашаетесь с
-              <a href="politics.html" target="_blank" rel="noopener noreferrer"
-                >Политикой конфиденциальности</a
-              >
+              <a href="politics.html" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
             </p>
           </div>
         </div>
-        <div class="vz-art log-social">
-          <h3>
-            <span>Или</span>
-          </h3>
-          <p>Зарегистрироваться с помощью</p>
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fa-facebook"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </form>
-      <div class="js-popup thanks">
-        <div class="kviz-thanks">
-          <img
-            src="./images/icon/check-done.svg"
-            class="kviz-thanks__icon"
-            alt="img"
-            loading="lazy"
-          />
-          <div class="kviz-thanks__title">
-            <h3>Спасибо за доверие!</h3>
-            <p>
-              Мы свяжемся с вами в ближайшее время. Время работы нашего офиса —
-              ежедневно, с&nbsp;9:00 до 23:00 по Москве
+        <div class="vz-art popup-grid__select kviz-input_pc">
+          <div class="vz-art kviz-input">
+            <p class="vz-art kviz-input__title">
+              Укажите желаемый размер потрета
             </p>
+            <select name="size" class="select-page select-size">
+              <option value="100x70 см">100x70 см</option>
+              <option value="200x70 см">200x70 см</option>
+              <option value="300x70 см">300x70 см</option>
+              <option value="400x70 см">400x70 см</option>
+            </select>
           </div>
-          <div class="kviz-thanks__info">
-            <p>Если у вас есть срочный вопрос, напишите нам WhatsApp</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <svg>
-                <use xlink:href="sprite.svg#wh"></use>
-              </svg>
-              Написать WhatsApp
-            </a>
+          <div class="vz-art kviz-input">
+            <p class="vz-art kviz-input__title">Укажите желаемый стиль</p>
+            <select name="styles" class="select-page select-style">
+              <option value="Бьюти шарж">Бьюти шарж</option>
+              <option value="Бьюти арт">Бьюти арт</option>
+              <option value="Бьюти гранж">Бьюти гранж</option>
+              <option value="Бьюти шарж">Бьюти шарж</option>
+            </select>
           </div>
         </div>
       </div>
+      <picture>
+        <source srcset="./images/portrait-form.webp" type="image/webp" />
+        <source srcset="./images/portrait-form.png" />
+        <img src="./images/portrait-form.png" class="vz-art photo-mokap" alt="img" loading="lazy" />
+      </picture>
+    </form>
+    <form action="#" method="POST" class="vz-art js-popup target-box popup-login">
+      <i class="vz-art fa-close popup-close"></i>
+      <h2 class="vz-art page-title popup-photo-title">Войти</h2>
+      <div class="vz-art popup-log-group">
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Укажите Ваш E-mail</p>
+          <div class="vz-art page-input__item">
+            <input type="email" name="email" placeholder="E-mail" required="" />
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#mail"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Введите пароль</p>
+          <div class="vz-art page-input__item">
+            <input type="password" name="password" required="" />
+            <svg class="vz-art kviz-input__icon" style="width: 24px; height: 24px">
+              <use xlink:href="sprite.svg#lock-popup"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="popup-log-save">
+        <div class="vz-art popup-log-check log-check_active js-checkbox">
+          <span class="vz-art log-check">
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#log"></use>
+            </svg>
+          </span>
+          <p>Запомнить меня</p>
+          <input type="checkbox" checked="checked" name="save" />
+        </div>
+        <a href="#">Забыли пароль?</a>
+      </div>
+      <label class="vz-art log-sub"> <input type="submit" />Войти </label>
+      <div class="vz-art log-creat">
+        <p>Еще не зарегистрированы?</p>
+        <a href="#" class="js-popup-registration">Создать аккаунт</a>
+      </div>
+      <div class="vz-art log-social">
+        <h3>
+          <span>Или</span>
+        </h3>
+        <p>Войти с помощью:</p>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <form action="#" method="POST" class="vz-art js-popup target-box popup-registration">
+      <i class="vz-art fa-close popup-close"></i>
+      <h2 class="vz-art page-title popup-photo-title">Создать аккаунт</h2>
+      <div class="vz-art registration-group">
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">
+            Введите Ваше Имя<span>*</span>
+          </p>
+          <div class="vz-art page-input__item">
+            <input type="text" name="name" placeholder="Имя" required="" />
+            <svg class="vz-art kviz-input__icon" style="width: 24px; height: 24px">
+              <use xlink:href="sprite.svg#user-popup"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Введите Фамилию</p>
+          <div class="vz-art page-input__item">
+            <input type="text" name="surname" placeholder="Фамилия" />
+            <svg class="vz-art kviz-input__icon" style="width: 24px; height: 24px">
+              <use xlink:href="sprite.svg#user-popup"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">
+            Укажите Ваш E-mail<span>*</span>
+          </p>
+          <div class="vz-art page-input__item">
+            <input type="email" name="email" placeholder="E-mail" required="" />
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#mail"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">
+            Укажите Ваш номер телефона<span>*</span>
+          </p>
+          <div class="vz-art page-input__item phone-input">
+            <div class="country-item country-item-active">
+              <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
+            </div>
+            <div class="country-list">
+              <div class="country-item">
+                <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
+                <p>Латвия</p>
+                <span data-mask="+371 99 99-99-99" data-placeholder="+371 00 00-00-00">+371</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/lt.svg" alt="img" loading="lazy" />
+                <p>Литва</p>
+                <span data-mask="+370 999 9-99-99" data-placeholder="+370 000 0-00-00">+370</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/es.svg" alt="img" loading="lazy" />
+                <p>Эстония</p>
+                <span data-mask="+372 99 999-99-99" data-placeholder="+372 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/fl.svg" alt="img" loading="lazy" />
+                <p>Финляндия</p>
+                <span data-mask="+358 99 999-99-99" data-placeholder="+358 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/no.svg" alt="img" loading="lazy" />
+                <p>Норвегия</p>
+                <span data-mask="+47 99 999-99-99" data-placeholder="+47 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/pl.svg" alt="img" loading="lazy" />
+                <p>Польша</p>
+                <span data-mask="+48 99 999-99-99" data-placeholder="+48 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/ge.svg" alt="img" loading="lazy" />
+                <p>Германия</p>
+                <span data-mask="+49 99 999-99-99" data-placeholder="+49 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/da.svg" alt="img" loading="lazy" />
+                <p>Дания</p>
+                <span data-mask="+45 99 999-99-99" data-placeholder="+45 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/cz.svg" alt="img" loading="lazy" />
+                <p>Чехия</p>
+                <span data-mask="+420 99 999-99-99" data-placeholder="+420 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/se.svg" alt="img" loading="lazy" />
+                <p>Швеция</p>
+                <span data-mask="+46 99 999-99-99" data-placeholder="+46 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/nl.svg" alt="img" loading="lazy" />
+                <p>Нидерланды</p>
+                <span data-mask="+31 99 999-99-99" data-placeholder="+31 00 000-00-00">+359</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/flag/be.svg" alt="img" loading="lazy" />
+                <p>Бельгия</p>
+                <span data-mask="+32 99 999-99-99" data-placeholder="+32 00 000-00-00">+359</span>
+              </div>
+            </div>
+            <input type="text" name="phone" class="input-mask input-counter" autocomplete="off" placeholder="+371"
+              required="" />
+            <svg class="vz-art kviz-input__icon">
+              <use xlink:href="sprite.svg#phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">Введите пароль<span>*</span></p>
+          <div class="vz-art page-input__item">
+            <input type="password" name="password" required="" />
+            <svg class="vz-art kviz-input__icon" style="width: 24px; height: 24px">
+              <use xlink:href="sprite.svg#lock-popup"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="vz-art kviz-input">
+          <p class="vz-art kviz-input__title">
+            Повторите пароль<span>*</span>
+          </p>
+          <div class="vz-art page-input__item">
+            <input type="password" name="password2" required="" />
+            <svg class="vz-art kviz-input__icon" style="width: 24px; height: 24px">
+              <use xlink:href="sprite.svg#lock-popup"></use>
+            </svg>
+          </div>
+        </div>
+        <label class="registration-sub">
+          <input type="submit" />Зарегистрироваться
+        </label>
+        <div class="kviz-politics registration-politics">
+          <svg>
+            <use xlink:href="sprite.svg#lock"></use>
+          </svg>
+          <p>
+            Ваши данные в безопасности. Нажимая на кнопку «Отправить», вы
+            соглашаетесь с
+            <a href="politics.html" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
+          </p>
+        </div>
+      </div>
+      <div class="vz-art log-social">
+        <h3>
+          <span>Или</span>
+        </h3>
+        <p>Зарегистрироваться с помощью</p>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <div class="js-popup thanks">
+      <div class="kviz-thanks">
+        <img src="./images/icon/check-done.svg" class="kviz-thanks__icon" alt="img" loading="lazy" />
+        <div class="kviz-thanks__title">
+          <h3>Спасибо за доверие!</h3>
+          <p>
+            Мы свяжемся с вами в ближайшее время. Время работы нашего офиса —
+            ежедневно, с&nbsp;9:00 до 23:00 по Москве
+          </p>
+        </div>
+        <div class="kviz-thanks__info">
+          <p>Если у вас есть срочный вопрос, напишите нам WhatsApp</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <svg>
+              <use xlink:href="sprite.svg#wh"></use>
+            </svg>
+            Написать WhatsApp
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="js/script.js"></script>
-    <script data-defdel="js/fancybox.js"></script>
-    <script data-defdel="js/swal.js"></script>
-    <script src="js/before-after.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+  <script data-defdel="js/fancybox.js"></script>
+  <script data-defdel="js/swal.js"></script>
+  <script src="js/before-after.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -3,11 +3,26 @@
     .collage-gift {
         right: 24%;
     }
+    .collage-express {
+        right: 10%;
+    }
+    .col-subtitle {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .col-subtitle-m {
+        font-size: 18px;
+        line-height: 25px;
+    
+    }
 }
 
 @media (max-width: 991px) {
     .collage__screen {
         background: #F9F0EC;
+    }
+    .col-main-el {
+        margin-top: 40px;
     }
 }
 
@@ -73,6 +88,17 @@
         height: 80px;
         position: absolute;
         background: url(../images/collage/vector2M.svg) no-repeat;
+    }
+    /*  */
+    .col-subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 10px 0;
+    }
+    .col-subtitle-m {
+        font-size: 16px;
+        line-height: 20px;
+    
     }
 }
 
@@ -140,5 +166,10 @@
     .collage-express::after {
         bottom: -58px;
         left: 28%;
+    }
+}
+@media (max-width: 360px) {
+    .collage-gift {
+        top: 34%;
     }
 }
