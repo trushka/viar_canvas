@@ -3,6 +3,7 @@
     background: url('../images/collage/hero-img.webp') no-repeat;
     background-position: center center;
     background-size: cover;
+    padding: 200px 0 0;
 }
 @media not all and (min-resolution: 0.001dpcm) {
     @supports(-webkit-appearance:none) {
@@ -12,4 +13,24 @@
             background-size: cover;
         }
     }
+}
+.collage-title {
+    max-width: 700px;
+}
+.collage__inner--list {
+    margin: 25px 0 56px;
+}
+.collage__list--item {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+}
+.collage__list--item:not(:last-child) {
+    margin-bottom: 18px;
+}
+.collage__list--item svg {
+    margin-right: 20px;
+}
+.collage__list--item strong {
+    color: #F7794B;
 }
