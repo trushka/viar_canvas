@@ -1,13 +1,13 @@
 .collage__screen {
     height: 923px;
-    background: url('images/collage/hero-img.webp') no-repeat;
+    background: url('../images/collage/hero-img.webp') no-repeat;
     background-position: center center;
     background-size: cover;
 }
 @media not all and (min-resolution: 0.001dpcm) {
     @supports(-webkit-appearance:none) {
         .collage__screen {
-            background: url('images/collage/hero-img.jpg') no-repeat;
+            background: url('../images/collage/hero-img.jpg') no-repeat;
             background-position: center center;
             background-size: cover;
         }
