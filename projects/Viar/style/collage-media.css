@@ -1,3 +1,10 @@
+
+@media (max-width: 1200px) {
+    .collage-gift {
+        right: 24%;
+    }
+}
+
 @media (max-width: 991px) {
     .collage__screen {
         background: #F9F0EC;
@@ -24,6 +31,49 @@
     .collage__list--item:not(:last-child) {
         margin-bottom: 15px;
     }
+    .absolute-elements > * {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .collage-express {
+        top: 55px;
+        right: 36%;
+        max-width: 115px;
+    }
+    .collage-express::after {
+        content: "";
+        bottom: -50px;
+        left: 57%;
+        width: 80px;
+        height: 52px;
+        position: absolute;
+        background: url(../images/collage/vector1M.svg) no-repeat;
+    }
+    .collage-express img {
+        width: 38px;
+        height: auto;
+        margin-bottom: 4px;
+    }
+    .collage-gift {
+        top: 40%;
+        left: 4%;
+        max-width: 120px;
+        display: none;
+    }
+    .collage-gift img {
+        width: 50px;
+        height: auto;
+        margin-right: auto;
+    }
+    .collage-gift::after {
+        content: "";
+        bottom: 10px;
+        left: -100%;
+        width: 195px;
+        height: 80px;
+        position: absolute;
+        background: url(../images/collage/vector2M.svg) no-repeat;
+    }
 }
 
 @media (max-width: 520px) {
@@ -37,7 +87,6 @@
         font-size: 15px;
     }
     .collage__inner {
-        padding-top: 20px;
         background: #fff;
     }
     .el-mobile {
@@ -54,5 +103,42 @@
     }
     .collage-m-bg {
         display: block;
+    }
+    .collage__inner .section-frame {
+        padding: 0 10px !important;
+    }
+    .collage__inner--list {
+        margin-bottom: 0;
+    }
+    .collage-btn {
+        margin-top: 35px;
+    }
+    .collage-gift {
+        display: flex;
+    }
+    .collage-express {
+        top: 83px;
+        left: 5%;
+    }
+    .collage-gift::after {
+        content: "";
+        bottom: -21px;
+        left: 89%;
+        width: 76px;
+        height: 97px;
+    }
+}
+@media (max-width: 425px) {
+    .collage-gift {
+        top: 37%;
+    }
+    .collage-gift::after {
+        bottom: 22px;
+        left: 48%;
+        height: 60px;
+    }
+    .collage-express::after {
+        bottom: -58px;
+        left: 28%;
     }
 }

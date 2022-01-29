@@ -5,6 +5,7 @@
     background-size: cover;
     padding: 200px 0 80px;
     margin-bottom: -130px;
+    position: relative;
 }
 @media not all and (min-resolution: 0.001dpcm) {
     @supports(-webkit-appearance:none) {
@@ -41,4 +42,50 @@
 }
 .el-mobile {
     display: none;
+}
+.absolute-elements > * {
+    position: absolute;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    z-index: 0;
+}
+.absolute-elements > * span {
+    color: #F7794B;
+}
+.collage-express {
+    top: 85px;
+    right: 36%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+    height: fit-content;
+}
+.collage-express::after {
+    content: "";
+    bottom: -75px;
+    left: -25%;
+    width: 145px;
+    height: 75px;
+    position: absolute;
+    background: url(../images/collage/vector1.svg) no-repeat;
+}
+.collage-gift {
+    bottom: 15%;
+    right: 54%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+    height: fit-content;
+}
+.collage-gift::after {
+    content: "";
+    bottom: 10px;
+    left: 100%;
+    width: 195px;
+    height: 80px;
+    position: absolute;
+    background: url(../images/collage/vector2.svg) no-repeat;
 }
