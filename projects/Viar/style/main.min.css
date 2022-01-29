@@ -235,6 +235,7 @@ p {
 }
 .services-photo a,
 .services-photo .a-btn {
+  max-width: 320px;
   width: 85%;
   display: flex;
   justify-content: center;

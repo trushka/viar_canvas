@@ -108,6 +108,10 @@
     transform: translateY(-50%);
     z-index: 0;
 }
+.collage-shape svg {
+    max-width: 30vw;
+    height: auto;
+}
 /*  */
 
 .collage-why__screen {
@@ -150,6 +154,10 @@
     margin-top: 60px;
     margin-right: 2%;
 }
+.collage-why--content > a .services-photo {
+    -webkit-box-shadow: 5px 5px 11px 0px #DBDBDD; 
+box-shadow: 5px 5px 11px 0px #DBDBDD;
+}
 .col-service-item {
     flex: 0 0 23%;
 }
@@ -158,4 +166,5 @@
 }
 .collage-why--content p {
     color: #1E2533;
+    font-size: 20px;
 }
