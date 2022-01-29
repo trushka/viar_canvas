@@ -144,12 +144,17 @@
 .collage-why--content {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -2%;
 }
 .collage-why--content > a {
     margin-top: 60px;
+    margin-right: 2%;
 }
 .col-service-item {
-    flex: 0 0 22%;
+    flex: 0 0 23%;
+}
+.col-service-item-b {
+    flex: 0 0 48%;
 }
 .collage-why--content p {
     color: #1E2533;
