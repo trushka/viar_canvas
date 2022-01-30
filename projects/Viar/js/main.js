@@ -779,19 +779,17 @@ $(document).ready(function () {
       nextArrow: ".collage-advantage-next",
       responsive: [
         {
-          breakpoint: 750,
+          breakpoint: 1200,
           settings: {
-            slidesToShow: 1,
-            // variableWidth: true
+            slidesToShow: 3,
           },
         },
         {
-          breakpoint: 400,
+          breakpoint: 991,
           settings: {
-            slidesToShow: 1,
-            variableWidth: false
+            slidesToShow: 2,
           },
-        },
+        }
       ],
     })
 
