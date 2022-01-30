@@ -289,3 +289,29 @@
 
 /*  */
 
+.collage-popular__screen {
+    margin-top: 200px;
+}
+.collage-pop__slider {
+    margin-top: 60px;
+    position: relative;
+}
+.collage-pop__slider--inner .examples-slide {
+    padding-bottom: 20px;
+}
+.collage-pop__slider--inner .examples-slide__title {
+    color: #1E2533;
+}
+.collage-pop__slider--inner p {
+    color: rgba(30, 37, 51, 0.5);
+}
+.collage-pop__slider--inner .examples-slide__photo {
+    height: unset;
+    padding-bottom: 20px;
+}
+.collage-pop__slider--inner .examples-slide__photo img {
+    height: 330px;
+}
+.collage-pop__slider--inner .examples-slide__photo:hover img {
+    transform: scale(1);
+}

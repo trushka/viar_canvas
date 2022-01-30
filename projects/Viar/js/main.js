@@ -793,4 +793,33 @@ $(document).ready(function () {
       ],
     })
 
+
+    $('.collage-pop__slider--inner').slick({
+      infinite: true,
+      slidesToShow: 4,
+      lazyLoad: 'ondemand',
+      prevArrow: '.examples-prev',
+      nextArrow: '.examples-next',
+      responsive: [
+        {
+          breakpoint: 1350,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
+    });
+
 });

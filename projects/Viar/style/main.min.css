@@ -1709,9 +1709,9 @@ p {
   height: auto;
   border: 1px solid transparent;
 }
-.slick-arrow.slick-hidden {
+/* .slick-arrow.slick-hidden {
   display: none;
-}
+} */
 .fancybox-outer,
 .fancybox-thumbs {
   -webkit-overflow-scrolling: touch;
