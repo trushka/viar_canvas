@@ -62,6 +62,24 @@ $(document).ready(function () {
     ],
   });
 
+  //modal
+    $('.js-popup-canvas').click(function (e) {
+        e.preventDefault();
+        $('body').addClass('open-frame');
+        $('.popup-frame').css("display", "flex").hide().fadeIn();
+        $('.popup-photo-header').fadeIn();
+
+        let price = $('.js_canvas_select_size').find(":selected").data('price');
+        $('.js_cost_canvas').text(price);
+        $('.js_c_price_mod').val(price);
+    });
+  //modal change size
+    $(document).on('change', '.js_canvas_select_size', function (e){
+        let price = $(this).find(":selected").data('price');
+        $('.js_cost_canvas').text(price);
+        $('.js_c_price_mod').val(price);
+    });
+
   let stageSlider = $(".stages-row");
   stageSlider.slick({
     infinite: false,
@@ -86,7 +104,11 @@ $(document).ready(function () {
   $(".ba-slider2").beforeAfter();
   $(".ba-slider3").beforeAfter();
 
-
+  $(document).on('click', '.retouch-tab', function (e){
+      $(".ba-slider1").beforeAfter();
+      $(".ba-slider2").beforeAfter();
+      $(".ba-slider3").beforeAfter();
+  });
 
 
 
@@ -236,7 +258,7 @@ $(document).ready(function () {
       ],
     })
 
-    
+
 
 
     let sharjWhiteblackSlider = $(".sharj__whiteblack-slider");
@@ -397,10 +419,7 @@ $(document).ready(function () {
         ".about-tab",
         "active"
       );
-    if (!iOS) {
-	exampleSlider[0]?.slick?.refresh();
-
-    }
+      // exampleSlider[0]?.slick?.refresh();
 
       return false;
     });
@@ -482,25 +501,26 @@ $(document).ready(function () {
   window.onresize = function () {
     mediaAction();
   };
-	  var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
   mediaAction();
+  var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
   function mediaAction() {
-    if (!iOS) {
-      if (mediaChecker("max", 750)) {
-        sharjBirthdaySlider[0]?.slick?.refresh();
-        sharjWeddingSlider[0]?.slick?.refresh();
-        sharjCollegueSlider[0]?.slick?.refresh();
-        sharjGrouppedSlider[0]?.slick?.refresh();
-        sharjFamilySlider[0]?.slick?.refresh();
-        sharjWhiteblackSlider[0]?.slick?.refresh();
-        sharjPatternSlider[0]?.slick?.refresh();
-        sharjEpisodesSlider[0]?.slick?.refresh();
-        sharjPopupSlider[0]?.slick?.refresh();
-      }
-      if (mediaChecker("max", 500)) {
-        stageSlider[0]?.slick?.refresh();
-      }
-    }
+    // if (!iOS) {
+    //   if (mediaChecker("max", 750)) {
+    //     sharjBirthdaySlider[0]?.slick?.refresh();
+    //     sharjWeddingSlider[0]?.slick?.refresh();
+    //     sharjCollegueSlider[0]?.slick?.refresh();
+    //     sharjGrouppedSlider[0]?.slick?.refresh();
+    //     sharjFamilySlider[0]?.slick?.refresh();
+    //     sharjWhiteblackSlider[0]?.slick?.refresh();
+    //     sharjPatternSlider[0]?.slick?.refresh();
+    //     sharjEpisodesSlider[0]?.slick?.refresh();
+    //     sharjPopupSlider[0]?.slick?.refresh();
+    //   }
+    //   if (mediaChecker("max", 500)) {
+    //     stageSlider[0]?.slick?.refresh();
+    //   }
+    // }
+
 
     // $('img').each(function(i,e) {
     //   $(e).attr('width', `${$(e).width()}`);
@@ -517,7 +537,7 @@ $(document).ready(function () {
     if (mediaChecker('max', 700)) {
       if (!$('.sizes-item').hasClass('active')) {
         $('.sizes-item.b').addClass('active');
-      }      
+      }
     } else {
       $('.sizes-item.b').removeClass('active');
     }
@@ -532,7 +552,7 @@ $(document).ready(function () {
   //     prevArrow: ".bf-arr_l",
   //     nextArrow: ".bf-arr_r",
   //   });
-  
+
   // })
 
 
@@ -546,7 +566,8 @@ $(document).ready(function () {
   let bf_obj2 = $(".bf-obj2");
   let bf_obj3 = $(".bf-obj3");
 
-  
+  console.log()
+
   bf_objP.slick({
     slidesToShow: 7,
     infinite: false,
@@ -584,13 +605,13 @@ $(document).ready(function () {
         "active"
       );
 
+      // if (!iOS) {
+      //   bf_obj1[0]?.slick?.refresh();
+      //   bf_obj2[0]?.slick?.refresh();
+      //   bf_obj3[0]?.slick?.refresh();
 
-      if (!iOS) {
-        bf_obj1[0]?.slick?.refresh();
-        bf_obj2[0]?.slick?.refresh();
-        bf_obj3[0]?.slick?.refresh();
+      // }
 
-      }
 
 
       return false;
@@ -606,13 +627,23 @@ $(document).ready(function () {
     beforeAfterNavSetter(index);
   });
 
-  $(".bf-obj li").click(function () {
-    $(this).parent().find(`li`).removeClass("active");
-    $(this).addClass("active");
-    let first = $(this).data("imageb");
-    let second = $(this).data("imagea");
-    fromSliderBeforeAfterSetter(first, second);
-  });
+  console.log($(".bf-obj li"))
+
+  $(".bf-obj li").each(function() {
+    console.log(this)
+  })
+
+  setTimeout(function() {
+    $(".bf-obj li").click(function () {
+    
+      $(this).parent().find(`li`).removeClass("active");
+      $(this).addClass("active");
+      let first = $(this).data("imageb");
+      let second = $(this).data("imagea");
+      fromSliderBeforeAfterSetter(first, second);
+    });
+  }, 300 )
+
 
   function fromSliderBeforeAfterSetter(first, second) {
     $(".ba-slider > picture img").attr("srcset", first);
@@ -621,20 +652,25 @@ $(document).ready(function () {
     $(".ba-slider .resize source").attr("srcset", second);
   }
 
-  let _beforeAfterCount = $(".bf-obj li").length;
- 
-  if (_beforeAfterCount <= 7) {
-    bf_objP.slick("unslick");
-    $(".bf-arr").remove();
-    $(".before-after__nav").css("justify-content", "center");
-  }
+  $('.bf-obj').each(function() {
+    let _beforeAfterCount = $(this).find("li").length;
+    if (_beforeAfterCount <= 7) {
+      $(this).slick("unslick");
+      $(".bf-arr").remove();
+      $(".before-after__nav").css("justify-content", "center");
+    }
+    
+  })
+  
+
+
   let el = $(".examples-slider__inner .examples-slide:nth-child(3)");
 
   function beforeAfterNavSetter(index) {
     let slickIndex = index - 1;
     $(`.bf-obj li`).removeClass("active");
     $(`.bf-obj li:nth-child(${index})`).addClass("active");
-    
+
     bf_objP.slick("slickGoTo", slickIndex);
   }
 
@@ -657,25 +693,19 @@ $(document).ready(function () {
 		$('body').addClass('open-frame');
 		$('.popup-frame').css("display", "flex").hide().fadeIn();
     if (mediaChecker('max', 750)) {
-      sharjPopupSlider[0]?.slick?.refresh();
+      // sharjPopupSlider[0]?.slick?.refresh();
     }
 		$('.popup-sharj').fadeIn();
 	});
-  $('.formalization-btn').click(function (e) {
-		e.preventDefault();
-		$('body').addClass('open-frame');
-		$('.popup-frame').css("display", "flex").hide().fadeIn();
 
-		$('.popup-cart').fadeIn();
-	});
   $('.sharj-item--btn:not(.patterns-btn), .sharj-btn, .js-popup-photo-sharj, .js-examples-sharj').click(function(e) {
     e.preventDefault();
     $('body').addClass('open-frame');
 		$('.popup-frame').css("display", "flex").hide().fadeIn();
     if (mediaChecker('max', 750)) {
-      sharjPopupSlider[0]?.slick?.refresh();
+      // sharjPopupSlider[0]?.slick?.refresh();
     }
-    
+
     if (!$(this).hasClass('sharj-btn-text')) {
       $('.popup-sharj-individual').find('.sharj-individual-text').fadeOut(0);
     } else {
@@ -713,7 +743,7 @@ $(document).ready(function () {
     let target = container.find('.file-save__title p:first-child');
     container.find('svg').html(`<use xlink:href="sprite.svg#picture"></use>`)
     container.find('.file-save__title span:nth-child(2)').text(`${(this.files[0].size / 1024).toFixed(2)} KB`)
-    
+
     target.text(this.files[0].name);
   })
 
@@ -725,13 +755,44 @@ $(document).ready(function () {
   })
 
   $('.kviz-row-single .kviz-radio img, .kviz-c-row>div label span img').hover(function() {
-    
+
     $(this).closest('label').find('.window-prompt').fadeToggle(100);
   })
 
   $('.popup-log-check').on('click', function() {
       $('.additional-hidden').fadeToggle();
-      
+
   })
+
+
+
+
+  
+
+    // sharj slider
+
+    let collageAdvantageSlider = $(".collage-advantage--slider_inner");
+    collageAdvantageSlider.slick({
+      slidesToShow: 4,
+      infinite: false,
+      prevArrow: ".collage-advantage-prev",
+      nextArrow: ".collage-advantage-next",
+      responsive: [
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+            // variableWidth: true
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: false
+          },
+        },
+      ],
+    })
 
 });

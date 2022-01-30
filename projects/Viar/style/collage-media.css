@@ -188,6 +188,9 @@
     .collage-why--content .services-photo img {
         height: 226px;
     }
+    .collage-why__screen {
+        padding-bottom: 55px;
+    }
 }
 @media (max-width: 425px) {
     .collage-gift {

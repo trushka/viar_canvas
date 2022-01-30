@@ -171,3 +171,79 @@
     color: #1E2533;
     font-size: 20px;
 }
+
+
+/*  */
+
+.collage_pop-advant {
+    background: url(../images/collage/hero-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 0 150px;
+}
+.collage-advantage--slider {
+    position: relative;
+    margin: 0 70px;
+}
+.collage-slider--item__body {
+    padding: 47px 11px 21px;
+    position: relative;
+    background: #FFFFFF;
+    border: 0.5px solid #FA7846;
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-height: 333px;
+    height: 100%;
+    max-height: 350px;
+}
+.collage-slider--item__body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -16px;
+    top: -16px;
+    background: rgba(255, 255, 255, 0.26);
+    border: 0.5px solid #FA7846;
+    box-sizing: border-box;
+    border-radius: 8px;
+    z-index: -1;
+}
+.collage-advantage--slider {
+    margin-top: 40px;
+}
+.collage-advantage--slider_inner {
+    margin: 0 -0.5%;
+}
+.collage-slider--item {
+    margin: 0 0.5%;
+    padding: 16px 16px 0 0;
+}
+.collage-advantage-nav.examples-arrow {
+    top: 43%;
+    transform: translateY(-50%);
+}
+.collage-advantage_s--content {
+    text-align: center;    
+}
+.collage-advantage_s--title {
+    font-family: Trajan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FA7846;
+    margin: 26px 0 19px;
+}
+.collage-advantage_s--text {
+    font-size: 16px;
+    line-height: 19px;
+}
+.collage-advantage_s--text li {
+    position: relative;
+}
+
+.collage-advantage_s--img {
+    display: flex;
+    justify-content: center;
+}
