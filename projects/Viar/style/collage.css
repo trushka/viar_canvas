@@ -116,6 +116,9 @@
 
 .collage-why__screen {
     background-color: #fff;
+    background-image: url(../images/collage/shape.svg), url(../images/collage/shape.svg), url(../images/collage/shape.svg), url(../images/collage/shape.svg);
+    background-position: 0 0, 100% 30%, 0 60%, 0 120%;
+    background-repeat: no-repeat;
     padding-bottom: 125px;
 }
 .page-collage-title span {
@@ -154,9 +157,9 @@
     margin-top: 60px;
     margin-right: 2%;
 }
-.collage-why--content > a .services-photo {
+.collage-why--content > a .services-photo img {
     -webkit-box-shadow: 5px 5px 11px 0px #DBDBDD; 
-box-shadow: 5px 5px 11px 0px #DBDBDD;
+    box-shadow: 5px 5px 11px 0px #DBDBDD;
 }
 .col-service-item {
     flex: 0 0 23%;
