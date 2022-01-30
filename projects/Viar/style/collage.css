@@ -78,6 +78,7 @@
     height: 75px;
     position: absolute;
     background: url(../images/collage/vector1.svg) no-repeat;
+    background-size: contain;
     z-index: 1;
 }
 .collage-gift {
@@ -100,6 +101,7 @@
     height: 80px;
     position: absolute;
     background: url(../images/collage/vector2.svg) no-repeat;
+    background-size: contain;
     z-index: 1;
 }
 .collage-shape {
