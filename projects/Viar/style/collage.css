@@ -282,6 +282,8 @@
 }
 .advantage-gift img {
     max-width: 245px;
+    margin-left: -30%; 
+    margin-bottom: -20px;
 }
 .advantage-gift span {
     color: #F7794B;
