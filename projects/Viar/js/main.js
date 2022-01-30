@@ -798,8 +798,8 @@ $(document).ready(function () {
       infinite: true,
       slidesToShow: 4,
       lazyLoad: 'ondemand',
-      prevArrow: '.examples-prev',
-      nextArrow: '.examples-next',
+      prevArrow: '.examples-prev-col',
+      nextArrow: '.examples-next-col',
       responsive: [
         {
           breakpoint: 1350,

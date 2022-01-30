@@ -55,6 +55,35 @@
     .collage-advantage-nav .collage-advantage-next {
         right: -60px;
     }
+    .collage-advantage__image {
+        width: 100%;
+
+    }
+    .advantage-gift img {
+        max-width: 145px;
+        margin-left: -100%;
+        margin-bottom: -100%;
+    }
+    .advantage-gift p {
+        max-width: 105px;
+        font-size: 14px;
+    }
+    .advantage-gift {
+        top: -110px;
+        left: 385.1px;
+    }
+    .advantage-gift::after {
+        top: 90%;
+        left: -50px;
+        width: 135px;
+        height: 110px;
+        background: url(../images/collage/vector3M.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .collage-advantage__image {
+        margin-top: 150px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -187,6 +216,29 @@
     .collage-slider--item {
         padding: 9px 9px 0 0;
     }
+    /*  */
+    .advantage-gift {
+        left: 50%;
+    }
+    .advantage-gift img {
+        width: 60px;
+        height: auto;
+        margin-left: -59%;
+        margin-bottom: -49%;
+    }
+    .advantage-gift p {
+        max-width: 110px;
+        font-size: 11px;
+    }
+    .collage-advantage__image {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /*  */
+    .collage-popular__screen {
+        margin-top: 71px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -247,6 +299,7 @@
     .collage-why__screen {
         padding-bottom: 55px;
     }
+    /*  */
 }
 @media (max-width: 425px) {
     .collage-gift {
