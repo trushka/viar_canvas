@@ -252,6 +252,9 @@
     }    
     /*  */
 
+    .collage-f-order__screen {
+        margin-top: -35px;
+    }
     .collage-f-order--items {
         justify-content: center;
     }

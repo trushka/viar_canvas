@@ -339,6 +339,21 @@
     color: #fff;
     padding: 70px 0;
 }
+.collage-order--content {
+    padding: 415px 0 550px;
+}
+.collage-order-img {
+    overflow: hidden;
+    border-radius: 25px;
+    max-width: 519px;
+    width: 50%;
+    margin: 0 auto;
+}
+.collage-order-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /*  */
