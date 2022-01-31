@@ -459,6 +459,7 @@ p {
 }
 .ellipse img {
   width: calc(100% + 100px);
+  height: auto;
   display: block;
   margin-left: -50px;
 }

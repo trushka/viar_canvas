@@ -795,7 +795,7 @@ $(document).ready(function () {
 
 
     $('.collage-pop__slider--inner').slick({
-      infinite: true,
+      infinite: false,
       slidesToShow: 4,
       lazyLoad: 'ondemand',
       prevArrow: '.examples-prev-col',

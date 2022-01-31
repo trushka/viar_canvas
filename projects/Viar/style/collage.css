@@ -340,7 +340,8 @@
     padding: 70px 0;
 }
 .collage-order--content {
-    padding: 415px 0 550px;
+    padding: 32% 0 43%;
+    position: relative;
 }
 .collage-order-img {
     overflow: hidden;
@@ -354,8 +355,54 @@
     height: 100%;
     object-fit: cover;
 }
-
-
+.o-abs-el > div {
+    position: absolute;
+    height: fit-content;
+}
+.o-abs-el > div img {
+    width: 100%;
+    height: auto;
+}
+.o-abs-el p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.o-abs-el p span {
+    color: #F7794B;
+    font-weight: 500;
+}
+.o-abs1 {
+    top: 3%;
+    left: 0;
+    width: 30%;
+}
+.o-abs1 p {
+    margin-top: -40%;
+}
+.o-abs2 {
+    top: 5%;
+    right: 42%;
+    transform: translateX(50%);
+    width: 30%;
+}
+.o-abs2 p {
+    margin-left: 57%;
+    margin-top: -63%;
+    white-space: nowrap;
+}
+.o-abs3 {
+    top: 25%;
+    right: 30%;
+    transform: translateX(50%);
+    width: 30%;
+}
+.o-abs3 p {
+    margin-top: -55%;
+    max-width: 80%;
+    
+}
 /*  */
 
 .collage-f-order__screen {
