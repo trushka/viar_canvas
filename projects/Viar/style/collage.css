@@ -705,9 +705,7 @@
 
 .collage-love__screen {
     background-color: #fff;
-    /* background-image: url(../images/collage/shape1.svg), url(../images/collage/shape.svg);
-    background-repeat: no-repeat;
-    background-position: 0 90%, 100% 50%; */
+    overflow: hidden;
     padding: 120px 0 80px;
     margin-top: -60px;
     position: relative;
@@ -746,4 +744,43 @@
 .collage-love--image img {
     max-width: 100%;
     height: auto;
+}
+.love-title--row {
+    position: relative;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.l-abs-el {
+    position: absolute;
+    bottom: -50px;
+    right: -30%;
+    width: 200px;
+}
+.l-abs-el img {
+    transform: scale(-1, 1);
+    width: 100%;
+    height: auto;
+}
+.l-abs-el::after {
+    content: "";
+    bottom: -6%;
+    left: -228px;
+    width: 209px;
+    height: 50px;
+    position: absolute;
+    background: url(../images/collage/vector7.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.collage-love--image::after {
+    content: "";
+    bottom: 42%;
+    right: 50%;
+    transform: translate(50%,50%);
+    width: 20%;
+    height: 26%;
+    position: absolute;
+    background: url(../images/collage/vector8.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
 }
