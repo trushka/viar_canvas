@@ -338,6 +338,7 @@
     background: #1E2532;
     color: #fff;
     padding: 70px 0;
+    overflow: hidden;
 }
 .collage-order--content {
     padding: 32% 0 43%;
@@ -564,6 +565,7 @@
 
 
 .collage-doubt__screen {
+    overflow: hidden;
     padding: 100px 0 50px;
     background: url(../images/bg/why-bg.webp) center bottom no-repeat;
     background-size: 100% auto;
@@ -576,33 +578,172 @@
         }
     }
   }
-
+.collage-doubt--inner {
+    position: relative;
+}
+.collage-doubt--inner {
+    position: relative;
+}
 .collage-doubt--block {
+    margin-top: 105px;
     display: flex;
     min-height: 708px;
+    justify-content: space-between;
+}
+.collage-d-express {
+    top: -30px;
+    right: 0;
+    max-width: 200px;
+}
+.collage-d-express::after {
+    content: "";
+    bottom: -25px;
+    left: -25%;
+    width: 165px;
+    height: 95px;
+    position: absolute;
+    background: url(../images/collage/vector4.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.collage-d-gift {
+    bottom: 50px;
+    left: 0;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.collage-d-gift::after {
+    content: "";
+    bottom: 55px;
+    left: 95%;
+    width: 165px;
+    height: 75px;
+    position: absolute;
+    background: url(../images/collage/vector5.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
 }
 .collage-doubt--content {
-    flex: 0 0 38%;
+    flex: 0 0 32%;
 }
 .collage-doubt-bg {
     flex: 0 0 62%;
     background: url(../images/collage/doubt.webp) right bottom no-repeat;
     background-size: 100% auto;
+}
+@media not all and (min-resolution: .001dpcm) {
+    @supports(-webkit-appearance:none) {
+        .collage-doubt-bg {
+            background: url(../images/collage/doubt.png) right bottom no-repeat !important;
+            background-size: 100% auto !important;
+        }
+    }
+  }
+.c-db-btn {
+    margin-left: auto;
+    width: 290px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 18.49px 46.22px -4.62px rgb(250 120 70 / 25%), 0 2.77px 0 #e87145;
+    cursor: pointer;
+    background: linear-gradient(
+90deg
+, #fc8c5f 0, #fa7846 100%);
+    border-radius: 8px;
+}
+.c-db-question {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+}
+.c-db-question img {
+    margin-right: 5px;
+}
+.c-db-question strong {
+    color: #F7794B;
+}
+.c-db-questions {
+    display: flex;
+    flex-direction: column;
+}
+.c-db-question:first-child {
+    margin-right: -40%;
+    justify-content: flex-end;
+}
+.c-db-question:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+.c-db-question:nth-child(2)::after {
+    content: "";
+    bottom: -126%;
+    right: -108px;
+    width: 92px;
+    height: 111px;
+    position: absolute;
+    background: url(../images/collage/vector6.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
 
 }
-
+.c-db-question p {
+    text-align: end;
+}
+.c-db-question:last-child {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 62px;
+}
 
 /*  */
 
 .collage-love__screen {
     background-color: #fff;
-    background-image: url(../images/collage/shape1.svg), url(../images/collage/shape.svg);
+    /* background-image: url(../images/collage/shape1.svg), url(../images/collage/shape.svg);
     background-repeat: no-repeat;
-    background-position: 0 90%, 100% 50%;
+    background-position: 0 90%, 100% 50%; */
     padding: 120px 0 80px;
     margin-top: -60px;
+    position: relative;
+}
+.collage-love__screen::after, .collage-love__screen::before {
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: 94%;
+    z-index: 1;
+}
+.collage-love__screen::after {
+    top: 5%;
+    left: 0;
+    background-image: url(../images/collage/shape1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.collage-love__screen::before {
+    top: 5%;
+    right: 0;
+    background-image: url(../images/collage/shape.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .collage-love__screen .col-subtitle-m {
     margin: 15px auto;
     max-width: 775px;
+}
+.collage-love--inner {
+    position: relative;
+}
+.collage-love--image {
+    margin-top: 50px;
+}
+.collage-love--image img {
+    max-width: 100%;
+    height: auto;
 }
