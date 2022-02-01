@@ -9,6 +9,14 @@
         left: -40px;
         max-width: 200px;
     }
+    /*  */
+    .collage-order-img {
+        border-radius: 15px;
+        width: 34%;
+    }
+    .o-abs3 {
+        right: 0;
+    }
 }
 @media (max-width: 1200px) {
     .collage-gift {
@@ -158,6 +166,24 @@
     /*  */
     .ellipse-b-dbt {
         margin-top: -80px;
+    }
+    /*  */
+    .o-abs-el p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .o-abs6 p {
+        margin-top: -38%;
+        margin-left: 60%;
+    }
+    .o-abs5 p {
+        margin-top: -17%;
+        margin-left: 38%;
+    }
+
+    /*  */
+    .collage-f-order__screen {
+        margin-top: -41px;
     }
 }
 
@@ -453,6 +479,26 @@
         width: 17%;
         height: 32%;
     }
+
+    /*  */
+
+    .collage-order-img {
+        display: none;
+    }
+    .collage-order--content {
+        padding: 20px 0;
+    }
+    .collage-order--content .o-abs-el > div {
+        position: unset;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        transform: unset;
+    }
+
+
+
 }
 
 @media (max-width: 520px) {
@@ -555,6 +601,10 @@
     .collage-f-order--item--wrap {
         max-width: 308px;
     }
+    /*  */
+    .c-order-btn {
+        height: 50px;
+    }
 }
 @media (max-width: 425px) {
     .collage-gift {
@@ -615,6 +665,8 @@
     .examples-prev, .reviews-prev {
         left: -10px;
     }
+    /*  */
+    
 }
 @media (max-width: 425px) not all and (min-resolution: .001dpcm) {
     @supports(-webkit-appearance:none) {
