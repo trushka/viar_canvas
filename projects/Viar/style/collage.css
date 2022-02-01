@@ -576,3 +576,33 @@
         }
     }
   }
+
+.collage-doubt--block {
+    display: flex;
+    min-height: 708px;
+}
+.collage-doubt--content {
+    flex: 0 0 38%;
+}
+.collage-doubt-bg {
+    flex: 0 0 62%;
+    background: url(../images/collage/doubt.webp) right bottom no-repeat;
+    background-size: 100% auto;
+
+}
+
+
+/*  */
+
+.collage-love__screen {
+    background-color: #fff;
+    background-image: url(../images/collage/shape1.svg), url(../images/collage/shape.svg);
+    background-repeat: no-repeat;
+    background-position: 0 90%, 100% 50%;
+    padding: 120px 0 80px;
+    margin-top: -60px;
+}
+.collage-love__screen .col-subtitle-m {
+    margin: 15px auto;
+    max-width: 775px;
+}
