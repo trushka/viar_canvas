@@ -350,6 +350,7 @@
     }
     .collage-f-order--item--wrap {
         flex: 0 0 100%;
+        max-width: 308px;
     }
     .collage-f-order--item--wrap::before {
         transform: translateX(50%);
@@ -496,9 +497,96 @@
         bottom: unset;
         transform: unset;
     }
+    .o-abs-el {
+        display: flex;
+        flex-direction: column;
+    }
+    .o-abs1 {
+        order: 6;
+        width: 226px;
+        height: 218px !important;
+        margin-left: auto;
+    }
+    .o-abs1 p {
+        margin-top: -26%;
+        text-align: start;
+        margin-left: -16px;
+    }
+    .o-abs2 {
+        order: 1;
+        width: 209px;
+        height: 170px !important;
+    }
+    .o-abs2 p {
+        margin-left: 33%;
+        margin-top: -78%;
+        width: 100%;
+        white-space: unset;
+    }
+    .o-abs3 {
+        order: 2;
+        width: 205px;
+        margin-left: auto;
+        height: 180px !important;
+        margin-top: -30px;
+    }
+    .o-abs3 p {
+        margin-top: -30%;
+        max-width: 100%;
+        margin-left: -5%;
+    }
+    .o-abs4 {
+        order: 4;
+        width: 209px;
+        height: 186px !important;
+        margin-left: auto;
+        margin-top: 25px;
+    }
+    .o-abs4 p {
+        margin-top: -39%;
+        width: 100%;
+        margin-left: -11%;
+    }
+    .o-abs5 {
+        order: 7;
+        max-width: 330px;
+        height: 258px !important;
+        width: 100%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .o-abs5 p {
+        margin-top: -12%;
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .o-abs6 {
+        order: 5;
+        width: 233px;
+        height: 196px !important;
+        margin-top: 20px;
+    }
+    .o-abs6 p {
+        margin-top: -24%;
+        margin-left: 15%;
+    }
+    .o-abs7 {
+        order: 3;
+        width: 217px;
+        margin-top: -10px;
+        height: 181px !important;
+    }
+    .o-abs7 p {
+        margin-top: -38%;
+        margin-left: 68%;
+        width: 70%;
+    }
 
-
-
+    .c-order-btn {
+        margin-top: 66px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -562,7 +650,7 @@
     /*  */
     .collage-f-order__screen {
         padding: 75px 0 80px;
-        margin-top: -34px;
+        margin-top: -20px;
     }
     .collage-f-order--item {
         padding: 33px 12px;
@@ -597,9 +685,6 @@
     .collage-f-order--item--wrap::after {
         width: calc(100% + 20px);
         height: calc(100% + 20px);
-    }
-    .collage-f-order--item--wrap {
-        max-width: 308px;
     }
     /*  */
     .c-order-btn {
