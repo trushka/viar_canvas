@@ -188,6 +188,9 @@
 }
 
 @media (max-width: 700px) {
+    /* .collage__screen {
+        margin-bottom: -95px;
+    } */
     .collage__list--item {
         justify-content: center;
     }

@@ -8,7 +8,7 @@
     background-position: center center;
     background-size: cover;
     padding: 200px 0 80px;
-    margin-bottom: -130px;
+    /* margin-bottom: -130px; */
     position: relative;
 }
 @media not all and (min-resolution: 0.001dpcm) {

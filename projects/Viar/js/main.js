@@ -822,4 +822,28 @@ $(document).ready(function () {
       ]
     });
 
+    $('.collage__screen--slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      lazyLoad: 'ondemand',
+      fade: true,
+      autoplay: true,
+			speed: 2500,
+      // prevArrow: '.examples-prev-col',
+      // nextArrow: '.examples-next-col',
+      arrows: false,
+      responsive: [
+        // {
+        //   breakpoint: 700,
+        //   settings: 'unslick'
+        // },
+        // {
+        //   breakpoint: 520,
+        //   settings: {
+        //     slidesToShow: 1,
+        //   }
+        // },
+      ]
+    });
+
 });
