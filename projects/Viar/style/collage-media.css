@@ -590,6 +590,17 @@
     .c-order-btn {
         margin-top: 66px;
     }
+    /*  */
+    .collage-why--content .top-btn,
+    .services-photo .a-btn {
+        width: 80%;
+        height: 40px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .collage-why--content p {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 520px) {
