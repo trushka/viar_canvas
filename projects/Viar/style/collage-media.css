@@ -707,7 +707,7 @@
 }
 @media (max-width: 425px) {
     .collage-gift {
-        top: 37%;
+        top: 36%;
     }
     .collage-gift::after {
         bottom: 22px;

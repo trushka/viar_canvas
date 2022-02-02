@@ -7,7 +7,7 @@
     background: url('../images/collage/hero-img.webp') no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 200px 0 80px;
+    padding: 180px 0 80px;
     /* margin-bottom: -130px; */
     position: relative;
 }
@@ -28,7 +28,7 @@
     max-width: 700px;
 }
 .collage__inner--list {
-    margin: 25px 0 56px;
+    margin: 25px 0 0px;
 }
 .collage__list--item {
     display: flex;
@@ -154,6 +154,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -2%;
+    justify-content: space-around;
 }
 .collage-why--content > a {
     margin-top: 60px;
@@ -846,4 +847,25 @@
     background: url(../images/collage/vector8.svg) no-repeat;
     background-size: contain;
     z-index: 1;
+}
+
+/*  */
+
+.example-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    width: fit-content;
+    margin: 10px auto;
+    background: #FBF2EA;
+    border-radius: 3.19495px;
+    font-family: Trajan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;    
+    color: #FA7846;
+    text-align: center;
 }
