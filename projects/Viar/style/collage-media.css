@@ -123,7 +123,7 @@
         font-size: 14px;
     }
     .advantage-gift {
-        top: -110px;
+        top: -152px;
         left: 385.1px;
     }
     .advantage-gift::after {
@@ -137,6 +137,13 @@
     }
     .collage-advantage__image {
         margin-top: 150px;
+    }
+    .advantage-price {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .advantage-price img {
+        max-width: 60px;
     }
     /*  */
     .collage-d-express {
@@ -341,7 +348,7 @@
     }
     /*  */
     .collage-popular__screen {
-        margin-top: 71px;
+        padding-top: 43px;
     }    
     /*  */
 
@@ -601,6 +608,28 @@
     .collage-why--content p {
         margin-bottom: 10px;
     }
+    .advantage-gift { 
+        top: -105px; 
+    }
+    .advantage-price {
+        top: 105%;
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .advantage-price::after {
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: -50%;
+        width: 108px;
+        height: 48px;
+    }
+    .advantage-price p {
+        max-width: 99px;
+    }
+    .advantage-price img {
+        max-width: 38px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -765,6 +794,9 @@
         left: -10px;
     }
     /*  */
+    .collage-advantage__screen {
+        padding-bottom: 50px;
+    }
     
 }
 @media (max-width: 425px) not all and (min-resolution: .001dpcm) {

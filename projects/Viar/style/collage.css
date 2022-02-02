@@ -154,7 +154,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -2%;
-    justify-content: space-around;
+    justify-content: center;
 }
 .collage-why--content > a {
     margin-top: 60px;
@@ -184,7 +184,8 @@
 
 /*  */
 .collage-advantage__screen {
-    overflow-x: hidden;
+    overflow: hidden;
+    padding-bottom: 100px;
 }
 .collage_pop-advant {
     background: url(../images/collage/hero-img.svg);
@@ -297,6 +298,37 @@
 .advantage-gift span {
     color: #F7794B;
 }
+.advantage-price {
+    position: absolute;
+    top: 95%;
+    right: -0;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+.advantage-price::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 140px;
+    height: 100px;
+    background: url(../images/collage/vector9.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.advantage-price p {
+    max-width: 155px;
+    font-weight: bold;
+}
+.advantage-price img {
+    max-width: 99px;
+    height: auto;
+}
+.advantage-price span {
+    color: #F7794B;
+}
 .collage-advantage__image > img {
     width: 100%;
     height: auto;
@@ -308,7 +340,7 @@
 /*  */
 
 .collage-popular__screen {
-    margin-top: 200px;
+    padding-top: 100px;
 }
 .collage-pop__slider {
     margin-top: 60px;
