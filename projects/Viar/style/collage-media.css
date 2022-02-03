@@ -102,6 +102,9 @@
     .col-main-el {
         margin-top: 40px;
     }
+    .collage-express {
+        display: none;
+    }
     /*  */
     .collage-advantage-nav .collage-advantage-prev {
         left: -60px;
@@ -222,6 +225,7 @@
         line-height: 13px;
     }
     .collage-express {
+        display: block;
         top: 55px;
         right: 36%;
         max-width: 115px;
@@ -423,6 +427,10 @@
     .c-db-question:nth-child(2),
     .c-db-question:last-child {
         align-items: center;
+        margin-bottom: 0;
+    }
+    .c-dbp-question {
+        justify-content: center;
         margin-bottom: 0;
     }
     .c-db-question p {

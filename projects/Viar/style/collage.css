@@ -63,7 +63,7 @@
 }
 .collage-express {
     top: 80px;
-    right: 36%;
+    right: 32%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -149,6 +149,9 @@
 }
 .collage-why--content .services-item__title {
     color: #FA7846;
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 .collage-why--content {
     display: flex;
@@ -757,6 +760,13 @@
     font-size: 20px;
     position: relative;
 }
+.c-dbp-question {
+    font-weight: bold;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
 .c-db-question img {
     margin-right: 5px;
 }
@@ -774,7 +784,7 @@
 .c-db-question:nth-child(2) {
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 .c-db-question:nth-child(2)::after {
     content: "";
