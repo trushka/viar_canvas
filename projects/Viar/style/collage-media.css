@@ -17,6 +17,10 @@
     .o-abs3 {
         right: 0;
     }
+    /*  */
+    .col-gen--element {
+        right: 98%;
+    }
 }
 @media (max-width: 1200px) {
     .collage-gift {
@@ -92,6 +96,36 @@
     .collage-d-express {
         right: 0;
         top: 20%;
+    }
+    /*  */
+    .collage-gen--title {
+        position: unset;
+    }
+    .collage-generator__screen {
+        position: relative;
+    }
+    .col-gen--element {
+        max-width: 175px;
+        top: -19%;
+        right: 69%;
+        height: fit-content;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+    .col-gen--element img {
+        width: 100px;
+        height: auto;
+    }
+    .col-gen--element::after {
+        bottom: -27%;
+        left: 99%;
+        background: url(../images/collage/vector11M.svg) no-repeat;
+        background-size: contain;
+        z-index: 4;
+    }
+    .collage-love__screen {
+        padding-bottom: 280px;
     }
 }
 
@@ -195,6 +229,8 @@
     .collage-f-order__screen {
         margin-top: -41px;
     }
+    /*  */
+
 }
 
 @media (max-width: 700px) {
@@ -638,6 +674,7 @@
     .advantage-price img {
         max-width: 38px;
     }
+    /*  */
 }
 
 @media (max-width: 520px) {
@@ -741,6 +778,57 @@
     .c-order-btn {
         height: 50px;
     }
+    /*  */
+    .collage-head--block::after {
+        top: 82%;
+        right: 10%;
+        width: 54px;
+        height: 149.5px;
+        background: url(../images/collage/vector10M.svg) no-repeat;
+        background-size: contain;
+    }
+    .collage-generator__screen {
+        padding-top: 10px;
+    }
+    .collage-head--block {
+        margin-bottom: 70px;
+    }
+    .collage-love__screen {
+        padding-bottom: 200px;
+    }
+    /*  */
+
+    .col-gen--element img {
+        width: 96px;
+    }
+    .col-gen--element {
+        max-width: 130px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .col-gen--element::after {
+        bottom: -48%;
+        left: 98%;    
+        width: 162.63px;
+        height: 94.64px;
+        background: url(../images/collage/vector11M.svg) no-repeat;
+        background-size: contain;
+    }
+    .collage-head-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+    .collage-head-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .col-gen--element {
+        right: 59%;
+    }
+    .col-gen--element p {
+        margin-top: 0;
+    }
 }
 @media (max-width: 425px) {
     .collage-gift {
@@ -805,9 +893,12 @@
     .collage-advantage__screen {
         padding-bottom: 50px;
     }
+    .col-gen--element {
+        top: -16%;
+    }
     
 }
-@media (max-width: 425px) not all and (min-resolution: .001dpcm) {
+@media not all and (min-resolution: .001dpcm) and (max-width: 425px) {
     @supports(-webkit-appearance:none) {
         .collage-doubt__screen {
             background: url(../images/collage/wbgM.jpg) center bottom no-repeat !important;

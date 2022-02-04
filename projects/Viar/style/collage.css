@@ -911,3 +911,157 @@
     color: #FA7846;
     text-align: center;
 }
+
+
+/*  */
+
+.collage-generator__screen {
+    background: #1E2533;
+    padding: 70px 0;
+}
+
+.collage-head--block {
+    margin-top: -15%;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid #FA7846;
+    border-radius: 10px;
+    max-width: 700px;
+    min-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.collage-head--block::after {
+    content: "";
+    top: 70%;
+    right: 10%;
+    width: 54px;
+    height: 201px;
+    position: absolute;
+    background: url(../images/collage/vector10.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+.collage-head--inner {
+    display: flex;
+    padding: 32px 25px 26px;
+    border: 0.5px solid #FA7846;
+    border-radius: 10px;
+    align-items: center;
+}
+.collage-head--inner > div {
+    flex: 0 0 50%;
+}
+.collage-head-title {
+    font-family: Trajan;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #1E2533;
+}
+.collage-head-text {
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.75;
+}
+.collage-head-text span {
+    color: #FA7846;
+    font-weight: 700;
+}
+.collage-gen--title {
+    position: relative;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 0;
+}
+.col-gen--element {
+    position: absolute;
+    bottom: -50px;
+    right: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    max-width: 245px;
+}
+.col-gen--element p {
+    margin: 10px auto 0;
+}
+.col-gen--element p span {
+    color: #F7794B;
+    font-weight: bold;
+}
+.col-gen--element::after {
+    content: "";
+    bottom: 50%;
+    left: 70%;
+    width: 203.5px;
+    height: 121.96px;
+    position: absolute;
+    background: url(../images/collage/vector11.svg) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+label > div.window-prompt {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 140%;
+    color: #575C65;
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    max-width: 250px;
+    width: fit-content;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    z-index: 1;
+}
+.collage-tabs .tabs {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.collage-tabs li {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.collage-tabs li:not(:last-child) {
+    margin-right: 17px;
+}
+.collage-tabs a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: rgba(173,135,128,.15);
+    border-radius: 8px;
+    transition: all .3s ease;
+    width: 186.32px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    color: #f7794b;
+}
+.collage-tabs a.active {
+    background: #ad8780;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.collage__formalization .formalization__block--top {
+    padding: 80px 20px 50px;
+}
