@@ -1104,7 +1104,28 @@
 </script>
     <script src="js/InteriorGenerator.js"></script>
 </head>
+<script type="text/javascript">
+  var mult = $('body').data('multiplier');
 
+  if (isNaN(mult)){
+      mult = 1;
+  }
+</script>
+<div id="template-preview" style="display:none;">
+  <div class="dz-preview dz-file-preview well" id="dz-preview-template">
+      <div class="dz-image">
+          <img data-dz-thumbnail="" src="img/loading.gif" alt="loading">
+      </div>
+      <div class="dz-details">
+          <div class="dz-filename"><span data-dz-name=""></span></div>
+          <div class="dz-size" data-dz-size=""></div>
+      </div>
+      <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+      <div class="dz-success-mark"><span></span></div>
+      <div class="dz-error-mark"><span></span></div>
+      <div class="dz-error-message"><span data-dz-errormessage=""></span></div>
+  </div>
+</div>
 <body class="vz-art load collage-bg">
   <div class="vz-art menu">
     <div class="vz-art menu-frame" data-menu="1">
@@ -3213,32 +3234,6 @@
                                                   </div>
                                               </div>
                                           </div>
-                                      </div>
-                                      <div class="total-price">
-                                          <div class="total-title"><span>Итоговая цена</span></div>
-                                          <div class="sum">
-                                              <h4><span id="glob_summ">0</span> €</h4>
-                                              <div class="js_spinner" style="text-align: center;"></div>
-                                          </div>
-                                          <a class="sbm__collage" data-route="https://viarcanvas.com/basket/add/construct"
-                                              data-name="Фотоколлажи" href="javascript:void(0)"><span>Заказать!</span></a>
-                                          <ul class="dost_items">
-                                              <li><strong>Срок изготовления:</strong></li>
-                                              <li>
-                                                  <label>
-                                                      <input checked="" type="radio" name="dost_time" value="0">
-                                                      <span></span>
-                                                      <span class="st_text">Стандарт - 3 рабочих дня</span>
-                                                  </label>
-                                              </li>
-                                              <li>
-                                                  <label>
-                                                      <input type="radio" name="dost_time" value="5">
-                                                      <span></span>
-                                                      <span class="st_text">Экспресс - 1 рабочие сутки</span>
-                                                  </label>
-                                              </li>
-                                          </ul>
                                       </div>
                                   </form>
                               </div>
