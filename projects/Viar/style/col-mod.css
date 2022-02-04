@@ -1279,7 +1279,7 @@ span.hint__text {
 }
 
 .lozad[data-loaded=true] {
-    opacity: 0
+    opacity: 1;
 }
 
 .fade.lozad[data-loaded=true] {
