@@ -1065,3 +1065,12 @@ label > div.window-prompt {
 .collage__formalization .formalization__block--top {
     padding: 80px 20px 50px;
 }
+
+/*  */
+
+.collage-settings {
+    flex: 0 0 40%;
+}
+.canvas-wrapper {
+    flex: 0 0 58.7%;
+}
