@@ -54,59 +54,6 @@
 
 
 
-.breadcrumbs {
-
-  margin-bottom: 67px;
-
-}
-
-
-
-.breadcrumbs__block {
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-
-  -webkit-box-align: center;
-
-  -ms-flex-align: center;
-
-  align-items: center;
-
-}
-
-
-
-.breadcrumbs__link_main.breadcrumbs__link {
-
-  color: #fa7846;
-
-}
-
-
-
-.breadcrumbs__link {
-
-  font-size: 14px;
-
-  color: #000;
-
-  line-height: 17px;
-
-}
-
-
-
-.breadcrumbs__arrow {
-
-  margin-left: 6px;
-
-  margin-right: 9px;
-
-}
 
 
 
@@ -2148,6 +2095,8 @@
   line-height: 42px;
 
   font-size: 35px;
+  
+  margin-bottom: 30px;
 
 }
 
@@ -2856,6 +2805,7 @@
   font-size: 20px;
 
   line-height: 22px;
+  min-height: 40px;
 
 }
 
@@ -5471,11 +5421,6 @@ div.sharj__text-icon:not(:last-child) {
 
 
 
-.canvas-portrait .portraits-title {
-
-  white-space: nowrap;
-
-}
 
 
 
@@ -6109,11 +6054,11 @@ div.sharj__text-icon:not(:last-child) {
 
 .retouch__screen {
 
-  /* background: url(../../images/canvas/Union.svg); */
+  background: url(../../images/form-bg.jpg);
 
   background-repeat: no-repeat;
 
-  background-position: 0 50%;
+  background-position: 0 100%;
 
   background-size: 100% 1380px;
 
@@ -6121,6 +6066,17 @@ div.sharj__text-icon:not(:last-child) {
 
 
 
+}
+@media (max-width: 425px) {
+  .retouch__screen {
+    background: url(../../images/form-bgM.jpg);
+
+    background-repeat: no-repeat;
+  
+    background-position: 0 100%;
+  
+    background-size: 100% 1380px;
+  }
 }
 
 .form-bg {
@@ -6280,7 +6236,7 @@ div.sharj__text-icon:not(:last-child) {
 
 
 .composition__screen {
-
+  padding-bottom: 16px;
   overflow: hidden;
 
 }

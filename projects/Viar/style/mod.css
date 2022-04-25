@@ -1249,7 +1249,7 @@ span.hint__text {
     text-align: right
 }
 
-.lozad {
+/* .lozad {
     opacity: 0
 }
 
@@ -1259,7 +1259,7 @@ span.hint__text {
 
 .fade.lozad[data-loaded=true] {
     opacity: 1
-}
+} */
 
 @media(max-width:1024px) {
     .sum__mod {

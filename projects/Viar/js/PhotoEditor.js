@@ -1344,7 +1344,7 @@ var PhotoEditor = function(options)
 	this.offset_cell_x = 0.0;
 	this.offset_cell_y = 0.0;
 	
-	this.Background_color = "#ffffff";	
+	this.Background_color = "#fbf2ea";	
 	
 	this.ColorCell = this.options.ColorCell; 
 	
@@ -1521,6 +1521,11 @@ PhotoEditor.prototype.setBackground = function(img)
 
 
 
+PhotoEditor.prototype.setBackgroundColor = function(color)
+{
+	this.Background_color = color;
+	this.DoChange('editor');	
+}
 
 
 
@@ -3352,7 +3357,8 @@ PhotoEditor.prototype.InitResource = function(obj,type){
 					case 'background':
 					this.setBackground(obj.img); 
 					break;
-	
+					case 'color': 
+					this.setBackgroundColor($(obj).data('color'));
 					case 'smile':
 					var rect_smile = obj.element.getBoundingClientRect();
 					var center_smile = {
@@ -3381,3 +3387,10 @@ PhotoEditor.prototype.InitResource = function(obj,type){
 	
 }
 
+PhotoEditor.prototype.changeBackgroundColor = function(color){
+	
+	this.Background = undefined;
+
+	this.setBackgroundColor(color);
+	
+}

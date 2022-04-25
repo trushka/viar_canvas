@@ -16,6 +16,8 @@
     <link href="./style/main.min.css" rel="stylesheet">
     <link href="./style/media.css" rel="stylesheet">
     <link rel="stylesheet" href="style/overall/overall.css">
+    <link rel="stylesheet" href="style/collage.css">
+    <link rel="stylesheet" href="style/collage-media.css">
 </head>
 
 <body class="vz-art load">
@@ -430,178 +432,64 @@
         <section class="portraits">
             <div class="portraits-wrap">
                 <div class="portraits-slider">
-                    <div class="portraits-slide">
-                        <picture>
-                            <source type="image/png" media="(max-width: 700px)" srcset="./images/slider/slide-mob-1.jpg" />
-                            <img class="portraits-bg" src="./images/slider/slide-1.jpg" alt="img" loading="eager" />
-                        </picture>
-
-                        <div class="section-frame">
-                            <div class="portraits-info">
-                                <div class="portraits-heading">
-                                    <h1 class="portraits-title">
-                                        <span>Портреты</span>
-                                        по фото на заказ
-                                    </h1>
-                                    <p>Оригинальный подарок, который точно оценят, с доставкой в любой город</p>
-                                </div>
-                                <div class="portraits-btn">
-                                    <a href="#" class="js-popup-photo">Отправить фото для портрета </a>
-                                    <a href="#" class="portraits-btn__style">Смотреть стили потретов </a>
-                                </div>
-                                <div class="portraits-gift">
+                    <div class="portraits-slide sl-slider">
+                        
+                        <div class="m-screen-slide">
+                            <div class="pmain__screen">                                
+                                <picture>
+                                    <source srcset="images/slider/portret-slider1.webp" type="image/webp">
+                                    <source srcset="images/slider/portret-slider1.jpg" type="image/jpeg">
+                                    <img width="1920" height="900" src="images/slider/portret-slider1.jpg" alt="Viar Image">
+                                </picture>
+                                <div class="pm-object">                            
                                     <picture>
-                                        <source srcset="./images/gift.webp" type="image/webp" />
-                                        <source srcset="./images/gift.png" />
-                                        <img src="./images/gift.png" class="gift-photo" alt="img" loading="lazy" width="85" height="51" />
+                                        <img width="550" height="600" src="images/objects/object1.svg" alt="Viar Image">
                                     </picture>
-                                    <svg class="gift-photo_mob">
-                                        <use xlink:href="sprite.svg#gift"></use>
-                                    </svg>
-                                    <p><b>Эксклюзивная упаковка + Доставка</b> в подарок</p>
-                                    <svg class="portraits-gift__arrow">
-                                        <use xlink:href="sprite.svg#arrow"></use>
-                                    </svg>
+                                    <div class="pmo-block pmo-block1">
+                                        <p>Любое каличество <strong>Ваших правок -бесплатно!</strong></p>
+                                        <img src="images/wing.svg" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="portraits-arrow">
-                                <a href="#" class="portraits-prev" aria-label="portrait prev">
-                                    <i class="fa-arrow-prev"></i>
-                                </a>
-                                <a href="#" class="portraits-next" aria-label="portrait next">
-                                    <i class="fa-arrow-next"></i>
-                                </a>
+                              <div class="mp-m-bg">
+                                <picture>
+                                  <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.webp" type="image/webp">
+                                  <source media="(max-width: 520px)" srcset="images/collage/hero-imgM.jpg" type="image/jpeg">
+                                  <img width="520" height="400" src="images/collage/hero-imgM.jpg" alt="Viar Image">
+                                </picture>
+                              </div>
+                              <div class="mp__inner">
+                                <div class="section-frame">
+                                  <h2 class="portraits-title mp-title">
+                                    <span>Портреты</span> по 
+                                    фото на заказ
+                                  </h2>
+                                  <div class="mp__inner--list">
+                                    <div class="mp__list--item">
+                                      <span><strong>10 стилей</strong> обработки Вашей фотографии!</span>
+                                    </div>
+                                    <div class="mp__list--item">
+                                      <span><strong>100 лет гарнтии</strong> на яркость и прочность материалов!</span>
+                                    </div>
+                                    <div class="mp__list--item">
+                                      <span><strong>7 лет на европейском рынке,</strong> работаем для Вас!</span>
+                                    </div>
+                                  </div>
+                                  <div class="portraits-btn mp-btn">
+                                    <a href="#generator" class="js-popup-photo-header" tabindex="-1">Заказать</a>
+                                  </div>
+                    
+                                </div>
+                              </div>
+                              <div class="absolute-elements">
+                                <div class="portrait-gift">
+                                  <img loading="lazy" width="149" height="138" src="images/collage/gift.svg" alt="Viar Image">
+                                  <p> <span>Бесплатная</span> подарочная упаковка</p>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
 
-                    <article class="portraits-slide">
-                        <picture>
-                            <source type="image/png" media="(max-width: 700px)" srcset="./images/slider/slide-mob-1.jpg" />
-                            <img class="portraits-bg" src="./images/slider/slide-1.jpg" alt="img" loading="lazy" />
-                        </picture>
-
-                        <div class="section-frame">
-                            <div class="portraits-info">
-                                <div class="portraits-heading">
-                                    <h2 class="portraits-title"><span>Портреты</span> по фото на заказ</h2>
-                                    <p>Оригинальный подарок, который точно оценят, с доставкой в любой город</p>
-                                </div>
-                                <div class="portraits-btn">
-                                    <a href="#" class="js-popup-photo">Отправить фото для портрета </a>
-                                    <a href="#" class="portraits-btn__style">Смотреть стили потретов </a>
-                                </div>
-                                <div class="portraits-gift">
-                                    <picture>
-                                        <source srcset="./images/gift.webp" type="image/webp" />
-                                        <source srcset="./images/gift.png" />
-                                        <img src="./images/gift.png" class="gift-photo" alt="img" loading="lazy" />
-                                    </picture>
-                                    <svg class="gift-photo_mob">
-                                        <use xlink:href="sprite.svg#gift"></use>
-                                    </svg>
-                                    <p><b>Эксклюзивная упаковка + Доставка</b> в подарок</p>
-                                    <svg class="portraits-gift__arrow">
-                                        <use xlink:href="sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="portraits-arrow">
-                                <a href="#" class="portraits-prev" aria-label="portrait prev">
-                                    <i class="fa-arrow-prev"></i>
-                                </a>
-                                <a href="#" class="portraits-next" aria-label="portrait next">
-                                    <i class="fa-arrow-next"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portraits-slide">
-                        <picture>
-                            <source type="image/png" media="(max-width: 700px)" srcset="./images/slider/slide-mob-1.jpg" />
-                            <img class="portraits-bg" src="./images/slider/slide-1.jpg" alt="img" loading="lazy" />
-                        </picture>
-
-                        <div class="section-frame">
-                            <div class="portraits-info">
-                                <div class="portraits-heading">
-                                    <h2 class="portraits-title">
-                                        <span>Портреты</span>
-                                        по фото на заказ
-                                    </h2>
-                                    <p>Оригинальный подарок, который точно оценят, с доставкой в любой город</p>
-                                </div>
-                                <div class="portraits-btn">
-                                    <a href="#" class="js-popup-photo">Отправить фото для портрета </a>
-                                    <a href="#" class="portraits-btn__style">Смотреть стили потретов </a>
-                                </div>
-                                <div class="portraits-gift">
-                                    <picture>
-                                        <source srcset="./images/gift.webp" type="image/webp" />
-                                        <source srcset="./images/gift.png" />
-                                        <img src="./images/gift.png" class="gift-photo" alt="img" loading="lazy" />
-                                    </picture>
-                                    <svg class="gift-photo_mob">
-                                        <use xlink:href="sprite.svg#gift"></use>
-                                    </svg>
-                                    <p><b>Эксклюзивная упаковка + Доставка</b> в подарок</p>
-                                    <svg class="portraits-gift__arrow">
-                                        <use xlink:href="sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="portraits-arrow">
-                                <a href="#" class="portraits-prev" aria-label="portrait prev">
-                                    <i class="fa-arrow-prev"></i>
-                                </a>
-                                <a href="#" class="portraits-next" aria-label="portrait next">
-                                    <i class="fa-arrow-next"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portraits-slide">
-                        <picture>
-                            <source type="image/png" media="(max-width: 700px)" srcset="./images/slider/slide-mob-1.jpg" />
-                            <img class="portraits-bg" src="./images/slider/slide-1.jpg" alt="img" loading="lazy" />
-                        </picture>
-                        <div class="section-frame">
-                            <div class="portraits-info">
-                                <div class="portraits-heading">
-                                    <h2 class="portraits-title"><span>Портреты</span> по фото на заказ</h2>
-                                    <p>Оригинальный подарок, который точно оценят, с доставкой в любой город</p>
-                                </div>
-                                <div class="portraits-btn">
-                                    <a href="#" class="js-popup-photo">Отправить фото для портрета </a>
-                                    <a href="#" class="portraits-btn__style">Смотреть стили потретов </a>
-                                </div>
-                                <div class="portraits-gift">
-                                    <picture>
-                                        <source srcset="./images/gift.webp" type="image/webp" />
-                                        <source srcset="./images/gift.png" />
-                                        <img src="./images/gift.png" class="gift-photo" alt="img" loading="lazy" />
-                                    </picture>
-                                    <svg class="gift-photo_mob">
-                                        <use xlink:href="sprite.svg#gift"></use>
-                                    </svg>
-                                    <p><b>Эксклюзивная упаковка + Доставка</b> в подарок</p>
-                                    <svg class="portraits-gift__arrow">
-                                        <use xlink:href="sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="portraits-arrow">
-                                <a href="#" class="portraits-prev" aria-label="portrait prev">
-                                    <i class="fa-arrow-prev"></i>
-                                </a>
-                                <a href="#" class="portraits-next" aria-label="portrait next">
-                                    <i class="fa-arrow-next"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
 
@@ -3531,8 +3419,353 @@
                 </div>
             </div>
         </div>
+        <div class="vz-art js-popup target-box popup-fit n-popup">
+            <div class="popup-fit--inner">
+                <i class="vz-art fa-close popup-close"></i>
+                <div class="popup-fit--title">
+                    Выберите подходящий для ВАС  
+                    <span>вариант заказа</span>!
+                </div>
+                <div class="popup-fit--content">
+                    <div class="p-fit-col">
+                        <h3>
+                            В быстром заказе можете выбрать:
+                        </h3>
+                        <ul>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Размер</span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Вид упаковки</span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Загрузить фото</span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Заказ в 1 минуту</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="top-btn">Быстрый заказ</a>
+                    </div>
+                    <div class="p-fit-img">
+                        <picture>
+                            <source media="(max-width: 700px)" srcset="images/canvas/canvasMin.webp" type="images/webp"> <source media="(max-width: 700px)" srcset="images/canvas/canvasMin.png">
+                            <source srcset="images/canvas/canvas.webp" type="images/webp">
+                            <source srcset="images/canvas/canvas.png">
+                            <img width="411" height="293" src="images/canvas/canvas.png" alt="">
+                          </picture>
+                    </div>
+                    <div class="p-fit-col">
+                        <h3>
+                            В детальном можете выбрать:
+                        </h3>
+                        <ul>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span><strong>Форму </strong></span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>3 варианта <strong>обработки фото</strong> </span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span><strong>Просмотр</strong>  макета / в интерьере</span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span><strong>Оформления</strong></span>
+                            </li>
+                            <li>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white"></circle>
+                                    <circle cx="15" cy="15" r="15" fill="#02BC4D"></circle>
+                                    <g clip-path="url(#clip0_32_1081)">
+                                        <path d="M13.6299 21.5823C13.3038 21.5823 12.9889 21.4596 12.748 21.2384L7.92171 16.8038C7.39128 16.3165 7.35661 15.4918 7.84393 14.9604C8.33218 14.4319 9.15593 14.3963 9.6873 14.8826L13.5455 18.4288L20.2283 11.0544C20.7119 10.5202 21.5375 10.4799 22.0717 10.9635C22.605 11.4471 22.6462 12.2717 22.1617 12.8059L14.597 21.155C14.3627 21.4118 14.0375 21.5654 13.6899 21.5823C13.6692 21.5823 13.6496 21.5823 13.6299 21.5823Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_32_1081">
+                                            <rect width="15" height="10.9571" fill="white" transform="translate(7.5 10.625)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Добавить <strong>комментарий, пожелания, понравившийся пример</strong></span>
+                            </li>
+                        </ul>
+                        <a href="#" class="top-btn">Детальный заказ</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/+37127044470" class="n-p-whatsapp">
+                    <img src="https://viarcanvas.com/images/premium-icon-whatsapp.svg" alt="">
+                    <p>связаться с нами сейчас</p>
+                </a>
+            </div>
+
+        </div>
+        <form class="vz-art js-popup target-box popup-why n-popup">
+            <div class="popup-why--inner">
+                <i class="vz-art fa-close popup-close"></i>
+                <div class="popup-why--title">
+                    <h2>Почему ВЫ уходите?</h2>                    
+                    <p>Выберите причину и мы сделаем все чтобы Вам помочь!</p>
+                </div>
+                <div class="popup-why--content">
+                    <ul>
+                        <li>
+                            <div class="vz-art popup-log-check js-checkbox">
+                                <span class="vz-art log-check">
+                                    <svg class="vz-art kviz-input__icon">
+                                        <use xlink:href="/sprite.svg#log"></use>
+                                    </svg>
+                                </span>
+                                <p>Не могу выбрать картину?</p>
+                                <span class="jcf-checkbox jcf-unchecked"><span></span><input type="checkbox" name="save" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vz-art popup-log-check js-checkbox">
+                                <span class="vz-art log-check">
+                                    <svg class="vz-art kviz-input__icon">
+                                        <use xlink:href="/sprite.svg#log"></use>
+                                    </svg>
+                                </span>
+                                <p>Не могу разобраться как заказать ?</p>
+                                <span class="jcf-checkbox jcf-unchecked"><span></span><input type="checkbox" name="save" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vz-art popup-log-check js-checkbox">
+                                <span class="vz-art log-check">
+                                    <svg class="vz-art kviz-input__icon">
+                                        <use xlink:href="/sprite.svg#log"></use>
+                                    </svg>
+                                </span>
+                                <p>Дорого. Как получить скидку ?</p>
+                                <span class="jcf-checkbox jcf-unchecked"><span></span><input type="checkbox" name="save" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vz-art popup-log-check js-checkbox">
+                                <span class="vz-art log-check">
+                                    <svg class="vz-art kviz-input__icon">
+                                        <use xlink:href="/sprite.svg#log"></use>
+                                    </svg>
+                                </span>
+                                <p>Маленький выбор оформленния  ?</p>
+                                <span class="jcf-checkbox jcf-unchecked"><span></span><input type="checkbox" name="save" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vz-art popup-log-check js-checkbox">
+                                <span class="vz-art log-check">
+                                    <svg class="vz-art kviz-input__icon">
+                                        <use xlink:href="/sprite.svg#log"></use>
+                                    </svg>
+                                </span>
+                                <p>Нет картины, которою я хочу</p>
+                                <span class="jcf-checkbox jcf-unchecked"><span></span><input type="checkbox" name="save" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="popup-why--img">
+                        <img src="img/p-why.svg" alt="">
+                    </div>
+                </div>
+                <a href="https://wa.me/+37127044470" class="n-p-whatsapp">
+                    <img src="https://viarcanvas.com/images/premium-icon-whatsapp.svg" alt="">
+                    <p>связаться с нами сейчас</p>
+                </a>
+            </div>
+
+        </form>
+        <form class="vz-art js-popup target-box popup-callback n-popup">
+            <div class="popup-callback--inner">
+                <i class="vz-art fa-close popup-close"></i>
+                <div class="popup-why--title">
+                    <h2>Как можно с ВАМИ связаться?</h2>                    
+                    <p>Мы постараемся решить Вашу проблему!</p>
+                </div>
+                <div class="popup-callback--content">
+                    <p>Введите свой номер телефона, 
+                        и мы поможем Вам во всем розобраться!</p>
+                       
+                        <div class="kviz-input">
+                            <div class="page-input__item phone-input">
+                                <div class="country-item country-item-active">
+                                    <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
+                                </div>
+                                <div class="country-list">
+                                    <div class="country-item">
+                                        <img src="./images/flag/lv.svg" alt="img" loading="lazy" />
+                                        <p>Латвия</p>
+                                        <span data-mask="+371 99 99-99-99" data-placeholder="+371 00 00-00-00">+371</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/lt.svg" alt="img" loading="lazy" />
+                                        <p>Литва</p>
+                                        <span data-mask="+370 999 9-99-99" data-placeholder="+370 000 0-00-00">+370</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/es.svg" alt="img" loading="lazy" />
+                                        <p>Эстония</p>
+                                        <span data-mask="+372 99 999-99-99" data-placeholder="+372 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/fl.svg" alt="img" loading="lazy" />
+                                        <p>Финляндия</p>
+                                        <span data-mask="+358 99 999-99-99" data-placeholder="+358 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/no.svg" alt="img" loading="lazy" />
+                                        <p>Норвегия</p>
+                                        <span data-mask="+47 99 999-99-99" data-placeholder="+47 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/pl.svg" alt="img" loading="lazy" />
+                                        <p>Польша</p>
+                                        <span data-mask="+48 99 999-99-99" data-placeholder="+48 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/ge.svg" alt="img" loading="lazy" />
+                                        <p>Германия</p>
+                                        <span data-mask="+49 99 999-99-99" data-placeholder="+49 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/da.svg" alt="img" loading="lazy" />
+                                        <p>Дания</p>
+                                        <span data-mask="+45 99 999-99-99" data-placeholder="+45 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/cz.svg" alt="img" loading="lazy" />
+                                        <p>Чехия</p>
+                                        <span data-mask="+420 99 999-99-99" data-placeholder="+420 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/se.svg" alt="img" loading="lazy" />
+                                        <p>Швеция</p>
+                                        <span data-mask="+46 99 999-99-99" data-placeholder="+46 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/nl.svg" alt="img" loading="lazy" />
+                                        <p>Нидерланды</p>
+                                        <span data-mask="+31 99 999-99-99" data-placeholder="+31 00 000-00-00">+359</span>
+                                    </div>
+                                    <div class="country-item">
+                                        <img src="./images/flag/be.svg" alt="img" loading="lazy" />
+                                        <p>Бельгия</p>
+                                        <span data-mask="+32 99 999-99-99" data-placeholder="+32 00 000-00-00">+359</span>
+                                    </div>
+                                </div>
+                                <input type="text" name="phone" class="input-mask input-counter" autocomplete="off" placeholder="+371" required="" />
+                                <svg class="kviz-input__icon">
+                                    <use xlink:href="sprite.svg#phone"></use>
+                                </svg>
+                            </div>
+                        </div> 
+                        <a href="#" class="top-btn">Отправить</a>
+                </div>
+                <a href="https://wa.me/+37127044470" class="n-p-whatsapp">
+                    <img src="https://viarcanvas.com/images/premium-icon-whatsapp.svg" alt="">
+                    <p>связаться с нами сейчас</p>
+                </a>
+            </div>
+
+        </form>
     </div>
 
+    <script src="js/custom.js" defer></script>
     <script src="js/script.js" defer></script>
     <script data-defdel="js/fancybox.js" defer></script>
     <script data-defdel="js/swal.js" defer></script>
