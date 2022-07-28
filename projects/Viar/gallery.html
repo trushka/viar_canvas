@@ -9,15 +9,20 @@
     <meta content="Описание" property="og:description">
     <meta content="https://siteurl.ru" property="og:url">
     <meta content="./images/logo.svg" property="og:image">
-    <title>Блог</title>
+    <title>Галерея</title>
     <link href="./images/fav.png" rel="shortcut icon" type="image/x-icon">
     <link href="https://url.com/" rel="alternate" hreflang="ru">
     <link href="./fonts/Trajan-Pro-3.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
     <link href="./style/main.min.css" rel="stylesheet">
     <link href="./style/media.css" rel="stylesheet">
     <link rel="stylesheet" href="style/overall/overall.css">
-    <link rel="stylesheet" href="style/blog.css">
-    <link rel="stylesheet" href="style/blog-media.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/gallery-media.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 </head>
 
 <body class="vz-art load blog-frame">
@@ -443,7 +448,7 @@
                                 d="M0.24775 1.4341C0.180786 1.50106 0.147304 1.57807 0.147304 1.66513C0.147304 1.75218 0.180786 1.82919 0.24775 1.89615L4.1953 5.8437L0.247751 9.79124C0.180787 9.85821 0.147304 9.93522 0.147304 10.0223C0.147304 10.1093 0.180787 10.1863 0.247751 10.2533L0.749984 10.7555C0.816948 10.8225 0.893957 10.856 0.98101 10.856C1.06806 10.856 1.14507 10.8225 1.21204 10.7555L5.89284 6.07473C5.9598 6.00776 5.99329 5.93075 5.99329 5.8437C5.99329 5.75664 5.9598 5.67964 5.89284 5.61267L1.21204 0.931868C1.14507 0.864903 1.06806 0.831421 0.981009 0.831421C0.893956 0.831421 0.816947 0.864903 0.749983 0.931868L0.24775 1.4341Z"
                                 fill="#FA7846"></path>
                         </svg>
-                        <a href="#" class="breadcrumbs__link">Блог</a>
+                        <a href="#" class="breadcrumbs__link">Галерея</a>
                     </div>
                     <script type="text/javascript">
 
@@ -453,848 +458,300 @@
         </div>
 
 
-        <div class="blog__screen">
+
+        <div class="gallery-main">
             <div class="section-frame">
-                <div class="blog__screen--inner">
-                    <div class="blog__screen--main">
-                        <div class="blog__screen--image">
+                <div class="gallery-main__inner">
+                    <div class="gallery-main__content">
+                        <div class="gallery-main__title page-title">
+                            <span>Подберите стильную</span> <br>
+                            репродукцию  <br>
+                            <span>под свой вкус!</span>
+                        </div>
+                        <hr>
+                        <p>
+                            Стены, украшенные впечатляющими картинами на холсте, добавят уют вашему дому или офису!
+                        </p>
+                    </div>
+                    <div class="gallery-main__slider">
+                        <div class="gs-inner">
+                            <div class="g-m-slider">
+                                <picture>
+                                    <source srcset="images/gallery/1.webp" type="image/webp">
+                                    <source srcset="images/gallery/1.jpg" type="image/jpeg">
+                                    <img width="575" height="530" src="images/gallery/1.jpg" alt="ViarCanvas">
+                                </picture>
+                                <a href="#" class="g-btn">Перейти в категорию</a>
+                            </div>
+                            <div class="g-m-slider">
+                                <picture>
+                                    <source srcset="images/gallery/2.webp" type="image/webp">
+                                    <source srcset="images/gallery/2.jpg" type="image/jpeg">
+                                    <img width="575" height="530" src="images/gallery/2.jpg" alt="ViarCanvas">
+                                </picture>
+                                <a href="#" class="g-btn">Перейти в категорию</a>
+                            </div>
+                            <div class="g-m-slider">
+                                <picture>
+                                    <source srcset="images/gallery/3.webp" type="image/webp">
+                                    <source srcset="images/gallery/3.jpg" type="image/jpeg">
+                                    <img width="575" height="530" src="images/gallery/3.jpg" alt="ViarCanvas">
+                                </picture>
+                                <a href="#" class="g-btn">Перейти в категорию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="category-main">
+            <div class="section-frame">
+                <div class="category-main__inner">
+                    <div class="category-main__title-row">
+                        <div class="category-main__title page-title">
+                            Категории
+                        </div>
+                        <p>Более 1000 картин разных стилев и жанров от ViarCanvas!</p>
+                    </div>
+                    <div class="g-category-slider ccs-slider">
+                        <div class="g-category-slide">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="images/blog/1min.jpg" type="image/jpeg">
-                                <source srcset="images/blog/1.jpg" type="image/jpeg">
-                                <img src="images/blog/1.jpg" alt="">
+                                <source srcset="images/gallery/4.webp" type="image/webp">
+                                <source srcset="images/gallery/4.jpg" type="image/jpeg">
+                                <img width="433" height="583" src="images/gallery/4.jpg" alt="ViarCanvas">
                             </picture>
-                        </div>
-                        <div class="blog__screen--content">
-                            <p>Портрет</p>
-                            <div class="blog__screen--title">
-                                Портрет — частичка души на полотне. О качестве портрета.
-                            </div>
-                            <div class="blog__screen--text">
-                                <p>
-                                    Мы расширяли нашу команду и выходили на новые рынки, разрабатывали новые технологии,
-                                    запускали новые устройства и даже производство семя ..
+                            <div class="g-c-slide__inner">
+                                <div class="gcs-title">
+                                    Модульные <br> картины
+                                </div>
+                                <p>Модульные изображения (картины, фотографии) — продукт творческого взаимодействия художника и заказчика.
                                 </p>
-                            </div>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="blog__screen--sidebar">
-                        <div class="blog__sidebar--title">
-                            Популярное
-                        </div>
-                        <div class="blog__sidebar--content">
-                            <a href="#" class="blog__sidebar--item">
-                                <p>Канвас</p>
-                                <div class="blog__s-title">
-                                    Фотокартина – лучший подарок родителям
-                                </div>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="blog__sidebar--item">
-                                <p>Канвас</p>
-                                <div class="blog__s-title">
-                                    Фотокартина – лучший подарок родителям
-                                </div>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="blog__sidebar--item">
-                                <p>Канвас</p>
-                                <div class="blog__s-title">
-                                    Фотокартина – лучший подарок родителям
-                                </div>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="blog__sidebar--item">
-                                <p>Канвас</p>
-                                <div class="blog__s-title">
-                                    Фотокартина – лучший подарок родителям
-                                </div>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="ellipse ellipse_black ellipse_top">
-            <img width="1374" height="99" src="https://viarcanvas.com/images/icon/ellipse-black.svg" alt="img"
-                loading="lazy">
-        </div>
-
-        <div class="newone__screen">
-            <div class="section-frame">
-                <div class="newone__screen--inner">
-                    <div class="newone-title page-title">
-                        Новое
-                    </div>
-                    <div class="newone-content">
-                        <div class="newone-slider">
-                            <div class="newone-slider--inner">
-                                <div class="newone-slide">
-                                    <div class="newone-slide-img">
-                                        <picture>
-                                            <source srcset="images/blog/s1.jpg">
-                                            <img src="images/blog/s1.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="newone-slide-content">
-                                        <p>Канвас</p>
-                                        <h3>Фотокартина – лучший подарок родителям</h3>
-                                        <div class="text">
-                                            Мы расширяли нашу команду и выходили на новые рынки ..
-                                        </div>
-                                        <div class="blog__screen--info">
-                                            <div class="b-time">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                        stroke-width="1.3" stroke-miterlimit="10" />
-                                                    <path
-                                                        d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                                </svg>
-                                                <span>2 мин.</span>
-                                            </div>
-                                            <div class="b-view">
-                                                <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                        fill="#848484" />
-                                                    <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                                </svg>
-                                                <span>250</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="newone-slide">
-                                    <div class="newone-slide-img">
-                                        <picture>
-                                            <source srcset="images/blog/s2.jpg">
-                                            <img src="images/blog/s2.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="newone-slide-content">
-                                        <p>Канвас</p>
-                                        <h3>Фотокартина – лучший подарок родителям</h3>
-                                        <div class="text">
-                                            Мы расширяли нашу команду и выходили на новые рынки ..
-                                        </div>
-                                        <div class="blog__screen--info">
-                                            <div class="b-time">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                        stroke-width="1.3" stroke-miterlimit="10" />
-                                                    <path
-                                                        d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                                </svg>
-                                                <span>2 мин.</span>
-                                            </div>
-                                            <div class="b-view">
-                                                <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                        fill="#848484" />
-                                                    <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                                </svg>
-                                                <span>250</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="newone-slide">
-                                    <div class="newone-slide-img">
-                                        <picture>
-                                            <source srcset="images/blog/s3.jpg">
-                                            <img src="images/blog/s3.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="newone-slide-content">
-                                        <p>Канвас</p>
-                                        <h3>Фотокартина – лучший подарок родителям</h3>
-                                        <div class="text">
-                                            Мы расширяли нашу команду и выходили на новые рынки ..
-                                        </div>
-                                        <div class="blog__screen--info">
-                                            <div class="b-time">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                        stroke-width="1.3" stroke-miterlimit="10" />
-                                                    <path
-                                                        d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                                </svg>
-                                                <span>2 мин.</span>
-                                            </div>
-                                            <div class="b-view">
-                                                <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                        fill="#848484" />
-                                                    <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                                </svg>
-                                                <span>250</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="newone-slide">
-                                    <div class="newone-slide-img">
-                                        <picture>
-                                            <source srcset="images/blog/s1.jpg">
-                                            <img src="images/blog/s1.jpg" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="newone-slide-content">
-                                        <p>Канвас</p>
-                                        <h3>Фотокартина – лучший подарок родителям</h3>
-                                        <div class="text">
-                                            Мы расширяли нашу команду и выходили на новые рынки ..
-                                        </div>
-                                        <div class="blog__screen--info">
-                                            <div class="b-time">
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                        stroke-width="1.3" stroke-miterlimit="10" />
-                                                    <path
-                                                        d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                                </svg>
-                                                <span>2 мин.</span>
-                                            </div>
-                                            <div class="b-view">
-                                                <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                        fill="#848484" />
-                                                    <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                                </svg>
-                                                <span>250</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="newone-arrow">
-                                <a href="#" class="newone-prev" aria-label="newone-prev">
-                                    <i class="fa-arrow-prev"></i>
-                                </a>
-                                <a href="#" class="newone-next" aria-label="newone-next">
-                                    <i class="fa-arrow-next"></i>
+                                <p>Картины, которые мы собираем вручную. </p>
+                                <p>Генератор модулей с неограниченным количеством эскизов по вашей фотографии!</p>
+                                <p>Натяжка на высококачественный холст! </p>
+                                <a href="#">
+                                    Перейти в категорию
                                 </a>
                             </div>
                         </div>
-                        <div class="newone-headings">
-                            <h3>Наши рубрики</h3>
-                            <ul>
-                                <li><a href="#">Портрет</a></li>
-                                <li><a href="#">Канвас</a></li>
-                                <li><a href="#">Модульные картины</a></li>
-                                <li><a href="#">Картина маслом</a></li>
-                                <li><a href="#">Шарж</a></li>
-                                <li><a href="#">Картины</a></li>
-                                <li><a href="#">Дигитальный портрет</a></li>
-                            </ul>
+                        <div class="g-category-slide">
+                            <picture>
+                                <source srcset="images/gallery/5.webp" type="image/webp">
+                                <source srcset="images/gallery/5.jpg" type="image/jpeg">
+                                <img width="433" height="583" src="images/gallery/5.jpg" alt="ViarCanvas">
+                            </picture>
+                            <div class="g-c-slide__inner">
+                                <div class="gcs-title">
+                                    Модульные <br> картины
+                                </div>
+                                <p>Модульные изображения (картины, фотографии) — продукт творческого взаимодействия художника и заказчика.
+                                </p>
+                                <p>Картины, которые мы собираем вручную. </p>
+                                <p>Генератор модулей с неограниченным количеством эскизов по вашей фотографии!</p>
+                                <p>Натяжка на высококачественный холст! </p>
+                                <a href="#">
+                                    Перейти в категорию
+                                </a>
+                            </div>
+                        </div>
+                        <div class="g-category-slide">
+                            <picture>
+                                <source srcset="images/gallery/6.webp" type="image/webp">
+                                <source srcset="images/gallery/6.jpg" type="image/jpeg">
+                                <img width="433" height="583" src="images/gallery/6.jpg" alt="ViarCanvas">
+                            </picture>
+                            <div class="g-c-slide__inner">
+                                <div class="gcs-title">
+                                    Модульные <br> картины
+                                </div>
+                                <p>Модульные изображения (картины, фотографии) — продукт творческого взаимодействия художника и заказчика.
+                                </p>
+                                <p>Картины, которые мы собираем вручную. </p>
+                                <p>Генератор модулей с неограниченным количеством эскизов по вашей фотографии!</p>
+                                <p>Натяжка на высококачественный холст! </p>
+                                <a href="#">
+                                    Перейти в категорию
+                                </a>
+                            </div>
+                        </div>
+                        <div class="g-category-slide">
+                            <picture>
+                                <source srcset="images/gallery/4.webp" type="image/webp">
+                                <source srcset="images/gallery/4.jpg" type="image/jpeg">
+                                <img width="433" height="583" src="images/gallery/4.jpg" alt="ViarCanvas">
+                            </picture>
+                            <div class="g-c-slide__inner">
+                                <div class="gcs-title">
+                                    Модульные <br> картины
+                                </div>
+                                <p>Модульные изображения (картины, фотографии) — продукт творческого взаимодействия художника и заказчика.
+                                </p>
+                                <p>Картины, которые мы собираем вручную. </p>
+                                <p>Генератор модулей с неограниченным количеством эскизов по вашей фотографии!</p>
+                                <p>Натяжка на высококачественный холст! </p>
+                                <a href="#">
+                                    Перейти в категорию
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="blogwhy__screen">
+        <div class="category-pop">
             <div class="section-frame">
-                <div class="blogwhy__screen--inner">
-                    <div class="blogwhy-block">
-                        <p>Модульные картины</p>
-                        <div class="blogwhy-title page-title">
-                            Почему портрет должен быть у каждого человека?
-                        </div>
-                        <div class="text">
-                            <p>Мы расширяли нашу команду и выходили на новые рынки, разрабатывали новые технологии,
-                                запускали ..</p>
-                        </div>
-                        <div class="blog__screen--info">
-                            <div class="b-time">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                        stroke-width="1.3" stroke-miterlimit="10" />
-                                    <path
-                                        d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                        stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                </svg>
-                                <span>2 мин.</span>
-                            </div>
-                            <div class="b-view">
-                                <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                        fill="#848484" />
-                                    <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                </svg>
-                                <span>250</span>
+                <div class="category-pop__inner">
+                    <div class="category-pop__title page-title">
+                        Популярные Категории
+                    </div>
+                    <div class="category-pop--block">
+                        <div class="cp-tabs">
+                            <div class="cp-tabs-inner">
+                                <div class="cp-tab active">
+                                    Модульные картины
+                                </div>
+                                <div class="cp-tab">
+                                    Репродукции
+                                </div>
+                                <div class="cp-tab">
+                                    Фото картины
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blogwhy-block">
-                        <div class="blogwhy-block--row">
-                            <a href="#" class="blogwhy-block--row-item">
-                                <h3>Фотокартина – лучший подарок родителям</h3>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
+                        <div class="cp-blocks">
+                            <div class="cp-block">
+                                <div class="cp-block-inner">
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/7.webp" type="image/webp">
+                                                <source srcset="images/gallery/7.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/7.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Пейзаж</p>
                                     </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/8.webp" type="image/webp">
+                                                <source srcset="images/gallery/8.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/8.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Абстракция</p>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#" class="blogwhy-block--row-item">
-                                <h3>Художники — профессионалы</h3>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/9.webp" type="image/webp">
+                                                <source srcset="images/gallery/9.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/9.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>New York</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="blogwhy-block--row-item">
-                                <h3>Фотокартина – лучший подарок родителям</h3>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
+                            </div>
+                            <div class="cp-block hidden-block">
+                                <div class="cp-block-inner">
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/7.webp" type="image/webp">
+                                                <source srcset="images/gallery/7.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/7.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Пейзаж</p>
                                     </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/8.webp" type="image/webp">
+                                                <source srcset="images/gallery/8.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/8.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Абстракция</p>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#" class="blogwhy-block--row-item">
-                                <h3>Художники — профессионалы</h3>
-                                <div class="blog__screen--info">
-                                    <div class="b-time">
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                                stroke-width="1.3" stroke-miterlimit="10" />
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                        </svg>
-                                        <span>2 мин.</span>
-                                    </div>
-                                    <div class="b-view">
-                                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                                fill="#848484" />
-                                            <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                        </svg>
-                                        <span>250</span>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/9.webp" type="image/webp">
+                                                <source srcset="images/gallery/9.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/9.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>New York</p>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="cp-block hidden-block">
+                                <div class="cp-block-inner">
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/7.webp" type="image/webp">
+                                                <source srcset="images/gallery/7.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/7.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Пейзаж</p>
+                                    </div>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/8.webp" type="image/webp">
+                                                <source srcset="images/gallery/8.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/8.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>Абстракция</p>
+                                    </div>
+                                    <div class="cp-item">
+                                        <div class="cp-item-inner">
+                                            <div class="cp-item-inner-b">
+                                                <a href="#" class="mm-btn">Смотреть</a>
+                                            </div>
+                                            <picture>
+                                                <source srcset="images/gallery/9.webp" type="image/webp">
+                                                <source srcset="images/gallery/9.jpg" type="image/jpeg">
+                                                <img width="433" height="583" src="images/gallery/9.jpg" alt="ViarCanvas">
+                                            </picture>
+                                        </div>
+                                        <p>New York</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="#">Смотреть больше</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="bloghistory__screen">
-            <div class="section-frame">
-                <div class="bloghistory__screen--inner">
-                    <div class="bloghistory-title page-title">
-                        Истории людей
-                    </div>
-                    <div class="bloghistory-row">
-                        <a href="#" class="bloghistory-item">
-                            <div class="bloghistory-img">
-                                <picture>
-                                    <source srcset="images/blog/h1.jpg" type="image/jpeg">
-                                    <img src="images/blog/h1.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина – лучший подарок родителям</h3>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="bloghistory-item">
-                            <div class="bloghistory-img">
-                                <picture>
-                                    <source srcset="images/blog/h2.jpg" type="image/jpeg">
-                                    <img src="images/blog/h2.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина – лучший подарок родителям</h3>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="bloghistory-item">
-                            <div class="bloghistory-img">
-                                <picture>
-                                    <source srcset="images/blog/h3.jpg" type="image/jpeg">
-                                    <img src="images/blog/h3.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина – лучший подарок родителям</h3>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="bloghistory-item">
-                            <div class="bloghistory-img">
-                                <picture>
-                                    <source srcset="images/blog/h4.jpg" type="image/jpeg">
-                                    <img src="images/blog/h4.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина – лучший подарок родителям</h3>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="blogwant__screen">
-            <div class="section-frame">
-                <div class="blogwant__screen--inner">
-                    <div class="blogwant-title page-title">
-                        <span>Хотите ещё?</span> Тогда почитайте как создают шедевры.
-                    </div>
-                    <div class="blogwant-row">
-                        <a href="#" class="blogwant-item">
-                            <div class="blogwant-img">
-                                <picture>
-                                    <source srcset="images/blog/w1.jpg" type="image/jpeg">
-                                    <img src="images/blog/w1.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина — лучший подарок родителям</h3>
-                            <p>Мы расширяли нашу команду и выходили на новые рынки, разрабатывали ..</p>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="blogwant-item">
-                            <div class="blogwant-img">
-                                <picture>
-                                    <source srcset="images/blog/w2.jpg" type="image/jpeg">
-                                    <img src="images/blog/w2.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина — лучший подарок родителям</h3>
-                            <p>Мы расширяли нашу команду и выходили на новые рынки, разрабатывали ..</p>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="blogwant-item">
-                            <div class="blogwant-img">
-                                <picture>
-                                    <source srcset="images/blog/w3.jpg" type="image/jpeg">
-                                    <img src="images/blog/w3.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина — лучший подарок родителям</h3>
-                            <p>Мы расширяли нашу команду и выходили на новые рынки, разрабатывали ..</p>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="blogwant-item">
-                            <div class="blogwant-img">
-                                <picture>
-                                    <source srcset="images/blog/w4.jpg" type="image/jpeg">
-                                    <img src="images/blog/w4.jpg" alt="">
-                                </picture>
-                            </div>
-                            <h3>Фотокартина — лучший подарок родителям</h3>
-                            <p>Мы расширяли нашу команду и выходили на новые рынки, разрабатывали ..</p>
-                            <div class="blog__screen--info">
-                                <div class="b-time">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.12854 4.15771V7.82557L9.72854 10.472" stroke="#848484"
-                                            stroke-width="1.3" stroke-miterlimit="10" />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            stroke="#848484" stroke-width="1.3" stroke-miterlimit="10" />
-                                    </svg>
-                                    <span>2 мин.</span>
-                                </div>
-                                <div class="b-view">
-                                    <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1 6.47326L0.433212 6.15506L0.263953 6.45655L0.419355 6.76541L1 6.47326ZM18 6.49126L18.5668 6.80946L18.736 6.50797L18.5806 6.19911L18 6.49126ZM9.3399 12V12.65V12ZM1.56679 6.79146C2.06301 5.90756 3.05392 4.60883 4.45169 3.53722C5.84491 2.46911 7.61018 1.65 9.67327 1.65V0.35C7.25111 0.35 5.21515 1.31384 3.66074 2.50552C2.1109 3.69371 1.00779 5.1316 0.433212 6.15506L1.56679 6.79146ZM9.67327 1.65C13.7962 1.65 16.5054 4.96699 17.4194 6.78341L18.5806 6.19911C17.5752 4.20083 14.5208 0.35 9.67327 0.35V1.65ZM17.4332 6.17306C16.9358 7.05907 15.947 8.36696 14.5524 9.44697C13.1621 10.5236 11.401 11.35 9.3399 11.35V12.65C11.7641 12.65 13.7976 11.6757 15.3483 10.4748C16.8947 9.27727 17.9934 7.8308 18.5668 6.80946L17.4332 6.17306ZM9.3399 11.35C5.21905 11.35 2.49604 8.00044 1.58064 6.18111L0.419355 6.76541C1.42332 8.76078 4.49024 12.65 9.3399 12.65V11.35Z"
-                                            fill="#848484" />
-                                        <circle cx="9.5" cy="6.5" r="1.5" fill="#848484" />
-                                    </svg>
-                                    <span>250</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="discount__screen">
-            <div class="section-frame">
-                <div class="discount__screen--inner">
-                    <div class="discount-title page-title">
-                        Картины со скидками
-                    </div>
-                    <div class="discount-row">
-                        <a href="#" class="discount-item">
-                            <div class="discount-img">
-                                <picture>
-                                    <source srcset="images/blog/d1.jpg" type="image/jpeg">
-                                    <img src="images/blog/d1.jpg" alt="">
-                                </picture>
-                            </div>
-                            <p>Скидка -35%</p>
-                            <h4>Фотокартина — лучший подарок родителям</h4>
-                        </a>
-                        <a href="#" class="discount-item">
-                            <div class="discount-img">
-                                <picture>
-                                    <source srcset="images/blog/d2.jpg" type="image/jpeg">
-                                    <img src="images/blog/d2.jpg" alt="">
-                                </picture>
-                            </div>
-                            <p>Скидка -35%</p>
-                            <h4>Фотокартина — лучший подарок родителям</h4>
-                        </a>
-                        <a href="#" class="discount-item">
-                            <div class="discount-img">
-                                <picture>
-                                    <source srcset="images/blog/d3.jpg" type="image/jpeg">
-                                    <img src="images/blog/d3.jpg" alt="">
-                                </picture>
-                            </div>
-                            <p>Скидка -35%</p>
-                            <h4>Фотокартина — лучший подарок родителям</h4>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1304,34 +761,315 @@
             <img alt="img" src="https://www.viarcanvas.com/theme/viar/images/icon/ellipse-whete.svg" decoding="async" height="99" width="1374">
         </div>
 
-        <div class="blogsoc__screen">
+        <div class="bestseller-main">
             <div class="section-frame">
-                <div class="blogsoc__screen--inner">
-                    <div class="blogsoc-title page-title">
-                        наши соц. сети
+                <div class="bestseller-main__inner">
+                    <div class="bs-title page-title">
+                        Наши Бестселлеры
                     </div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <svg width="19" height="39" viewBox="0 0 19 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4.32938 7.69898C4.32938 8.67696 4.32938 13.0421 4.32938 13.0421H0.39209V19.5756H4.32938V38.9911H12.4174V19.5762H17.8449C17.8449 19.5762 18.3532 16.4434 18.5996 13.018C17.8931 13.018 12.448 13.018 12.448 13.018C12.448 13.018 12.448 9.21697 12.448 8.55073C12.448 7.88304 13.3298 6.98492 14.2014 6.98492C15.0714 6.98492 16.9075 6.98492 18.6081 6.98492C18.6081 6.09536 18.6081 3.02176 18.6081 0.183105C16.3378 0.183105 13.755 0.183105 12.6165 0.183105C4.12946 0.182654 4.32938 6.72272 4.32938 7.69898Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.848145 8.55908C0.848145 4.14081 4.42987 0.559082 8.84815 0.559082H24.5281C28.9464 0.559082 32.5281 4.1408 32.5281 8.55908V24.2391C32.5281 28.6574 28.9464 32.2391 24.5281 32.2391H8.84815C4.42987 32.2391 0.848145 28.6574 0.848145 24.2391V8.55908ZM16.6881 22.1991C19.8913 22.1991 22.4881 19.6023 22.4881 16.3991C22.4881 13.1958 19.8913 10.5991 16.6881 10.5991C13.4848 10.5991 10.8881 13.1958 10.8881 16.3991C10.8881 19.6023 13.4848 22.1991 16.6881 22.1991ZM16.6881 25.1991C21.5482 25.1991 25.4881 21.2592 25.4881 16.3991C25.4881 11.539 21.5482 7.59906 16.6881 7.59906C11.828 7.59906 7.88807 11.539 7.88807 16.3991C7.88807 21.2592 11.828 25.1991 16.6881 25.1991ZM25.4881 9.3591C26.4601 9.3591 27.2481 8.57112 27.2481 7.5991C27.2481 6.62708 26.4601 5.8391 25.4881 5.8391C24.5161 5.8391 23.7281 6.62708 23.7281 7.5991C23.7281 8.57112 24.5161 9.3591 25.4881 9.3591Z" fill="white"/>
-                                </svg>                                    
-                            </a>
-                        </li>
-                    </ul>
-                    <p>Откуда которое обстоятельства действительно ни никто которое заниматься постигают собой зодчим возжаждал. Вы но нет по которого приносило а презирает отвергает никого какими я откуда представление или: потому лишь именно никого или перед. Или воспользоваться такого а: по мог наслаждению и картину, равно с&nbsp;&mdash; из-за неприятностей перед несло потому. Человек людей никого счастливой примером и страдание, неприятностей этот поняли страдание такие. Пользы страдание ни разъясню поняли разумно счастливой картину. обстоятельства приносило наслаждению я, приносило когда раз что умеет по немалое eсли. Открывший возжаждал с если человек равно восхваляющих мог иной того страдания.</p>
+                    <div class="bs-slider ccs-slider">
+                        <div class="bs-item bs-dc">
+                            <div class="bs-item-wrapper">
+                                <div class="bs-discount">
+                                    -50 %
+                                </div>
+                                <div class="bs-item-inner">
+                                    <picture>
+                                        <source srcset="images/gallery/10.webp" type="image/webp">
+                                        <source srcset="images/gallery/10.jpg" type="image/jpeg">
+                                        <img width="430" height="396" src="images/gallery/10.jpg" alt="ViarCanvas">
+                                    </picture>                                    
+                                    <div class="bs-item-content">
+                                        <p class="bs-price"><span>15€</span><span>30€</span></p>
+                                        <p class="bs-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"/>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Модульная картина — <br> Лавандовое поле</p>
+                        </div>
+                        <div class="bs-item bs-dc">
+                            <div class="bs-item-wrapper">
+                                <div class="bs-discount">
+                                    -50 %
+                                </div>
+                                <div class="bs-item-inner">
+                                    <picture>
+                                        <source srcset="images/gallery/11.webp" type="image/webp">
+                                        <source srcset="images/gallery/11.jpg" type="image/jpeg">
+                                        <img width="430" height="396" src="images/gallery/11.jpg" alt="ViarCanvas">
+                                    </picture>                                    
+                                    <div class="bs-item-content">
+                                        <p class="bs-price"><span>15€</span><span>30€</span></p>
+                                        <p class="bs-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"/>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Репродукция — “Рождение Венеры” <br> Сандро Боттичелли <br> (1445–1510)</p>
+                        </div>
+                        <div class="bs-item bs-dc">
+                            <div class="bs-item-wrapper">
+                                <div class="bs-discount">
+                                    -50 %
+                                </div>
+                                <div class="bs-item-inner">
+                                    <picture>
+                                        <source srcset="images/gallery/12.webp" type="image/webp">
+                                        <source srcset="images/gallery/12.jpg" type="image/jpeg">
+                                        <img width="430" height="396" src="images/gallery/12.jpg" alt="ViarCanvas">
+                                    </picture>                                    
+                                    <div class="bs-item-content">
+                                        <p class="bs-price"><span>15€</span><span>30€</span></p>
+                                        <p class="bs-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"/>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Репродукция  — ВанГог <br> 
+                                “ Звездная ночь (1889)”</p>
+                        </div>
+                        <div class="bs-item bs-dc">
+                            <div class="bs-item-wrapper">
+                                <div class="bs-discount">
+                                    -50 %
+                                </div>
+                                <div class="bs-item-inner">
+                                    <picture>
+                                        <source srcset="images/gallery/10.webp" type="image/webp">
+                                        <source srcset="images/gallery/10.jpg" type="image/jpeg">
+                                        <img width="430" height="396" src="images/gallery/10.jpg" alt="ViarCanvas">
+                                    </picture>                                    
+                                    <div class="bs-item-content">
+                                        <p class="bs-price"><span>15€</span><span>30€</span></p>
+                                        <p class="bs-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"/>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Модульная картина — <br> Лавандовое поле</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
+        
+        <div class="ellipse rotated-ell">
+            <img alt="img" src="https://www.viarcanvas.com/theme/viar/images/icon/ellipse-whete.svg" decoding="async" height="99" width="1374">
+        </div>
+
+
+        <div class="trybuy-main">
+            <div class="section-frame">
+                <div class="trybuy-main__inner">
+                    <div class="trybuy-title page-title">
+                        Успей купить!
+                    </div>
+                    <div class="category-pop--block">
+                        <div class="cp-tabs">
+                            <div class="cp-tabs-inner">
+                                <div class="cp-tab active">
+                                    Модульные картины
+                                </div>
+                                <div class="cp-tab">
+                                    Репродукции
+                                </div>
+                                <div class="cp-tab">
+                                    Фото картины
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cp-blocks">
+                            <div class="cp-block">
+                                <div class="cp-v">
+                                    <div class="cp-v_img">
+                                        <div class="bs-discount">
+                                            -50 %
+                                        </div>
+                                        <picture>
+                                            <source srcset="images/gallery/13.webp" type="image/webp">
+                                            <source srcset="images/gallery/13.jpg" type="image/jpeg">
+                                            <img width="430" height="535" src="images/gallery/13.jpg" alt="ViarCanvas">
+                                        </picture>  
+                                    </div>
+                                    <div class="cp-v_content">
+                                        <p class="cp-v-text">До конца акции осталось:</p>
+                                        <div class="timer">
+                                            <div class="day">
+                                                Дн.
+                                            </div>
+                                            <div class="hour">
+                                                Час.
+                                            </div>
+                                            <div class="minute">
+                                                Мин.
+                                            </div>
+                                            <div class="seconds">
+                                                Сек.
+                                            </div>
+                                        </div>
+                                        <div class="cp-v-title">
+                                            Модульная картина “Розы” 
+                                        </div>
+                                        <p class="cp-v-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"></path>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <p class="cp-v-price"><span>15€</span><span>30€</span></p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cp-block hidden-block">
+                                <div class="cp-v">
+                                    <div class="cp-v_img">
+                                        <div class="bs-discount">
+                                            -50 %
+                                        </div>
+                                        <picture>
+                                            <source srcset="images/gallery/13.webp" type="image/webp">
+                                            <source srcset="images/gallery/13.jpg" type="image/jpeg">
+                                            <img width="430" height="535" src="images/gallery/13.jpg" alt="ViarCanvas">
+                                        </picture>  
+                                    </div>
+                                    <div class="cp-v_content">
+                                        <p class="cp-v-text">До конца акции осталось:</p>
+                                        <div class="timer">
+                                            <div class="day">
+                                                Дн.
+                                            </div>
+                                            <div class="hour">
+                                                Час.
+                                            </div>
+                                            <div class="minute">
+                                                Мин.
+                                            </div>
+                                            <div class="seconds">
+                                                Сек.
+                                            </div>
+                                        </div>
+                                        <div class="cp-v-title">
+                                            Модульная картина “Розы” 
+                                        </div>
+                                        <p class="cp-v-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"></path>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <p class="cp-v-price"><span>15€</span><span>30€</span></p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cp-block hidden-block">
+                                <div class="cp-v">
+                                    <div class="cp-v_img">
+                                        <div class="bs-discount">
+                                            -50 %
+                                        </div>
+                                        <picture>
+                                            <source srcset="images/gallery/13.webp" type="image/webp">
+                                            <source srcset="images/gallery/13.jpg" type="image/jpeg">
+                                            <img width="430" height="535" src="images/gallery/13.jpg" alt="ViarCanvas">
+                                        </picture>  
+                                    </div>
+                                    <div class="cp-v_content">
+                                        <p class="cp-v-text">До конца акции осталось:</p>
+                                        <div class="timer">
+                                            <div class="day">
+                                                Дн.
+                                            </div>
+                                            <div class="hour">
+                                                Час.
+                                            </div>
+                                            <div class="minute">
+                                                Мин.
+                                            </div>
+                                            <div class="seconds">
+                                                Сек.
+                                            </div>
+                                        </div>
+                                        <div class="cp-v-title">
+                                            Модульная картина “Розы” 
+                                        </div>
+                                        <p class="cp-v-size">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46667 5H5V5.46667V10.1333H5.93333V6.5933L9.80335 10.4633L10.4633 9.80335L6.5933 5.93333H10.1333V5H5.46667ZM18.5333 5H19V5.46667V10.1333H18.0667V6.5933L14.1966 10.4633L13.5367 9.80335L17.4067 5.93333H13.8667V5H18.5333ZM19 19H18.5333H13.8667V18.0667H17.4067L13.5367 14.1966L14.1966 13.5367L18.0667 17.4067V13.8667H19V18.5333V19ZM5.46667 19H5V18.5333V13.8667H5.93333V17.4067L9.80335 13.5367L10.4633 14.1966L6.5933 18.0667H10.1333V19H5.46667Z" fill="#FA7846"></path>
+                                            </svg>     
+                                            <span>100х70см</span>                                       
+                                        </p>
+                                        <p class="cp-v-price"><span>15€</span><span>30€</span></p>
+                                        <a href="#" class="mm-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="g-viar">
+            <div class="section-frame">
+                <div class="g-viar__inner">
+                    <div class="g-viar-title page-title">
+                       <b>ViarCanvas</b>  это:
+                    </div>
+                </div>
+                <div class="g-viar-blocks">
+                    <div class="g-viar-block">
+                        <img src="images/gallery/1.svg" alt="">
+                        <div class="g-viar-btitle">Доставка</div>
+                        <p>Доставка в любые 
+                            страны и города Европы!</p>
+                    </div>
+                    <div class="g-viar-block">
+                        <img src="images/gallery/2.svg" alt="">
+                        <div class="g-viar-btitle">Оплата</div>
+                        <p>3 способа удобной 
+                            и безопасной оплаты!</p>
+                    </div>
+                    <div class="g-viar-block">
+                        <img src="images/gallery/3.svg" alt="">
+                        <div class="g-viar-btitle">Гарантии</div>
+                        <p>Возврат и замена картины за наш счет!</p>
+                    </div>
+                    <div class="g-viar-block">
+                        <img src="images/gallery/4.svg" alt="">
+                        <div class="g-viar-btitle">Качество</div>
+                        <p>Яркость материалов 
+                            более 100 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -2546,10 +2284,11 @@
 
         </form>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/custom.js" defer></script>
     <script src="js/script.js" defer></script>
-    <script src="js/blog.js" defer></script>
+    <script src="js/gallery.js" defer></script>
     <script data-defdel="js/fancybox.js" defer></script>
     <script data-defdel="js/swal.js" defer></script>
 </body>
