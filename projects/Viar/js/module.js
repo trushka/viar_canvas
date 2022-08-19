@@ -151,7 +151,7 @@ $(document).ready(function() {
 
 
 
-var swiper = new Swiper(".mcard-navSlider-wrapper", {
+var mcardSwiper = new Swiper(".mcard-navSlider-wrapper", {
     spaceBetween: 18,
     slidesPerView: 5,
     freeMode: true,
@@ -161,10 +161,10 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
       prevEl: ".swiper-prev",
     },
   });
-  var swiper2 = new Swiper(".mcard-mainSlider-wrapper", {
+ new Swiper(".mcard-mainSlider-wrapper", {
     spaceBetween: 20,
     thumbs: {
-      swiper: swiper,
+      swiper: mcardSwiper,
     },
     navigation: {
       nextEl: ".swiper-next",
@@ -335,7 +335,7 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
 
 
 
-  var swiper3 = new Swiper(".similar-slider", {
+  new Swiper(".similar-slider", {
     spaceBetween: 15,
     slidesPerView: 2,
     navigation: {
@@ -367,7 +367,7 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
     });
   });
 
-  var swiper4 = new Swiper(".pp-list", {
+  new Swiper(".pp-list", {
     spaceBetween: 15,
     slidesPerView: 1,
     navigation: {
@@ -387,7 +387,7 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
     }
   });
 
-  var swiper5 = new Swiper(".cats-slider", {
+  new Swiper(".cats-slider", {
     spaceBetween: 20,
     slidesPerView: 1.1,
     navigation: {
@@ -430,7 +430,7 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
   });
 
 
-  var swiper = new Swiper(".rcardd-swiper", {
+  let rcarddSwiper = new Swiper(".rcardd-swiper", {
     spaceBetween: 20,
     slidesPerView: 3,
     freeMode: true,
@@ -440,10 +440,10 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
       prevEl: ".swiper-prev",
     },
   });
-  var swiper2 = new Swiper(".rcard-mainSlider-wrapper", {
+  new Swiper(".rcard-mainSlider-wrapper", {
     spaceBetween: 20,
     thumbs: {
-      swiper: swiper,
+      swiper: rcarddSwiper,
     },
     navigation: {
       nextEl: ".swiper-next",
@@ -457,18 +457,20 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
   });
 
 
-  var swiper7 = new Swiper(".rcardv-swiper", {
+  let rcardvSwiper = new Swiper(".rcardv-swiper", {
     spaceBetween: 20,
     slidesPerView: 3,
     freeMode: true,
     direction: 'vertical',
     navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
+      nextEl: ".rcm-block .swiper-next",
+      prevEl: ".rcm-block .swiper-prev",
     },
   });
 
-  var swiper8 = new Swiper(".photo-slider", {
+  rcarddSwiper.controller.control = this.rcardvSwiper;
+
+  new Swiper(".photo-slider", {
     spaceBetween: 20,
     slidesPerView: 1,
     navigation: {
@@ -485,13 +487,18 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
     }
   });
 
-  new Swiper(".interior-item__slider", {
+  let sSwiper1 = new Swiper(".interior-item__slider", {
     spaceBetween: 12,
-    slidesPerView: 3,
+    slidesPerView: 1.8,
     navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
+      nextEl: ".interior-item__slider_block .swiper-next",
+      prevEl: ".interior-item__slider_block .swiper-prev",
     },
+    breakpoints: {
+      525: {
+        slidesPerView: 3
+      }
+    }
   });
 
   $(document).on('click', '.mc-deliver', function(e) {
@@ -511,12 +518,13 @@ var swiper = new Swiper(".mcard-navSlider-wrapper", {
   })
 
 
-  $(document).on('click', '.frame-item', function(e) {
-    e.preventDefault();
-    $('.frame-item').removeClass('active');
-    $(this).addClass('active');
-  })
+  function mediaAction() {
+    if (mediaChecker('max', 991)) {
+      $('.mc-mainSlide').attr('href', '#');
+      $('.mc-mainSlide').removeAttr('data-fancybox')
+    }
+  }
+  mediaAction()
 
-  
 
 })

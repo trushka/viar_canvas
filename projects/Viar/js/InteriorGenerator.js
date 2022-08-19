@@ -583,6 +583,7 @@ InteriorGenerator.prototype.setPortrait = function(src,canvas_width,canvas_heigh
 			
 InteriorGenerator.prototype.setRam = function(src,ram_width = 0)
 {   
+
 	this.ram_width = ram_width;
 	this.portrait_width = (this.ram_width * 2) + this.portrait_canvas_width;	
 	this.portrait_height = (this.ram_width * 2) + this.portrait_canvas_height;

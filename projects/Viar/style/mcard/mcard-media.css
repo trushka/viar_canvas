@@ -6,6 +6,9 @@
   .mcard-slider__block {
     grid-gap: 15px;
   }
+  .rcard-row {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 1200px) {
   .mcard-row {
@@ -13,6 +16,9 @@
   }
   .mca-item:not(:last-child) {
     margin-bottom: 60px;
+  }
+  .mcard-rowb button {
+    max-width: 220px;
   }
 }
 @media (max-width: 1090px) {
@@ -71,6 +77,40 @@
   }
   .order-stage__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .rcm-block {
+    display: block;
+  }
+  .rcard-sl {
+    display: none;
+  }
+  .rcard-main__inner {
+    display: block;
+  }
+  .rcard-mode {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .subcontent .mcard-size a {
+    max-width: 330px;
+  }
+  .rc-row {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .rc-row .mc-search {
+    max-width: 100%;
+  }
+  .subcontent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .limits {
+    margin-bottom: 20px;
+  }
+  .frame-item p {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 
@@ -163,6 +203,41 @@
   .order-stage {
     padding-bottom: 90px;
   }
+  .frame-item {
+    max-width: 136px;
+    padding: 3px 7px;
+  }
+  .frame-item img {
+    max-width: 100%;
+  }
+  .rcard-frame .frame-js {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .frames-list {
+    grid-gap: 10px;
+  }
+  .rcard-frame__inner > a span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .rcard-frame__inner > a > picture img {
+    max-width: 120px;
+  }
+  .rcard-frame__inner > a svg {
+    margin-left: 10px;
+  }
+  .rcard-frame__inner,
+  .frame-wrapper {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .frame-block {
+    height: 377px;
+  }
+  .rcard-type-item img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .mcard-main {
@@ -175,6 +250,10 @@
   .pf-info li:not(:first-child) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .rcard-tab {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 @media (max-width: 525px) {
@@ -348,5 +427,109 @@
   .pf-title {
     font-size: 20px;
     line-height: 25px;
+  }
+  .mcard-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .rcard-mainSlider-wrapper {
+    padding: 0;
+  }
+  .rcard-mode {
+    margin-bottom: 20px;
+  }
+  .rcard-type-item {
+    padding: 2px 10px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .rcard-type-item img {
+    height: 74px;
+  }
+  .mcard-size a {
+    max-width: 100%;
+  }
+  .rcard-type > p,
+  .rcard-size > p,
+  .mcard-price__block p,
+  .subcontent > div > p,
+  .interior-select > P,
+  .rcard-frame > p,
+  .rcc-size p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .subcats-inner {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+  }
+  .subcats-inner span {
+    width: max-content;
+    white-space: nowrap;
+  }
+  .subcats {
+    overflow: hidden;
+  }
+  .rcc-view__inner {
+    padding-top: 0;
+    border: none;
+  }
+  .jcf-range-handle {
+    width: 14px;
+    height: 14px;
+  }
+  .main__input--wall,
+  .changeSm span {
+    font-size: 15px;
+  }
+  .interior-item__slider_block {
+    padding: 10px;
+  }
+  .range_box {
+    margin: 0;
+  }
+  .rcard-tab {
+    height: 35px;
+  }
+  .rcard-tabs {
+    margin-bottom: 15px;
+  }
+  .frame-item:hover .frame-info {
+    display: none;
+  }
+  .frames-list {
+    grid-template-columns: repeat(3, 136px);
+  }
+  .frame-item > .frame-js-popup {
+    display: none;
+  }
+  .frame-item > .frame-js-popup.mf-popup {
+    display: block;
+  }
+}
+
+
+
+@media (max-height: 1080px) and (max-width: 1500px) {
+  .rcard-type-item img {
+    max-height: 70px;
+  }
+  .mcard-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .mcard-title br {
+    display: none;
+  }
+  .mcard-rowb button {
+    height: 45px;
+  }
+  .mcard-price {
+    font-size: 25px;
+    line-height: 28px;
+
+  }
+  .rcc-view__inner {
+    padding-top: 20px;
   }
 }

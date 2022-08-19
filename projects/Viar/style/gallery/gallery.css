@@ -690,6 +690,35 @@ li.active .checkbox-item p span {
   cursor: pointer;
   pointer-events: none;
 }
+.radiomark {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFFAF3;
+  border: 1px solid #FA7846;
+  cursor: pointer;
+  pointer-events: none;
+}
+.checkbox-item label .radiomark:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 9.55px;
+  height: 9.55px;
+  display: none;
+  border-radius: 50%;
+  background: #FC8C5F;
+}
 .checkbox-item label .checkmark:after {
   content: "";
   position: absolute;
@@ -704,7 +733,8 @@ li.active .checkbox-item p span {
   height: 13px;
   display: none;
 }
-.checkbox-item label input:checked ~ .checkmark::after {
+.checkbox-item label input:checked ~ .checkmark::after,
+.checkbox-item label input:checked ~ .radiomark::after  {
   display: block;
 }
 
