@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+
+
+    
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+        var loadLater = document.querySelector('.loadLater');
+        var head = document.querySelector('head');
+        if(loadLater && head){
+            head.insertAdjacentHTML('beforeend', loadLater.innerHTML);
+        }
+    });
   function setPrice() {
     let s_price = $(".popup-photo input[name='new_price']").val();
     let c_price = $(".popup-photo input[name='new_people_count_price']").val();

@@ -112,6 +112,20 @@
     font-size: 10px;
     line-height: 16px;
   }
+  .rcard-mainSlider-wrapper .swiper-button {
+    display: flex;
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .rcard-mainSlider-wrapper .swiper-next {
+    right: 0;
+    left: unset;
+  }
+  .rcard-mainSlider-wrapper .swiper-prev {
+    left: 0;
+    right: unset;
+  }
 }
 
 @media (max-width: 768px) {

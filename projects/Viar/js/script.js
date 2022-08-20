@@ -917,7 +917,7 @@ $(".input-file_wrapper input").on("change", function () {
 window.onload = function() {
 
 
-
+	document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
 // $('img').each(function() {
