@@ -525,6 +525,6 @@ var mcardSwiper = new Swiper(".mcard-navSlider-wrapper", {
     }
   }
   mediaAction()
-
+  document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 })

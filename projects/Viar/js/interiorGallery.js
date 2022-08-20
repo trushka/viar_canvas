@@ -124,7 +124,6 @@
 
 	$(document).on('click', '.mc-navSLide', function() {
 		
-		console.log($(`.mc-navSLide`), document.querySelector('.mc-navSLide'))
 		let index = $(this).data('slider');
 		$('.mc-navSLide').removeClass('active')
 		$(`.mc-navSLide[data-slider="${index}"]`).addClass('active');
