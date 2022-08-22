@@ -1079,7 +1079,7 @@
   position: relative;
 }
 .rcard-interio canvas {
-  width: 100%;
+  /* width: 100%; */
 }
 .rcc-view__inner {
   padding-top: 40px;
