@@ -1,13 +1,14 @@
 $(document).ready(function () {
 
 
-  let gallerySlider = $(".gs-inner");
+  let gallerySlider = $(".gs-slider");
 
   gallerySlider.slick({
     infinite: false,
     slidesToShow: 1,
     arrows: false,
     dots: true,
+    fade: true,
     autoplay: true
   });
 

@@ -148,7 +148,7 @@
   .gallery-main__content p {
     margin: 0 auto;
   }
-  .gs-inner .slick-dots {
+  .gs-slider .slick-dots {
     right: 50%;
     transform: translateX(50%);
     bottom: -30px;
