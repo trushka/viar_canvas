@@ -235,6 +235,22 @@ var mcardSwiper = new Swiper(".mcard-navSlider-wrapper", {
 
 
 
+  $(document).on('click', '.rp-p-about li', function() {
+    $('.rp-p-about li').removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(document).on('click', '.alphabets li', function() {
+    $('.alphabets li').removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(document).on('click', '.rp-results li', function() {
+    $('.rp-results li').removeClass('active');
+    $(this).addClass('active');
+  })
+
+
   $(document).on('click', '.mc-js-filter > a', function(e) {
     e.preventDefault();
     $('.mc-js-filter ').removeClass('active')

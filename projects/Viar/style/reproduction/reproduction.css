@@ -131,6 +131,11 @@
 .rp-p-about li {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.rp-p-about li.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 .rp-p-about li:not(:last-child) {
     margin-bottom: 15px;
