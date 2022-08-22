@@ -1277,3 +1277,28 @@
   bottom: 0;
   transform: unset;
 }
+
+
+/*  */
+
+.cp-v-slider {
+  overflow: hidden;
+  max-width: 450px;
+  padding: 0 25px;
+  max-height: 535px;
+  position: relative;
+}
+
+.cp-v-slider .swiper-button {
+  top: 50%;
+  bottom: unset;
+  transform: translateY(-50%);
+}
+.cp-v-slider .swiper-next {
+  right: 0;
+  left: unset;
+}
+.cp-v-slider .swiper-prev {
+  left: 0;
+  right: unset;
+}

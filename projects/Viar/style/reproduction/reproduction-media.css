@@ -101,7 +101,7 @@
   .rp-century-row {
     flex-direction: column;
   }
-  
+
   .select-color {
     margin: 20px 0 0;
   }
@@ -182,6 +182,9 @@
   .rp-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .photo-rp-why {
+    margin-bottom: 90px;
+}
 }
 @media (max-width: 700px) {
   .reproduction {
@@ -281,6 +284,15 @@
     font-size: 15px;
     line-height: 142%;
   }
+  .photo-rp-why {
+    margin-bottom: 50px;
+  }
+  .rp-why-content > p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 130.4%;
+    margin-bottom: 20px;
+  }
   .rp-why__inner {
     padding: 25px 5px;
   }
@@ -375,7 +387,7 @@
   .rp-s-title__row {
     margin-bottom: 20px;
   }
-  
+
   .rp-nations .rp-results ul {
     column-count: 1;
   }

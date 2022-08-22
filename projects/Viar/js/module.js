@@ -542,6 +542,13 @@ var mcardSwiper = new Swiper(".mcard-navSlider-wrapper", {
   }
   mediaAction()
 
-  
+  new Swiper(".cp-v-slider", {
+    spaceBetween: 40,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    }
+  });
 
 })
