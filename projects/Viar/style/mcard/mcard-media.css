@@ -463,7 +463,7 @@
   .mcard-size a {
     max-width: 100%;
   }
-  .rcard-type > p,
+  .rcard-type-block > p,
   .rcard-size > p,
   .mcard-price__block p,
   .subcontent > div > p,
