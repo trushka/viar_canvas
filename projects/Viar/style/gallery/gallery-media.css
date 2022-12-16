@@ -244,12 +244,14 @@
     bottom: 0;
   }
   .cp-tabs::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    width: 2px;
+    height: 2px;
+    background: transparent;
   }
   .cp-tabs::-webkit-scrollbar-thumb {
-    width: 0;
-    height: 0;
+    width: 2px;
+    height: 2px;
+    background: #fa7846;
   }
   .cp-tabs-inner {
     display: flex;

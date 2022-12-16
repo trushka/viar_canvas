@@ -937,6 +937,14 @@
     padding-top: 110px;
   }
 
+  .breadcrumbs {
+    margin-bottom: 35px;
+  }
+
+  .breadcrumbs__link {
+    font-size: 10px;
+    line-height: 13px;
+  }
 
   .portrait__screen .section-frame {
     max-width: 100%;
@@ -1818,7 +1826,9 @@
     height: 450px;
   }
 
- 
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
 
   .portrait__screen .portraits-slide {
     padding-bottom: 65px;

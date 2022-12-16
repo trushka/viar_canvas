@@ -10785,9 +10785,10 @@ label > div.window-prompt {
     background: #fff;
     border-radius: 8px;
     padding: 5px 10px;
-    max-width: 250px;
-    width: fit-content;
-    min-width: 150px;
+    /* max-width: 250px; */
+    /* width: fit-content; */
+    /* min-width: 180px; */
+    /* white-space: nowrap; */
     display: none;
     position: absolute;
     top: 0;
@@ -10800,3 +10801,7 @@ label > div.window-prompt {
 /* .kviz-row-single .kviz-radio img:hover {
     display: block !important;
 } */
+
+#generator .tabs-content {
+max-width:100vw !important;
+}

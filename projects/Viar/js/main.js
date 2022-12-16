@@ -398,6 +398,8 @@ $(document).ready(function () {
       });
 
     newActiveTabContent.classList.remove("hidden-block");
+
+
   }
   // trigger for comments
   document.querySelectorAll(".about-tab").forEach((element) => {
@@ -411,7 +413,9 @@ $(document).ready(function () {
         ".about-tab",
         "active"
       );
-      // exampleSlider[0]?.slick?.refresh();
+
+      console.log('slider')
+      exampleSlider[0]?.slick?.refresh();
 
       return false;
     });
@@ -532,11 +536,8 @@ $(document).ready(function () {
     //   $(e).attr('width', `${$(e).width()}`);
     //   $(e).attr('height', `${$(e).height()}`);
     // })
-    setTimeout(()=>{
-      var bgPos = `${parseInt($('.retouch__blocks').height() + 600)}px`;
-      $('.form-bg').css({'top': bgPos, 'height': `${$('.retouch__inner').height()}px`})
-    })
-
+    var bgPos = `${parseInt($('.retouch__blocks').height() + 600)}px`;
+    $('.form-bg').css('top', bgPos)
 
     let whySharjHeight = $('.sharj-why__screen').height();
 

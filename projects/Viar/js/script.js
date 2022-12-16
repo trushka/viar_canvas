@@ -37,9 +37,6 @@ const observer = lozad();
 observer.observe();
 
 $(document).ready(function () {
-	$("body").removeClass("load");
-	var fileValid = $('.kviz').data('file');
-	var messegerValid = $('.kviz').data('messeger');
 	// AJAX отправка формы
 	// $(".submit-form").submit(function (e) {
 	// 	//e.preventDefault();
@@ -61,26 +58,7 @@ $(document).ready(function () {
 	// 	}*/
 	// });
 
-	$(".kviz").submit(function (e) {
-		e.preventDefault();
-		if (fileValid == false) {
-			swal({
-				title: fileValid,
-				icon: 'error',
-				confirmButtonText: 'Ок'
-			});
-		} else if (messegeValid == false) {
-			swal({
-				title: messegerValid,
-				icon: 'error',
-				confirmButtonText: 'Ок'
-			});
-		} else {
-			tabCounter++;
-			tabClick(tabCounter);
-			$('.kviz-item__title').hide();
-		}
-	});
+
 
 });
 
@@ -124,7 +102,7 @@ $(document).ready(function () {
 	// $(".input-mask").inputmask({ "mask": "+371 99 99-99-99" });
 
 	var mask = Maska.create('.input-mask', {
-		mask: '## ##-##-##'
+		mask: $('.input-mask').data('mask')
 	});
 
 	// Событие смены атрибута "checked" у стилизованных checkbox или radio
@@ -279,7 +257,7 @@ $(document).ready(function () {
 				});
 				$(".reviews-slide-box").height(highest);
 				console.log(highest);
-			}, 300)
+			}, 500)
 	   
 	
 	
@@ -337,6 +315,10 @@ $(document).ready(function () {
 		$(this).addClass('kviz-tab_active');
 		$('.tab-group').hide();
 		$('.tab-group[data-tab = ' + tab + ']').fadeIn();
+		let tabInd = tab == 2 ? 0 : 1;
+		let src = $(`#step${tabInd}_default`).data('img');
+		$(".kviz-item[data-step = " + tabCounter + "] .stock-full img").attr("src", src);
+		$(".kviz-item[data-step = " + tabCounter + "] .stock-full img").attr("srcset", src);
 	});
 
 	$('.box-radio').click(function (e) {
@@ -384,15 +366,26 @@ $(document).ready(function () {
 
 	$('.country-list .country-item').click(function () {
 		let photo = $(this).children('img').attr('src');
-		let mask = $(this).children('span').data('mask');
+		//let mask = $(this).children('span').data('mask');
 		let placeholder = $(this).children('span').data('placeholder');
+		let country = $(this).children('span').data('country');
 
 		$(".input-mask").val(' ');
 		$(".input-mask").attr('placeholder', placeholder);
+		if(country)
+		{
+			$(".input-mask").attr('data-country', country);
+		}
 		// $(".input-mask").inputmask({ "mask": mask });
-		$(".input-mask").Maska.mask({ "mask": mask });
+		// $(".input-mask").Maska.mask({ "mask": mask });
+		$('.input-mask').attr('data-mask', $(this).children('span').data('mask'));
 		$('.country-item-active').children('img').attr('src', photo);
 		$('.country-list').slideUp().toggleClass('country-list_active');
+
+		var mask = Maska.create('.input-mask', {
+			mask:  $(this).children('span').data('mask')
+		});
+
 	});
 
 
@@ -413,17 +406,42 @@ $(document).ready(function () {
 
 
 
-	if ($(window).width() < 700) {
-		$('.kviz-input_pc').remove();
-	} else {
-		$('.kviz-input_mob').remove();
-	}
+	// if ($(window).width() < 700) {
+	// 	$('.kviz-input_pc').remove();
+	// } else {
+	// 	$('.kviz-input_mob').remove();
+	// }
 
 	$('.kviz-messege__tab').click(function () {
 		$('.kviz-messege__tab').removeClass('kviz-messege__tab_active');
 		$(this).addClass('kviz-messege__tab_active');
 	});
 
+	
+	$("body").removeClass("load");
+	var fileValid = $('.kviz').data('file');
+	var messegerValid = $('.kviz').data('messeger');
+
+	$(".kviz").submit(function (e) {
+		e.preventDefault();
+		if (fileValid == false) {
+			swal({
+				title: fileValid,
+				icon: 'error',
+				confirmButtonText: 'Ок'
+			});
+		} else if (messegerValid == false) {
+			swal({
+				title: messegerValid,
+				icon: 'error',
+				confirmButtonText: 'Ок'
+			});
+		} else {
+			tabCounter++;
+			tabClick(tabCounter);
+			$('.kviz-item__title').hide();
+		}
+	});
 
 	$('.kviz-next').click(function (e) {
 		e.preventDefault();
@@ -453,6 +471,10 @@ $(document).ready(function () {
 		$(".kviz-item").hide();
 		$(".kviz-item[data-step = " + counter + "]").css("display", "flex").hide().fadeIn(700);
 		active = false;
+		let src = $(`#step${counter}_default`).data('img');
+		console.log( counter, $(".kviz-item[data-step = " + counter + "] .stock-full img"), src);
+		$(".kviz-item[data-step = " + counter + "] .stock-full img").attr("src", src);
+		$(".kviz-item[data-step = " + counter + "] .stock-full img").attr("srcset", src);
 	};
 
 

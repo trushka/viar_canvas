@@ -52,7 +52,7 @@
 		gen.maximum(canvas.parentElement.clientWidth,Math.max(700,canvas.parentElement.clientHeight));//максимальна область 
 	} 
 		
-	resize()
+		
 		
 	
 	$( window ).resize(function() {
@@ -229,7 +229,7 @@
 	}
 	
 	
-	window.gen = gen;
+
 
 })();
 

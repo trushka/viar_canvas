@@ -1,3 +1,8 @@
+#PhotoEditor canvas#canvas {
+max-width: 100% !important;
+    height: unset !important;
+}
+
 .portraits-heading h1,
 .portraits-heading h2,
 .portraits-title {
@@ -452,7 +457,7 @@
 
 .ellipse {
     padding-top: 25px;
-    margin-top: -65px;
+    margin-top: -100px;
     position: relative;
     z-index: 3
 }
@@ -536,7 +541,12 @@
     width: calc(100% + 30px);
     margin-left: -15px
 }
-
+@media (max-width: 525px) {
+    .examples-slider {
+        width: unset;
+        margin-left: unset;
+    }
+}
 .examples-slider .slick-list {
     padding-bottom: 35px
 }
@@ -562,9 +572,11 @@
     font-size: 15px;
     transition: .3s
 }
-
+.examples-about__slider .slick-slide {
+    margin: 0 7.5px;
+}
 .examples-slide {
-    margin: 0 15px;
+    /* margin: 0 15px; */
     color: #fff
 }
 
@@ -612,7 +624,7 @@
 }
 
 .examples-slide__photo:hover img {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .examples-size {
@@ -2643,3 +2655,5 @@
 .fancybox-thumbs__list a.fancybox-thumbs-active:before {
     opacity: 1
 }
+
+

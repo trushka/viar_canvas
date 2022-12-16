@@ -2421,12 +2421,14 @@ input[type=color]::-webkit-color-swatch {
     -ms-flex: 0 0 32%;
     flex: 0 0 32%;
     margin-bottom: 10px;
-    cursor: pointer
+    cursor: pointer;
+    padding: 0 5px;
 }
 
 .cs-smiles_item img {
     width: 100%;
-    height: auto
+    height: 100%;
+    object-fit: contain;
 }
 
 .cs-smiles_block.hidden-block {

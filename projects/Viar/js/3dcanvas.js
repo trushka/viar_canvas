@@ -2870,6 +2870,7 @@ PhotoEditor.prototype.AddSmile = function(img,x,y)
 PhotoEditor.prototype.AddText = function(value,font,size,color)
 {
 
+	debugger;
 	var text = new Layer();
 
 	text.x = 0.5;
@@ -2906,6 +2907,7 @@ PhotoEditor.prototype.AddText = function(value,font,size,color)
 	this.layers.push(text);	
 	
 	this.DoChange('layer');
+	console.log(text)
 }
 
 
@@ -3353,3 +3355,5 @@ trigger.addEventListener("DragAndDrop_mouseup", function(e){
 	}.bind(this));
 	
 }
+
+

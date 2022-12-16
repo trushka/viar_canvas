@@ -256,10 +256,7 @@
     .ellipse {
         margin-top: -68px
     }
-    .rotated-ell {
-        margin-top: -0;
-        margin-bottom: -68px !important;
-    }
+
     .faq-content {
         flex-direction: column-reverse
     }
@@ -561,13 +558,9 @@
 
     .ellipse {
         padding-top: 17px;
-        margin-top: -25px;
-        
+        margin-top: -25px
     }
-    .rotated-ell {
-        margin-top: -0;
-        margin-bottom: -25px !important; 
-    }
+
     .services-photo img {
         height: 225px
     }

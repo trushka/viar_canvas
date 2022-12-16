@@ -54,6 +54,59 @@
 
 
 
+.breadcrumbs {
+
+  margin-bottom: 67px;
+
+}
+
+
+
+.breadcrumbs__block {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+  align-items: center;
+
+}
+
+
+
+.breadcrumbs__link_main.breadcrumbs__link {
+
+  color: #fa7846;
+
+}
+
+
+
+.breadcrumbs__link {
+
+  font-size: 14px;
+
+  color: #000;
+
+  line-height: 17px;
+
+}
+
+
+
+.breadcrumbs__arrow {
+
+  margin-left: 6px;
+
+  margin-right: 9px;
+
+}
 
 
 
@@ -3291,7 +3344,7 @@
 
 .others {
 
-  padding: 60px 0 135px;
+  padding: 60px 0 60px;
 
 }
 
@@ -5658,7 +5711,7 @@ div.sharj__text-icon:not(:last-child) {
 
 .check-border {
 
-  border: 1px solid #FBF2EA;
+  border: 1px solid #f0bb82;
 
 }
 

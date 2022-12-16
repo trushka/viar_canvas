@@ -28,16 +28,73 @@
     <link rel="stylesheet" href="style/portrait/portrait.css" />
     <link rel="stylesheet" href="style/portrait/portrait-media.css" />
     <link rel="stylesheet" href="style/combine_canvas.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
 
-
-<script src="js/script.js"></script>
-<script type="6c82bb225fa213b601dcfa94-text/javascript">
+<script defer src="js/script.js"></script>
+<script defer type="6c82bb225fa213b601dcfa94-text/javascript">
   !function(a){"use strict";"function"==typeof define&&define.amd?define(["jquery"],a):"undefined"!=typeof module&&module.exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){var b=-1,c=-1,d=function(a){return parseFloat(a)||0},e=function(b){var c=1,e=a(b),f=null,g=[];return e.each(function(){var b=a(this),e=b.offset().top-d(b.css("margin-top")),h=g.length>0?g[g.length-1]:null;null===h?g.push(b):Math.floor(Math.abs(f-e))<=c?g[g.length-1]=h.add(b):g.push(b),f=e}),g},f=function(b){var c={byRow:!0,property:"height",target:null,remove:!1};return"object"==typeof b?a.extend(c,b):("boolean"==typeof b?c.byRow=b:"remove"===b&&(c.remove=!0),c)},g=a.fn.matchHeight=function(b){var c=f(b);if(c.remove){var d=this;return this.css(c.property,""),a.each(g._groups,function(a,b){b.elements=b.elements.not(d)}),this}return this.length<=1&&!c.target?this:(g._groups.push({elements:this,options:c}),g._apply(this,c),this)};g.version="0.7.2",g._groups=[],g._throttle=80,g._maintainScroll=!1,g._beforeUpdate=null,g._afterUpdate=null,g._rows=e,g._parse=d,g._parseOptions=f,g._apply=function(b,c){var h=f(c),i=a(b),j=[i],k=a(window).scrollTop(),l=a("html").outerHeight(!0),m=i.parents().filter(":hidden");return m.each(function(){var b=a(this);b.data("style-cache",b.attr("style"))}),m.css("display","block"),h.byRow&&!h.target&&(i.each(function(){var b=a(this),c=b.css("display");"inline-block"!==c&&"flex"!==c&&"inline-flex"!==c&&(c="block"),b.data("style-cache",b.attr("style")),b.css({display:c,"padding-top":"0","padding-bottom":"0","margin-top":"0","margin-bottom":"0","border-top-width":"0","border-bottom-width":"0",height:"100px",overflow:"hidden"})}),j=e(i),i.each(function(){var b=a(this);b.attr("style",b.data("style-cache")||"")})),a.each(j,function(b,c){var e=a(c),f=0;if(h.target)f=h.target.outerHeight(!1);else{if(h.byRow&&e.length<=1)return void e.css(h.property,"");e.each(function(){var b=a(this),c=b.attr("style"),d=b.css("display");"inline-block"!==d&&"flex"!==d&&"inline-flex"!==d&&(d="block");var e={display:d};e[h.property]="",b.css(e),b.outerHeight(!1)>f&&(f=b.outerHeight(!1)),c?b.attr("style",c):b.css("display","")})}e.each(function(){var b=a(this),c=0;h.target&&b.is(h.target)||("border-box"!==b.css("box-sizing")&&(c+=d(b.css("border-top-width"))+d(b.css("border-bottom-width")),c+=d(b.css("padding-top"))+d(b.css("padding-bottom"))),b.css(h.property,f-c+"px"))})}),m.each(function(){var b=a(this);b.attr("style",b.data("style-cache")||null)}),g._maintainScroll&&a(window).scrollTop(k/l*a("html").outerHeight(!0)),this},g._applyDataApi=function(){var b={};a("[data-match-height], [data-mh]").each(function(){var c=a(this),d=c.attr("data-mh")||c.attr("data-match-height");d in b?b[d]=b[d].add(c):b[d]=c}),a.each(b,function(){this.matchHeight(!0)})};var h=function(b){g._beforeUpdate&&g._beforeUpdate(b,g._groups),a.each(g._groups,function(){g._apply(this.elements,this.options)}),g._afterUpdate&&g._afterUpdate(b,g._groups)};g._update=function(d,e){if(e&&"resize"===e.type){var f=a(window).width();if(f===b)return;b=f}d?-1===c&&(c=setTimeout(function(){h(e),c=-1},g._throttle)):h(e)},a(g._applyDataApi);var i=a.fn.on?"on":"bind";a(window)[i]("load",function(a){g._update(!1,a)}),a(window)[i]("resize orientationchange",function(a){g._update(!0,a)})});
 </script>
+
+
+
+
+
+
+<script src="js/jmspinner.js" defer></script>
+<script src="js/popup_close.js" defer></script>
+<script src="js/events_actions.js" defer></script>
+<script defer src="js/InteriorGenerator.js"></script>
+<script defer
+src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+data-cf-settings="6c82bb225fa213b601dcfa94-|49"
+></script>
+<script src="js/testWebP.js" defer>
+</script>
+<script src="js/ajaxSetup.js" defer>
+</script>
+<script defer
+src="js/swal.js"
+></script>
+<script defer
+src="js/add.js?1636488310"
+></script>
+<script defer src="js/custom.js"></script>
+<script defer src="js/main.js"></script>
+<script defer data-defdel="js/fancybox.js"></script>
+<script defer data-defdel="js/swal.js"></script>
+<script defer src="js/before-after.min.js"></script>
+<script defer src="js/three.min.js"></script>
+<script defer src="js/3dcanvas.js"></script>
+<script defer>
+  window.onShowInterior = function() {
+      return {
+          size: {
+              h: size_centimeter_h,
+              w: size_centimeter_w
+          },
+          src: editor.out(editor.canvas.width, editor.canvas.height, false)
+      };
+  }
+</script>
+<script defer src="js/jcf.min.js"></script>
+<script defer src="js/jcf.radio.min.js"></script>
+<script defer src="js/jcf.checkbox.min.js"></script>
+<script defer src="js/jcf.range.min.js"></script>
+<script defer src="js/jquery.collapse_storage.min.js"></script>
+<script defer src="js/jquery.collapse.min.js"></script>
+<script defer src="js/slick.min.js"></script>
+<script defer src="js/templates.js"></script>
+<script defer src="js/canvas.min.js"></script>
+<script defer src="js/interior.js"></script>
+<script defer src="js/canvas_part1.js">
+</script>
+<script defer src="js/canvas_part2.js">
+</script>
+<script defer src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6c82bb225fa213b601dcfa94-|49" defer></script>
+
 </head>
 
   <body class="vz-art load template-canvas tpl-"  
@@ -53,13 +110,6 @@
   data-full="Всего:"
   data-multiplier="1">
 
-  <script>
-    var mult = $('body').data('multiplier');
-
-    if (isNaN(mult)){
-        mult = 1;
-    }
-  </script>
 
     <div class="vz-art menu">
       <div class="vz-art menu-frame" data-menu="1">
@@ -423,7 +473,7 @@
     <div class="vz-art burge-menu">
       <div class="vz-art header-bar header-bar_burger">
         <a href="#" class="vz-art logo" aria-label="logo link">
-          <img width="175" height="68" src="./images/logo.svg" alt="Logo" />
+          <img src="./images/logo.svg" alt="Logo" />
         </a>
         <div class="vz-art header-button">
           <a href="#" class="vz-art header-user" aria-label="user link">
@@ -560,7 +610,7 @@
       <div class="vz-art section-frame">
         <div class="vz-art header-bar">
           <a href="#" class="vz-art logo">
-            <img width="175" height="68" src="./images/logo.svg" alt="Logo" width="170" height="68" />
+            <img src="./images/logo.svg" alt="Logo" width="170" height="68" />
           </a>
           <ul class="vz-art header-social">
             <li>
@@ -1989,11 +2039,11 @@
                                         <div class="product-download pd-canvas" id="imgs">
                                           <div class="loader-canvas">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2023,11 +2073,11 @@
                                           </div>      
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2057,11 +2107,11 @@
                                           </div>        
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2091,11 +2141,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2125,11 +2175,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2159,11 +2209,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2193,11 +2243,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2227,11 +2277,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2261,11 +2311,11 @@
                                           </div>       
                                           <div class="loader-canvas file-save_hide">
                                             <button type="button">
-                                              <script
+                                              <script defer
                                                 data-cfasync="false"
                                                 src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                                               ></script>
-                                              <script
+                                              <script defer
                                                 src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
                                                 data-cf-settings="6c82bb225fa213b601dcfa94-|49"
                                               ></script>
@@ -2365,7 +2415,7 @@
                                         <span class="tab-icon"></span>
                                       </h2>
                                       <div class="accordion-content">
-                                          <script>
+                                          <script defer>
                                             window.onload = function(){setForm(0);}
                                           </script>
                                         <div class="form-types">
@@ -4663,7 +4713,7 @@
                 class="vz-art footer-logo__item"
                 aria-label="footer logo"
               >
-                <img width="175" height="68" src="./images/logo.svg" alt="img" loading="lazy" />
+                <img src="./images/logo.svg" alt="img" loading="lazy" />
               </a>
               <div class="vz-art footer-social footer-social_mob">
                 <ul>
@@ -5783,1443 +5833,7 @@
 
 
 
-    <script>
-      (function($){
-    
-        $.fn.jmspinner = function(value){
-          var small = 'small';
-          var custom = 'custom';
-          var large = 'large';
-          var div_bounces ='';
-          var div  = document.createElement('div');
-          var plc = $(div).prop('class', 'spin_loading');
-          var inner = document.createElement('div');
-          var center_loading = $(inner).prop('class', 'spinner');
-          var made = $(plc).html(center_loading);
-          var bce1 = document.createElement('div');
-          var bce2 = document.createElement('div');
-          var bce3 = document.createElement('div');
-          var div_btn_1 = $(bce1).prop('class', 'bounce1');
-          var div_btn_2 = $(bce2).prop('class', 'bounce2');
-          var div_btn_3 = $(bce3).prop('class', 'bounce3');
-          // returning the bounce divs to the template
-    
-          //var div_inner_bounces = $(div_bounces).html(div_btn);
-          var divs_bts;
-          var index = 0;
-          var loading =  [];
-          loading.push(div_btn_1,div_btn_2, div_btn_3);
-    
-    
-          $.each(loading, function(i, index){
-    
-            divs_bts = $(center_loading).append(index);
-    
-          });
-    
-          if(value == 'small'){
-            var small = $(divs_bts).addClass('small');
-             this.html(small);
-             return this;
-          }
-          if(value == 'large'){
-            var large = $(divs_bts).addClass('large');
-             this.html(large);
-             return this;
-          }
-          if(value == null){
-            var detf = $(divs_bts).addClass('default');
-             this.html(detf);
-             return this;
-          }
-    
-          if(value == false){
-             this.find('.spinner').remove();
-             return this;
-          }
-    
-    
-        }
-    
-    
-      }(jQuery));
-    </script>
-    <script>
-      $(document).ready(function() {
-          $(".close-content").on("click", function() {
-                  $(".popup").removeClass("active");
-                  if ($(this).closest('.popup').hasClass('popup-bask-add')) {
-                      $("html, body").animate({
-                          scrollTop: 0
-                      }, 0);
-                      document.location.reload(true);
-                  }
-                  if ($(this).closest('.popup').hasClass('popup-act-act')) {
-                      document.location.reload(true);
-                  }
-              }),
-    
-              $(".close-popup").on("click", function() {
-                  $(".popup").removeClass("active")
-              }), $(".office.off").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-login-registration").addClass("active")
-              }), $(".login").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-login").addClass("active")
-              }), $(".registration").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-registration").addClass("active")
-              }), $(".forgotYour_js").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-forgotYour").addClass("active")
-              }), $(".datas_js").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-dates").addClass("active")
-              }), $(".friend_js").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-lnvite-friend").addClass("active")
-              }), $(".printScreen_js").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-print-screen").addClass("active")
-              }), $(".photo_js").on("click", function() {
-                  $(".popup").removeClass("active"), $(".popup-photo").addClass("active")
-              }), $(".invited_js").on("click", function() {
-                  $(this).toggleClass("active"), $(this).next().toggleClass("active")
-              })
-      });
-    </script>
-    <script>
-      $(document).ready(function() {
-    
-          $(document).on('change, keyup', '.js_users_count', function(e) {
-              var val = $(this).val();
-              var cat_data_price = $('.js_persons_all').data('var');
-              var size_price = $(this).next('input').val();
-    
-              var total = parseInt(val) * parseInt(cat_data_price) * parseInt(size_price);
-              $(this).closest('.item').find('.js__total').text(total);
-          });
-    
-          $(document).on('change', '.js_select_cc', function(e) {
-              var tel_place = $(this).find(":selected").data('tel');
-              $(this).closest('.select').next('.js_phone_cc').val(tel_place).focus();
-          });
-    
-          // forget password
-          $(document).on('submit', '.js_forget_pass', function(e) {
-              e.stopImmediatePropagation();
-              e.preventDefault();
-    
-              $('.js_forget_pass').find('button').attr("disabled", true);
-              var route_forget = $(this).attr('action');
-              var user_email = $('.js__mail_forget').val();
-              $.ajax({
-                  method: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: route_forget,
-                  data: {
-                      email: user_email
-                  },
-                  success: function(response) {
-                      $('.js_forget_pass button').removeAttr("disabled");
-                      if (response) {
-                          console.log(response);
-    
-                          if (response.msg) {
-                              $('.popup').removeClass('active');
-                              $('.popup-print').addClass('active');
-                          }
-                      }
-                  },
-                  error: function(error) {
-                      $('.js_forget_pass button').removeAttr("disabled");
-                  }
-              });
-          });
-    
-          $(document).on('click', '.js_scroll_calc', function(e) {
-              e.preventDefault();
-              var id = $(this).attr('href');
-              $("html, body").animate({
-                  scrollTop: $(id).offset().top
-              }, 'fast');
-          });
-    
-          // copy coupon
-          $(document).on('click', '.js_user_copy', function(e) {
-              var code = $('.js_code_cup').val();
-              const el = document.createElement('textarea');
-              el.value = code;
-              el.setAttribute('readonly', '');
-              el.style.position = 'absolute';
-              el.style.left = '-9999px';
-              document.body.appendChild(el);
-              el.select();
-              document.execCommand('copy');
-              document.body.removeChild(el);
-          });
-    
-          $(document).on('keyup', '.js_prod_count', function(e) {
-              var val = $(this).val();
-              var index = $(this).data('index');
-    
-              if (val == 0) return;
-    
-              var form_data = new FormData;
-              form_data.append('count', val);
-              form_data.append('index', index);
-    
-              // update count
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: '/basket/update/count',
-                  data: form_data,
-                  success: function(response) {
-                      if (response) {
-                          var data = jQuery.parseJSON(response);
-                          if (data.success) {
-                              location.reload();
-                          }
-                      }
-                  },
-                  error: function(error) {
-                      console.log(error);
-                  }
-              });
-    
-    
-          });
-    
-          $(document).on('submit', '.js_print_sale', function(e) {
-              e.preventDefault();
-              var $input = $("#js_print_sale");
-              var form_data = new FormData;
-              form_data.append('image', $input.prop('files')[0]);
-    
-              $('.js_spinner').addClass('spinner');
-    
-              var cur_btn = $(this).find('button');
-              cur_btn.attr('disabled', true);
-    
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: '/user/send_screen',
-                  data: form_data,
-                  success: function(response) {
-                      cur_btn.removeAttr('disabled');
-                      $('.js_spinner').removeClass('spinner');
-                      if (response) {
-                          if (response.message == 'Invalid filesize or extension.') {
-                              var msg = $('body').data('err_file');
-                              alert(msg);
-                          }
-    
-                          if (response.message ==
-                              'The image must be a file of type: png, bmp, jpg, jpeg.') {
-                              var msg = $('body').data('err_file');
-                              alert(msg);
-                          }
-    
-                          if (response.message == 'Success') {
-                              var msg = $('body').data('suc_send_fb_sale');
-                              $('.popup-print-screen').removeClass('active');
-                              $('.popup-print').addClass('active');
-                              $('.popup-print').find('.js_mod_text').text(msg);
-                          }
-                      }
-                  },
-                  error: function(error) {
-                      cur_btn.removeAttr('disabled');
-                      $('.js_spinner').removeClass('spinner');
-                      console.log(error);
-                  }
-              });
-    
-          });
-    
-          $(document).on('submit', '.js_dates_form', function(e) {
-              e.preventDefault();
-              var date1 = $('.js_date1').val();
-              var torj1 = $('.js_torj1').val();
-              var date2 = $('.js_date2').val();
-              var torj2 = $('.js_torj2').val();
-    
-              var form_data = new FormData;
-              form_data.append('date1', date1);
-              form_data.append('torj1', torj1);
-              form_data.append('date2', date2);
-              form_data.append('torj2', torj2);
-    
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: $('#routes_links').data('send_dates'),
-                  data: form_data,
-                  success: function(response) {
-                      if (response) {
-                          if (response.message == 1 || response.message == '1') {
-                              $('.popup-dates').removeClass('active');
-                              $('.popup-act-act').addClass('active');
-                              var msg = $('body').data('suc_dates');
-                              $('.popup-act-act').find('.p__mod__title').children('span').eq(
-                                  0).text(msg);
-                          }
-                      }
-                  },
-                  error: function(error) {
-                      console.log(error);
-                  }
-              });
-          });
-    
-          $(document).on('submit', '.js_free_image', function(e) {
-              e.preventDefault();
-              var form_data = new FormData;
-              var is_return = 0;
-    
-              $('.js_spinner').jmspinner('large');
-    
-              let TotalImages = $('#js_free_img')[0].files.length;
-              let images = $('#js_free_img')[0];
-              for (let i = 0; i < TotalImages; i++) {
-                  var file_size = images.files[i].size / 1024 / 1024;
-                  if ((file_size > 50) || (TotalImages > 10)) {
-                      var err_msg = $('body').data('err_file');
-                      alert(err_msg);
-                      is_return = 1;
-                      break;
-                  }
-                  form_data.append('images[]', images.files[i]);
-              }
-    
-              if (is_return == 1) {
-                  return;
-              }
-    
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: $('#routes_links').data('user_free_img'),
-                  data: form_data,
-                  success: function(response) {
-                      $('.js_spinner').jmspinner(false);
-                      if (response) {
-                          if (response.message == 'Invalid filesize or extension.') {
-                              var msg = $('body').data('err_file');
-                              alert(msg);
-                          }
-    
-                          if (response.message == 'Success') {
-                              var msg = $('body').data('suc_send');
-                              $('.popup-photo').removeClass('active');
-                              $('.popup-act-conf').find('.p__mod__title').html(msg);
-                              $('.popup-act-conf').addClass('active');
-                          }
-                      }
-                  },
-                  error: function(error) {
-                      $('.js_spinner').jmspinner(false);
-                      console.log(error);
-                  }
-              });
-    
-          });
-    
-          $(document).on('submit', '.js_coupon_form', function(e) {
-              e.preventDefault();
-    
-              var coupon = $(".js_coupon").val();
-              var form_data = new FormData;
-              form_data.append('coupon', coupon);
-    
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: $('#routes_links').data('coupon_use'),
-                  data: form_data,
-                  success: function(response) {
-                      if (response) {
-                          if (response.finded == 1) {
-                              document.location.reload(true);
-                          }
-    
-                      }
-                  },
-                  error: function(error) {
-                      console.log(error);
-                  }
-              });
-    
-          });
-    
-          $(document).on('submit', '.js_gift_form', function(e) {
-              e.preventDefault();
-              var form_data = new FormData;
-    
-    
-              var summ = $('.js_summ').val();
-              if (summ == 0) {
-                  summ = $('.js_custom_summ').val();
-              }
-    
-              var name = $(this).data('name');
-              var date = $('.js_date').val();
-              var sender = $('.js_sender').val();
-              var res = $('.js_receiver').val();
-              var torjname = $('.js_torj_title').val();
-              var torjtext = $('.js_torj_text').val();
-              var card_type = $('input[name="el_type"]:checked').val();
-              var hide_nom = $('.js_hide_nom').is(":checked");
-    
-              form_data.append('name', name);
-              form_data.append('summ', summ);
-              form_data.append('date', date);
-              form_data.append('sender', sender);
-              form_data.append('res', res);
-              form_data.append('torjname', torjname);
-              form_data.append('torjtext', torjtext);
-              form_data.append('card_type', card_type);
-              form_data.append('hide_nom', hide_nom); // false/true
-    
-              $.ajax({
-                  processData: false,
-                  contentType: false,
-                  type: 'POST',
-                  headers: {
-                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                  },
-                  url: $('#routes_links').data('send_gift_card'),
-                  data: form_data,
-                  success: function(response) {
-                      if (response) {
-                          var res = JSON.parse(response);
-                          if (res.success) {
-                              $('.popup-bask-add').addClass('active');
-                              var cur_count = $('#smallCart').text();
-                              var new_val = parseInt(cur_count);
-                              $('#smallCart').text(++new_val);
-                          } else {
-                              alert(res.message);
-                          }
-    
-                      }
-                  },
-                  error: function(error) {
-                      console.log(error);
-                  }
-              });
-    
-    
-    
-    
-    
-          });
-    
-          $(document).on('click', '.modular-shapes button', function(e) {
-              $(this).addClass('js__selected');
-              $(this).siblings().removeClass('js__selected');
-          });
-    
-      });
-    </script>
-    <script
-      src="js/InteriorGenerator.js"
-    ></script>
-    
-    <script
-    src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
-    data-cf-settings="6c82bb225fa213b601dcfa94-|49"
-    ></script>
-    
-    <script>
-    function testWebP(callback) {
-        var webP = new Image();
-        webP.onload = webP.onerror = function() {
-            callback(webP.height == 2);
-        };
-        webP.src =
-            'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-    };
-    
-    testWebP(function(support) {
-        if (support) {
-            $("html").addClass("webp");
-        } else {
-            $("html").addClass("no-webp");
-        }
-    });
-    
-    "ontouchstart" in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0 ? $("html").addClass(
-        "js_touch") : $("html").addClass("js_no_touch");
-    var calc_float_val = function(t) {
-        var a = Number(t);
-        return parseFloat(a).toFixed(2)
-    };
-    
-    function dataURItoBlob(t) {
-        var a, e;
-        a = -1 !== t.split(",")[0].indexOf("base64") ? atob(t.split(",")[1]) : decodeURI(t.split(",")[1]), e = t.split(
-            ",")[0].split(":")[1].split(";")[0];
-        for (var s = new Array, i = 0; i < a.length; i++) s[i] = a.charCodeAt(i);
-        return new Blob([new Uint8Array(s)], {
-            type: e
-        })
-    }
-    $(document).on("click", ".js_mod_collapse", function(t) {
-        t.PreventDefault, $(this).toggleClass("js_vis"), $(this).hasClass("js_vis") ? ($(this).find("span")
-            .text($(this).data("hide")), $(this).prev().css("height", "100%"), $(this).prev().animate({
-                height: "auto"
-            }, 1)) : ($(this).find("span").text($(this).data("show")), $(this).prev().css("height",
-            "467px"), $(this).prev().animate({
-            height: 467
-        }, 1))
-    });
-    
-    // check support passive events listeners
-    var supportsPassive = false;
-    document.createElement("div").addEventListener("test", _ => {}, {
-        get passive() {
-            supportsPassive = true
-        }
-    });
-    /* lazyload.js (c) Lorenzo Giuliani
-     * MIT License (http://www.opensource.org/licenses/mit-license.html)
-     *
-     * expects a list of:
-     * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
-     */
-    $(function() {
-        var $q = function(q, res) {
-                if (document.querySelectorAll) {
-                    res = document.querySelectorAll(q);
-                } else {
-                    var d = document,
-                        a = d.styleSheets[0] || d.createStyleSheet();
-                    a.addRule(q, 'f:b');
-                    for (var l = d.all, b = 0, c = [], f = l.length; b < f; b++)
-                        l[b].currentStyle.f && c.push(l[b]);
-    
-                    a.removeRule(0);
-                    res = c;
-                }
-                return res;
-            },
-            addEventListener = function(evt, fn) {
-                window.addEventListener ?
-                    this.addEventListener(evt, fn, false) :
-                    (window.attachEvent) ?
-                    this.attachEvent('on' + evt, fn) :
-                    this['on' + evt] = fn;
-            },
-            _has = function(obj, key) {
-                return Object.prototype.hasOwnProperty.call(obj, key);
-            };
-    
-        function loadImage(el, fn) {
-            var img = new Image(),
-                src = el.getAttribute('data-src');
-            img.onload = function() {
-                if (!!el.parent)
-                    el.parent.replaceChild(img, el)
-                else
-                    el.src = src;
-    
-                fn ? fn() : null;
-            }
-            img.src = src;
-        }
-    
-        function elementInViewport(el) {
-            var rect = el.getBoundingClientRect()
-    
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-            )
-        }
-    
-        var images = new Array(),
-            query = $q('img.lazy'),
-            processScroll = function() {
-                for (var i = 0; i < images.length; i++) {
-                    if (elementInViewport(images[i])) {
-                        loadImage(images[i], function() {
-                            images.splice(i, i);
-                        });
-                    }
-                };
-            };
-    
-        for (var i = 0; i < query.length; i++) {
-            images.push(query[i]);
-        };
-    
-        processScroll();
-        addEventListener('scroll', processScroll, supportsPassive ? {
-            passive: true
-        } : false);
-    
-    });
-    </script>
-    <script>
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-    var csrfToken = $('[name="csrf_token"]').attr('content');
-    
-    setInterval(refreshToken, 3600000); // 1 hour
-    
-    function refreshToken() {
-        $.get('refresh-csrf').done(function(data) {
-            csrfToken = data; // the new token
-        });
-    }
-    
-    setInterval(refreshToken, 3600000); // 1 hour
-    
-    $(document).ajaxComplete(function(event, xhr, settings) {
-        if (xhr.status == 400) {
-            location.reload();
-        }
-    });
-    </script>
-    
-    
-    <script
-    src="js/swal.js"
-    ></script>
-    <script
-    src="js/add.js?1636488310"
-    ></script>
 
-
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
-    <script data-defdel="js/fancybox.js"></script>
-    <script data-defdel="js/swal.js"></script>
-    <script src="js/before-after.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/3dcanvas.js"></script>
-    <script>
-      window.onShowInterior = function() {
-          return {
-              size: {
-                  h: size_centimeter_h,
-                  w: size_centimeter_w
-              },
-              src: editor.out(editor.canvas.width, editor.canvas.height, false)
-          };
-      }
-    </script>
-    <script src="js/jcf.min.js"></script>
-    <script src="js/jcf.radio.min.js"></script>
-    <script src="js/jcf.checkbox.min.js"></script>
-    <script src="js/jcf.range.min.js"></script>
-    <script src="js/jquery.collapse_storage.min.js"></script>
-    <script src="js/jquery.collapse.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/templates.js"></script>
-    <script src="js/canvas.min.js"></script>
-    <script src="js/interior.js"></script>
-    <script>
-      var CanvasMainImg = null;
-      var base_64_img = null;
-      var saved_tab2_img;
-      var preview,file,reader;
-      var dost_price = 0;
-
-      $(document).on("click", "span.delete", function () {
-          var btn = $(this).closest('button');
-          var eq = btn.index();
-
-          btn.removeClass('is-load');
-          btn.find('img').attr('src', '(unknown)').removeAttr('style');
-          btn.find('input').val('');
-      });
-
-      $(".slider-tabs").on("click", ".slider-tabs a", function () {
-          // $(".ramu-slider").get(0).slick.setPosition(),
-          $(".ramu-item .img").matchHeight({
-              byRow: !1,
-          });
-      }),
-
-      $(document).on('click', '.interior-item', function(e){
-          var size = $(this).data('size');
-          var size = size.split(',');
-
-          $('.js_s1').text(size[0]);
-          $('.js_s2').text(size[1]);
-
-          var int = $(this).data('interior');
-          $('.tab2-item-child').children('img').attr('src', int);
-
-          var index = $(this).data('item');
-
-          $('.range__box').hide(0);
-          $('.range__box').eq(index).show(0);
-      });
-
-      $('input[name="wall_size"]').on('keyup',function(){
-          v = parseInt($(this).val());
-          min = parseInt($(this).attr('min'));
-          max = parseInt($(this).attr('max'));
-          if (v > max){
-              $(this).val(max);
-          }
-          if(v<min){
-              $(this).val(min);
-          }
-
-      })
-
-      $('.interior-sizes input').on('input', function(e){
-
-          var val = this.value;
-          $('.size-item').find('input').val(this.value);
-          var cacl_val = this.value/30;
-          $('.int-draggable').css({ 'width': 'calc(230px - ' + cacl_val+ '%)' });
-      });
-
-      function previewFile() {
-          preview = document.getElementById('img__selected__tab1');
-          file    = document.getElementById('user_image').files[0];
-          reader  = new FileReader();
-
-          reader.onloadend = function () {
-              preview.src = reader.result;
-          }
-
-          if (file) {
-              reader.readAsDataURL(file);
-          } else {
-              preview.src = "";
-          }
-      }
-
-      // SUBMIT
-      $('#t1_submit_btn').click(function () {
-          if(CanvasMainImg == null){
-              $('.popup-inv-size').addClass('active');
-              return;
-          }
-
-          let data = formData();
-
-          $('.js_spinner').jmspinner('large');
-          $.ajax({
-              type: 'post',
-              processData: false,
-              contentType: false,
-              headers: {
-                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-              },
-              url: 'https://www.viarcanvas.com/basket/add',
-              data: data,
-              success: function (response) {
-                  if (response) {
-                      var data = jQuery.parseJSON(response);
-
-                      if (data['Error']) {
-                          alert(data['Error']);
-                      } else if (data['success']) {
-                      // seo
-                      var total_seo__price = $('.tabs-item #totalPrice').data('total');
-                      window.dataLayer = window.dataLayer || [];
-                      dataLayer.push({
-                      'ecommerce': {
-                          'currencyCode': 'EUR',
-                          'add': {
-                          'actionField': {'list': 'Kanvas'},
-                          'products': [{
-                              'name': 'Kanvas',
-                              'price': total_seo__price,
-                              'quantity': 1,
-                          }]
-                          }
-                      },
-                      'event': 'EE-event',
-                      'EE-event-category': 'Enhanced Ecommerce',
-                      'EE-event-action': 'Add To Cart',
-                      'EE-event-non-interaction': 'False'
-                      });
-
-                      // endseo
-                          $('.popup-bask-add').addClass('active');
-                          var cur_count = $('#smallCart').text();
-                          cur_count = parseInt(cur_count);
-                          cur_count++;
-                          $('#smallCart').text(cur_count);
-                      }
-
-                      $('#t1_submit_btn').attr('data-disabled', '0');
-                  }
-
-                  $('.js_spinner').jmspinner(false);
-              },
-              error: function (error) {
-
-                  if (error.responseText) {
-                      let response = JSON.parse(error.responseText);
-                      $.each(response.errors, function (key, value) {
-                          alert(value[0])
-                      });
-                  } else {
-                      alert('Server error');
-                  }
-
-                  $('.js_spinner').jmspinner(false);
-                  $('#t1_submit_btn').attr('data-disabled', '0');
-              }
-          });
-      });
-
-      // выберите размер
-      $(document).on('click', '.js_add_basket_module', function(e){
-          $('#t1_submit_btn').trigger('click');
-      });
-
-      $(document).on('click', '.calcSize', function(e){
-          let sizePrice = $(this).data('price');
-          let sizeSize = $(this).data('size');
-          calcTotalPrice(sizePrice, sizeSize);
-      });
-
-      // тип исполнения
-      $('.calcExecution').on('click', function () {
-          calcTotalPrice(null, null, $(this).data('execution'));
-      });
-
-      // вид холста
-      $('input[name="canvas_type"]').on('change', function () {
-          calcTotalPrice();
-      });
-
-      // худ. оформление
-      $('input[name="decoration"]').on('change', function () {
-          calcTotalPrice();
-      });
-
-      $('input[name="boxes[]"]').on('change', function () {
-          calcTotalPrice();
-      });
-      $('input[name="boxes2[]"]').on('change', function () {
-          calcTotalPrice();
-      });
-
-      // доставка
-      $('input[name="dost_time"]').on('change', function () {
-          calcTotalPrice();
-      });
-
-      function formData() {
-          let formData = new FormData();
-          let userImage = CanvasMainImg;
-          let formId = $('.calcForm.active').data('id');
-          let sizeId = $('.calcSize.active').data('size');
-          let canvasId = $('input[name="canvas_type"]:checked').data('id');
-          let executionId = $('.calcExecution.active').data('execution');
-          let decorationId = $('input[name="decoration"]:checked').data('id');
-          let userComment = $('#userComment').val();
-          let boxIds = [];
-          let terms = $('.tabs-item1 .dost_items').find('.jcf-label-active').find('.st_text').text();
-          let terms_price = $('.tabs-item1 .dost_items').find('.jcf-label-active input').val();
-
-          let resizedCanvas = document.createElement("canvas");
-          let resizedContext = resizedCanvas.getContext("2d");
-          resizedCanvas.height = "200";
-          resizedCanvas.width = "200";
-          let canvas = document.getElementById("canvas");
-          let context = canvas.getContext("2d");
-          resizedContext.drawImage(canvas, 0, 0, 200, 200);
-
-          let Image3d = resizedCanvas.toDataURL();
-
-          $('input[name="boxes[]"]:checked, input[name="boxes2[]"]:checked').each(function () {
-              boxIds.push(parseInt($(this).data('id')));
-          });
-          
-
-          formData.append('name', cur_name);
-          formData.append('price',  $('.tabs-item #totalPrice').data('total'));
-
-          if( $('input[name="photo_ex"]').length && $('input[name="photo_ex"').val() != ''){
-              formData.append('photo_ex', $('input[name="photo_ex"]').prop('files')[0]);
-          }else{
-              formData.append('photo_ex', '');
-          }
-
-          if($('.ramu-item.active').length){
-              if(!$('.ramu-item.active').hasClass('ramu_zero')){
-                  var ram_id = $('.ramu-item.active').data('id');
-              }
-          }
-
-          formData.append('basketType', '1');
-
-          if (userImage)
-              formData.append('userImage', userImage);
-          if (Image3d)
-              formData.append('Image3d', Image3d);
-          if (formId)
-              formData.append('formId', formId);
-          if (sizeId)
-              formData.append('sizeId', sizeId);
-          if (name)
-              formData.append('name', name);
-          if (ram_id)
-              formData.append('ram_id', ram_id);
-          if (executionId)
-              formData.append('executionId', executionId);
-          if (canvasId)
-              formData.append('canvasId', canvasId);
-          if (decorationId)
-              formData.append('decorationId', decorationId);
-          if (userComment)
-              formData.append('userComment', userComment);
-          if (terms)
-              formData.append('terms', terms);
-          if (terms_price)
-              formData.append('terms_price', terms_price);
-          if (boxIds)
-              formData.append('boxIds', JSON.stringify(boxIds));
-
-          formData.append('is_canvas_collage', 1);
-          formData.append('is_with_orig_image', 1);
-
-          return formData;
-      }
-
-      function calcExecutionPrice(sizeSize, execution) {
-          let executionPrice = 0;
-
-          if (execution == 1) {
-              let height = sizeSize.split('x')[0];
-              let length = sizeSize.split('x')[1];
-              let area = height * length / 10000;
-
-              if (area <= 0.4)
-                  executionPrice = area * 80;
-              else if (area > 0.4 && area <= 1)
-                  executionPrice = area * 60;
-              else if (area >= 1.01)
-                  executionPrice = area * 50;
-          }
-
-          return executionPrice;
-      }
-
-      var rp = 0;
-      function calcTotalPrice(sizePrice = null, sizeSize = null, execution = null) {
-        
-          sizePrice = $('.accordion__sizes-block:not(.hidden-block) .calcSize.kviz-radio_active').data('price');
-
-          if (!sizeSize)
-              sizeSize = $('.calcSize.kviz-radio_active').data('size');
-
-          if (!execution)
-              execution = $('.calcExecution.active').data('execution');
-
-          let dostTimePrice = parseFloat(dost_price);
-
-          let totalPrice = 0;
-
-          totalPrice += parseFloat(sizePrice);
-
-          var ram_price = $('.ramu-item.active').data('price');
-
-          var cur_size  = $('.calcSize.kviz-radio_active').data('size');
-
-          var cur_size_calc = cur_size.split("x");
-          var s1 = parseInt(cur_size_calc[0]);
-          var s2 = parseInt(cur_size_calc[1]);
-          if(typeof ram_price === 'undefined'){
-              rp = 0;
-          }else{
-              if($('.calcSize.kviz-radio_active'.length)){
-                  rp = ((s1+s1+s2+s2)/100)*parseInt(ram_price);
-              }else{
-                  rp  = 0;
-              }
-          }
-
-          // холст
-          let defPrice = $('.calcSize.kviz-radio_active').data('price');
-          let canvasTypePrice = parseFloat($('input[name="canvas_type"]:checked').val());
-          let cur_sizes_add_coef = defPrice * canvasTypePrice;
-
-          let cur_sizes_add = parseFloat(cur_sizes_add_coef).toFixed(2);
-
-          if(cur_sizes_add != 0.00){
-              totalPrice = cur_sizes_add;
-          }
-          //
-
-          totalPrice = parseFloat(totalPrice) + parseFloat(dostTimePrice);
-          totalPrice = parseFloat(totalPrice).toFixed(2);
-
-          // тип исполнения
-          let ex_add_price = calcExecutionPrice(sizeSize, execution);
-          // console.log('+ за тип исполнения',ex_add_price);
-          totalPrice = parseFloat(totalPrice) + parseFloat(ex_add_price);
-
-          totalPrice = parseFloat(totalPrice).toFixed(2);
-
-          // худ. оформление
-          totalPrice = parseFloat(totalPrice).toFixed(2);
-          let coef_1 = parseInt($('input[name="decoration"]:checked').data('coef_sm'));
-          let coef_2 = parseInt($('input[name="decoration"]:checked').data('coef_md'));
-          let coef_3 = parseInt($('input[name="decoration"]:checked').data('coef_lg'));
-          let area = s1 * s2 / 10000;
-
-          if (area <= 0.4) {
-              decorAddPrice = area * coef_1;
-          }
-          else if (area > 0.4 && area <= 1) {
-              decorAddPrice = area * coef_2;
-          }
-          else if (area >= 1.01) {
-              decorAddPrice = area * coef_3;
-          }
-
-          if(isNaN(decorAddPrice)){
-              decorAddPrice = 0;
-          }
-
-          decorAddPrice = parseFloat(decorAddPrice);
-
-          totalPrice = parseFloat(totalPrice);
-
-          totalPrice += decorAddPrice;
-
-          totalPrice = parseFloat(totalPrice) + parseFloat($('input[name="boxes[]"]:checked').val());
-          totalPrice = parseFloat(totalPrice) + parseFloat($('input[name="boxes2[]"]:checked').val());
-          totalPrice = parseFloat(totalPrice).toFixed(2);
-
-          if(undefined == sizePrice){
-              sizePrice = $('.js__hidden_sizes>li:first').find('a').data('price');
-          }
-
-          if(isNaN(totalPrice)) return;
-
-          totalPrice = calc_float_val(totalPrice);
-
-          $('.total_with_total').remove();
-          $('.ramm__pr').remove();
-
-          if(rp != 0){
-              var cur_summ_price = parseFloat(totalPrice) + parseFloat(rp);
-              cur_summ_price = cur_summ_price.toFixed(2);
-
-              $('.tabs-item #totalPrice').html(calc_float_val(totalPrice));
-              $('.sum__mod #glob_summ2').html(calc_float_val(totalPrice));
-
-              var rm_txt = $('body').data('for_ram');
-
-
-              var vs_text = $('body').data('full');
-
-              $('.totalPriceNew').text(+calc_float_val(cur_summ_price));
-
-              $('.tabs-item #totalPrice').attr('data-total',calc_float_val(cur_summ_price));
-          }else{
-              var cur_summ_price = totalPrice;
-              cur_summ_price = calc_float_val(cur_summ_price);
-              $('.tabs-item #totalPrice').html(cur_summ_price);
-              $('.tabs-item #totalPrice').attr('data-total',cur_summ_price);
-              $('.totalPriceNew').text(cur_summ_price);
-              $('.totalPriceNew').attr('data-total',cur_summ_price);
-          }
-      }
-
-      var cur_name = $('.js_add_basket_stena').data('name');
-
-      $('.jcf-button-content').text('Загрузить');
-      $('.jcf-fake-input').text('Загрузить');
-
-      $(document).on('click', '.interior-item', function(e){
-          var img_border = $('.ramu-item.active').find('img').attr('src');
-          var bi_full = 'url('+img_border+') 65 68 / 5em stretch';
-      })
-
-      $('.ramu-item').click(function(e){
-          setTimeout(() => {
-          calcTotalPrice();
-          }, 200);
-      });
-
-      $('.delivery-inputs input').change(function(e){
-          dost_price = $(this).val();
-          if(dost_price == 0){
-              $('.tabs-item1 .dost_items').children('li').eq(1).find('label').trigger('click');
-              $('.tabs-item2 .dost_items').children('li').eq(1).find('label').trigger('click');
-          }else{
-              $('.tabs-item1 .dost_items').children('li').eq(2).find('label').trigger('click');
-              $('.tabs-item2 .dost_items').children('li').eq(2).find('label').trigger('click');
-          }
-          setTimeout(() => {
-          calcTotalPrice();
-          }, 200);
-      });
-    </script>
-    <script>
-      var tool_undo = document.getElementById("undo");
-      var tool_redo = document.getElementById("redo");
-      var tool_photo_zoom_minus = document.getElementById("photo_zoom_minus");
-      var tool_photo_zoom_plus = document.getElementById("photo_zoom_plus");
-      var tool_turn_right = document.getElementById("turn_right");
-      var tool_turn_left = document.getElementById("turn_left");
-      var tool_cell_delete = document.getElementById("cell_delete");
-
-      var canvas = document.getElementById("canvas");
-
-      var editor = new Canvas3D(canvas);
-      console.log(editor)
-      editor.ColorCell = '#d2afac';
-      //правки123
-      editor.is_box_offset_2_x = true;
-      editor.is_box_offset_1_y = true;
-      editor.is_box_offset_2_y = true;
-      //правки123
-
-      // resize
-      function resize()
-      {
-          var mn = canvas.parentElement.clientWidth;
-          canvas.height = mn;
-          canvas.width  = mn;
-          editor.setSize(canvas.height,canvas.width);
-
-          Canvas3D.prototype.render.call(editor);
-      }
-
-      var glob_rotated_img = null;
-      // fix click
-      $(document).on('click', '.tools>div', function(e){
-          Canvas3D.prototype.render.call(editor);
-          glob_rotated_img = editor.out(200,150);
-      });
-
-      // new
-      function elementInViewport(el) {
-          var top = el.offsetTop;
-          var left = el.offsetLeft;
-          var width = el.offsetWidth;
-          var height = el.offsetHeight;
-
-          while(el.offsetParent) {
-              el = el.offsetParent;
-              top += el.offsetTop;
-              left += el.offsetLeft;
-          }
-
-          return (
-              top < (window.pageYOffset + window.innerHeight) &&
-              left < (window.pageXOffset + window.innerWidth) &&
-              (top + height) > window.pageYOffset &&
-              (left + width) > window.pageXOffset
-          );
-      }
-
-      var time_wheel;
-      document.addEventListener("wheel", function(e){
-          if (e.target !== canvas)
-          time_wheel = new Date().getTime();
-      });
-
-      function render()
-      {
-          if (time_wheel< new Date().getTime() - 500 && elementInViewport(canvas))
-          {
-              Canvas3D.prototype.render.call(editor);
-          }
-          window.requestAnimationFrame(render);
-      }
-
-      window.requestAnimationFrame(render);
-      // endnew
-
-      var old_clientWidth, old_clientHeight;
-
-      setInterval(function()
-      {
-          if (canvas.parentElement.clientWidth !== old_clientWidth || canvas.parentElement.clientHeight !== old_clientHeight)
-          {
-          old_clientHeight = canvas.parentElement.clientHeight;
-          old_clientWidth = canvas.parentElement.clientWidth;
-          resize();
-      }
-      },10);
-
-      window.addEventListener("orientationchange",resize,true);
-      window.addEventListener("resize",resize,true);
-
-      resize();
-
-      editor.onchange = function(){//ловим изменения в редакторе
-          editor.is_Redo()?tool_redo.classList.remove("disable"):tool_redo.classList.add("disable");
-          editor.is_Undo()?tool_undo.classList.remove("disable"):tool_undo.classList.add("disable");
-          if(editor.selection && editor.selection.cell && editor.selection.cell.resource)
-          {   tool_cell_delete.classList.remove("disable");
-              tool_photo_zoom_minus.classList.remove("disable");
-              tool_photo_zoom_plus.classList.remove("disable");
-              tool_turn_right.classList.remove("disable");
-              tool_turn_left.classList.remove("disable");
-          }else
-          {   tool_cell_delete.classList.add("disable");
-              tool_photo_zoom_minus.classList.add("disable");
-              tool_photo_zoom_plus.classList.add("disable");
-              tool_turn_right.classList.add("disable");
-              tool_turn_left.classList.add("disable");
-          }
-      }
-
-
-
-      editor.enable_drawing();// включить рисование. editor.disable_drawing(); отключить
-      // editor.disable_drawing();
-      editor.radius = 0;
-      editor.between = 0.00;
-
-      // function _sizeSetter(h,w) {
-      //   let depth = (Math.max(h,w)) * 0.07;
-      //   editor.setSizeBox(h,w,depth);
-      //     resize();
-      // }
-      function setSize(centimeter_h,centimeter_w,centimeter_depth = 0)
-      {
-        
-          size_centimeter_h = centimeter_h;
-          size_centimeter_w = centimeter_w;
-          if (!centimeter_depth) {
-            centimeter_depth = size_centimeter_h * 0.07;
-          } 
-          var mx = Math.max(centimeter_h,centimeter_w);
-          var h = (1 / mx) * centimeter_h;
-          var w = (1 / mx) * centimeter_w;
-          var depth = (1 / mx) * centimeter_depth;
-          
-          editor.setSizeBox(h,w,depth);
-          resize();
-      }
-
-      function setForm(index)
-      {
-
-
-
-          var act_h, act_w, act_depth, act_price;
-          var targetContainer = $(`.accordion__sizes-block[data-id="${index + 1}"] .kviz-group__item:first-child .calcSize:first-child`);
-          setTimeout(()=>{
-            targetContainer.click();
-
-          }, 200)
-
-          }
-
-
-      tool_cell_delete.onclick = function()
-      {
-          if (editor.selection.cell)editor.selection.cell.resource = undefined;
-          editor.selection.delete();
-      }
-
-      tool_undo.onclick = function()
-      {
-          editor.Undo();
-      }
-
-      tool_redo.onclick = function()
-      {
-          editor.Redo();
-      }
-
-      tool_photo_zoom_minus.onclick = function()
-      {
-          editor.selection.cell.photo_zoom(Math.max(1, editor.selection.cell.resource.zoom - (editor.selection.cell.resource.zoom * 0.1)));
-      }
-
-      tool_photo_zoom_plus.onclick = function()
-      {
-          editor.selection.cell.photo_zoom(editor.selection.cell.resource.zoom + (editor.selection.cell.resource.zoom * 0.1));
-      }
-
-      tool_turn_right.onclick = function()
-      {
-          editor.selection.cell.photo_rotate(editor.selection.cell.resource.rotate + Math.PI/2);
-      }
-
-      tool_turn_left.onclick = function()
-      {
-          editor.selection.cell.photo_rotate(editor.selection.cell.resource.rotate - Math.PI/2);
-
-      }
-
-      function GetIcon(original)
-      {
-          var canvas = document.createElement("canvas");
-          canvas.width = canvas.height = 80;
-          var ctx = canvas.getContext('2d');
-          var s = Math.max((canvas.width / original.width),(canvas.height / original.height));
-          ctx.scale(s,s);
-          ctx.drawImage(original, 0, 0);
-          var r = new Image();
-          r.src = canvas.toDataURL('image/jpeg', 0.95);
-
-          // save image to future send
-          base_64_img = original.src;
-
-          return r;
-      }
-
-
-      function loadImg(src,callback)
-      {
-          var img = {};
-          img.original = new Image();
-          img.original.src = src;
-
-          img.original.onload = function()
-          {
-              img.icon = GetIcon(img.original);
-              callback(img);
-          }
-
-          img.original.onerror = function()
-          {
-              callback();
-          }
-      }
-
-
-      var js_img_tab2 = '';
-      function InitImgs(imgs,type)
-      {
-
-          imgs.forEach(function(item){
-                  if (item.isOpen)
-                  {
-                      var inputFile = document.createElement('input');
-                      inputFile.setAttribute('type', 'file');
-
-                      item.element.appendChild(inputFile);
-
-                      inputFile.setAttribute('multiple', 'multiple');
-                      inputFile.setAttribute('accept', 'image/*');
-
-                      inputFile.onchange = function()
-                      {
-                          CanvasMainImg = inputFile.files[0];
-
-                          let pos = imgs.indexOf(item);
-
-                          for (let file of inputFile.files)
-                          {
-                              if (pos < imgs.length)
-                              {
-                                  let b = imgs[pos];
-
-                                  var reader = new FileReader();
-                                // console.log(this)
-                                  reader.onload = function (e)
-                                  {
-                                      loadImg(e.target.result,function(img){
-                                              if (img)
-                                              {
-                                                  b.element.src= img.original.src;
-                                                  js_img_tab2 = b.element.src;
-                                                  b.element.parentElement.setAttribute('class', 'is-load');
-                                                  // CanvasMainImg
-                                                  b.img = img;
-                                                  b.isLoad = true;
-
-                                                  // if (!editor.grid[0].resource)
-                                                  editor.grid[0].setImg(img);
-                                              }else
-                                              {
-                                                  b.isLoad = false;
-                                              }
-                                          });
-                                  }
-
-                                  reader.readAsDataURL(file);
-
-                                  // CanvasMainImg
-
-                                  pos++;
-                              }
-
-                          }
-                      }
-
-                      item.element.onclick = function()
-                      {
-                          inputFile.click();
-                      }
-                  }
-
-                  DragAndDrop_img(item,type);
-
-                  if  (item.element.src !== "")
-                  {
-
-                      loadImg(item.element.src,function(img){
-                              if (img)
-                              {
-                                  item.element.src= img.icon.src;
-                                  item.img = img;
-                                  item.isLoad = true;
-
-                              }else
-                              {
-                                  item.isLoad = false;
-
-                              }
-                          });
-                  }
-
-                if (item.isLoad) {
-                  console.log(item)
-                }
-
-              
-          });
-
-          console.log(imgs)
-      }
-
-
-      var imgs = Object.values(document.getElementById("imgs").getElementsByTagName("img")).map(function(img)
-      {
-          return {element : img,isOpen:true};
-      });
-
-      InitImgs(imgs,"img");
-
-      // $('.calcForm.active').trigger('click');
-    </script>
-    <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6c82bb225fa213b601dcfa94-|49" defer=""></script>
 
   </body>
 </html>

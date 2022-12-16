@@ -275,6 +275,7 @@ ul {
 .vz-art label {
   margin-bottom: 0;
 }
+
 .breadcrumbs {
   /* margin-bottom: 67px */
 }
@@ -283,8 +284,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -303,6 +302,7 @@ ul {
   margin-left: 6px;
   margin-right: 9px
 }
+
 * {
   box-sizing: border-box;
 }
@@ -1138,7 +1138,7 @@ img::selection {
 }
 
 .vz-art.popup-photo__submit,
-.vz-art.scroll-button {
+.scroll-button {
   box-shadow: 0 18.49px 46.22px -4.62px rgba(250, 120, 70, 0.25),
     0 2.77px 0 #e87145;
   cursor: pointer;
@@ -1146,17 +1146,17 @@ img::selection {
   max-width: 100%;
 }
 
-.vz-art.scroll-button:hover {
+.scroll-button:hover {
   transform: scale(1.04);
 }
 
 .vz-art.popup-log-check input,
-.vz-art.scroll-button input {
+.scroll-button input {
   display: none;
 }
 
 .vz-art.log-sub,
-.vz-art.scroll-button {
+.scroll-button {
   justify-content: center;
   color: #fff;
 }
@@ -1223,7 +1223,7 @@ img::selection {
 
 .vz-art.log-social ul,
 .vz-art.log-social ul a,
-.vz-art.scroll-button i {
+.scroll-button i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1238,13 +1238,13 @@ img::selection {
   font-size: 16px;
 }
 
-.vz-art.scroll-button {
+.scroll-button {
   transition: 0.4s;
   border-radius: 8px;
   background: linear-gradient(90deg, #fc8c5f 0, #fa7846 100%);
 }
 
-.vz-art.scroll-button {
+.scroll-button {
   width: 40px;
   height: 40px;
   display: flex;
@@ -1258,13 +1258,13 @@ img::selection {
   pointer-events: none;
 }
 
-.vz-art.scroll-button i {
+.scroll-button i {
   font-size: 8px;
   transform: rotate(-90deg);
   margin: 0;
 }
 
-.vz-art.scroll-button_active {
+.scroll-button_active {
   opacity: 1;
   pointer-events: inherit;
 }
@@ -2246,6 +2246,7 @@ template {
   background-color: #fff;
   border-radius: 50%;
   flex-shrink: 0;
+  border: 1px solid #f0bb82;
 }
 
 .check::before {
@@ -3015,11 +3016,11 @@ svg {
     margin-bottom: 20px;
   }
 
-  .vz-art.scroll-button {
+  .scroll-button {
     font-size: 15px;
   }
 
-  .vz-art.scroll-button {
+  .scroll-button {
     height: 40px;
     right: 20px;
     bottom: 20px;
@@ -3283,14 +3284,16 @@ svg {
     width: 100%;
     height: 52px;
   }
+  
   .breadcrumbs {
-    /* margin-bottom: 35px; */
+    margin-bottom: 35px;
   }
 
   .breadcrumbs__link {
     font-size: 10px;
     line-height: 13px;
   }
+
   .popup-cart {
     max-width: 425px;
   }
@@ -3329,7 +3332,7 @@ svg {
 /*  */
 
 .slick-slider {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .slick-initialized.slick-slider {
@@ -3350,7 +3353,7 @@ svg {
 
 
 .portraits-slider {
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
 }
 
 .portraits-slider.slick-initialized {
@@ -3961,25 +3964,41 @@ svg {
 }
 
 
-.formalization-bottom--check .kviz-c-group .pic-pop {
+ .pic-pop {
   display: none;
   position: absolute;
   bottom: 100%;
   right: 0;
-  width: 150px;
-  height: 100px;
+  width: 175px;
+  /*height: 100px;*/
+  height: auto;
+  min-height: 100px;
   object-fit: cover;
   border: 2px solid #fa7846;
   border-radius: 6px;
+  overflow: hidden;
+  z-index: 2;
 }
 
-.formalization-bottom--check .kviz-c-group .pic-pop img {
+ .pic-pop .hint{
+	background: white;
+	font-size: 12px;
+	margin-top: 0px;
+	padding: 6px;
+	float: left;
+    font-weight: 400;
+}
+
+ .pic-pop img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+    width: 101%;
+    height: 100%;
+    margin: 0px !important;
+    margin-bottom: -8px !important;
+    margin-right: -2px !important;
 }
 
-.formalization-bottom--check .kviz-c-group .kviz-radio.hovered .pic-pop {
+.hovered .pic-pop {
   display: block;
 }
 
@@ -4153,7 +4172,7 @@ svg {
   /* bottom: 80%;
   left: -30%;
   padding-bottom: 0; */
-  top: -4%;
+  top: 5%;
   right: -30px;
   left: unset;
 }
@@ -4278,8 +4297,8 @@ svg {
   right: 5%;
 }
 .portrait-gift {
-  bottom: 15%;
-  right: 46%;
+  bottom: 18%;
+  right: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4304,7 +4323,7 @@ svg {
 .portrait-gift::after {
   content: "";
   bottom: -37px;
-  right: 100%;
+  right: 77%;
   width: 214px;
   height: 48.19px;
   position: absolute;
@@ -4516,6 +4535,78 @@ svg {
   }
 }
 
+.cart-page-item-edit {
+  position: relative;
+}
+.cart-page-item-edit input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.cart-delivery-point__pickup-point--item.hidden-item {
+  display: none;
+}
+.cart-delivery-comments__add-photo .cart-comments--complete {
+  display: none;
+}
+
+input.error {
+  border-color: red !important;
+}
+
+/* 
+
+*/
+
+
+.images-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.images-container div {
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+
+}
+.images-container svg {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 525px) {
+  .images-container div {
+    height: 120px;
+  
+  }
+  .images-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .mp-btn {
+    margin-top: 30px !important;
+  }
+  /* .mp-m-bg {
+    margin-bottom: -55px;
+  } */
+   .breadcrumbs {
+    margin-bottom: 20px;
+  }
+}
+
 .mm-btn {
   max-width: 290px;
   width: 100%;
@@ -4554,4 +4645,46 @@ svg {
   display: none;
   align-items: center;
   justify-content: center;
+}
+
+
+.block-padding {
+    padding: 150px 0 110px;
+}
+
+@media (max-width: 700px) {
+    .block-padding {
+        padding: 120px 0 80px;
+    }
+}
+
+
+.cart-checkbox {
+  width: 22px;
+  height: 22px;
+  justify-content: center;
+  background-color: #fa7846;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 9px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+.cart-checkbox input + svg {
+  margin: 0 !important;
+  transform: scale(0);
+}
+.cart-checkbox input:checked + svg {
+  transform: scale(1);
 }

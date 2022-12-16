@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+#PhotoEditor .canvas#canvas {
+max-width: 100% !important;
+}
 @font-face {
     font-family: "Trajan";
     src: url("../fonts/Trajan-Pro-3.woff2") format("woff2"), url("../fonts/Trajan-Pro-3.woff") format("woff");

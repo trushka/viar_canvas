@@ -17362,7 +17362,10 @@ $(function () {
       return;
     }
 
-    var js_per_user = $('.js_per_user').val();
+    // var js_per_user = $('.js_per_user').val();
+    var js_per_user = $('.js__personal_checker').eq(1).find('input').data('price');
+
+    
 
     if (js_per_user === 0) {
       js_per_user = 1;
@@ -17371,7 +17374,9 @@ $(function () {
     if (val >= 2 && val <= 8) {} //if any inputs selected
 
 
-    persons_price = val * js_per_user;
+  
+    persons_price = (val * js_per_user) - js_per_user;
+    if (persons_price < 0) persons_price = 0;
     persons_count = val;
     calc_new_total_price();
   });
@@ -17422,13 +17427,15 @@ $(function () {
     data.append('pid', $('.js_submit_form').data('pid'));
     data.append('name', $('.js_submit_form').data('name'));
     data.append('userComment', '');
-    var fileList = $("input[name='file[]']");
+    var fileList = $(this).closest('form').find("input[name='file[]']");
 
-    for (var x = 0; x < fileList.length; x++) {
-      if (fileList[x].files[0]) {
-        data.append('orig_images[]', fileList[x].files[0]);
+    for (var x = 0; x < fileList[0].files.length; x++) {
+      if (fileList[0].files[x]) {
+        data.append('orig_images[]', fileList[0].files[x]);
+        console.log(fileList[0].files[x]);
       }
     }
+    
 
     data.append('pack', undefined);
     data.append('dost_time', '');
@@ -17442,7 +17449,7 @@ $(function () {
     data.append('type', ''); //fix
 
     data.append('holst_id', $('.js_canvas_type_item.kviz-radio_active').data('id'));
-    data.append('hud_of', $('.js_decor__item.kviz-radio_active').find('.js_decor__name').text());
+    data.append('hud_of', $('input[name="tools"]:checked').data('name'));
     data.append('decor_id', $('.js_decor__item.kviz-radio_active').find('input').data('id'));
     data.append('ram_id', $('.js__frame_item.kviz-radio_active').find('input').val());
     data.append('userComment', $('#comments1').val());
@@ -17456,72 +17463,78 @@ $(function () {
 
     data.append('compl_id', $('.set__item.kviz-radio_active').find('input').data('id'));
     data.append('terms', $('.js_terms.kviz-radio_active').find('.js_term__selected').text());
-    $.ajax({
-      method: 'POST',
-      headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-      },
-      url: $('.js_submit_form').data('action'),
-      processData: false,
-      contentType: false,
-      dataType: "json",
-      data: data,
-      beforeSend: function() {
-        $('.loading-bar').css('display', 'flex').hide().fadeIn();
-      },
-      success: function success(msg) {
-        // if(msg.msg){
-        //     alert(msg.msg);
-        // }
-        if (msg.success) {
-          $("body").addClass("open-frame");
-          $(".popup-frame").css("display", "flex").hide().fadeIn();
-          $(".popup-cart").fadeIn();
-        }
+    data.append('terms_price', $('.js_terms.kviz-radio_active').find('.js_term__selected').next().val());
 
-        var item_name = $('.js_submit_form').data('name');
-        item_name = item_name.replace('<span>', '');
-        item_name = item_name.replace('</span>', '');
-        var pid = $('.js_submit_form').data('pid');
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-          'ecommerce': {
-            'currencyCode': 'EUR',
-            'add': {
-              'actionField': {
-                'list': item_name
-              },
-              'products': [{
-                'name': item_name,
-                'id': pid,
-                'price': total_price,
-                'categoryId': pid,
-                'category': item_name,
-                'quantity': 1
-              }]
-            }
-          },
-          'event': 'EE-event',
-          'EE-event-category': 'Enhanced Ecommerce',
-          'EE-event-action': 'Add To Cart',
-          'EE-event-non-interaction': 'False'
-        }); // endseo
-      },
-      error: function error(response) {
-        var errors = response.responseJSON.errors;
+    let loadedImage = $('.image-block').length;
 
-        if (errors.file) {
-          alert(errors.file[0]);
+    if (loadedImage != 0) {
+      $.ajax({
+        method: 'POST',
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        url: $('.js_submit_form').data('action'),
+        processData: false,
+        contentType: false,
+        dataType: "json",
+        data: data,
+        beforeSend: function() {
+          $('.loading-bar').css('display', 'flex').hide().fadeIn();
+        },
+        success: function success(msg) {
+          // if(msg.msg){
+          //     alert(msg.msg);
+          // }
+          if (msg.success) {
+            $("body").addClass("open-frame");
+            $(".popup-frame").css("display", "flex").hide().fadeIn();
+            $(".popup-cart").fadeIn();
+          }
+  
+          var item_name = $('.js_submit_form').data('name');
+          item_name = item_name.replace('<span>', '');
+          item_name = item_name.replace('</span>', '');
+          var pid = $('.js_submit_form').data('pid');
+          window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+            'ecommerce': {
+              'currencyCode': 'EUR',
+              'add': {
+                'actionField': {
+                  'list': item_name
+                },
+                'products': [{
+                  'name': item_name,
+                  'id': pid,
+                  'price': total_price,
+                  'categoryId': pid,
+                  'category': item_name,
+                  'quantity': 1
+                }]
+              }
+            },
+            'event': 'EE-event',
+            'EE-event-category': 'Enhanced Ecommerce',
+            'EE-event-action': 'Add To Cart',
+            'EE-event-non-interaction': 'False'
+          }); // endseo
+        },
+        error: function error(response) {
+          var errors = response.responseJSON.errors;
+  
+          if (errors.file) {
+            alert(errors.file[0]);
+          }
+  
+          if (response.responseJSON.message) {
+            alert(response.responseJSON.message);
+          }
         }
-
-        if (response.responseJSON.message) {
-          alert(response.responseJSON.message);
-        }
-      }
-    });
+      });
+    }
   });
 });
 })();
 
-/******/ })()
+})()
 ;

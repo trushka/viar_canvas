@@ -177,7 +177,7 @@ $(document).ready(function () {
 	// $(".input-mask").inputmask({ "mask": "+371 99 99-99-99" });
 
 	var mask = Maska.create('.input-mask', {
-		mask: '## ##-##-##'
+		mask: $('.input-mask').data('mask')
 	});
 
 	// Событие смены атрибута "checked" у стилизованных checkbox или radio
@@ -371,15 +371,26 @@ $(document).ready(function () {
 
 	$('.country-list .country-item').click(function () {
 		let photo = $(this).children('img').attr('src');
-		let mask = $(this).children('span').data('mask');
+		//let mask = $(this).children('span').data('mask');
 		let placeholder = $(this).children('span').data('placeholder');
+		let country = $(this).children('span').data('country');
 
 		$(".input-mask").val(' ');
 		$(".input-mask").attr('placeholder', placeholder);
+		if(country)
+		{
+			$(".input-mask").attr('data-country', country);
+		}
 		// $(".input-mask").inputmask({ "mask": mask });
-		$(".input-mask").Maska.mask({ "mask": mask });
+		// $(".input-mask").Maska.mask({ "mask": mask });
+		$('.input-mask').attr('data-mask', $(this).children('span').data('mask'));
 		$('.country-item-active').children('img').attr('src', photo);
 		$('.country-list').slideUp().toggleClass('country-list_active');
+
+		var mask = Maska.create('.input-mask', {
+			mask:  $(this).children('span').data('mask')
+		});
+
 	});
 
 
@@ -472,11 +483,11 @@ $(document).ready(function () {
 	});
 
 
-	if ($(window).width() < 700) {
-		$('.kviz-input_pc').remove();
-	} else {
-		$('.kviz-input_mob').remove();
-	}
+	// if ($(window).width() < 700) {
+	// 	$('.kviz-input_pc').remove();
+	// } else {
+	// 	$('.kviz-input_mob').remove();
+	// }
 
 	$('.kviz-messege__tab').click(function () {
 		$('.kviz-messege__tab').removeClass('kviz-messege__tab_active');

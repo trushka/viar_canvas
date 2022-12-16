@@ -3311,7 +3311,7 @@ PhotoEditor.prototype.updateSizeText = function(text)
 PhotoEditor.prototype.AddText = function(value,font,size,color)
 {
 	
-	debugger
+	
 
 	var text = new Layer(this);
 
