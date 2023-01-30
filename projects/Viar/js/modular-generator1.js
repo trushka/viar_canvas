@@ -1,5 +1,5 @@
 // settings
-var modular={
+const modular={
 	Panorama: .4,
 	Landscape: .75,
 	Square: 1,
@@ -22,15 +22,12 @@ var modular={
 
 function mediaChecker(max_min, resolution, width = "width") {
     return window.matchMedia(`(${max_min}-${width}: ${resolution}px)`).matches;
-  }
+}
+
 if (mediaChecker("max", 1080)) {
 	$(".tabs-content").before($(".cs-ds-controls"));
+}
 
-
-
-
-
-  }
 var lang={
 	tooSmall: 'Выбирите картинку не меньше $*$!',
 	notSupport: 'Не поддерживаемый формат изображения!',
@@ -39,10 +36,66 @@ var lang={
 	tooSmallW: 'Недостаточная ширина блока для разделения'
 };
 
-//(function(){
-	var dpcm = modular.dpcm || modular.dpi/2.54;
-	var minImgSize = Math.round(modular.min*dpcm);
-	var tooSmall = lang.tooSmall.replace(/\$/g, minImgSize);
+$(function(){
+
+	const $win=$(window);
+	const dpcm = modular.dpcm || modular.dpi/2.54;
+	const minImgSize = Math.round(modular.min*dpcm);
+	const tooSmall = lang.tooSmall.replace(/\$/g, minImgSize);
+
+	const cHistory = new function(){
+		var snapshots = [],
+			current = -1,
+			state = {},
+			hObj, id,
+
+			clear = (html='')=>html.replace(/\s?(selected|hover)\s?/g, ''),
+			resized = ()=>'w,h,s,maxW,src'.split(',').some(key=>options[key]!=state.options?.[key]);
+
+		return hObj={
+			snapshots,
+			save() {
+
+				const last=state,
+					html=svgG[0].innerHTML.replace(/rect class[^>]*/g, 'rect'),
+					newState={options: Object.assign({}, options)};
+
+				if (clear(html)!=clear(last.html)) newState.html=html;
+				else if (!resized()) return;
+				
+				//console.log(clear(html), clear(last.html))
+				snapshots.length = ++current;
+				snapshots.push(state=newState)
+				console.log(snapshots.length, current, state.options.src);
+			},
+			restore() {
+				console.log(snapshots.length, current);
+				const {state}=hObj,
+					{format}=options;
+				if (state.html) svgG.html(state.html.replace('hover', ''));
+				if (!resized()) return;
+				options=state.options;
+				pattern.attr('href', options.src);
+				wInp.val(options.w);
+				setMinMax();
+				resizeCanvas();
+				if (format!=options.format) setTemplates();
+			},
+			undo() {
+				if (current<1) return;
+				hObj.current--;
+				hObj.restore();
+			},
+			redo() {
+				if (current>snapshots.length-2) return;
+				hObj.current++;
+				hObj.restore();
+			},
+			get current() {return current},
+			set current(i) {state = snapshots[current=i] || {}},
+			get state() {return state},
+		}
+	} 
 
 	function SVG(tag){
 		return document.createElementNS('http://www.w3.org/2000/svg', tag)
@@ -72,61 +125,78 @@ var lang={
 		})
 	}
 
-	var templatesContainer = $('.modular-shapes');
-	var mainContainer = $('.modular');
-	var img = $('.canv_cel image').on('load', function(){
+	const templatesContainer = $('.modular-shapes');
+	const mainContainer = $('.modular');
 
-	});
-	var svg0 = $('.canv_cel svg');
-	var h2w={
+	const svg0 = $('.canv_cel svg'),
+		svgG = $('>g', svg0),
+		pattern = $('image', svg0);
+
+	var options={
 		actual: 1
 	};
-	var padding=.01;
 
-	function resizeCanvas(){
-		if (!$('g', svg0).html()) return;
-		svg0[0].setAttribute('viewBox', '0,0,'+h2w.w+','+h2w.h);
-		$('pattern, image', svg0).attr({width: h2w.w, height: h2w.h});
-		$('>g', svg0)[0].innerHTML+=''; // huck for svg redraw
-		var w=$('>rect', svg0)[0].getBoundingClientRect().width;
-		hRuler.width(w);
-		h2w.dpcm=w/h2w.w;
-		svg0.css({fontSize: 1/h2w.dpcm});
+	function redraw() {svgG[0].innerHTML+=''}
+
+	function resizeCanvas(save){
+		//if (!$('g', svg0).html()) return;
+		const {w, h} = options;
+		svg0[0].setAttribute('viewBox', '0,0,'+w+','+h);
+		$('pattern, image', svg0).attr({width: w, height: h});
+		redraw(); // huck for svg redraw
+		var rw=$('>rect', svg0)[0].getBoundingClientRect().width;
+		hRuler.width(rw);
+		options.dpcm=rw/w;
+		svg0.css({fontSize: 1/options.dpcm});
 		resized=false;
+		if (save) cHistory.save(1)
 	}
 
-	function setTemplates(format, selected){
+	function setTemplates(restore){
 		// templatesContainer.not('[aria-hidden]').hide();
+		const format = options.format;
+
 		templatesContainer.html('');
+		var w0, h0;
 		templates.forEach(function(tpl,i){
 			if (tpl.format!=format) return;
+
 			var svg=$('<svg viewBox="0, 0, 100, '+modular[format]*100+'"/>');
-			var bl=tpl.bl[0]?tpl.bl:[tpl.bl];
+			var blocks=tpl.bl[0]?tpl.bl:[tpl.bl];
+			var maxW=0, maxH=0;
 
-			if (bl.find(function(data){
-				var x=+(data.x*100).toFixed(2)+'%',
-					y=+(data.y*100).toFixed(2)+'%',
-					w=+(data.w*100).toFixed(2)+'%',
-					h=+(data.h*100).toFixed(2)+'%';
-				$('<g class="module" style="--x: '+x+'; --y: '+y+'; --w: '+w+'; --h: '+h+'"><rect /></g>')
-				.appendTo(svg);
+			if (blocks.find(function(block){
+				maxW = Math.max(maxW, +block.x + +block.w);
+				maxH = Math.max(maxH, +block.y + +block.h);
 
-				return !('s' in data) || +data.r
+				return !('s' in block) || +block.r
 
 			})) return;
+
+			blocks.forEach(block=>{
+
+				var x=+(block.x*100/maxW).toFixed(1)+'%',
+					y=+(block.y*100/maxH).toFixed(1)+'%',
+					w=+(block.w*100/maxW).toFixed(1)+'%',
+					h=+(block.h*100/maxH).toFixed(1)+'%';
+				$('<g class="module" style="--x: '+x+'; --y: '+y+'; --w: '+w+'; --h: '+h+'"><rect /></g>')
+				.appendTo(svg);
+			})
 
 			svg[0].innerHTML+='';
 
 			$('<button />').append(svg)//.prop({title: JSON.stringify(tpl)})
 			.click(function(e){
 				e.preventDefault();
-				$('>g', svg0)[0].innerHTML=svg[0].innerHTML;
+				svgG[0].innerHTML=svg[0].innerHTML;
 				$('g.module', svg0).addLines();
-				resizeCanvas();
+				cHistory.save();
 			}).appendTo(templatesContainer);
 		})
 
-		$('button', templatesContainer).eq(selected||0).focus().click();
+		if (restore) return;
+
+		$('button', templatesContainer).eq(0).focus().click();
 		$('a',templatesContainer.prev()).trigger('open');
 	}
 
@@ -142,15 +212,14 @@ var lang={
 			return;
 		}
 
-		var img0=new Image();
-		img0.onload=function(){
-			if (!this.width) {
+		var img=new Image();
+		img.onload=function(){
+			if (!img.width) {
 				alert(lang.notSupport);
 				return;
 			}
-			var w=this.width,
-				h=this.height,
-				src=this.src,
+			var w=img.width,
+				h=img.height,
 				maxW=modular.maxW;
 
 			if (w<minImgSize || h<minImgSize) {
@@ -159,36 +228,40 @@ var lang={
 			}
 			// $(inp).addClass('selected').hide()
 
-			var hw=h2w.actual=this.height/this.width;
+			var hw=options.actual=img.height/img.width;
 			
 			if (w>maxW || h>maxW) {
-				URL.revokeObjectURL(src);
+				URL.revokeObjectURL(img.src);
 				var w0=Math.min(maxW, maxW/hw),
 					h0=Math.min(maxW, maxW*hw),
 					canvas = $('<canvas>').prop({width: w0, height: h0})[0],
 					ctx=canvas.getContext('2d');
-				ctx.drawImage(img0, 0, 0, w0, h0);
+				ctx.drawImage(img, 0, 0, w0, h0);
 				canvas.toBlob(function(blob){
-					img0.src=URL.createObjectURL(blob)
+					img.src=URL.createObjectURL(blob)
 				})
 				return;
 			}
 			$(inp).parents('.download').children('.img')
-			 .css('background-image', 'url("'+this.src+'")')
+			 .css('background-image', 'url("'+img.src+'")')
 
-			img.attr('href', src);
+			pattern.attr('href', img.src);
+			options.src=img.src;
 
-			h2w.maxW=this.width/dpcm;
-			h2w.maxH=this.height/dpcm;
+			options.maxW=w/dpcm;
+			options.maxH=h/dpcm;
 			setMinMax();
-			if (hw>modular.minPortrait) setTemplates('Portrait');
-			else if (hw>modular.minSquare) setTemplates('Square');
-			else if (hw>modular.minLandscape) setTemplates('Landscape');
-			else setTemplates('Panorama');
+
+			options.format = hw>modular.minPortrait ? 'Portrait' :
+			hw>modular.minSquare ? 'Square' :
+			hw>modular.minLandscape ? 'Landscape' : 'Panorama';
+
+			resizeCanvas();
+			setTemplates();
 		}
-		img0.onerror=function(){alert(lang.notSupport)};
-		img0.src=URL.createObjectURL(file);
-		$(this).data('img', img0)
+		img.onerror=function(){alert(lang.notSupport)};
+		img.src=URL.createObjectURL(file);
+		$(this).data('img', img)
 
 	}).on('click', function(e){
 		$('input.imageFile').not(this).show();
@@ -200,42 +273,32 @@ var lang={
 	})
 
 	function setMinMax(){
-		var hw=h2w.actual,
+		var hw=options.actual,
 			minW=hw<1?Math.floor(modular.min/hw):modular.min,
 			minH=hw>1?Math.floor(modular.min*hw):modular.min,
-			maxW=Math.min(modular.max, h2w.maxW),
-			maxH=Math.min(modular.max, h2w.maxH);
+			maxW=Math.min(modular.max, options.maxW),
+			maxH=Math.min(modular.max, options.maxH);
 		maxW=Math.round(Math.min(maxW, modular.max/hw));
 		maxH=Math.round(Math.min(maxH, modular.max*hw));
 		wInp.setMinMax(minW, maxW);
 		hInp.setMinMax(minH, maxH);
-		sizeInp.trigger('change');
+		sizeInp.trigger('input');
 	}
 
 	// move and resize
 
-	mainContainer.on('mouseenter touchstart mousedown', 'g.module', function(e){
-		if (e.type!='mousedown' && !$(this).is('.blocked g, :last-child')) {
-			$('>g', svg0).append(this);			return;
-		}
-		if (e.type=='mouseenter') return;
+	mainContainer.on('mouseleave', 'svg:not(.blocked) .hover', function(e){
 
-		$('.selected', svg0).removeClass('selected');
-		$(this).addClass('selected');
-		//console.log (e)
-		var el=this;
-		var touch = e.type=='touchstart' && e.originalEvent.changedTouches[0];
+		$('rect.hover', svg0).add(this).removeClass('hover');
 
-		if (touch && !$(el).is(':hover')) return;
-		e.preventDefault();
-	    svg0.addClass('blocked');
-		var x0=(touch||e).pageX;
-		var y0=(touch||e).pageY;
-		var id=touch && touch.identifier;
+	}).on('mouseover touchstart mousedown', 'svg:not(.blocked) g.module', function(e){
+		//console.log(e.type, svg0.hasClass('blocked'))
 
-		var pos0=this.querySelector('rect').getBoundingClientRect();
-		var bBox=$('>rect', svg0)[0].getBoundingClientRect(),
-			minSize=modular.minSize*h2w.dpcm;
+		const el=this, $el=$(this).mouseleave(), targ=e.target;
+		const pos0=el.querySelector('rect').getBoundingClientRect();
+
+		if (this.nextSibling) svgG.append(this);
+		$el.addClass('hover');//.one('mouseleave', e=>$el.removeClass('hover'));
 		/*
 
 		[5]---1---[6]
@@ -245,17 +308,39 @@ var lang={
 		[8]---3---[7]
 
 		*/
-		var move={};
-		this.querySelectorAll('rect').forEach(function(el,i){
-			if (e.target!=el) return;
-			move.l = /0|8|4|5/.test(i);
-			move.t = /0|5|1|6/.test(i);
-			move.r = /6|2|7/.test(i);
-			move.b = /8|3|7/.test(i);
-			move.w=i && -move.l || +move.r;
-			move.h=i && -move.t || +move.b;
-		});
+		var rects=$('rect', el),
+			i=rects.index(targ)
+			move={
+				l: /0|8|4|5/.test(i),
+				t: /0|5|1|6/.test(i),
+				r: /6|2|7/.test(i),
+				b: /8|3|7/.test(i),
+			};
+
+		move.w=i && -move.l || +move.r;
+		move.h=i && -move.t || +move.b;
+
+		if (i) rects[i%5 || 4].classList.add('hover');
+		if (i>4) rects[i-4].classList.add('hover');
 		//console.log(move);
+
+		if (e.type=='mouseover') return;
+
+		$('.selected', svg0).removeClass('selected');
+		$(this).addClass('selected');
+		//console.log (e)
+		var touch = (e.type=='touchstart' && e.originalEvent.changedTouches[0]);
+
+		//if (touch && !$el.is(':hover')) return;
+		e.preventDefault();
+	    svg0.addClass('blocked');
+		var x0=(touch||e).pageX;
+		var y0=(touch||e).pageY;
+		var id=touch && touch.identifier;
+		var dx, dy;
+
+		var bBox=$('>rect', svg0)[0].getBoundingClientRect(),
+			minSize=modular.minSize*options.dpcm;
 		function change(e){
 			//
 			var touch=e;
@@ -268,8 +353,8 @@ var lang={
 			} else {
 				e.preventDefault();
 			}
-			var dx=touch.pageX-x0;
-			var dy=touch.pageY-y0;
+			dx=(touch.pageX-x0);
+			dy=(touch.pageY-y0);
 			var x=pos0.x - bBox.x,
 				y=pos0.y - bBox.y,
 				w=pos0.width,
@@ -292,17 +377,29 @@ var lang={
 			//return false
 		}
 
-		$(window).on(touch?'touchmove':'mousemove', change)
-		 .on('mouseup touchcancel touchend blur', function(){
-		 	$(window).off('mousemove touchmove', change);
+		$win.on(touch?'touchmove':'mousemove', change)
+
+		 .one('mouseup touchcancel touchend blur', function end(e){
+
+			$(window).off('mousemove touchmove', change)
+			 .off('mouseup touchcancel touchend blur', end);
+
+			if (touch) rects.removeAttr('class');
+
 			svg0.removeClass('blocked');
+			if (e.type!='mouseup' || e.target!=targ) {
+				$el.mouseleave();
+				$(e.target).mouseover();
+			}
+			if (dx || dy) cHistory.save();
+
 		})
 	})
 
 	// Rulers
 
-	var hRuler=$('.h-ruler');
-	var wRuler=$('.v-ruler');
+	const hRuler=$('.h-ruler');
+	const wRuler=$('.v-ruler');
 	for (var i = 0, j, html; i*20 < modular.max; i++) {
 		j=i*20;
 		html='<div><div><div>'+j+'</div><div>'+(j+5)+'</div></div><div><div>'+(j+10)+'</div><div>'+(j+15)+'</div></div></div>'
@@ -314,34 +411,30 @@ var lang={
 
 	var resized;
 
-	var wInp=$('.modular-size .width input').on('input change', function(e){
-		h2w.h=(this.value*h2w.actual).toFixed(1)*1;
-		mainContainer.css({'--h': h2w.h, '--w': this.value});
+	const wInp=$('.modular-size .width input').on('input', function(e){
+		options.h=(this.value*options.actual).toFixed(1)*1;
+		mainContainer.css({'--h': options.h, '--w': this.value});
 		wInp.val(this.value).setBg();
-		hInp.not(':focus').val(h2w.h);
-		if (e.originalEvent) hInp.triggerHandler('change');
+		hInp.not(':focus').val(options.h);
+		if (e.originalEvent) hInp.triggerHandler('input');
 
 		resized=true;
 	});
-	var hInp=$('.modular-size .height input').on('input change', function(e){
-		h2w.w=(this.value/h2w.actual).toFixed(1)*1;
-		mainContainer.css({'--h': this.value, '--w': h2w.w});
+	const hInp=$('.modular-size .height input').on('input', function(e){
+		options.w=(this.value/options.actual).toFixed(1)*1;
+		mainContainer.css({'--h': this.value, '--w': options.w});
 		hInp.val(this.value).setBg();
-		wInp.not(':focus').val(h2w.w);
-		if (e.originalEvent) wInp.triggerHandler('change');
+		wInp.not(':focus').val(options.w);
+		if (e.originalEvent) wInp.triggerHandler('input');
 	});
-	var sizeInp=wInp.add(hInp).trigger('input');
+	const sizeInp=wInp.add(hInp).trigger('input')
+	 .on('change', ()=>{if (resized) resizeCanvas(1)});
 	resized=false;
 
-	var sInp=$('.modular-size .space input').on('input change', function(e){
-		sInp.val(h2w.space=this.value).setBg();
-	}).val(h2w.space=modular.space).setBg()
+	const sInp=$('.modular-size .space input').on('input change', function(e){
+		sInp.val(options.space=this.value).setBg();
+	}).val(options.space=modular.space).setBg()
 	.setMinMax(modular.minSpace, modular.maxSpace);
-
-	$(window).on('touchend touchcancel mouseup blur', function(){
-		if (resized) resizeCanvas();
-	});
-
 
 	$.fn.hideScroll=function(){ 
 		var el=this[0];
@@ -379,7 +472,7 @@ var lang={
 		var y0=(touch||e).pageY;
 		var id=touch && touch.identifier;
 
-		var pos0=$('>g', svg0)[0].getBoundingClientRect();
+		var pos0=svgG[0].getBoundingClientRect();
 		var preview=svg0.closest('div')[0];
 		var bBox=preview.parentNode.getBoundingClientRect();
 		var left=parseInt(preview.style.left || 50);
@@ -419,7 +512,7 @@ var lang={
 	var wallSizeInp=$('.interior-sizes input').on('input', function(e){
 		wallSizeInp.val(this.value).setBg();
 		var div=$('.interior .active'),
-			box=$('>g', svg0)[0].getBBox(),
+			box=svgG[0].getBBox(),
 			box0=svg0[0].getBBox(),
 			w=div.width(),
 			scale=w/this.value;
@@ -431,7 +524,7 @@ var lang={
 			'--dy': (box0.y-box.y)*scale+'px',
 			'font-size': scale
 		});
-		$('>g', svg0)[0].innerHTML+='';
+		redraw();
 	});
 
 	$('.interior-item').each(function(){
@@ -458,7 +551,7 @@ var lang={
 	})
 	$('.modular .cs-controls .csc-item').addClass('disabled');
 
-	$(window).on('resize', resizeCanvas)
+	$(window).on('resize', e=>resizeCanvas())
 
 	function checkActive() {
 		var active=$('.selected, .module:only-child', svg0)
@@ -468,37 +561,39 @@ var lang={
 
 	$('.split_v').click(function(){
 		var selected=checkActive();
-		if (!selected) return;
+		if (!selected) return false;
 		var bBox=$('>rect', selected)[0].getBBox(),
-			h=(bBox.height - h2w.space)/2,
+			h=(bBox.height - options.space)/2,
 			y=bBox.y;
 		if (h<modular.minSize) return alert(lang.tooSmallH);
-		selected.css('--h', (h*100/h2w.h).toFixed(2)+'%')
-		.clone().css('--y', ((y+h+h2w.space)*100/h2w.h).toFixed(2)+'%')
-		.removeClass('selected').appendTo($('>g', svg0));
+		selected.css('--h', (h*100/options.h).toFixed(2)+'%')
+		.clone().css('--y', ((y+h+options.space)*100/options.h).toFixed(2)+'%')
+		.removeClass('selected').appendTo(svgG);
 	})
 	$('.split_h').click(function(){
 		var selected=checkActive();
-		if (!selected) return;
+		if (!selected) return false;
 		var bBox=$('>rect', selected)[0].getBBox(),
-			w=(bBox.width - h2w.space)/2,
+			w=(bBox.width - options.space)/2,
 			x=bBox.x;
 		if (w<modular.minSize) return alert(lang.tooSmallW);
-		selected.css('--w', (w*100/h2w.w).toFixed(2)+'%')
-		.clone().css('--x', ((x+w+h2w.space)*100/h2w.w).toFixed(2)+'%')
-		.removeClass('selected').appendTo($('>g', svg0));
+		selected.css('--w', (w*100/options.w).toFixed(2)+'%')
+		.clone().css('--x', ((x+w+options.space)*100/options.w).toFixed(2)+'%')
+		.removeClass('selected').appendTo(svgG);
 	})
 	$('.cs-controls .delete').click(function(){
 		var selected=checkActive();
-		if (!selected) return;
+		if (!selected) return false;
 		if (selected.is(':only-child')) return;
 		selected.remove();
+		delete cHistory.movedEl;
 	})
+	$('.cs-controls').click('.csc-item', e=>{(cHistory[e.target.id]||cHistory.save)()});
 
 	window.saveModular=function(){
 		var inp=$('input.imageFile:hidden');
 		var svg=svg0.clone().attr({
-			width: h2w.w+'cm', height: h2w.h+'cm',
+			width: options.w+'cm', height: options.h+'cm',
 			xmlns: 'http://www.w3.org/2000/svg',
 			'xmlns:xlink': 'http://www.w3.org/1999/xlink'
 		});
@@ -523,4 +618,4 @@ var lang={
 
 		return {svg: svg[0].outerHTML, input: inp}
 	}
-//})()
+})

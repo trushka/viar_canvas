@@ -923,6 +923,7 @@ video[poster] {
   height: 30px;
   width: 30px;
   cursor: pointer;
+  /* outline: 1px solid; */
 }
 .csc-item-row {
   display: flex;
@@ -1316,6 +1317,7 @@ video[poster] {
   height: calc(100vh - 400px);
   min-height: 600px;
 }
+
 g.module>rect {
   width: var(--w);
   height: var(--h);
@@ -1331,7 +1333,11 @@ g.module>rect {
   height: .01em;
   x: var(--x);
   y: var(--y);
-  --xw: calc(var(--x) + var(--w)); --yh: calc(var(--y) + var(--h)); }
+  --xw:
+  calc(var(--x) + var(--w)); --yh:
+  calc(var(--y) + var(--h));
+  mix-blend-mode: color-burn;
+  }
 
 /*
 [5]---1---[6]
@@ -1382,14 +1388,14 @@ g.module g rect:nth-of-type(8) {
   y: var(--yh);
 }
 
-g.module g rect:hover {
+g.module g rect.hover {
   /* outline: var(--color) 1em solid; */
   stroke: var(--color);
   stroke-opacity: .6;
 }
 
-.modular g.module:hover>rect {
-  /* outline: 1px dashed #888; */
+.modular g.module.hover>rect {
+  /* outline: 1em dashed #888; */
   stroke: var(--color);
   stroke-width: 2em;
   stroke-dasharray: 3em 5em;
