@@ -103,8 +103,8 @@ $(function(){
 
 	// plugins
 
-	$.fn.addLines=function(){
-		return this.each(function(){
+	$.fn.setModulesHtml=function(){
+		return this.setRectId().each(function(){
 			if (this.querySelector('g')) return;
 			this.innerHTML+='<g><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/></g>'
 		})
@@ -125,6 +125,13 @@ $(function(){
 		})
 	}
 
+	$.fn.setRectId=function(){
+		return this.each((i, el)=>{
+			el.id = 'rect' + idCounter++
+		})
+	}
+	let idCounter = 0;
+
 	const templatesContainer = $('.modular-shapes');
 	const mainContainer = $('.modular');
 
@@ -132,7 +139,7 @@ $(function(){
 		svgG = $('>g', svg0),
 		pattern = $('image', svg0);
 
-	var options={
+	const options={
 		actual: 1
 	};
 
@@ -189,7 +196,7 @@ $(function(){
 			.click(function(e){
 				e.preventDefault();
 				svgG[0].innerHTML=svg[0].innerHTML;
-				$('g.module', svg0).addLines();
+				$('g.module', svg0).setModulesHtml();
 				cHistory.save();
 			}).appendTo(templatesContainer);
 		})
@@ -285,6 +292,46 @@ $(function(){
 		sizeInp.trigger('input');
 	}
 
+	function getIntersections(el0, box0) {
+
+		el0 = el0 || svgG[0].querySelector('.selected');
+		box0 = box0 || el0.firstChild.getBoundingClientRect();
+
+		const intersections=[];
+		const space=options.space * options.dpcm;
+
+		svgG[0].childNodes.forEach(el=>{
+			if (el==el0) return;
+
+			const box=el.firstChild.getBoundingClientRect();
+
+			const top = Math.max(box.bottom + space - box0.top, 0);
+			const bottom = Math.max(box0.bottom + space - box.top, 0);
+			const left = Math.max(box.right + space - box0.left, 0);
+			const right = Math.max(box0.right + space - box.left, 0);
+
+			if (top && bottom && left && right) {
+
+				intersections.push({left, top, right, bottom, el});
+			} 
+		})
+		return intersections;
+	}
+
+	function markIntersections(el0, intersections=[]) {
+
+		svgG[0].childNodes.forEach(el=>{
+			if (intersections.some(item => item.el==el)) {
+				el.classList.add('intersected', el0.id);
+				el0.classList.add('intersected', el.id);
+			} else if(el.classList.contains('intersected')) {
+				el.classList.remove(el0.id);
+				el0.classList.remove(el.id);
+				if (!/rect/.test(el.classList.value)) el.classList.remove('intersected')
+			}
+		})
+	}
+
 	// move and resize
 
 	mainContainer.on('mouseleave', 'svg:not(.blocked) .hover', function(e){
@@ -295,7 +342,7 @@ $(function(){
 		//console.log(e.type, svg0.hasClass('blocked'))
 
 		const el=this, $el=$(this).mouseleave(), targ=e.target;
-		const pos0=el.querySelector('rect').getBoundingClientRect();
+		const box0=el.querySelector('rect').getBoundingClientRect();
 
 		if (this.nextSibling) svgG.append(this);
 		$el.addClass('hover');//.one('mouseleave', e=>$el.removeClass('hover'));
@@ -313,12 +360,12 @@ $(function(){
 			move={
 				l: /0|8|4|5/.test(i),
 				t: /0|5|1|6/.test(i),
-				r: /6|2|7/.test(i),
-				b: /8|3|7/.test(i),
+				r: /0|6|2|7/.test(i),
+				b: /0|8|3|7/.test(i),
 			};
 
-		move.w=i && -move.l || +move.r;
-		move.h=i && -move.t || +move.b;
+		move.w=i && (-move.l || +move.r);
+		move.h=i && (-move.t || +move.b);
 
 		if (i) rects[i%5 || 4].classList.add('hover');
 		if (i>4) rects[i-4].classList.add('hover');
@@ -355,10 +402,13 @@ $(function(){
 			}
 			dx=(touch.pageX-x0);
 			dy=(touch.pageY-y0);
-			var x=pos0.x - bBox.x,
-				y=pos0.y - bBox.y,
-				w=pos0.width,
-				h=pos0.height;
+			var x=box0.x - bBox.x,
+				y=box0.y - bBox.y,
+				w=box0.width,
+				h=box0.height;
+
+			var {left, top, right, bottom} = box0;
+
 			var css={}, attr={};
 
 			dx=Math.max(dx, move.l?-x:-w+minSize);
@@ -366,6 +416,14 @@ $(function(){
 
 			dx=Math.min(dx, move.w<0?w-minSize:bBox.width-x-w);
 			dy=Math.min(dy, move.h<0?h-minSize:bBox.height-y-h);
+
+			left += dx*move.l;
+			right += dx*move.r;
+			top += dy*move.t;
+			bottom += dy*move.b;
+
+			const intersections = getIntersections(el, {left, top, right, bottom});
+			markIntersections(el, intersections);
 
 			if (move.l) css['--x']=attr['x']=+((x+dx)/bBox.width*100).toFixed(2)+'%';
 			if (move.t) css['--y']=attr['y']=+((y+dy)/bBox.height*100).toFixed(2)+'%';
@@ -389,7 +447,7 @@ $(function(){
 			svg0.removeClass('blocked');
 			if (e.type!='mouseup' || e.target!=targ) {
 				$el.mouseleave();
-				$(e.target).mouseover();
+				if (!touch) $(e.target).mouseover();
 			}
 			if (dx || dy) cHistory.save();
 
@@ -472,7 +530,7 @@ $(function(){
 		var y0=(touch||e).pageY;
 		var id=touch && touch.identifier;
 
-		var pos0=svgG[0].getBoundingClientRect();
+		var box0=svgG[0].getBoundingClientRect();
 		var preview=svg0.closest('div')[0];
 		var bBox=preview.parentNode.getBoundingClientRect();
 		var left=parseInt(preview.style.left || 50);
@@ -492,11 +550,11 @@ $(function(){
 			var dx=touch.pageX-x0;
 			var dy=touch.pageY-y0;
 
-			dx=Math.max(dx, bBox.left-pos0.left);
-			dy=Math.max(dy, bBox.top-pos0.top);
+			dx=Math.max(dx, bBox.left-box0.left);
+			dy=Math.max(dy, bBox.top-box0.top);
 
-			dx=Math.min(dx, bBox.right-pos0.right);
-			dy=Math.min(dy, bBox.bottom-pos0.bottom);
+			dx=Math.min(dx, bBox.right-box0.right);
+			dy=Math.min(dy, bBox.bottom-box0.bottom);
 
 			preview.style.left= left+dx/bBox.width*100+'%';
 			preview.style.top = top+dy/bBox.height*100+'%';
@@ -568,7 +626,7 @@ $(function(){
 		if (h<modular.minSize) return alert(lang.tooSmallH);
 		selected.css('--h', (h*100/options.h).toFixed(2)+'%')
 		.clone().css('--y', ((y+h+options.space)*100/options.h).toFixed(2)+'%')
-		.removeClass('selected').appendTo(svgG);
+		.setRectId().removeClass('selected').appendTo(svgG);
 	})
 	$('.split_h').click(function(){
 		var selected=checkActive();
@@ -579,7 +637,7 @@ $(function(){
 		if (w<modular.minSize) return alert(lang.tooSmallW);
 		selected.css('--w', (w*100/options.w).toFixed(2)+'%')
 		.clone().css('--x', ((x+w+options.space)*100/options.w).toFixed(2)+'%')
-		.removeClass('selected').appendTo(svgG);
+		.setRectId().removeClass('selected').appendTo(svgG);
 	})
 	$('.cs-controls .delete').click(function(){
 		var selected=checkActive();

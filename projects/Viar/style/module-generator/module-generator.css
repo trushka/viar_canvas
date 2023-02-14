@@ -924,6 +924,7 @@ video[poster] {
   width: 30px;
   cursor: pointer;
   /* outline: 1px solid; */
+  color: #ff9118;
 }
 .csc-item-row {
   display: flex;
@@ -943,6 +944,11 @@ video[poster] {
   background-position: center center;
   background-size: contain;
   transform: rotate(90deg);
+}
+#add_block {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px inset;
+  text-align: center;
 }
 #clear {
   background: url(../../images/collage/tool2.svg);
@@ -1311,7 +1317,7 @@ video[poster] {
   max-width: auto;
   overflow: visible;
   display: block;
-  --color: #F808; 
+  --color: #F808;
 }
 .modular .canv_cel>svg:not([viewBox]) {
   height: calc(100vh - 400px);
@@ -1392,6 +1398,10 @@ g.module g rect.hover {
   /* outline: var(--color) 1em solid; */
   stroke: var(--color);
   stroke-opacity: .6;
+}
+
+.modular g.module>rect {
+  filter: drop-shadow(7em 7em 12em #000a);
 }
 
 .modular g.module.hover>rect {
