@@ -136,8 +136,9 @@ $(function(){
 	const mainContainer = $('.modular');
 
 	const svg0 = $('.canv_cel svg'),
-		svgG = $('>g', svg0),
-		pattern = $('image', svg0);
+		pattern = $('image', svg0),
+		svgG = $('>g', svg0)
+		.on('mouseleave', e=>{$('.selected', svgG).appendTo(svgG)});
 
 	const options={
 		actual: 1
@@ -449,7 +450,11 @@ $(function(){
 				$el.mouseleave();
 				if (!touch) $(e.target).mouseover();
 			}
-			if (dx || dy) cHistory.save();
+			if (dx || dy) 
+				cHistory.save()
+			else if (/mouseup|touchend/.test(e.type)) {
+				$('#'+Array.from(el.classList).join(', #'), svgG).first().before(el);
+			}
 
 		})
 	})
@@ -644,8 +649,19 @@ $(function(){
 		if (!selected) return false;
 		if (selected.is(':only-child')) return;
 		selected.remove();
+		markIntersections(selected[0]);
 		delete cHistory.movedEl;
 	})
+	$('.cs-controls .add_block').click(e=>{
+		const block=SVG('g');
+
+		$(block).css({'--w': modular.minSize+'px', '--h': modular.minSize+'px'})
+		.addClass('module selected').html('<rect>').setModulesHtml().appendTo(svgG);
+
+		markIntersections(block, getIntersections(block));
+	})
+	$('.cs-controls #clear').click(e=>{svgG.html('')});
+
 	$('.cs-controls').click('.csc-item', e=>{(cHistory[e.target.id]||cHistory.save)()});
 
 	window.saveModular=function(){

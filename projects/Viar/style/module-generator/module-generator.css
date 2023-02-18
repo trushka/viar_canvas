@@ -1342,7 +1342,7 @@ g.module>rect {
   --xw:
   calc(var(--x) + var(--w)); --yh:
   calc(var(--y) + var(--h));
-  mix-blend-mode: color-burn;
+  /* mix-blend-mode: color-burn; */
   }
 
 /*
@@ -1401,7 +1401,10 @@ g.module g rect.hover {
 }
 
 .modular g.module>rect {
-  filter: drop-shadow(7em 7em 12em #000a);
+  filter: drop-shadow(3em 3em 12em #0007);
+}
+.modular g.module.intersected >rect {
+  filter: drop-shadow(0 0 6em #f30d) drop-shadow(7em 7em 12em #000a);
 }
 
 .modular g.module.hover>rect {
